@@ -41,6 +41,7 @@
 
 | 方向 | 核心内容 | 学习入口 |
 |---|---|---|
+| AI使用 | ChatGPT、GPT-6 Astra、Claude Opus 5、Fable 5.1| [会员充值教程](https://github.com/youngyangyang04/gpt-daichong)、[API调用教程](https://github.com/youngyangyang04/chatgpt-claude-api) |
 | 基础认知 | LLM 关键词、训练流程、岗位选择、Token 与 API 成本 | [开发者入门](docs/roadmap/beginner.md) |
 | 模型应用 | Prompt、结构化输出、流式响应、Function Calling、上下文工程 | [应用开发路线](docs/roadmap/application.md) |
 | RAG | Chunk、Embedding、向量数据库、混合检索、Rerank、评估 | [RAG 专题](docs/topics/rag.md) |

@@ -8,7 +8,7 @@ tags: [大模型应用, AI Agent, Multi-Agent, 上下文工程, Token治理, 大
 # 多Agent上下文、消息和Token怎么治理
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[《Planner、Worker、Reviewer怎么分工》](./multi_agent_roles.md)讲了角色边界：Planner定义任务，Worker交付Artifact和证据，Reviewer负责验收，编排器执行硬约束。

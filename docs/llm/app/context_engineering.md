@@ -8,7 +8,7 @@ tags: [大模型应用, Context Engineering, 上下文管理, Prompt工程, 大�
 # 上下文窗口有多大？Context Engineering入门
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[《大模型结构化输出》](./structured_output.md)讲的是怎么管住模型的输出：用JSON Schema定义结构，用校验和重试接住异常。

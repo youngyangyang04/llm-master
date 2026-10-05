@@ -8,7 +8,7 @@ tags: ["大模型调用", "Function Calling"]
 # Function Calling详解：大模型怎么调用工具，为什么是Agent的基础
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 如果你也打算面试Agent开发岗，那么你至少要知道：Function Calling 是什么？它为什么是 Agent 的前置能力？

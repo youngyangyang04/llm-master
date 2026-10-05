@@ -8,7 +8,7 @@ tags: ["RAG", "大模型应用"]
 # 向量数据库解决了什么问题：为什么不能用 MySQL 做向量检索、ANN 索引原理
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 ## 一、从一个问题出发

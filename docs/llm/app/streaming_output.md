@@ -8,7 +8,7 @@ tags: ["大模型调用", "流式输出"]
 # 大模型同步、异步、流式输出怎么选？三种调用方式详解
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 ## 一、为什么调用方式很重要

@@ -8,7 +8,7 @@ tags: [Claude Code面经, AI编程面试, 大模型面试, Context Engineering, 
 # Claude Code上下文窗口面试详解：Auto-Compact、上下文压缩与Agent记忆管理
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 > 不少读者问我，如何充值Claude会员，我在这里篇单独讲一下：[国内Claude充值会员的方法](../../qita/0002.claudepay.md)

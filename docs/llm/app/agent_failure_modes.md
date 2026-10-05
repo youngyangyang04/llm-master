@@ -8,7 +8,7 @@ tags: ["大模型应用", "AI Agent", "Agent可靠性", "大模型面试"]
 # Agent为什么容易翻车？
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 前几篇我们把 Agent 的核心能力一路讲下来了。

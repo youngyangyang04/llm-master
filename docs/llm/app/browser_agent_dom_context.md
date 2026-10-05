@@ -8,7 +8,7 @@ tags: [大模型应用, AI Agent, Browser Agent, 上下文工程, 工具调用, 
 # Browser Agent怎么读取大型网页
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[《多Agent上下文、消息和Token怎么治理》](./multi_agent_context_governance.md)讲了一个原则：大结果留在外部，Agent之间只传任务需要的摘要、状态和引用。Browser Agent也一样。

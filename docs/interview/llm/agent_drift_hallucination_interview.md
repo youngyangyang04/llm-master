@@ -8,7 +8,7 @@ tags: [Agent面经, 大模型面试, LLM面试, AI求职, 大模型求职]
 # Agent上下文漂移与工具调用幻觉：深度拆解与面试回答思路
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 之前分享了[录友四面字节Agent开发岗的面经](./20260506bytedance.md)，里面就有一个很不错的面试问题：“如何解决 Agent 的上下文漂移以及工具调用幻觉类问题”

@@ -19,7 +19,7 @@ faq:
 # Loop详解：从ReAct到Loop Engineering，Agent到底在循环什么
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 前面在 [Agent 大厂面试题汇总](./agent_interview.md) 里讲过 ReAct，把它当作四种 Agent 工作模式之一，知道了"思考-行动-观察"这个三步循环；在 [Claude Code 深度拆解](./claude_code_deep_dive.md) 里又看到，一个真实的 AI 编程工具，核心就是一个 while 循环。

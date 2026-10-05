@@ -8,7 +8,7 @@ tags: [大模型应用, 大模型微调, LoRA, QLoRA, PEFT, 大模型面试]
 # LoRA/QLoRA：为什么低秩微调这么流行
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇我们讲了 [SFT、RLHF、DPO 微调方法全景认知](./finetuning_sft_rlhf_dpo.md)。

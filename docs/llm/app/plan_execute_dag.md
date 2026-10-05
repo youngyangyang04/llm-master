@@ -8,7 +8,7 @@ tags: ["大模型应用", "AI Agent", "Agent设计", "任务调度", "大模型�
 # Plan-and-Execute怎么落地成DAG执行器
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[ReAct、Reflection、规划执行三种思路](./react_reflection_planning.md)讲了Plan-and-Execute的设计理念：先拆步骤，再按计划推进，适合复杂任务。

@@ -8,7 +8,7 @@ tags: [大模型应用, 大模型部署, 推理服务, 性能压测, 容量规�
 # 大模型服务怎么压测？吞吐最高不等于能上线
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[《量化不是只看4bit/8bit：权重、激活和KV Cache怎么选》](./model_quantization.md)讲了：模型文件变小，不代表推理一定更快。量化方案最后仍要回到真实负载，比较质量、延迟、吞吐和成本。

@@ -8,7 +8,7 @@ tags: [大模型应用, Token, 成本优化, 延迟优化, 大模型面试]
 # Token、成本与延迟：大模型应用的三个硬约束
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[《大模型同步、异步、流式输出怎么选》](./streaming_output.md)讲了结果怎么交付。流式输出能让用户更早看到内容，但它没有让模型少算一个Token，也没有让总生成时间凭空消失。

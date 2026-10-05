@@ -8,7 +8,7 @@ tags: ["大模型应用", "AI Agent", "Agent入门", "大模型面试"]
 # Agent到底是什么？和普通大模型问答有什么区别？
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 前段时间有个录友面试大模型应用岗，项目里写了一个"智能客服 Agent"。

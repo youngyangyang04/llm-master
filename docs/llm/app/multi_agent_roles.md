@@ -8,7 +8,7 @@ tags: ["大模型应用", "AI Agent", "Multi-Agent", "Agent架构", "大模型�
 # Planner、Worker、Reviewer怎么分工
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[《Plan-and-Execute怎么落地成DAG执行器》](./plan_execute_dag.md)讲了怎么把文本计划变成可调度、可恢复的执行图。

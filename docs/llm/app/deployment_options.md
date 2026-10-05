@@ -8,7 +8,7 @@ tags: [大模型应用, 大模型部署, 推理服务, 工程化, 大模型面�
 # 云API、托管推理还是自部署？大模型部署方案怎么选
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[《面试官怎么问微调？应用开发者该怎么答》](./finetuning_interview.md)讲清了一个边界：应用开发者不一定亲手训练模型，但必须能判断什么时候值得微调。

@@ -8,7 +8,7 @@ tags: ["Agent面经", "大模型面试", "LLM面试", "AI求职"]
 # OpenClaw、Hermes Agent、Claude Code三框架横评：面试必懂的对比
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 现在大厂面Agent开发岗，面试官动不动就问："**你了解哪些Agent框架？它们的记忆机制、工具调用、上下文管理有什么不同**？"

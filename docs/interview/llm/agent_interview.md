@@ -21,7 +21,7 @@ faq:
 # Agent大厂面试题汇总：ReAct、Function Calling、MCP、RAG高频问题
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 现在无论是什么岗位，都要求了解一些AI，Agent相关的内容。

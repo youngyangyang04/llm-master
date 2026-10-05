@@ -8,7 +8,7 @@ tags: ["大模型应用", "AI Agent", "MCP", "工具调用", "大模型面试"]
 # MCP协议：Agent工具调用的新标准
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇我们讲了 [工具设计决定 Agent 上限](./agent_tool_design.md)。

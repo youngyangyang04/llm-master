@@ -8,7 +8,7 @@ tags: ["大模型应用", "Prompt工程"]
 # Prompt Engineering不是"写提示词"：结构化Prompt设计、System/User/Assistant角色与模板变量
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[《大模型怎么接入真实应用》](./model_integration.html)里，我们把一个AI请求的完整链路拆成了四步：用户请求→Prompt构造→模型调用→输出处理。当时我说"Prompt构造是最关键的一步"，但只用了一小段带过。

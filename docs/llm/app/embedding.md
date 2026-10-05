@@ -8,7 +8,7 @@ tags: ["RAG", "大模型应用"]
 # Embedding 是什么：语义压缩、模型选型、和 Rerank 的区别
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 前段时间有个录友的分享，对话是这样的：

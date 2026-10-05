@@ -8,7 +8,7 @@ tags: [Claude Code面经, AI编程面试, Agent面经, RAG面试, 大模型面�
 # Claude Code为什么不用RAG检索代码？Grep、Glob、Read与代码检索设计哲学
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 最近[知识星球](https://programmercarl.com/other/kstar.html)有录友问了一个很容易被面试官拿来深挖的问题：

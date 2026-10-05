@@ -8,7 +8,7 @@ tags: [大模型应用, 大模型微调, 大模型面试, AI求职, 选型决策
 # 面试官怎么问微调？应用开发者该怎么答
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 微调这一章，前面三篇该讲的都讲透了。

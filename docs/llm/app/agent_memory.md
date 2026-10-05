@@ -8,7 +8,7 @@ tags: ["大模型应用", "AI Agent", "Agent记忆", "RAG", "大模型面试"]
 # Agent的记忆：短期、长期、RAG到底什么关系？
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇我们讲了 [Agent 为什么容易翻车](./agent_failure_modes.md)。

@@ -8,7 +8,7 @@ tags: [Agent面经, Harness Engineering, 大模型面试, LLM面试, AI求职]
 # Agent Harness 可观测性：生产级 AI 项目必须补上的一课
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 前面我们聊过 [Harness Engineering](./harness_interview.md)，讲的是 Agent 不能只靠 Prompt，要靠一整套运行环境把模型、工具、上下文、状态、评估都管起来。

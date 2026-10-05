@@ -8,7 +8,7 @@ tags: [大模型应用, Prompt工程, 大模型面试, LLM推理, AI求职]
 # Few-shot、CoT与自我反思有什么区别？
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[《Prompt Engineering不是“写提示词”》](./prompt_engineering.md)讲了结构化Prompt：System放规则，User放请求，动态数据用变量注入，输出格式提前约束。

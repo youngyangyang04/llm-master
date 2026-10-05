@@ -8,7 +8,7 @@ tags: ["RAG", "大模型应用"]
 # RAG 切片策略：固定长度、递归字符、语义切分、结构感知四种方式对比
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 ## 一、为什么 Chunking 这么重要？

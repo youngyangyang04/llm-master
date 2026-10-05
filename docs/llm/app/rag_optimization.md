@@ -8,7 +8,7 @@ tags: ["RAG", "大模型应用"]
 # RAG 优化思路：Query 改写、混合检索、Rerank、父子块检索、Context 压缩
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 ## 一、优化要对症下药

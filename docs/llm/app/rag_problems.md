@@ -8,7 +8,7 @@ tags: ["RAG", "大模型应用"]
 # RAG 系统答不准的常见问题：检索侧五类、生成侧四类问题逐一排查
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 前段时间一个录友发帖求助，他的 RAG 系统效果一直很差，换模型、加 Rerank 都试遍了，还是没起色。

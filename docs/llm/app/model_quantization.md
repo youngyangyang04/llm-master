@@ -8,7 +8,7 @@ tags: [大模型应用, 大模型部署, 模型量化, 推理优化, 大模型�
 # 量化不是只看4bit/8bit：权重、激活和KV Cache怎么选
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[《KV Cache为什么会吃光显存？从PagedAttention到Prefix Cache》](./kv_cache_paged_attention.md)讲了：模型权重装进GPU，只是拿到了入场券。上下文变长、并发升高以后，KV Cache照样可能把剩余显存吃光。

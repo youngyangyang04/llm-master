@@ -8,7 +8,7 @@ tags: [大模型应用, 大模型部署, 推理优化, KV Cache, 大模型面试
 # KV Cache为什么会吃光显存？从PagedAttention到Prefix Cache
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[《云API、托管推理还是自部署？大模型部署方案怎么选》](./deployment_options.md)讲了部署模式和责任边界。

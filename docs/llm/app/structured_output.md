@@ -8,7 +8,7 @@ tags: ["大模型调用", "结构化输出"]
 # 大模型结构化输出：为什么自然语言不稳定，JSON Schema怎么约束
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 前段时间有个录友来找我复盘，他面了字节的大模型应用岗，简历项目里做了一套信息提取与入库系统。

@@ -8,7 +8,7 @@ tags: ["大模型应用", "AI Agent", "Agent设计", "大模型面试"]
 # ReAct、Reflection、规划执行：Agent三种常见思路怎么选？
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇我们讲了 [Agent 到底是什么](./agent_intro.md)。

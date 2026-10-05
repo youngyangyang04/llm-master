@@ -8,7 +8,7 @@ tags: [大模型应用, 大模型微调, RAG, 选型决策, 大模型面试]
 # 什么时候微调、什么时候RAG？选型决策框架
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 前两篇我们把微调讲透了。
@@ -65,7 +65,7 @@ tags: [大模型应用, 大模型微调, RAG, 选型决策, 大模型面试]
 
 <!-- drawio源文件: ./drawio/finetuning_vs_rag_01_essence.drawio -->
 
-![微调改变模型参数RAG不改参数只外挂知识的对比示意图](https://file1.kamacoder.com/i/web/20260617153329_finetuning_vs_rag_01_essence.png)
+![微调改变模型参数RAG不改参数只外挂知识的对比示意图](https://file1.kamacoder.com/i/web/20260617153329_finetuning_vs_rag_01_essence.png?v=20261005)
 
 这张图回答的是：微调和 RAG 到底动了模型的什么。
 
@@ -185,7 +185,7 @@ tags: [大模型应用, 大模型微调, RAG, 选型决策, 大模型面试]
 
 <!-- drawio源文件: ./drawio/finetuning_vs_rag_03_decision_tree.drawio -->
 
-![先Prompt再RAG最后才微调的选型决策流程图](https://file1.kamacoder.com/i/web/20260617153332_finetuning_vs_rag_03_decision_tree.png)
+![先Prompt再RAG最后才微调的选型决策流程图](https://file1.kamacoder.com/i/web/20260617153332_finetuning_vs_rag_03_decision_tree.png?v=20261005)
 
 这张图回答的是：拿到一个不达标的需求，该按什么顺序决策。
 
@@ -221,7 +221,7 @@ tags: [大模型应用, 大模型微调, RAG, 选型决策, 大模型面试]
 
 <!-- drawio源文件: ./drawio/finetuning_vs_rag_04_hybrid.drawio -->
 
-![RAG提供实时知识微调对齐行为的混合架构示意图](https://file1.kamacoder.com/i/web/20260617153335_finetuning_vs_rag_04_hybrid.png)
+![RAG提供实时知识微调对齐行为的混合架构示意图](https://file1.kamacoder.com/i/web/20260617153335_finetuning_vs_rag_04_hybrid.png?v=20261005)
 
 这张图回答的是：两者怎么配合在一条链路里。
 

@@ -8,7 +8,7 @@ tags: ["大模型应用", "AI Agent", "Agent评估", "大模型面试", "LLM评�
 # Agent怎么评估？任务完成率与可靠性度量
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇我们讲了 [Agent 的记忆](./agent_memory.md)。
@@ -51,7 +51,7 @@ Agent 不行。
 
 这篇我们就把 Agent 怎么评估讲清楚。
 
-![Agent评估需要同时查看最终答案、执行轨迹和安全边界](https://file1.kamacoder.com/i/web/20260528163456_agent_evaluation_01_eval_layers_compressed.png)
+![Agent评估需要同时查看最终答案、执行轨迹和安全边界](https://file1.kamacoder.com/i/web/20260528163456_agent_evaluation_01_eval_layers_compressed.png?v=20261005)
 
 ## 一、为什么 Agent 评估比普通问答难
 
@@ -232,7 +232,7 @@ Agent 不能编。
 - 正确失败率
 - 错误失败率
 
-![Agent任务结果按完整完成、部分完成、正确失败和错误失败分级](https://file1.kamacoder.com/i/web/20260528163457_agent_evaluation_02_task_outcome_compressed.png)
+![Agent任务结果按完整完成、部分完成、正确失败和错误失败分级](https://file1.kamacoder.com/i/web/20260528163457_agent_evaluation_02_task_outcome_compressed.png?v=20261005)
 
 面试里如果你只说：
 
@@ -323,7 +323,7 @@ Agent B：
 
 如果 Agent 中间绕到数据库、缓存、无关服务查了一圈，那就是路径效率差。
 
-![Agent步骤效率通过关键路径、无效调用和重复调用衡量](https://file1.kamacoder.com/i/web/20260528163458_agent_evaluation_03_step_efficiency_compressed.png)
+![Agent步骤效率通过关键路径、无效调用和重复调用衡量](https://file1.kamacoder.com/i/web/20260528163458_agent_evaluation_03_step_efficiency_compressed.png?v=20261005)
 
 步骤效率的价值在于：
 
@@ -427,7 +427,7 @@ Agent 却继续查询订单详情。
 - 工具结果理解正确率
 - 高风险工具违规调用次数
 
-![Agent工具调用质量从工具选择、参数校验、调用时机和结果理解评估](https://file1.kamacoder.com/i/web/20260528163459_agent_evaluation_04_tool_call_quality_compressed.png)
+![Agent工具调用质量从工具选择、参数校验、调用时机和结果理解评估](https://file1.kamacoder.com/i/web/20260528163459_agent_evaluation_04_tool_call_quality_compressed.png?v=20261005)
 
 如果你的 Agent 项目里写了 Function Calling、MCP、Tool Use，这一块面试官很容易追问。
 
@@ -509,7 +509,7 @@ Agent 一定会遇到失败。
 
 看 Agent 是否解释规则，而不是继续尝试执行。
 
-![Agent错误恢复率评估不同失败类型对应的合理下一步动作](https://file1.kamacoder.com/i/web/20260528163500_agent_evaluation_05_error_recovery_compressed.png)
+![Agent错误恢复率评估不同失败类型对应的合理下一步动作](https://file1.kamacoder.com/i/web/20260528163500_agent_evaluation_05_error_recovery_compressed.png?v=20261005)
 
 前面我们讲过，错误返回最好结构化。
 
@@ -639,7 +639,7 @@ Agent 有没有把不该输出的信息输出给用户。
 
 用来测上下文污染控制。
 
-![Agent评估集需要覆盖正常完成、信息缺失、工具失败、高风险动作和噪音干扰](https://file1.kamacoder.com/i/web/20260528163502_agent_evaluation_06_eval_dataset_compressed.png)
+![Agent评估集需要覆盖正常完成、信息缺失、工具失败、高风险动作和噪音干扰](https://file1.kamacoder.com/i/web/20260528163502_agent_evaluation_06_eval_dataset_compressed.png?v=20261005)
 
 评估集不是越大越好。
 
@@ -717,7 +717,7 @@ LLM-as-judge 也可以用。
 
 尤其是安全、权限、事实正确性，最好还是结合规则和人工抽检。
 
-![Agent评估流程结合自动化规则评测、人工抽检、失败归因和回归评估](https://file1.kamacoder.com/i/web/20260528163503_agent_evaluation_07_auto_human_eval_compressed.png)
+![Agent评估流程结合自动化规则评测、人工抽检、失败归因和回归评估](https://file1.kamacoder.com/i/web/20260528163503_agent_evaluation_07_auto_human_eval_compressed.png?v=20261005)
 
 一个比较稳的评估流程是：
 
@@ -792,7 +792,7 @@ Agent 上线以后，用户输入会不断变化。
 - 哪一步开始跑偏
 - 最后为什么交付或停止
 
-![Agent线上监控通过Trace采集、指标看板、异常回放和灰度回归持续评估](https://file1.kamacoder.com/i/web/20260528163504_agent_evaluation_08_online_monitoring_compressed.png)
+![Agent线上监控通过Trace采集、指标看板、异常回放和灰度回归持续评估](https://file1.kamacoder.com/i/web/20260528163504_agent_evaluation_08_online_monitoring_compressed.png?v=20261005)
 
 没有 trace，Agent 问题很难排。
 

@@ -8,7 +8,7 @@ tags: [大模型应用, Prompt工程, 大模型面试, LLM推理, AI求职]
 # Few-shot、CoT与自我反思有什么区别？
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[《Prompt Engineering不是“写提示词”》](./prompt_engineering.md)讲了结构化Prompt：System放规则，User放请求，动态数据用变量注入，输出格式提前约束。
@@ -37,7 +37,7 @@ tags: [大模型应用, Prompt工程, 大模型面试, LLM推理, AI求职]
 
 <!-- drawio源文件: ./drawio/prompt_methods_01_execution_positions.drawio -->
 
-![Few-shot在输入前提供示例、CoT在生成中拆解步骤、自我反思在初稿后形成复核闭环](https://file1.kamacoder.com/i/web/20260716114509_prompt_methods_01_execution_positions_compressed.png)
+![Few-shot在输入前提供示例、CoT在生成中拆解步骤、自我反思在初稿后形成复核闭环](https://file1.kamacoder.com/i/web/20260716114509_prompt_methods_01_execution_positions_compressed.png?v=20261005)
 
 这张图回答的是：Few-shot、CoT和自我反思分别在一次生成的哪个位置发力。Few-shot在模型作答前提供参照，CoT改变模型处理问题的过程，自我反思则发生在初稿之后。**作用位置都不一样，不能把它们当成三个可以随便互换的“提示词技巧”。**
 
@@ -70,7 +70,7 @@ Few-shot Prompting就是在Prompt里放几个示例。
 
 <!-- drawio源文件: ./drawio/prompt_methods_02_fewshot_mapping.drawio -->
 
-![Few-shot通过输入输出示例归纳当前任务映射且不修改模型参数](https://file1.kamacoder.com/i/web/20260716114509_prompt_methods_02_fewshot_mapping_compressed.png)
+![Few-shot通过输入输出示例归纳当前任务映射且不修改模型参数](https://file1.kamacoder.com/i/web/20260716114509_prompt_methods_02_fewshot_mapping_compressed.png?v=20261005)
 
 这张图回答的是：Few-shot为什么比继续堆抽象规则更容易对齐。示例直接把“什么输入对应什么标签”展示出来，模型归纳的是当前上下文里的映射模式；新请求沿着同一映射得到结果，模型权重没有变化。
 
@@ -132,7 +132,7 @@ CoT常见两种方式：
 
 <!-- drawio源文件: ./drawio/prompt_methods_03_reflection_evidence_loop.drawio -->
 
-![自我反思依靠评分标准测试结果和检索证据形成校验修正闭环](https://file1.kamacoder.com/i/web/20260716114509_prompt_methods_03_reflection_evidence_loop_compressed.png)
+![自我反思依靠评分标准测试结果和检索证据形成校验修正闭环](https://file1.kamacoder.com/i/web/20260716114509_prompt_methods_03_reflection_evidence_loop_compressed.png?v=20261005)
 
 这张图回答的是：为什么自我反思必须有证据锚点。有评分标准、测试或检索结果时，反馈能指出具体错误并进入下一轮；如果只有一句“请反思”，模型很可能只是换一种说法，甚至把原本正确的答案改错。
 

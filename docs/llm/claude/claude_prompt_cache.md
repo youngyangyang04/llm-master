@@ -104,7 +104,7 @@ Prompt Cache 解决的就是这个问题：
 
 而是从请求开头开始，连续一段内容必须一致，才能命中缓存。
 
-![Prompt Cache 命中依赖请求前缀连续一致](https://file1.kamacoder.com/i/web/20260601095801_claude_prompt_cache_01_prefix_layers_compressed.png)
+![Prompt Cache 命中依赖请求前缀连续一致](https://file1.kamacoder.com/i/web/20260601095801_claude_prompt_cache_01_prefix_layers_compressed.png?v=20261005)
 
 所以 Claude Code 的请求组织方式很讲究：
 
@@ -160,7 +160,7 @@ Anthropic 在原文里提到，他们也踩过类似坑：比如把详细时间�
 
 但从缓存角度看，都是前缀污染。
 
-![Prompt Cache 前缀断点会导致后续缓存失效](https://file1.kamacoder.com/i/web/20260601095803_claude_prompt_cache_02_cache_breakers_compressed.png)
+![Prompt Cache 前缀断点会导致后续缓存失效](https://file1.kamacoder.com/i/web/20260601095803_claude_prompt_cache_02_cache_breakers_compressed.png?v=20261005)
 
 这就像你在一个大项目里改构建缓存 key。
 
@@ -240,7 +240,7 @@ CLAUDE.md 适合放长期稳定规则。
 
 也是为了缓存稳定。
 
-![动态信息应该追加到消息末尾而不是修改稳定前缀](https://file1.kamacoder.com/i/web/20260601095805_claude_prompt_cache_03_dynamic_messages_compressed.png)
+![动态信息应该追加到消息末尾而不是修改稳定前缀](https://file1.kamacoder.com/i/web/20260601095805_claude_prompt_cache_03_dynamic_messages_compressed.png?v=20261005)
 
 ## 四、不要中途切模型，可能更贵
 
@@ -294,7 +294,7 @@ CLAUDE.md 适合放长期稳定规则。
 
 但不要让主干为了一个小任务把整个缓存掀掉。
 
-![长会话中途切模型会失去原模型缓存](https://file1.kamacoder.com/i/web/20260601095807_claude_prompt_cache_04_model_switch_compressed.png)
+![长会话中途切模型会失去原模型缓存](https://file1.kamacoder.com/i/web/20260601095807_claude_prompt_cache_04_model_switch_compressed.png?v=20261005)
 
 ## 五、Plan Mode 为什么不能靠“删掉写入工具”实现？
 
@@ -322,7 +322,7 @@ Claude Code 的 Plan Mode，录友应该不陌生。
 
 这就很亏。
 
-![Plan Mode 的关键是保持工具定义稳定只追加模式状态](https://file1.kamacoder.com/i/web/20260601095808_claude_prompt_cache_05_plan_mode_compressed.png)
+![Plan Mode 的关键是保持工具定义稳定只追加模式状态](https://file1.kamacoder.com/i/web/20260601095808_claude_prompt_cache_05_plan_mode_compressed.png?v=20261005)
 
 Claude Code 的设计更有意思。
 
@@ -398,7 +398,7 @@ GitHub 一个。
 
 所以 Claude Code 的思路不是“动态删工具”，而是“延迟加载工具详情”。
 
-![MCP 工具多时用稳定工具目录和按需加载 schema](https://file1.kamacoder.com/i/web/20260601095810_claude_prompt_cache_06_deferred_tools_compressed.png)
+![MCP 工具多时用稳定工具目录和按需加载 schema](https://file1.kamacoder.com/i/web/20260601095810_claude_prompt_cache_06_deferred_tools_compressed.png?v=20261005)
 
 它可以先在稳定前缀里放轻量 stub。
 
@@ -474,7 +474,7 @@ Claude Code 里常见的处理方式就是 compact。
 
 Claude Code 的做法是缓存友好分叉。
 
-![上下文压缩应该复用父会话前缀再追加 compact 指令](https://file1.kamacoder.com/i/web/20260601095811_claude_prompt_cache_07_compaction_fork_compressed.png)
+![上下文压缩应该复用父会话前缀再追加 compact 指令](https://file1.kamacoder.com/i/web/20260601095811_claude_prompt_cache_07_compaction_fork_compressed.png?v=20261005)
 
 它在做压缩时，使用和父会话一样的系统提示词、用户上下文、系统上下文和工具定义。
 
@@ -550,7 +550,7 @@ cache creation input tokens：本轮写入缓存的输入 token。
 
 cache read input tokens：本轮从缓存读取的输入 token。
 
-![Prompt Cache 命中率需要纳入 Agent 监控闭环](https://file1.kamacoder.com/i/web/20260601095813_claude_prompt_cache_08_cache_metrics_compressed.png)
+![Prompt Cache 命中率需要纳入 Agent 监控闭环](https://file1.kamacoder.com/i/web/20260601095813_claude_prompt_cache_08_cache_metrics_compressed.png?v=20261005)
 
 如果 read 很高，creation 很低，说明缓存用得好。
 

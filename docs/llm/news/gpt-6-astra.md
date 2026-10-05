@@ -15,7 +15,7 @@ tags: [GPT-6, OpenAI, AI编程, Agent, Computer Use, 大模型发布, 大模型�
 
 2026 年 9 月 3 日，OpenAI 正式发布 GPT-6 Astra。官方给它的定位很直接：最聪明、最对齐，也是目前最擅长电脑操作、浏览器使用、软件工程、网络安全和科学工作的 OpenAI 模型。
 
-![GPT-6 Astra发布首屏](https://file1.kamacoder.com/i/web/20260904143405.png)
+![GPT-6 Astra发布首屏](https://file1.kamacoder.com/i/web/20260904143405.png?v=20261005)
 
 *截图说明：OpenAI 官方发布页首屏没有堆参数，只放了一个由星光组成的“6”。这次 Astra 不是 GPT-5.6 Sol 的小修小补，而是 GPT-6 的第一款旗舰模型。*
 
@@ -43,7 +43,7 @@ GPT-6 Astra 的基础规格如下：
 | 输出价格 | 50 美元 / 百万 Token |
 | 核心能力 | 推理、编程、电脑操作、研究、文档制作 |
 
-![GPT-6 Astra模型规格](https://file1.kamacoder.com/i/web/20260904143409.png)
+![GPT-6 Astra模型规格](https://file1.kamacoder.com/i/web/20260904143409.png?v=20261005)
 
 *截图说明：OpenAI 开发者文档列出了 Astra 的模型定位、价格、输入模态和上下文规格。它支持文本与图片输入，但不直接支持音频、视频输入。*
 
@@ -64,7 +64,7 @@ OpenAI 在发布摘要里放了三个非常抓眼球的数字：
 - ARC-AGI-3：99.9%
 - ExploitBench：100%
 
-![GPT-6 Astra官方摘要](https://file1.kamacoder.com/i/web/20260904143406.png)
+![GPT-6 Astra官方摘要](https://file1.kamacoder.com/i/web/20260904143406.png?v=20261005)
 
 *截图说明：官方摘要强调 Astra 在数学、抽象推理、漏洞利用、电脑操作和专业工作上的突破，同时注明当前仍是分批开放。*
 
@@ -80,7 +80,7 @@ ARC-AGI-3 的成绩来自带状态的 Responses API Harness，模型会在交互
 
 它让智能体用代码和终端完成科研工作流，包括分析数据、运行模拟和拟合模型。Astra 最高拿到 64.6%，[Claude Fable 5.1](./claude-fable-5-1.md) 是 52.6%，GPT-5.6 Sol 只有 22.4%。
 
-![GPT-6 Astra科学评测](https://file1.kamacoder.com/i/web/20260904143408.png)
+![GPT-6 Astra科学评测](https://file1.kamacoder.com/i/web/20260904143408.png?v=20261005)
 
 *截图说明：横轴是估算的 API 单任务成本，纵轴是科研任务解决率。Astra 的多个推理档位整体位于对比模型上方，但更高分依然伴随更高成本。*
 
@@ -153,7 +153,7 @@ Astra 带来的几个接口变化，都是在解决长任务的真实痛点。
 
 GPT-6 Astra 的标准 API 价格是每百万输入 Token 10 美元、输出 Token 50 美元。
 
-![GPT-6 Astra价格表](https://file1.kamacoder.com/i/web/20260904143410.png)
+![GPT-6 Astra价格表](https://file1.kamacoder.com/i/web/20260904143410.png?v=20261005)
 
 *截图说明：缓存读取为 1 美元，缓存写入为 12.5 美元。Batch 和 Flex 按标准价五折，Fast mode 按标准价两倍计费。*
 

@@ -68,7 +68,7 @@ tags: [大模型面试, LLM面试, 模型微调, AI求职, 大模型求职]
 
 <!-- drawio源文件: ./drawio/finetuning_01_overview.drawio -->
 
-![大模型优化体系全景图](https://file1.kamacoder.com/i/web/20260515181609_finetuning_01_overview.png)
+![大模型优化体系全景图](https://file1.kamacoder.com/i/web/20260515181609_finetuning_01_overview.png?v=20261005)
 
 先给结论。
 
@@ -118,7 +118,7 @@ tags: [大模型面试, LLM面试, 模型微调, AI求职, 大模型求职]
 
 <!-- drawio源文件: ./drawio/finetuning_02_concepts.drawio -->
 
-![SFT、RLHF、RL、PPO、DPO概念关系图](https://file1.kamacoder.com/i/web/20260515181611_finetuning_02_concepts.png)
+![SFT、RLHF、RL、PPO、DPO概念关系图](https://file1.kamacoder.com/i/web/20260515181611_finetuning_02_concepts.png?v=20261005)
 
 很多录友不懂这些名词。
 
@@ -186,7 +186,7 @@ SFT，全称是 Supervised Fine-Tuning，监督微调。
 
 <!-- drawio源文件: ./drawio/finetuning_03_sft_flow.drawio -->
 
-![SFT训练流程图](https://file1.kamacoder.com/i/web/20260515181613_finetuning_03_sft_flow.png)
+![SFT训练流程图](https://file1.kamacoder.com/i/web/20260515181613_finetuning_03_sft_flow.png?v=20261005)
 
 
 ### 2. RLHF：基于人类反馈的强化学习
@@ -354,7 +354,7 @@ DPO 很依赖偏好数据质量。
 
 <!-- drawio源文件: ./drawio/finetuning_04_rlhf_dpo_compare.drawio -->
 
-![RLHF和DPO对比图](https://file1.kamacoder.com/i/web/20260515181615_finetuning_04_rlhf_dpo_compare.png)
+![RLHF和DPO对比图](https://file1.kamacoder.com/i/web/20260515181615_finetuning_04_rlhf_dpo_compare.png?v=20261005)
 
 
 ## 三、微调、Prompt、RAG 到底怎么选
@@ -373,7 +373,7 @@ DPO 很依赖偏好数据质量。
 
 <!-- drawio源文件: ./drawio/finetuning_05_decision_tree.drawio -->
 
-![Prompt、RAG、SFT、DPO、RLHF和RL选择决策树](https://file1.kamacoder.com/i/web/20260515181621_finetuning_05_decision_tree.png)
+![Prompt、RAG、SFT、DPO、RLHF和RL选择决策树](https://file1.kamacoder.com/i/web/20260515181621_finetuning_05_decision_tree.png?v=20261005)
 
 ### 1. 能靠 Prompt 解决，就先别训练
 
@@ -476,7 +476,7 @@ DPO 很依赖偏好数据质量。
 
 <!-- drawio源文件: ./drawio/finetuning_06_value_shift.drawio -->
 
-![基模变强后的微调价值迁移图](https://file1.kamacoder.com/i/web/20260515181622_finetuning_06_value_shift.png)
+![基模变强后的微调价值迁移图](https://file1.kamacoder.com/i/web/20260515181622_finetuning_06_value_shift.png?v=20261005)
 
 答案是：会。
 
@@ -486,7 +486,7 @@ DPO 很依赖偏好数据质量。
 
 <!-- drawio源文件: ./drawio/finetuning_07_flattened_vs_valuable.drawio -->
 
-![哪些微调会被抹平哪些仍有价值](https://file1.kamacoder.com/i/web/20260515181624_finetuning_07_flattened_vs_valuable.png)
+![哪些微调会被抹平哪些仍有价值](https://file1.kamacoder.com/i/web/20260515181624_finetuning_07_flattened_vs_valuable.png?v=20261005)
 
 ### 1. 只补通用知识的微调，容易被抹平
 
@@ -902,7 +902,7 @@ DPO 可以比完整 RLHF 更容易落地。
 
 <!-- drawio源文件: ./drawio/finetuning_08_engineering_loop.drawio -->
 
-![大模型微调工程闭环图](https://file1.kamacoder.com/i/web/20260515181626_finetuning_08_engineering_loop.png)
+![大模型微调工程闭环图](https://file1.kamacoder.com/i/web/20260515181626_finetuning_08_engineering_loop.png?v=20261005)
 
 微调有没有收益，不能靠感觉。
 

@@ -8,7 +8,7 @@ tags: [大模型应用, 大模型部署, 推理优化, KV Cache, 大模型面试
 # KV Cache为什么会吃光显存？从PagedAttention到Prefix Cache
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[《云API、托管推理还是自部署？大模型部署方案怎么选》](./deployment_options.md)讲了部署模式和责任边界。
@@ -108,7 +108,7 @@ Prefill和Decode消耗显存的方式不一样。
 
 <!-- drawio源文件: ./drawio/kv_cache_01_growth_pressure.drawio -->
 
-![KV Cache容量放大链](https://file1.kamacoder.com/i/web/20260812110333.png)
+![KV Cache容量放大链](https://file1.kamacoder.com/i/web/20260812110333.png?v=20261005)
 
 这张图回答的是：KV Cache压力如何从单Token经过序列长度和活跃请求数逐层放大。Prefill让长输入一次占入大量缓存，Decode持续追加，连续批处理又让更多请求同时驻留，最终把有限的GPU KV池推到排队、抢占或OOM。
 
@@ -135,7 +135,7 @@ Prefill和Decode消耗显存的方式不一样。
 
 <!-- drawio源文件: ./drawio/kv_cache_02_paged_attention.drawio -->
 
-![PagedAttention分页映射](https://file1.kamacoder.com/i/web/20260812110336.png)
+![PagedAttention分页映射](https://file1.kamacoder.com/i/web/20260812110336.png?v=20261005)
 
 这张图回答的是：PagedAttention为什么能缓解显存碎片。上方的连续分配路径被最大长度预留和零散空洞卡住；下方通过逻辑块表把序列映射到公共物理块池，只在最后一个未填满的块留下有限尾部浪费。
 
@@ -196,7 +196,7 @@ Prefill通常更偏计算密集，Decode更受显存带宽和逐Token调度影�
 
 <!-- drawio源文件: ./drawio/kv_cache_03_optimization_path.drawio -->
 
-![KV Cache优化决策路径](https://file1.kamacoder.com/i/web/20260812110337.png)
+![KV Cache优化决策路径](https://file1.kamacoder.com/i/web/20260812110337.png?v=20261005)
 
 这张图回答的是：看到KV池告警后应该先判断哪种浪费。碎片走分页，重复前缀走Prefix Cache，单Token太大再看量化，冷热工作集超过GPU才考虑卸载；只有Prefill和Decode互相干扰时，才进入分离式推理。
 

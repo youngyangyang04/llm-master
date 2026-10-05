@@ -9,7 +9,7 @@ tags: [Claude Code, Claude Code封号, AI编程, 大模型入门, 平台风控]
 
 
 <a href="https://notes.kamacoder.com/qita/0021.gpt-5-6-sol-terra-luna-domestic-guide.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 
@@ -26,7 +26,7 @@ tags: [Claude Code, Claude Code封号, AI编程, 大模型入门, 平台风控]
 
 最近有国外开发者，对claude做了逆向工程，发现他在客户端偷偷藏了一套用户标记系统。
 
-![国外开发者逆向 Claude Code 客户端发现用户标记系统](https://file1.kamacoder.com/i/web/2026-07-01_15-46-21.jpg) 
+![国外开发者逆向 Claude Code 客户端发现用户标记系统](https://file1.kamacoder.com/i/web/2026-07-01_15-46-21.jpg?v=20261005) 
 
 ## 不是只看 IP
 
@@ -40,7 +40,7 @@ Anthropic 官方支持地区里，没有中国大陆。所以中国 IP 直连被
 
 <!-- drawio源文件: ./drawio/claude_code_china_ban_01_risk_path.drawio -->
 
-![Claude Code通过时区和Base URL识别中国访问路径](https://file1.kamacoder.com/i/web/20260701185621_claude_code_china_ban_01_risk_path_compressed.png)
+![Claude Code通过时区和Base URL识别中国访问路径](https://file1.kamacoder.com/i/web/20260701185621_claude_code_china_ban_01_risk_path_compressed.png?v=20261005)
 
 这张图回答的是：为什么换 IP 没用。你换的是出口，但 Claude Code 还能从本地和请求配置里看到更多东西。
 
@@ -86,7 +86,7 @@ ANTHROPIC_BASE_URL=https://xxx.example.com
 
 网传名单大概是这样：
 
-![Claude Code中转域名和关键词名单截图](https://file1.kamacoder.com/i/web/2026-07-01_15-46-10.jpg)
+![Claude Code中转域名和关键词名单截图](https://file1.kamacoder.com/i/web/2026-07-01_15-46-10.jpg?v=20261005)
 
 如果中转地址里出现 `.cn`、国内大厂域名、国内 AI 公司关键词、常见中转服务域名，就会更像中国访问路径。
 
@@ -114,7 +114,7 @@ Today's date is 2026-06-30.
 
 <!-- drawio源文件: ./drawio/claude_code_china_ban_02_trust_boundary.drawio -->
 
-![Claude Code隐蔽标记藏进系统提示词的过程](https://file1.kamacoder.com/i/web/20260701185621_claude_code_china_ban_02_trust_boundary_compressed.png)
+![Claude Code隐蔽标记藏进系统提示词的过程](https://file1.kamacoder.com/i/web/20260701185621_claude_code_china_ban_02_trust_boundary_compressed.png?v=20261005)
 
 这张图回答的是：隐蔽标记为什么难发现。它复用原本就要发出的系统提示词，把地区和中转信息编码进去。
 
@@ -146,7 +146,7 @@ Today's date is 2026-06-30.
 
 目前可能只能找没有被封的中转站，可以[试试这个](https://apidock.ai/)，目前我们还在用，还是稳定的。
 
-![Claude Opus 模型中转站使用入口截图](https://file1.kamacoder.com/i/web/2026-07-01_18-41-53.jpg)
+![Claude Opus 模型中转站使用入口截图](https://file1.kamacoder.com/i/web/2026-07-01_18-41-53.jpg?v=20261005)
 
 ## 参考资料
 

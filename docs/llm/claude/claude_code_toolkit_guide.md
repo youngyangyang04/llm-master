@@ -21,7 +21,7 @@ tags: [Claude Code, AI编程, Agent, MCP, 大模型入门]
 
 我们先说它们为什么出现，再逐个讲是什么、怎么用，最后把六件东西装进同一个真实项目。
 
-![Claude Code扩展能力封面](https://file1.kamacoder.com/i/web/20260729153227_claude_code_toolkit_01_cover-compressed.jpg)
+![Claude Code扩展能力封面](https://file1.kamacoder.com/i/web/20260729153227_claude_code_toolkit_01_cover-compressed.jpg?v=20261005)
 
 这张图讲的是：Claude Code 从来不是靠一个“万能 Prompt”变强，而是靠一套分工清楚的工作系统。长期规则、专项流程、独立角色、外部能力、自动门禁和团队分发，各自解决一类问题。
 
@@ -45,7 +45,7 @@ Claude 要读几十个文件、跑一堆命令、处理测试失败，还可能�
 
 你告诉过 Claude 的规则，换个同事、换台电脑、换个项目，又要从头再讲一遍。
 
-![临时聊天规则被新消息淹没](https://file1.kamacoder.com/i/web/20260729153229_claude_code_toolkit_02_background-compressed.jpg)
+![临时聊天规则被新消息淹没](https://file1.kamacoder.com/i/web/20260729153229_claude_code_toolkit_02_background-compressed.jpg?v=20261005)
 
 这张图讲的是：**聊天适合表达当前任务，不能承载整套工程制度。** 规则只存在聊天里，任务一长就容易被稀释；经验只存在个人会话里，团队就无法复用。
 
@@ -87,7 +87,7 @@ README 面向人，重点是项目是什么、怎么启动。
 
 `CLAUDE.md` 面向 Agent，重点是**接到任务以后应该怎么行动**。
 
-![CLAUDE.md项目说明书](https://file1.kamacoder.com/i/web/20260729153231_claude_code_toolkit_03_claude_md-compressed.jpg)
+![CLAUDE.md项目说明书](https://file1.kamacoder.com/i/web/20260729153231_claude_code_toolkit_03_claude_md-compressed.jpg?v=20261005)
 
 这张图讲的是：长期规则不该靠程序员一遍遍口头提醒。把命令、架构和禁区写成项目说明书，Claude 每次进项目就有稳定起点。
 
@@ -179,7 +179,7 @@ README 面向人，重点是项目是什么、怎么启动。
 
 它既可以由你用 `/skill-name` 主动触发，也可以由 Claude 根据 `description` 自动判断。
 
-![Claude Code按需加载Skill](https://file1.kamacoder.com/i/web/20260729153233_claude_code_toolkit_04_skills-compressed.jpg)
+![Claude Code按需加载Skill](https://file1.kamacoder.com/i/web/20260729153233_claude_code_toolkit_04_skills-compressed.jpg?v=20261005)
 
 这张图讲的是：Skill 不是把所有资料永久堆在桌面，而是面对发布、评审、排障等具体任务时，只拿当前需要的工具箱。
 
@@ -259,7 +259,7 @@ Skill 给当前 Agent 加一套方法，但工作仍然发生在**当前上下�
 
 Subagent 的价值是：**另开一个独立上下文，让一个专门角色完成任务，只把结论和证据带回来。**
 
-![Claude Code Subagents独立分工](https://file1.kamacoder.com/i/web/20260729153234_claude_code_toolkit_05_subagents-compressed.jpg)
+![Claude Code Subagents独立分工](https://file1.kamacoder.com/i/web/20260729153234_claude_code_toolkit_05_subagents-compressed.jpg?v=20261005)
 
 这张图讲的是：探索、测试和审查可以由独立角色分别完成。过程噪音留在各自上下文，主 Agent 只接收有证据的结果。
 
@@ -344,7 +344,7 @@ MCP，全称 Model Context Protocol，解决的是**AI 应用如何用统一方�
 
 MCP Server 把能力暴露出来，Claude Code 作为 MCP Client 连接并调用。
 
-![Claude Code通过MCP连接外部系统](https://file1.kamacoder.com/i/web/20260729153236_claude_code_toolkit_06_mcp-compressed.jpg)
+![Claude Code通过MCP连接外部系统](https://file1.kamacoder.com/i/web/20260729153236_claude_code_toolkit_06_mcp-compressed.jpg?v=20261005)
 
 这张图讲的是：MCP 像受控转接器，让 Claude Code 够到仓库外的代码平台、数据库和浏览器；权限钥匙仍然应该掌握在人和系统策略手里。
 
@@ -422,7 +422,7 @@ Hooks 会在 Claude Code 生命周期的特定事件上触发，比如：
 - Claude 等待确认时发桌面通知；
 - 上下文压缩前保存关键状态。
 
-![Claude Code Hooks自动门禁](https://file1.kamacoder.com/i/web/20260729153237_claude_code_toolkit_07_hooks-compressed.jpg)
+![Claude Code Hooks自动门禁](https://file1.kamacoder.com/i/web/20260729153237_claude_code_toolkit_07_hooks-compressed.jpg?v=20261005)
 
 这张图讲的是：格式化、测试和危险命令检查不该靠人追着提醒。Hook 像自动门禁，命中事件就执行，该通过的通过，该拦的拦住。
 
@@ -499,7 +499,7 @@ Hook 是自动执行的，所以要比普通 Prompt 更谨慎。
 
 当这套配置已经稳定，需要跨项目、跨团队安装、升级和版本管理时，再把它做成 Plugin。
 
-![Claude Code Plugin团队分发](https://file1.kamacoder.com/i/web/20260729153239_claude_code_toolkit_08_plugins-compressed.jpg)
+![Claude Code Plugin团队分发](https://file1.kamacoder.com/i/web/20260729153239_claude_code_toolkit_08_plugins-compressed.jpg?v=20261005)
 
 这张图讲的是：Plugin 把零散的 Skill、Agent、Hook 和 MCP 配置装进同一个团队工具包。一份维护、多人复用，才不会每台电脑手工配一遍。
 

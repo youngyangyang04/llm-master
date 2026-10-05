@@ -32,7 +32,7 @@ tags: ["RAG", "大模型应用"]
 
 下面这张图展示了纯大模型在知识层面存在的几个边界：
 
-![大模型知识缺失和幻觉问题示意图](https://file1.kamacoder.com/i/bagu/Snipaste_2026-04-14_22-18-35.png)
+![大模型知识缺失和幻觉问题示意图](https://file1.kamacoder.com/i/bagu/Snipaste_2026-04-14_22-18-35.png?v=20261005)
 
 ### 1. 幻觉问题（Hallucination）
 
@@ -66,7 +66,7 @@ RAG 的全称是 Retrieval-Augmented Generation，检索增强生成。它的核
 
 下面这张图展示了 RAG 如何对应地解决上面四个问题：
 
-![RAG检索增强生成解决问题示意图](https://file1.kamacoder.com/i/bagu/Snipaste_2026-04-14_22-18-51.png)
+![RAG检索增强生成解决问题示意图](https://file1.kamacoder.com/i/bagu/Snipaste_2026-04-14_22-18-51.png?v=20261005)
 
 RAG 针对四个问题各有应对：
 

@@ -24,7 +24,7 @@ AI 时代新词出现得太快。之前 Loop Engineering 还没学完，现在�
 
 先别急着焦虑。这个词背后不是凭空冒出一门新玄学，它说的就是一个很朴素的工程问题：**一个 Agent Loop 能把一件事转起来；当任务需要并行、分工、校验、人工确认、断点恢复时，这些 Loop、代码和人该怎么连起来？**
 
-![AI时代新词接连出现：Loop Engineering还没学完，Graph Engineering又来了](https://file1.kamacoder.com/i/web/20260727122137_graph_engineering_01_preview-upload.jpg)
+![AI时代新词接连出现：Loop Engineering还没学完，Graph Engineering又来了](https://file1.kamacoder.com/i/web/20260727122137_graph_engineering_01_preview-upload.jpg?v=20261005)
 
 最近关于这个词的讨论很热。有观点认为，单一 Agent Loop 已经暴露出串行、状态全在 transcript 里、失败难恢复的上限，因此下一层抽象应该是显式的图；LangChain 的回应则更克制：图编排是成熟的做法，Loop 只是其中最简单的有环图，不存在“谁取代谁”。[Josh C. Simmons 的文章](https://www.drjoshcsimmons.com/writing/we-are-entering-the-graph-engineering-phase) 和 [LangGraph 官方复盘](https://www.langchain.com/blog/3-years-of-graph-engineering-with-langgraph) 放在一起看，答案反而更清楚。
 
@@ -64,7 +64,7 @@ LangGraph 官方把它概括为一种状态机：节点做事，边决定下一�
 
 但真实任务一复杂，问题马上不是“这一圈怎么转”，而是“**下一件事该由谁做、能不能同时做、失败后从哪接着做**”。
 
-![单一Loop让独立任务排队，Graph编排可让检索、代码、校验并行后汇总](https://file1.kamacoder.com/i/web/20260727122139_graph_engineering_02_parallel-upload.jpg)
+![单一Loop让独立任务排队，Graph编排可让检索、代码、校验并行后汇总](https://file1.kamacoder.com/i/web/20260727122139_graph_engineering_02_parallel-upload.jpg?v=20261005)
 
 例如“把一份需求变成可 review 的 PR”：
 
@@ -88,7 +88,7 @@ LangGraph 官方把它概括为一种状态机：节点做事，边决定下一�
 
 **好节点应该无聊。**它只做一件清楚的事，所以能单测、能缓存、能重试、能替换。
 
-![Graph节点应各司其职：检索、执行、校验分别独立，才方便测试与替换](https://file1.kamacoder.com/i/web/20260727122141_graph_engineering_03_nodes-upload.jpg)
+![Graph节点应各司其职：检索、执行、校验分别独立，才方便测试与替换](https://file1.kamacoder.com/i/web/20260727122141_graph_engineering_03_nodes-upload.jpg?v=20261005)
 
 举个例子，下面这些节点的边界就很清楚：
 
@@ -112,7 +112,7 @@ LangGraph 官方把它概括为一种状态机：节点做事，边决定下一�
 - **条件边**：根据 state 选择分支，例如风险等级高则去人工审批。
 - **模型边**：模型在受限选项中判断下一步，例如三类工单该转给哪个专用 Agent。
 
-![Graph里的边决定下一步：确定规则交给代码，需要语义理解才交给模型或人工](https://file1.kamacoder.com/i/web/20260727122142_graph_engineering_04_edges-upload.jpg)
+![Graph里的边决定下一步：确定规则交给代码，需要语义理解才交给模型或人工](https://file1.kamacoder.com/i/web/20260727122142_graph_engineering_04_edges-upload.jpg?v=20261005)
 
 越是模型决策的边，越要记录：它看到了什么状态、为什么选这条路、置信度多少、走错后代价是什么。因为生产事故往往不是某个节点“不会干活”，而是**路由走错了**。
 
@@ -137,7 +137,7 @@ type TicketState = {
 
 这份 state 有两个作用：一是让每个节点只读写自己负责的字段；二是让系统能在**跨边时做检查点（Checkpoint）**。机器崩了、人工周末才回复、某次工具超时，都不用从第一步重新烧 Token。
 
-![跨越节点边界时保存状态检查点，任务失败后能够从最近进度恢复](https://file1.kamacoder.com/i/web/20260727122144_graph_engineering_05_checkpoint-upload.jpg)
+![跨越节点边界时保存状态检查点，任务失败后能够从最近进度恢复](https://file1.kamacoder.com/i/web/20260727122144_graph_engineering_05_checkpoint-upload.jpg?v=20261005)
 
 ## 4. 生产里真正值钱的五个能力
 

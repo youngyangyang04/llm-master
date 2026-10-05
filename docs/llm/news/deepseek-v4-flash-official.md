@@ -13,7 +13,7 @@ tags: [DeepSeek, 大模型发布, AI编程, Agent, Codex, API]
 
 7 月 31 日，DeepSeek 把 V4-Flash 的官方 API 放进公测。模型名还是 `deepseek-v4-flash`，但实际版本已经更新为 **DeepSeek-V4-Flash-0731**。
 
-![V4-Flash官方公测公告](https://file1.kamacoder.com/i/web/20260801114940.jpg)
+![V4-Flash官方公测公告](https://file1.kamacoder.com/i/web/20260801114940.jpg?v=20261005)
 
 这次不是 App 或网页端换模型。官方明确说了：**升级的只有 API；V4-Pro API、DeepSeek App 和网页端模型都没变。** 所以你在网页里试几句，不能据此判断这次更新有没有生效。
 
@@ -32,7 +32,7 @@ tags: [DeepSeek, 大模型发布, AI编程, Agent, Codex, API]
 
 官方原话是，新版在 Agent 能力上显著增强，跑分大幅超过 V4-Pro-Preview。[更新日志](https://api-docs.deepseek.com/zh-cn/updates) 也给出了完整数字。
 
-![](https://file1.kamacoder.com/i/web/2026-08-01_15-46-58.jpg)
+![](https://file1.kamacoder.com/i/web/2026-08-01_15-46-58.jpg?v=20261005)
 
 **这个提升值得重视，但别把它翻译成“Flash 已经全面超过 Pro，更超过所有顶级模型”。**
 
@@ -66,7 +66,7 @@ DeepSeek 已经把 Codex 接入文档放出来了：目前只有 `deepseek-v4-fl
 
 模型名不变，调用方式也不变：继续填 `deepseek-v4-flash`，就是最新的 0731 版本。
 
-![](https://file1.kamacoder.com/i/web/2026-08-01_15-48-31.jpg)
+![](https://file1.kamacoder.com/i/web/2026-08-01_15-48-31.jpg?v=20261005)
 
 当前常规价按百万 Token 计算：
 

@@ -65,7 +65,7 @@ $$
 
 加完之后，每个 Token 的向量里就同时包含了**语义信息**（它是什么词）和**位置信息**（它在第几位）。
 
-![Transformer没有位置编码时无法区分词序示意图](https://file1.kamacoder.com/i/algo/589ad6d1-bb1a-4faa-8260-d923a2f410a9.webp)
+![Transformer没有位置编码时无法区分词序示意图](https://file1.kamacoder.com/i/algo/589ad6d1-bb1a-4faa-8260-d923a2f410a9.webp?v=20261005)
 
 
 ---
@@ -107,7 +107,7 @@ $$
 
 就好像用"秒"刻度区分相邻时刻，用"小时"刻度区分跨度更大的时间段——**不同精度的尺子，量不同尺度的距离**。
 
-![正弦位置编码不同频率变化示意图](https://file1.kamacoder.com/i/algo/ddc658ca-f85f-4cca-b5fb-b4e9bf059e5c.webp)
+![正弦位置编码不同频率变化示意图](https://file1.kamacoder.com/i/algo/ddc658ca-f85f-4cca-b5fb-b4e9bf059e5c.webp?v=20261005)
 ## 3.位置编码是固定的，还是学出来的？
 
 原始 Transformer 论文用的是**固定的正弦编码**，不参与训练，直接按公式算好。

@@ -8,7 +8,7 @@ tags: [大模型应用, Context Engineering, 上下文管理, Prompt工程, 大�
 # 上下文窗口有多大？Context Engineering入门
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[《大模型结构化输出》](./structured_output.md)讲的是怎么管住模型的输出：用JSON Schema定义结构，用校验和重试接住异常。
@@ -61,7 +61,7 @@ tags: [大模型应用, Context Engineering, 上下文管理, Prompt工程, 大�
 
 <!-- drawio源文件: ./drawio/context_engineering_01_shared_budget.drawio -->
 
-![上下文窗口中系统规则工具定义历史检索和本轮问题共同占用输入预算并需为输出预留空间](https://file1.kamacoder.com/i/web/20260717115238_context_engineering_01_shared_budget_compressed.png)
+![上下文窗口中系统规则工具定义历史检索和本轮问题共同占用输入预算并需为输出预留空间](https://file1.kamacoder.com/i/web/20260717115238_context_engineering_01_shared_budget_compressed.png?v=20261005)
 
 这条预算关系最容易踩的坑，是把窗口全部留给输入。
 
@@ -105,7 +105,7 @@ Token不是汉字数，也不是字符数。
 
 <!-- drawio源文件: ./drawio/context_engineering_02_context_dilution.drawio -->
 
-![全部材料直接进入上下文会因噪声位置和规则冲突降低有效信号密度而筛选排序能保留高信号信息](https://file1.kamacoder.com/i/web/20260717115238_context_engineering_02_context_dilution_compressed.png)
+![全部材料直接进入上下文会因噪声位置和规则冲突降低有效信号密度而筛选排序能保留高信号信息](https://file1.kamacoder.com/i/web/20260717115238_context_engineering_02_context_dilution_compressed.png?v=20261005)
 
 这不是说中间的信息一定读不到，也不是所有模型退化程度都一样。真正应该得到的工程结论是：**不要把“窗口装得下”当成“模型一定用得到”。**
 
@@ -142,7 +142,7 @@ System规则 + 用户请求 + Few-shot示例 + 对话历史
 
 <!-- drawio源文件: ./drawio/context_engineering_03_curation_pipeline.drawio -->
 
-![上下文工程把系统规则会话历史外部记忆工具和请求依次经过检索筛选排序压缩与预算组装后交给模型](https://file1.kamacoder.com/i/web/20260717115238_context_engineering_03_curation_pipeline_compressed.png)
+![上下文工程把系统规则会话历史外部记忆工具和请求依次经过检索筛选排序压缩与预算组装后交给模型](https://file1.kamacoder.com/i/web/20260717115238_context_engineering_03_curation_pipeline_compressed.png?v=20261005)
 
 注意，这五步不是只在会话开始时做一次。用户每追问一轮、Agent每调用一次工具，候选信息都变了，上下文也应该重新编排。
 
@@ -219,7 +219,7 @@ def build_context(request, session):
 
 <!-- drawio源文件: ./drawio/context_engineering_04_long_session_loop.drawio -->
 
-![长对话通过工作上下文状态摘要和外部记忆三层结构让必要信息在后续轮次重新回到模型窗口](https://file1.kamacoder.com/i/web/20260717115238_context_engineering_04_long_session_loop_compressed.png)
+![长对话通过工作上下文状态摘要和外部记忆三层结构让必要信息在后续轮次重新回到模型窗口](https://file1.kamacoder.com/i/web/20260717115238_context_engineering_04_long_session_loop_compressed.png?v=20261005)
 
 每一轮结束后，系统要判断新信息去哪：当前就要用的留在窗口，长期有效的写入状态或记忆，纯过程噪声只保留日志地址。下一轮再围绕新问题取回必要部分。
 

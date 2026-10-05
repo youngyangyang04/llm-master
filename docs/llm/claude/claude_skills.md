@@ -23,7 +23,7 @@ tags: [Claude Code, AI编程, Agent Skills, 大模型入门]
 
 官方原话：Skill 是「指令、脚本和资源的文件夹」（folders of instructions, scripts, and resources）。注意，是**文件夹**，不是文件。
 
-![Skill文件夹解剖](https://file1.kamacoder.com/i/web/20260616181017_skill_anatomy.png)
+![Skill文件夹解剖](https://file1.kamacoder.com/i/web/20260616181017_skill_anatomy.png?v=20261005)
 
 一个像样的 Skill 长这样：
 
@@ -43,7 +43,7 @@ Anthropic 内部把所有 Skill 盘了一遍，发现它们能干净地落进 **
 
 这 9 类长这样：
 
-![Skill九大分类](https://file1.kamacoder.com/i/web/20260616181018_skill_nine_categories.png)
+![Skill九大分类](https://file1.kamacoder.com/i/web/20260616181018_skill_nine_categories.png?v=20261005)
 
 挨个说一下，对照着看你自己手头哪些活能做成 Skill：
 
@@ -86,7 +86,7 @@ Claude 本身就懂很多编程知识。所以如果你的 Skill 主要是传递
 
 这条是 Skill 设计的精髓，也是它和「一个长 md」最本质的区别。
 
-![渐进式披露](https://file1.kamacoder.com/i/web/20260616181019_progressive_disclosure.png)
+![渐进式披露](https://file1.kamacoder.com/i/web/20260616181019_progressive_disclosure.png?v=20261005)
 
 笨办法是：把所有参考文档、所有脚本源码、所有模板、每个边界情况的长篇说明，**一股脑全塞进上下文**。结果还没开始干活，上下文窗口就满了，Claude 反而抓不住重点。
 
@@ -126,7 +126,7 @@ Anthropic 内部那些最好用的 Skill，**几乎都不是设计出来的，�
 
 原文：大多数 Skill 一开始就是**几行字 + 一个坑**，后来变好，是因为大家在 Claude 不断撞到新边界情况的时候，一条一条往里加。
 
-![Skill成长路径](https://file1.kamacoder.com/i/web/20260616181021_skill_evolution.png)
+![Skill成长路径](https://file1.kamacoder.com/i/web/20260616181021_skill_evolution.png?v=20261005)
 
 所以路径很清楚：
 

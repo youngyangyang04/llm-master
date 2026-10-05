@@ -21,7 +21,7 @@ Loop 很诱人，但它不是免费午餐。**它烧 token、要花时间搭、�
 
 <!-- drawio源文件: ./drawio/loop_engineering_guide_01_decision.drawio -->
 
-![判断是否需要 Loop](https://file1.kamacoder.com/i/web/20260708113429_loop_decision.jpg)
+![判断是否需要 Loop](https://file1.kamacoder.com/i/web/20260708113429_loop_decision.jpg?v=20261005)
 
 **任务是重复的吗？** Loop 的搭建成本要靠多次运行摊回来。一次性的活儿，写个好 prompt 更快。
 
@@ -43,7 +43,7 @@ Loop 很诱人，但它不是免费午餐。**它烧 token、要花时间搭、�
 
 <!-- drawio源文件: ./drawio/loop_engineering_guide_02_components.drawio -->
 
-![Loop 的五个核心构件](https://file1.kamacoder.com/i/web/20260708113435_loop_components.jpg)
+![Loop 的五个核心构件](https://file1.kamacoder.com/i/web/20260708113435_loop_components.jpg?v=20261005)
 
 **Automations——loop 的心跳。** 按节奏触发，跑完一轮，停下。**关键是停止条件要写死，别让它无限跑。**
 
@@ -59,7 +59,7 @@ Loop 很诱人，但它不是免费午餐。**它烧 token、要花时间搭、�
 
 <!-- drawio源文件: ./drawio/loop_engineering_guide_03_roadmap.drawio -->
 
-![14 步完整路线图](https://file1.kamacoder.com/i/web/20260708113442_loop_roadmap.jpg)
+![14 步完整路线图](https://file1.kamacoder.com/i/web/20260708113442_loop_roadmap.jpg?v=20261005)
 
 ### 第一段：先想清楚要不要做（5 步）
 
@@ -96,7 +96,7 @@ Loop 很诱人，但它不是免费午餐。**它烧 token、要花时间搭、�
 
 <!-- drawio源文件: ./drawio/loop_engineering_guide_04_pitfalls.drawio -->
 
-![Loop 的三种翻车方式](https://file1.kamacoder.com/i/web/20260708113449_loop_pitfalls.jpg)
+![Loop 的三种翻车方式](https://file1.kamacoder.com/i/web/20260708113449_loop_pitfalls.jpg?v=20261005)
 
 **假装干完了。** 工程师 Geoffrey Huntley 管这叫 Ralph Wiggum 循环：Agent 提前发「完成」信号，活干一半就退。原因只有一个：**没有硬闸门。** 解法：回到第 9 步，设一道硬闸门。
 

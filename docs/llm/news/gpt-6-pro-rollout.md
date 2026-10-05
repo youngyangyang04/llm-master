@@ -22,7 +22,7 @@ tags: [GPT-6, GPT-6 Astra, OpenAI, ChatGPT Pro, ChatGPT充值, 大模型动态]
 - 符合条件的 ChatGPT Business；
 - 符合条件并由管理员开启的 ChatGPT Enterprise。
 
-![GPT-6 Pro开放公告](https://file1.kamacoder.com/i/web/20260905205554.jpg)
+![GPT-6 Pro开放公告](https://file1.kamacoder.com/i/web/20260905205554.jpg?v=20261005)
 
 截图里的重点就两个：**Pro 用户已经开始收到推送，Plus 用户还要继续等灰度。**
 

@@ -9,7 +9,7 @@ tags: ["Transformer", "架构对比"]
 上一篇文章我们简单介绍了Transformer架构，这一篇文章我们来详细讲讲Transformer中的Encoder-only，Dcoder-only，Encoder-Decoder这三种架构的异同与用法  
 ## 1.Encoder-only架构  
 顾名思义，Encoder-only架构为只有编码器的架构，代表性模型为BERT。这种架构更擅长“理解输入”，所以其主要应用场景为文本分类、情感分析、信息抽取、命名实体识别等。注意力矩阵采用双向注意力计算，即每个字都能看到上下文得所有信息。 以“远方有棵苹果树”这句话为例子带大家看下注意力矩阵大概的样子：
-![Encoder-only架构示意图](https://file1.kamacoder.com/i/algo/ff1a7b94-d7a5-45fc-a80b-a5bc9b80cdb9.webp)
+![Encoder-only架构示意图](https://file1.kamacoder.com/i/algo/ff1a7b94-d7a5-45fc-a80b-a5bc9b80cdb9.webp?v=20261005)
 
 ## 2.Decoder-only架构  
 Decoder-only架构为只有解码器的架构，擅长按顺序生成，适合生成类任务，也就是当今GPT（Generative Pre-trained Transformer）、Llama、Qwen、Deepseek等模型家族的主流架构，我们日常使用AI产品例如deepseek、千问、元宝、豆包等，底层往往也是这类生成式大模型。  
@@ -19,7 +19,7 @@ Decoder-only架构为只有解码器的架构，擅长按顺序生成，适合�
 
 当生成到“苹果”这个词时，“树”这个词是不应该被“看见”的。即在生成当前位置的Token时，不能提前“偷看”后面的Token。  
 在Decoder-only架构中，会通过 causal mask 把“未来位置”遮住，这样便可以使大模型在生成前文时“看不到”后文。（我们后面会详细讲解自注意力矩阵的计算，大家在这里有个印象即可） 如果把注意力矩阵画出来，常见写法里被遮住的部分通常表现为上三角区域： 
-![Decoder-only架构示意图](https://file1.kamacoder.com/i/algo/2240fcb5-44c5-4fdb-877c-13139e1da48e.webp)
+![Decoder-only架构示意图](https://file1.kamacoder.com/i/algo/2240fcb5-44c5-4fdb-877c-13139e1da48e.webp?v=20261005)
 
 ## 3.Encoder- Decoder架构  
 即编码器-解码器架构，代表性模型为T5，适合序列到序列，文本到文本的转换任务，比如翻译、摘要、问答生成。在该架构中：  
@@ -27,7 +27,7 @@ Decoder-only架构为只有解码器的架构，擅长按顺序生成，适合�
 * Decoder阶段采用两种注意力计算方式：  
 1. **掩码自注意力（Masked Self-Attention）**：用于处理已经生成的译文。  
 2. **交叉注意力（Cross-Attention）**：用于从编码器输出的“原文”中提取关键信息。
-![Encoder-Decoder架构示意图](https://file1.kamacoder.com/i/algo/03f4f341-dd49-44ae-8dfc-afb3d93d79ed.webp)
+![Encoder-Decoder架构示意图](https://file1.kamacoder.com/i/algo/03f4f341-dd49-44ae-8dfc-afb3d93d79ed.webp?v=20261005)
 
 
 ## 三种架构的主要区别：  

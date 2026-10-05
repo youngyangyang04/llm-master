@@ -8,7 +8,7 @@ tags: [DeepSeek, 大模型发布, AI编程, 开源大模型]
 # DeepSeek V4发布：1.6万亿参数开源MoE，百万上下文，价格只要GPT-5.5的十分之一
 
 <a href="https://notes.kamacoder.com/qita/0021.gpt-5-6-sol-terra-luna-domestic-guide.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 
@@ -18,7 +18,7 @@ tags: [DeepSeek, 大模型发布, AI编程, 开源大模型]
 
 GPT-5.5凌晨发，DeepSeek V4北京时间白天发。两家同一天放大招，这节奏符合ai的气质（卷起来）。
 
-![DeepSeek V4模型发布截图](https://file1.kamacoder.com/i/web/2026-04-24_17-20-01.jpg)
+![DeepSeek V4模型发布截图](https://file1.kamacoder.com/i/web/2026-04-24_17-20-01.jpg?v=20261005)
 
 之前在[Opus 4.7那篇](https://mp.weixin.qq.com/s/QJZ34IOWf8vdEiFqugNsMw)里还调侃DeepSeek"生产队的驴不能这么拖"，结果人家真的在憋大招。
 
@@ -30,7 +30,7 @@ GPT-5.5凌晨发，DeepSeek V4北京时间白天发。两家同一天放大招�
 
 ## 一、两个模型：V4-Pro和V4-Flash
 
-![DeepSeek V4模型能力说明截图](https://file1.kamacoder.com/i/web/2026-04-24_18-42-54.jpg)
+![DeepSeek V4模型能力说明截图](https://file1.kamacoder.com/i/web/2026-04-24_18-42-54.jpg?v=20261005)
 DeepSeek这次一口气发了两个模型，都是MoE（混合专家）架构：
 
 **V4-Pro**——旗舰版
@@ -59,7 +59,7 @@ DeepSeek这次一口气发了两个模型，都是MoE（混合专家）架构：
 
 先看最硬的数据。
 
-![DeepSeek V4性能指标截图](https://file1.kamacoder.com/i/web/2026-04-24_17-20-02.jpg)
+![DeepSeek V4性能指标截图](https://file1.kamacoder.com/i/web/2026-04-24_17-20-02.jpg?v=20261005)
 
 **编码类**
 
@@ -83,7 +83,7 @@ DeepSeek这次一口气发了两个模型，都是MoE（混合专家）架构：
 
 不过deepseek在Agent方面，还是有较大提升 ，下图为 V4-Pro 在某 Agent 框架下生成的 PPT 内页示例： 
 
-![DeepSeek V4产品定位截图](https://file1.kamacoder.com/i/web/2026-04-24_17-36-26.jpg)
+![DeepSeek V4产品定位截图](https://file1.kamacoder.com/i/web/2026-04-24_17-36-26.jpg?v=20261005)
 
 **数学类**
 
@@ -126,7 +126,7 @@ V4-Pro和V4-Flash都原生支持**100万token上下文**，不需要额外付费
 - V4-Flash：计算量只有V3.2的**10%**（9.8倍降低），KV cache只有**7%**（13.7倍压缩）
 
 
-![DeepSeek V4价格信息截图](https://file1.kamacoder.com/i/web/2026-04-24_18-35-20.jpg)
+![DeepSeek V4价格信息截图](https://file1.kamacoder.com/i/web/2026-04-24_18-35-20.jpg?v=20261005)
 
 怎么做到的？核心是两种混合注意力机制：
 
@@ -169,14 +169,14 @@ HLE（Humanity's Last Exam，人类最后的考试）从7.7飙到37.7，差距�
 
 API调用时可以按请求级别切换模式，不用换模型。
 
-![DeepSeek V4模型对比截图](https://file1.kamacoder.com/i/web/2026-04-24_18-38-38.jpg)
+![DeepSeek V4模型对比截图](https://file1.kamacoder.com/i/web/2026-04-24_18-38-38.jpg?v=20261005)
 
 
 ## 五、价格：这才是真正的杀手锏
 
 看完能力，再看价格。这才是DeepSeek V4最炸裂的部分。
 
-![DeepSeek V4 输出价格对比](https://file1.kamacoder.com/i/web/20260424175437_dsv4_price.png)
+![DeepSeek V4 输出价格对比](https://file1.kamacoder.com/i/web/20260424175437_dsv4_price.png?v=20261005)
 
 | 模型 | 输入（缓存命中） | 输入（缓存未命中） | 输出 |
 |------|-----------------|-------------------|------|
@@ -219,7 +219,7 @@ API调用时可以按请求级别切换模式，不用换模型。
 | 推理模式 | 三档 | 无 | effort五档 |
 
 
-![DeepSeek V4使用场景截图](https://file1.kamacoder.com/i/web/2026-04-24_18-07-12.jpg)
+![DeepSeek V4使用场景截图](https://file1.kamacoder.com/i/web/2026-04-24_18-07-12.jpg?v=20261005)
 
 几个关键判断：
 
@@ -232,15 +232,15 @@ API调用时可以按请求级别切换模式，不用换模型。
 **私有化部署**：只有V4能做到。开源权重意味着你可以在自己的服务器上跑，数据不出内网。对金融、医疗、政府这些对数据安全敏感的行业，这是唯一选择。
 
 
-![DeepSeek V4模型工具箱截图](https://file1.kamacoder.com/i/web/2026-04-24_18-07-30.jpg)
+![DeepSeek V4模型工具箱截图](https://file1.kamacoder.com/i/web/2026-04-24_18-07-30.jpg?v=20261005)
 
 **说白了**：V4-Pro是"穷人的Opus（实惠装）"，能力接近前沿，价格差一个数量级。GPT-5.5是"Agent之王"，跑长任务最稳。Opus 4.7是"编码之王"，改bug最准。三个不是替代关系，是各有战场。
 
-![DeepSeek V4成本预算示意图](https://file1.kamacoder.com/i/web/2026-04-24_18-07-46.jpg)
+![DeepSeek V4成本预算示意图](https://file1.kamacoder.com/i/web/2026-04-24_18-07-46.jpg?v=20261005)
 
 ## 七、开源 + 华为昇腾：对国内开发者意味着什么
 
-![DeepSeek + 华为昇腾](https://file1.kamacoder.com/i/web/2026-04-24_17-54-42.jpg)
+![DeepSeek + 华为昇腾](https://file1.kamacoder.com/i/web/2026-04-24_17-54-42.jpg?v=20261005)
 
 这次发布有两个对国内开发者特别重要的信息：
 

@@ -8,7 +8,7 @@ tags: ["RAG", "大模型应用"]
 # Embedding 是什么：语义压缩、模型选型、和 Rerank 的区别
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 前段时间有个录友的分享，对话是这样的：
@@ -45,7 +45,7 @@ Embedding 是一种将文本（或图片、音频等）映射到高维向量空�
 
 下面这张图用二维空间来直觉化这件事。真实的向量是几百到几千维，但投影到二维平面后，语义聚类的模式仍然清晰可见：
 
-![语义向量空间直觉图](https://file1.kamacoder.com/i/bagu/embedding_semantic_space.png)
+![语义向量空间直觉图](https://file1.kamacoder.com/i/bagu/embedding_semantic_space.png?v=20261005)
 
 图中的每个点都是一段文本经过 Embedding 后在向量空间中的位置。真实维度远不止两维（通常是几百到几千维），但语义聚类的规律是一致的：出行报销类的文档彼此靠近，动物类、编程类各自聚集。
 
@@ -95,7 +95,7 @@ RAG 里有一个典型的非对称场景：Query 是一个简短的问题（"退
 
 下面这张图展示了两者在链路中的位置和工作机制对比：两者的核心差异在于建模方式：
 
-![Embedding和Rerank在RAG链路中的区别](https://file1.kamacoder.com/i/bagu/embedding_vs_rerank.png)
+![Embedding和Rerank在RAG链路中的区别](https://file1.kamacoder.com/i/bagu/embedding_vs_rerank.png?v=20261005)
 
 Embedding 使用**双塔模型（Bi-Encoder）**：Query 和每个文档片段各自独立经过模型编码成向量，然后通过向量距离（余弦相似度）来衡量相关性。这种方式的最大优势是文档向量可以**离线预计算**，存入向量库，检索时只需计算 Query 向量并做近似最近邻搜索，速度极快，可以在毫秒内从百万量级文档里完成召回。
 

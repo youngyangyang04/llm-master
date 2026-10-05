@@ -8,7 +8,7 @@ tags: [Agent面经, 大模型面试, LLM面试, AI求职, 大模型求职]
 # Agent上下文漂移与工具调用幻觉：深度拆解与面试回答思路
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 之前分享了[录友四面字节Agent开发岗的面经](./20260506bytedance.md)，里面就有一个很不错的面试问题：“如何解决 Agent 的上下文漂移以及工具调用幻觉类问题”
@@ -71,7 +71,7 @@ Agent 跑几步就偏了，忘了原始任务；该调工具的时候调错了�
 
 **总结一句话：上下文漂移的本质，是原始目标在注意力分配中逐渐失焦。**
 
-![注意力稀释过程](https://file1.kamacoder.com/i/web/202605111554011.png)
+![注意力稀释过程](https://file1.kamacoder.com/i/web/202605111554011.png?v=20261005)
 
 ### 漂移的三种模式
 
@@ -83,7 +83,7 @@ Agent 跑几步就偏了，忘了原始任务；该调工具的时候调错了�
 
 **风格漂移**：目标和优先级都没偏，但输出风格变了。开头按要求输出结构化 JSON，跑了几步开始写大段自然语言解释。这种漂移最隐蔽，不影响任务完成但影响下游消费。
 
-![漂移三种模式](https://file1.kamacoder.com/i/web/202605111554042.png)
+![漂移三种模式](https://file1.kamacoder.com/i/web/202605111554042.png?v=20261005)
 
 ### 检测信号：怎么知道漂移了？
 
@@ -115,7 +115,7 @@ Agent 跑几步就偏了，忘了原始任务；该调工具的时候调错了�
 
 代价是：每次 Re-Planning 都是一次额外的 LLM 调用，增加了延迟和成本。但对长任务来说，这个代价远低于跑偏后全部重来的成本。
 
-![漂移解法分层](https://file1.kamacoder.com/i/web/202605111554063.png)
+![漂移解法分层](https://file1.kamacoder.com/i/web/202605111554063.png?v=20261005)
 
 
 ## 二、工具调用幻觉：Agent 为什么调了不该调的工具？
@@ -170,7 +170,7 @@ Agent 生成了一个工具列表里没有的工具名。比如你只有 `search
 
 根因：模型有"工具使用倾向"——训练数据中，使用工具的对话往往得到更高的奖励信号，导致模型过度倾向于调用工具，哪怕当前不需要。
 
-![幻觉三种类型×对应解法](https://file1.kamacoder.com/i/web/202605111554094.png)
+![幻觉三种类型×对应解法](https://file1.kamacoder.com/i/web/202605111554094.png?v=20261005)
 
 ### 解法：每种幻觉对应不同策略
 
@@ -211,7 +211,7 @@ Agent 生成了一个工具列表里没有的工具名。比如你只有 `search
 
 这套防线不解决根因，但能有效拦截大部分幻觉的后果。**根因靠工具描述和参数约束解决，兜底靠全流程校验保障。**
 
-![调用全流程校验](https://file1.kamacoder.com/i/web/202605111554115.png)
+![调用全流程校验](https://file1.kamacoder.com/i/web/202605111554115.png?v=20261005)
 
 
 ## 三、面试怎么答

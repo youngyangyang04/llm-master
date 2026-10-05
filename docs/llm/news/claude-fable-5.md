@@ -12,11 +12,11 @@ tags: [Claude, 大模型发布, AI编程, Agent]
 
 6月9日，Anthropic 发布了 Claude Fable 5。
 
-![](https://file1.kamacoder.com/i/web/2026-06-10_14-34-30.jpg)
+![](https://file1.kamacoder.com/i/web/2026-06-10_14-34-30.jpg?v=20261005)
 
 现在就已经可以用上了：
 
-![](https://file1.kamacoder.com/i/web/2026-06-11_11-19-01.jpg) 
+![](https://file1.kamacoder.com/i/web/2026-06-11_11-19-01.jpg?v=20261005) 
 
 
 官方的定位很直接：**目前最强的公开发布模型**，专门给高难度推理和长链路 Agent 任务用。
@@ -25,11 +25,11 @@ tags: [Claude, 大模型发布, AI编程, Agent]
 
 Anthropic 表示，Fable 5 堪称其有史以来最强大的模型，而从下面的跑分表中可以看出出来，确实是碾压。
 
-![](https://file1.kamacoder.com/i/web/2026-06-11_11-19-02.jpg)
+![](https://file1.kamacoder.com/i/web/2026-06-11_11-19-02.jpg?v=20261005)
 
 不过他的价格也是最贵的。
 
-![](https://file1.kamacoder.com/i/web/20260611143412_position.png)
+![](https://file1.kamacoder.com/i/web/20260611143412_position.png?v=20261005)
 
 这次和上次 Opus 4.8 的"温和更新"不一样。
 
@@ -49,7 +49,7 @@ Opus 4.8 是把老问题往前推一步，Fable 5 是换了一个梯队。
 
 这是官网价格：https://claude.com/pricing#api，大家可以去看。
 
-![](https://file1.kamacoder.com/i/web/2026-06-11_11-25-15.jpg) 
+![](https://file1.kamacoder.com/i/web/2026-06-11_11-25-15.jpg?v=20261005) 
 
 | 模型 | 输入价格 | 输出价格 |
 |------|----------|----------|
@@ -66,7 +66,7 @@ Opus 4.8 是把老问题往前推一步，Fable 5 是换了一个梯队。
 
 这两个因素叠在一起，**同一个任务的实际花费，可能是 Opus 4.8 的 2.5 倍甚至更多。**
 
-![](https://file1.kamacoder.com/i/web/20260611143412_cost.png)
+![](https://file1.kamacoder.com/i/web/20260611143412_cost.png?v=20261005)
 
 所以那种"既然更强就全换 Fable 5"的想法，钱包会第一个反对。
 
@@ -166,7 +166,7 @@ else:
 
 被拒之后想换个模型重试，官方给了三条路：服务端的 `fallbacks` 参数、SDK 的客户端中间件、自己手搓。配合 fallback credit，重试时还能把切模型的缓存成本退回来，不至于双倍付钱。
 
-![](https://file1.kamacoder.com/i/web/20260611143412_refusal_fallback.png)
+![](https://file1.kamacoder.com/i/web/20260611143412_refusal_fallback.png?v=20261005)
 
 **第四，数据留存有要求。**
 
@@ -199,7 +199,7 @@ Fable 5 要求 30 天数据留存，**不支持零留存（ZDR）**。
 | 超长链路 Agent、一次成型复杂系统、偶发深层 bug | Claude Fable 5 | 耐力和连续性最强，难任务里更稳 |
 | 大仓库迁移、安全审计、跨模块重构 | Fable 5 + 子 Agent 并行 | 任务能拆、能并行、能自我验证 |
 
-![](https://file1.kamacoder.com/i/web/20260611143412_model_choice.png)
+![](https://file1.kamacoder.com/i/web/20260611143412_model_choice.png?v=20261005)
 
 注意，Opus 4.8 没有被淘汰。
 

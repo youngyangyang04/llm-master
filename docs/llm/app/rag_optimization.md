@@ -8,7 +8,7 @@ tags: ["RAG", "大模型应用"]
 # RAG 优化思路：Query 改写、混合检索、Rerank、父子块检索、Context 压缩
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 ## 一、优化要对症下药
@@ -27,7 +27,7 @@ tags: ["RAG", "大模型应用"]
 
 
 
-![各优化手段在 RAG 链路中的落点](https://file1.kamacoder.com/i/bagu/rag_optimization_landscape.png)
+![各优化手段在 RAG 链路中的落点](https://file1.kamacoder.com/i/bagu/rag_optimization_landscape.png?v=20261005)
 
 
 
@@ -82,7 +82,7 @@ Rerank 的核心价值在于：向量检索的相似度是独立编码的，不�
 
 下面这张图展示了混合检索和 Rerank 组合使用时，整条优化链路的工作方式：
 
-![Hybrid Search+Rerank机制](https://file1.kamacoder.com/i/bagu/hybrid_search_rerank_mechanism.png)
+![Hybrid Search+Rerank机制](https://file1.kamacoder.com/i/bagu/hybrid_search_rerank_mechanism.png?v=20261005)
 
 混合检索 + Rerank 是目前工程上最成熟的检索优化组合。两路各召回一定量候选，经 RRF 融合后形成候选池，再由 Cross-Encoder 精排，最终只有 3-5 条高质量 chunk 进入 Context。
 

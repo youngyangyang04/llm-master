@@ -8,7 +8,7 @@ tags: [大模型应用, 大模型部署, 推理服务, 性能压测, 容量规�
 # 大模型服务怎么压测？吞吐最高不等于能上线
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[《量化不是只看4bit/8bit：权重、激活和KV Cache怎么选》](./model_quantization.md)讲了：模型文件变小，不代表推理一定更快。量化方案最后仍要回到真实负载，比较质量、延迟、吞吐和成本。
@@ -169,7 +169,7 @@ SLO也不要照抄固定数字。对话、代码补全、离线摘要和Agent任
 
 <!-- drawio源文件: ./drawio/stress_testing_01_capacity_knee.drawio -->
 
-![推理服务容量拐点](https://file1.kamacoder.com/i/web/20260827092345.png)
+![推理服务容量拐点](https://file1.kamacoder.com/i/web/20260827092345.png?v=20261005)
 
 这张图回答的是：并发上升后，为什么原始吞吐的最高点不是上线容量。容量拐点之前，批处理收益能同时抬高吞吐与Goodput；越过拐点后，排队和资源争用让越来越多请求违反SLO，即使GPU仍在吐Token，业务可用容量已经下降。
 

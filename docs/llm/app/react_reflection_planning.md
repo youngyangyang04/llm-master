@@ -8,7 +8,7 @@ tags: ["大模型应用", "AI Agent", "Agent设计", "大模型面试"]
 # ReAct、Reflection、规划执行：Agent三种常见思路怎么选？
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇我们讲了 [Agent 到底是什么](./agent_intro.md)。
@@ -35,7 +35,7 @@ tags: ["大模型应用", "AI Agent", "Agent设计", "大模型面试"]
 
 重点不是背概念，而是知道：**什么场景用哪种，为什么面试官喜欢追问 ReAct。**
 
-![Agent 三种常见思路：ReAct、Reflection、规划执行](https://file1.kamacoder.com/i/web/20260515181732_react_reflection_01_three_patterns_overview_compressed.png)
+![Agent 三种常见思路：ReAct、Reflection、规划执行](https://file1.kamacoder.com/i/web/20260515181732_react_reflection_01_three_patterns_overview_compressed.png?v=20261005)
 
 ## 一、先别背名词，Agent 本质是一个循环
 
@@ -131,7 +131,7 @@ ReAct Agent 可能这样跑：
 
 你只能查一步，看一步，再决定下一步。
 
-![ReAct：每一步都由观察结果决定下一步](https://file1.kamacoder.com/i/web/20260515181733_react_reflection_02_react_loop_compressed.png)
+![ReAct：每一步都由观察结果决定下一步](https://file1.kamacoder.com/i/web/20260515181733_react_reflection_02_react_loop_compressed.png?v=20261005)
 
 ## 三、为什么面试官最爱问 ReAct
 
@@ -265,7 +265,7 @@ Reflection 可以在交付前加一道门：
 
 不要把它当玄学许愿。
 
-![Reflection：不是让模型自嗨，而是加一道检查门](https://file1.kamacoder.com/i/web/20260515181734_react_reflection_03_reflection_gate_compressed.png)
+![Reflection：不是让模型自嗨，而是加一道检查门](https://file1.kamacoder.com/i/web/20260515181734_react_reflection_03_reflection_gate_compressed.png?v=20261005)
 
 ## 六、规划执行：先拆任务，再推进
 
@@ -344,7 +344,7 @@ Reflection 可以在交付前加一道门：
 
 因为它讲到了工程落地。
 
-![规划执行：计划不是写死的，而是可更新的任务清单](https://file1.kamacoder.com/i/web/20260515181736_react_reflection_04_plan_execute_replan_compressed.png)
+![规划执行：计划不是写死的，而是可更新的任务清单](https://file1.kamacoder.com/i/web/20260515181736_react_reflection_04_plan_execute_replan_compressed.png?v=20261005)
 
 ## 八、三种思路到底怎么选
 
@@ -361,7 +361,7 @@ Reflection 可以在交付前加一道门：
 | 任务复杂，步骤多，容易跑偏 | 规划执行 | 先拆任务，避免一开始就乱跑 |
 | 代码修改、数据分析、故障排查 | 组合使用 | 先规划，中间 ReAct，交付前 Reflection |
 
-![ReAct、Reflection、规划执行到底怎么选](https://file1.kamacoder.com/i/web/20260515181738_react_reflection_05_selection_matrix_compressed.png)
+![ReAct、Reflection、规划执行到底怎么选](https://file1.kamacoder.com/i/web/20260515181738_react_reflection_05_selection_matrix_compressed.png?v=20261005)
 
 举个真实一点的例子。
 

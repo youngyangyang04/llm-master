@@ -172,7 +172,7 @@ flowchart LR
 最新内容首发于公众号「卡码大模型」。
 
 <p align="center">
-  <img src="https://file1.kamacoder.com/i/web/卡码大模型二维码.jpg" width="180" alt="卡码大模型公众号二维码" />
+  <img src="https://file1.kamacoder.com/i/web/卡码大模型二维码.jpg?v=20261005" width="180" alt="卡码大模型公众号二维码" />
 </p>
 
 ## 参与贡献

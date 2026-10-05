@@ -69,7 +69,7 @@ output.shape = (L, d_model)
 
 这也是为什么 Transformer 可以一层一层往上堆。
 
-![Transformer Block代码结构示意图](https://file1.kamacoder.com/i/algo/article14_0425_p1.png)
+![Transformer Block代码结构示意图](https://file1.kamacoder.com/i/algo/article14_0425_p1.png?v=20261005)
 
 ## 先写 LayerNorm 和 FFN
 
@@ -196,7 +196,7 @@ Q/K/V:               (L, d_model)
 
 可以看到，Attention 虽然中间拆成多个头，但最后依然回到原来的形状。
 
-![Transformer Block前向传播输出示意图](https://file1.kamacoder.com/i/algo/article14_0425_p2.png)
+![Transformer Block前向传播输出示意图](https://file1.kamacoder.com/i/algo/article14_0425_p2.png?v=20261005)
 
 ---
 

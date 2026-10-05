@@ -8,19 +8,19 @@ tags: [GLM, 智谱, 大模型发布, AI编程, Agent, 开源大模型]
 # GLM-5.2发布：智谱这次不放跑分表，先让你用上，开源、1M上下文、华为昇腾训练
 
 <a href="https://notes.kamacoder.com/qita/0021.gpt-5-6-sol-terra-luna-domestic-guide.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 
 智谱今天（2026 年 6 月 13 日）发布了 GLM-5.2。
 
-![](https://file1.kamacoder.com/i/web/wecom-temp-152790-fc8c4534ad14ea4d52a7f4f3bdafb702.jpg)
+![](https://file1.kamacoder.com/i/web/wecom-temp-152790-fc8c4534ad14ea4d52a7f4f3bdafb702.jpg?v=20261005)
 
 算一下节奏：2 月 11 日 GLM-5，4 月 GLM-5.1，今天 GLM-5.2。
 
 四个月三个版本，国产这边卷得也不轻。
 
-![GLM 系列迭代节奏：GLM-5、GLM-5.1、GLM-5.2 四个月三个版本](https://file1.kamacoder.com/i/web/20260613230327_glm_5_2_timeline.png)
+![GLM 系列迭代节奏：GLM-5、GLM-5.1、GLM-5.2 四个月三个版本](https://file1.kamacoder.com/i/web/20260613230327_glm_5_2_timeline.png?v=20261005)
 
 但这次发布最让我意外的，不是又快了一个小版本。
 
@@ -54,7 +54,7 @@ GLM-5.2 这次干脆把表撤了。
 
 **Coding Plan 优先，不是跑分优先。**
 
-![GLM-5.2 反常发布顺序：Coding Plan 优先，开源和跑分往后](https://file1.kamacoder.com/i/web/20260613230328_glm_5_2_release_order.png)
+![GLM-5.2 反常发布顺序：Coding Plan 优先，开源和跑分往后](https://file1.kamacoder.com/i/web/20260613230328_glm_5_2_release_order.png?v=20261005)
 
 这个顺序很有意思。
 
@@ -181,7 +181,7 @@ GLM-5.2 现在的入口就是 [GLM Coding Plan](https://www.bigmodel.cn/glm-codi
 
 按三件事分流：失败成本、能不能自部署、量有多大。
 
-![模型选型：GLM-5.2 开源、Opus 4.8 攻坚、DeepSeek 跑量怎么选](https://file1.kamacoder.com/i/web/20260613230328_glm_5_2_model_choice.png)
+![模型选型：GLM-5.2 开源、Opus 4.8 攻坚、DeepSeek 跑量怎么选](https://file1.kamacoder.com/i/web/20260613230328_glm_5_2_model_choice.png?v=20261005)
 
 说具体点：
 

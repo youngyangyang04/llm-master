@@ -86,7 +86,7 @@ Transformer 用注意力机制一步到位解决了这两个问题：
 
 **一句话：RNN 记不住长距离关系，CNN 看不到全局，Transformer 用注意力一步搞定，还能并行。**
 
-![RNN vs Transformer](https://file1.kamacoder.com/i/web/1778232931.png)
+![RNN vs Transformer](https://file1.kamacoder.com/i/web/1778232931.png?v=20261005)
 
 ### 有替代方案吗？
 
@@ -137,7 +137,7 @@ Self-Attention 用三个矩阵把每个 Token 映射成三个向量：
 
 **Q 找对象，K 判断匹不匹配，V 提供实际内容。** 这就是 Self-Attention 的核心逻辑。
 
-![Self-Attention QKV 流程](https://file1.kamacoder.com/i/web/1778232933.png)
+![Self-Attention QKV 流程](https://file1.kamacoder.com/i/web/1778232933.png?v=20261005)
 
 ### 对应用开发的启示
 
@@ -191,7 +191,7 @@ Multi-Head Attention 就是把 QKV 复制多份，每份独立算注意力，每
 
 最后把 8 个头的结果拼起来，综合判断。
 
-![Multi-Head Attention](https://file1.kamacoder.com/i/web/1778232934.png)
+![Multi-Head Attention](https://file1.kamacoder.com/i/web/1778232934.png?v=20261005)
 
 **不是说模型被手动设计了这些分工，而是在训练过程中，不同的头自然学会了关注不同的关系模式。**
 
@@ -262,7 +262,7 @@ Multi-Head Attention 就是把 QKV 复制多份，每份独立算注意力，每
 - **为什么超长上下文质量会下降**：即使模型声称支持 200K 上下文，后半部分的注意力质量也不如前半部分
 - **为什么重要信息要放在 Prompt 开头或结尾**：模型对中间位置的信息关注度天然较低，这是所谓的"中间迷失"（Lost in the Middle）问题
 
-![中间迷失](https://file1.kamacoder.com/i/web/1778232935.png)
+![中间迷失](https://file1.kamacoder.com/i/web/1778232935.png?v=20261005)
 
 关于上下文窗口的管理，之前在 [Claude Code 深度解析](./claude_code_deep_dive.md) 里有详细讲 200K 窗口的管理策略，录友们可以翻翻。
 
@@ -286,7 +286,7 @@ Multi-Head Attention 就是把 QKV 复制多份，每份独立算注意力，每
 | 擅长什么 | 理解、分类、抽取 | 翻译、摘要、转换 | 生成、对话、推理 |
 | 生成能力 | 弱 | 强 | 最强 |
 
-![三大架构对比](https://file1.kamacoder.com/i/web/1778232936.png)
+![三大架构对比](https://file1.kamacoder.com/i/web/1778232936.png?v=20261005)
 
 ### Encoder-Only：BERT 的路线
 
@@ -312,7 +312,7 @@ Google 的 T5 和 PaLM（部分版本）用这个架构。
 
 这就是自回归生成：看前面的词，预测下一个词，再看前面的词（包括刚预测的），再预测下一个……一步步生成下去。
 
-![自回归生成](https://file1.kamacoder.com/i/web/1778232938.png)
+![自回归生成](https://file1.kamacoder.com/i/web/1778232938.png?v=20261005)
 
 **为什么现在大模型都用 Decoder-Only？**
 
@@ -363,7 +363,7 @@ Self-Attention 的计算量和序列长度的平方成正比。序列长度翻�
 | 4K Token | 1600 万次 |
 | 128K Token | 163 亿 |
 
-![O(n²) 复杂度](https://file1.kamacoder.com/i/web/1778232939.png)
+![O(n²) 复杂度](https://file1.kamacoder.com/i/web/1778232939.png?v=20261005)
 
 这就是为什么：
 

@@ -30,7 +30,7 @@ tags:
 # GPT-5.6突然全面开放：Codex并入ChatGPT，AI开始自己组队干活了
 
 <a href="https://notes.kamacoder.com/qita/0021.gpt-5-6-sol-terra-luna-domestic-guide.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 
@@ -42,7 +42,7 @@ tags:
 
 而且这次不是只发一个模型，是一口气端出三个：**旗舰 Sol、均衡款 Terra、低成本款 Luna。**
 
-![OpenAI宣布GPT-5.6 Sol、Terra和Luna在ChatGPT、Codex及API上线](https://file1.kamacoder.com/i/web/20260710114641_01-hero_compressed.png)
+![OpenAI宣布GPT-5.6 Sol、Terra和Luna在ChatGPT、Codex及API上线](https://file1.kamacoder.com/i/web/20260710114641_01-hero_compressed.png?v=20261005)
 
 前面写[GPT-5.5](./gpt-5-5.md)的时候，我说它最大的变化是从“帮你写代码”走向“替你跑完整任务”。
 
@@ -66,7 +66,7 @@ GPT-5.6 接着往前推了一步：**模型不只会跑任务，还会自己拆�
 | GPT-5.6 Terra | 均衡模型 | $2.5/百万Token | $15/百万Token | 日常开发、知识工作、大多数生产任务 |
 | GPT-5.6 Luna | 最快、最便宜 | $1/百万Token | $6/百万Token | 高频调用、摘要分类、后台自动化、轻量Agent |
 
-![GPT-5.6 Sol、Terra和Luna的API及提示缓存价格](https://file1.kamacoder.com/i/web/2026-07-10_11-52-01.jpg)
+![GPT-5.6 Sol、Terra和Luna的API及提示缓存价格](https://file1.kamacoder.com/i/web/2026-07-10_11-52-01.jpg?v=20261005)
 
 Sol 还是上一代旗舰 GPT-5.5 的价格，Terra 直接打五折，Luna 更便宜。
 
@@ -92,7 +92,7 @@ OpenAI 这次的宣传策略很直接：不只比谁得分高，还比完成同�
 
 在 Agents' Last Exam 这个覆盖55个行业、考察长流程专业工作的评测中，OpenAI 公布的最高配置成绩达到53.6，比 Claude Fable 5 高13.1分。即使只开中档推理，官方估算成本也只有 Fable 5 的四分之一左右。
 
-![GPT-5.6在Agents' Last Exam中的分数与API成本关系](https://file1.kamacoder.com/i/web/20260710114643_03-agent-last-exam_compressed.png)
+![GPT-5.6在Agents' Last Exam中的分数与API成本关系](https://file1.kamacoder.com/i/web/20260710114643_03-agent-last-exam_compressed.png?v=20261005)
 
 不过这里要提醒录友一句：**发布正文里的最高曲线成绩，和文末完整评测表里的标准配置数字不是同一档，不能混着比。**
 
@@ -108,7 +108,7 @@ OpenAI 自己也在脚注里承认，图里的延迟和 API 成本是根据生�
 
 在 Artificial Analysis Coding Agent Index v1.1 上，GPT-5.6 Sol 拿到80分，高于 Fable 5 的77.2分。Terra 是77.4，Luna 是74.6，也都比上一代更有性价比。
 
-![GPT-5.6在Artificial Analysis编程智能体指数中的成本和得分](https://file1.kamacoder.com/i/web/20260710114644_05-coding_compressed.png)
+![GPT-5.6在Artificial Analysis编程智能体指数中的成本和得分](https://file1.kamacoder.com/i/web/20260710114644_05-coding_compressed.png?v=20261005)
 
 Terminal-Bench 2.1 上，Sol 是88.8%，ultra 模式能到91.9%，超过 Claude Mythos 5 的88%。DeepSWE 上，Sol 也拿到72.7%。
 
@@ -120,7 +120,7 @@ Terminal-Bench 2.1 上，Sol 是88.8%，ultra 模式能到91.9%，超过 Claude 
 
 在 SWE-Bench Pro 上，Sol 只有64.6%，Fable 5 是80%，Mythos 5 是80.3%。差距不是误差，是一眼就能看出来的差距。
 
-![GPT-5.6与Claude在SWE-Bench Pro、DeepSWE和Terminal-Bench中的成绩](https://file1.kamacoder.com/i/web/20260710114647_07-weakness_compressed.png)
+![GPT-5.6与Claude在SWE-Bench Pro、DeepSWE和Terminal-Bench中的成绩](https://file1.kamacoder.com/i/web/20260710114647_07-weakness_compressed.png?v=20261005)
 
 FrontierMath Tier 4 上，Sol 是83%，Fable 5 是87.8%；GDPval-AA 专业工作评测里，Sol 的1747.8 Elo 也略低于 Fable 5 的1759.6。
 
@@ -138,7 +138,7 @@ GPT-5.6 新增了两个更高推理档位：`max` 和 `ultra`。
 
 `ultra` 更直接：**默认拉起4个智能体并行开工，部分评测可以扩到16个。**
 
-![GPT-5.6 ultra模式下1个、4个和16个智能体的BrowseComp表现](https://file1.kamacoder.com/i/web/20260710114648_08-ultra_compressed.png)
+![GPT-5.6 ultra模式下1个、4个和16个智能体的BrowseComp表现](https://file1.kamacoder.com/i/web/20260710114648_08-ultra_compressed.png?v=20261005)
 
 这不是简单地把同一道题复制四份。
 
@@ -160,7 +160,7 @@ API 侧还加入了 Programmatic Tool Calling。以前开发者要提前写好�
 
 GPT-5.6 发布当天，OpenAI 同时推出了 ChatGPT Work。
 
-![OpenAI发布由GPT-5.6和Codex技术驱动的ChatGPT Work](https://file1.kamacoder.com/i/web/20260710114649_09-work_compressed.jpg)
+![OpenAI发布由GPT-5.6和Codex技术驱动的ChatGPT Work](https://file1.kamacoder.com/i/web/20260710114649_09-work_compressed.jpg?v=20261005)
 
 它不是给 ChatGPT 换了一个更商务的皮肤。
 
@@ -192,7 +192,7 @@ Codex 的编码能力还在，而且新增了 diff 内联编辑、侧边栏 PR R
 
 另一个变化是 Sites 公测。
 
-![ChatGPT Sites把分析结果生成可分享的交互网页](https://file1.kamacoder.com/i/web/20260710114650_10-sites_compressed.jpg)
+![ChatGPT Sites把分析结果生成可分享的交互网页](https://file1.kamacoder.com/i/web/20260710114650_10-sites_compressed.jpg?v=20261005)
 
 你可以让 ChatGPT Work 把分析结果直接做成仪表盘、项目追踪页、产品原型或者交互报告，再通过链接分享。
 
@@ -226,13 +226,13 @@ GPT-5.6 的网络安全能力提升非常猛。
 
 ExploitBench 从 GPT-5.5 的47.9%提升到73.5%；ExploitGym 在六小时上限下从15.1%提升到33.7%。
 
-![GPT-5.6在ExploitBench网络安全评测中的成本和能力变化](https://file1.kamacoder.com/i/web/20260710114652_12-cyber_compressed.png)
+![GPT-5.6在ExploitBench网络安全评测中的成本和能力变化](https://file1.kamacoder.com/i/web/20260710114652_12-cyber_compressed.png?v=20261005)
 
 能力上来之后，OpenAI 的限制也明显更严。
 
 这次正式开放前，OpenAI 用了约70万 A100 等效 GPU 小时做自动化红队测试，又进行了六周安全训练和测试。
 
-![GPT-5.6上线前投入70万A100等效GPU小时进行红队测试](https://file1.kamacoder.com/i/web/20260710114653_13-safety_compressed.png)
+![GPT-5.6上线前投入70万A100等效GPU小时进行红队测试](https://file1.kamacoder.com/i/web/20260710114653_13-safety_compressed.png?v=20261005)
 
 最敏感的网络安全能力会通过 Trusted Access 开放。个人需要身份验证和更高级的账户安全措施，高风险实体和地区会受到额外限制。
 

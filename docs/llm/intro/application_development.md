@@ -11,7 +11,7 @@ tags: [大模型岗位, AI求职, 大模型应用开发]
 
 在boss上搜一下，现在 大模型应用开发 岗位很多，比普通开发岗位都多。下面我这还是仅仅深圳南山的结果：
 
-<p align="center"><img src="https://file1.kamacoder.com/i/web/82c17188e3042099eba30453796a4923.jpg" style="max-width:55%;" alt="大模型应用开发岗位方向示意图"/></p>
+<p align="center"><img src="https://file1.kamacoder.com/i/web/82c17188e3042099eba30453796a4923.jpg?v=20261005" style="max-width:55%;" alt="大模型应用开发岗位方向示意图"/></p>
 
 我自己也搞 [卡码大模型应用开发训练营](https://mp.weixin.qq.com/s/-m6l3nLWzU3mbQihl7wlKQ)
 
@@ -52,7 +52,7 @@ tags: [大模型岗位, AI求职, 大模型应用开发]
 
 而C++/Go/Java开发 + LLM，就是现在造车的，最好也要懂点智驾，这么比喻够形象了吧。
 
-![大模型算法岗应用岗开发岗区别图](https://file1.kamacoder.com/i/web/20260418113822_llm_three_jobs_v3.png)
+![大模型算法岗应用岗开发岗区别图](https://file1.kamacoder.com/i/web/20260418113822_llm_three_jobs_v3.png?v=20261005)
 
 ## 大模型方向，实际就两类新岗位
 

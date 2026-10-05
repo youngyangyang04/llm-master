@@ -35,11 +35,11 @@ Qoder Security把安全检查放进 Agent 正在写代码的会话里：边写�
 
 建议下载 桌面应用端：
 
-![](https://file1.kamacoder.com/i/web/2026-07-30_16-41-48.jpg) 
+![](https://file1.kamacoder.com/i/web/2026-07-30_16-41-48.jpg?v=20261005) 
 
 可以试试这个也页面，真正让你感受到，它在干活，不用看着它，去其他的就好了。 
 
-![](https://file1.kamacoder.com/i/web/2026-07-30_16-14-12.jpg)
+![](https://file1.kamacoder.com/i/web/2026-07-30_16-14-12.jpg?v=20261005)
 
 不少录友，可能想，就一个头像上传，有啥安全可做的？ 
 
@@ -51,7 +51,7 @@ Qoder Security把安全检查放进 Agent 正在写代码的会话里：边写�
 
 卡码简历（https://jianli.kamacoder.com/） 一直都没有头像管理的功能：
 
-![](https://file1.kamacoder.com/i/web/2026-07-30_16-48-07.jpg)
+![](https://file1.kamacoder.com/i/web/2026-07-30_16-48-07.jpg?v=20261005)
 
 正好这次来个大家演示一波。
 
@@ -59,7 +59,7 @@ Qoder Security把安全检查放进 Agent 正在写代码的会话里：边写�
 
 首先 让 Qoder 绑定对应的项目目录上。
 
-![](https://file1.kamacoder.com/i/web/2026-07-30_16-49-53.jpg)
+![](https://file1.kamacoder.com/i/web/2026-07-30_16-49-53.jpg?v=20261005)
 
 提示词故意只写正常的产品需求，不提前把安全答案喂给它：
 
@@ -69,7 +69,7 @@ Qoder Security把安全检查放进 Agent 正在写代码的会话里：边写�
 
 这个提示词朴实无华，在正常不过了，估计大家平时和AI交互，也就是这么写提示词的。
 
-![](https://file1.kamacoder.com/i/web/2026-07-30_22-03-49.jpg) 
+![](https://file1.kamacoder.com/i/web/2026-07-30_22-03-49.jpg?v=20261005) 
 
 
 这里我没有故意要求 Agent 使用危险函数，也没有告诉它“请生成一段有漏洞的代码”。
@@ -80,13 +80,13 @@ Qoder Security把安全检查放进 Agent 正在写代码的会话里：边写�
 
 开发完了：
 
-![](https://file1.kamacoder.com/i/web/2026-07-30_22-20-33.jpg) 
+![](https://file1.kamacoder.com/i/web/2026-07-30_22-20-33.jpg?v=20261005) 
 
 我来本地运行一下。
 
 这里帮我补充了 1M 图片以内，这个就不错，做过网站的人都知道，如果这个不现实，存储就容易被搞死。
 
-![](https://file1.kamacoder.com/i/web/2026-07-30_22-17-27.jpg)
+![](https://file1.kamacoder.com/i/web/2026-07-30_22-17-27.jpg?v=20261005)
 
 接下来，来看看，安全方面 Qoder 都做了哪些：
 
@@ -94,7 +94,7 @@ Qoder Security把安全检查放进 Agent 正在写代码的会话里：边写�
 
 头像上传接口 POST /api/files/avatar 和用户更新接口 PUT /api/user/{id} 都需要携带有效 Token 
 
-![](https://file1.kamacoder.com/i/web/2026-07-30_22-30-59.jpg)
+![](https://file1.kamacoder.com/i/web/2026-07-30_22-30-59.jpg?v=20261005)
 
 如果没有 校验，任何人都可以直接调用 POST /api/files/avatar 上传文件，或调用 PUT /api/user/1 修改任意用户的资料。
 
@@ -104,7 +104,7 @@ Qoder Security把安全检查放进 Agent 正在写代码的会话里：边写�
 
 **2、越权防护（IDOR 防护）**
 
-![](https://file1.kamacoder.com/i/web/2026-07-30_22-33-07.jpg) 
+![](https://file1.kamacoder.com/i/web/2026-07-30_22-33-07.jpg?v=20261005) 
 
 如果没有这个，用户 A 登录后，可以构造请求 PUT /api/user/2、PUT /api/user/3... 遍历修改所有用户的昵称、头像、手机号。
 
@@ -114,7 +114,7 @@ Qoder Security把安全检查放进 Agent 正在写代码的会话里：边写�
 
 **3、字段白名单（防提权攻击）** 
 
-![](https://file1.kamacoder.com/i/web/2026-07-30_22-35-00.jpg) 
+![](https://file1.kamacoder.com/i/web/2026-07-30_22-35-00.jpg?v=20261005) 
 
 如果不这么做，有的用户如果直接把请求体反序列化为 User 实体传给 updateById，攻击者可以在请求体中夹带：
 ```
@@ -138,7 +138,7 @@ MyBatis 的 updateById 是动态 SQL，
 
 如果存储目录恰好被 Web 服务器当作静态资源目录对外暴露，攻击者访问 http://xxx/uploads/avatars/xxx.jsp 就能执行任意服务器端代码，直接拿下服务器（WebShell 上传漏洞）。
 
-![](https://file1.kamacoder.com/i/web/2026-07-30_22-17-27.jpg)
+![](https://file1.kamacoder.com/i/web/2026-07-30_22-17-27.jpg?v=20261005)
 
 在这里其实做了类型检查 和 大小限制，基本就不会有这种问题了。 
 
@@ -146,7 +146,7 @@ MyBatis 的 updateById 是动态 SQL，
 
 FileStorageServiceImpl 用 UUID.randomUUID() 重新命名文件，并检查 .. 路径穿越字符。
 
-![](https://file1.kamacoder.com/i/web/2026-07-30_22-41-33.jpg)
+![](https://file1.kamacoder.com/i/web/2026-07-30_22-41-33.jpg?v=20261005)
 
 
 如果没有这个，攻击者可以构造文件名为 ../../../etc/passwd 或 ../../webapps/ROOT/shell.jsp 的文件。
@@ -163,7 +163,7 @@ File.createTempFile 或 Files.copy 会按照原始路径写入，直接覆盖系
 
 **7、图片压缩**
 
-![](https://file1.kamacoder.com/i/web/2026-07-30_22-43-23.jpg) 
+![](https://file1.kamacoder.com/i/web/2026-07-30_22-43-23.jpg?v=20261005) 
 
 这个其实很重要，虽然 已经限制了 1M以内，但是用户一多，存储成本也很高。
 
@@ -181,11 +181,11 @@ Qoder Security 已经内置到 Qoder Desktop 和 Qoder CLI，不需要再装第�
 
 在 Desktop 里，进入 Quest 视窗的 **设置 > Security** 
 
-![](https://file1.kamacoder.com/i/web/2026-07-30_16-16-54.jpg) 
+![](https://file1.kamacoder.com/i/web/2026-07-30_16-16-54.jpg?v=20261005) 
 
 打开“开启安全审查”，就能看到三层能力：
 
-![](https://file1.kamacoder.com/i/web/2026-07-30_16-17-11.jpg)
+![](https://file1.kamacoder.com/i/web/2026-07-30_16-17-11.jpg?v=20261005)
 
 三层不是同一份扫描换三个名字，而是检查时机和深度不一样。
 
@@ -317,11 +317,11 @@ Qoder Security 已经内置到 Qoder Desktop 和 Qoder CLI，不需要再装第�
 
 在 Desktop 里，进入 Quest 视窗的 **设置 > Security** 
 
-![](https://file1.kamacoder.com/i/web/2026-07-30_16-16-54.jpg) 
+![](https://file1.kamacoder.com/i/web/2026-07-30_16-16-54.jpg?v=20261005) 
 
 打开“开启安全审查”，就能看到三层能力：
 
-![](https://file1.kamacoder.com/i/web/2026-07-30_16-17-11.jpg)
+![](https://file1.kamacoder.com/i/web/2026-07-30_16-17-11.jpg?v=20261005)
 
 三层不是同一份扫描换三个名字，而是检查时机和深度不一样。
 

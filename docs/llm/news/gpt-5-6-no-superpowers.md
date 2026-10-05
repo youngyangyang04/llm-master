@@ -44,7 +44,7 @@ AI时代变化太快了。
 
 过去用来“教模型怎么干活”的很多Skill，正在从必装插件变成重复说明。
 
-![恭喜这课不用补了](https://file1.kamacoder.com/i/web/20260728104947_gpt56_skills_01_late_learner-compressed.jpg)
+![恭喜这课不用补了](https://file1.kamacoder.com/i/web/20260728104947_gpt56_skills_01_late_learner-compressed.jpg?v=20261005)
 
 先把我的结论说清楚：
 
@@ -119,7 +119,7 @@ OpenAI在[GPT-5.6官方使用指南](https://developers.openai.com/api/docs/guid
 
 **模型变强以后，更多说明不一定带来更多能力，反而可能制造更多噪声。**
 
-![模型强了先给流程做减法](https://file1.kamacoder.com/i/web/20260728104950_gpt56_skills_02_lean_workflow-compressed.jpg)
+![模型强了先给流程做减法](https://file1.kamacoder.com/i/web/20260728104950_gpt56_skills_02_lean_workflow-compressed.jpg?v=20261005)
 
 GPT-5.6还新增了更强的工具编排、持续推理和多Agent能力。
 
@@ -223,7 +223,7 @@ Skill仍然是复用经验的方法。
 
 ## 新方法：先裸跑，再加最小Skill
 
-![先裸跑再加最小Skill](https://file1.kamacoder.com/i/web/20260728104955_gpt56_skills_03_minimum_skill-compressed.jpg)
+![先裸跑再加最小Skill](https://file1.kamacoder.com/i/web/20260728104955_gpt56_skills_03_minimum_skill-compressed.jpg?v=20261005)
 
 以后判断一个Skill要不要装，我建议用下面这套顺序。
 

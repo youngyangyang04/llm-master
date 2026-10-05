@@ -19,7 +19,7 @@ tags: ["大模型", "应用开发", "学习路线"]
 
 先把整条路线放出来，下面每一步都对着这张图讲：
 
-![大模型学习路线：程序员从零入门的七个阶段](https://file1.kamacoder.com/i/web/20260616160116_llmroadmap.png)
+![大模型学习路线：程序员从零入门的七个阶段](https://file1.kamacoder.com/i/web/20260616160116_llmroadmap.png?v=20261005)
 
 ## 先说一个最常见的误区
 

@@ -8,7 +8,7 @@ tags: [Agent面经, 大模型面试, LLM面试, AI求职, 大模型求职]
 # Agent系统如何约束大模型幻觉？约束后还幻觉怎么办？
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 之前写过 [Agent上下文漂移与工具调用幻觉](./agent_drift_hallucination_interview.md)，重点讲的是为什么会漂移、为什么会工具幻觉。
@@ -124,7 +124,7 @@ Agent 却直接调用退款接口，把钱退了。
 
 <!-- drawio源文件: ./drawio/agent_hallucination_01_types.drawio -->
 
-![Agent幻觉类型](https://file1.kamacoder.com/i/web/20260515094539_agent_hallucination_01_types.png)
+![Agent幻觉类型](https://file1.kamacoder.com/i/web/20260515094539_agent_hallucination_01_types.png?v=20261005)
 
 所以，Agent 幻觉不能只说"模型会编"。
 
@@ -150,7 +150,7 @@ Prompt 要不要写？
 
 <!-- drawio源文件: ./drawio/agent_hallucination_02_four_layers.drawio -->
 
-![Agent幻觉四层防线](https://file1.kamacoder.com/i/web/20260515094540_agent_hallucination_02_four_layers.png)
+![Agent幻觉四层防线](https://file1.kamacoder.com/i/web/20260515094540_agent_hallucination_02_four_layers.png?v=20261005)
 
 这四层解决的问题不一样。
 
@@ -213,7 +213,7 @@ Prompt 是必须要做的。
 
 <!-- drawio源文件: ./drawio/agent_hallucination_03_prompt_boundary.drawio -->
 
-![Prompt约束边界](https://file1.kamacoder.com/i/web/20260515094542_agent_hallucination_03_prompt_boundary.png)
+![Prompt约束边界](https://file1.kamacoder.com/i/web/20260515094542_agent_hallucination_03_prompt_boundary.png?v=20261005)
 
 正确姿势是：Prompt 负责声明规则，工程层负责强制执行。
 
@@ -312,7 +312,7 @@ Agent Loop 里，`Observation` 必须来自真实工具执行结果，而不是�
 
 <!-- drawio源文件: ./drawio/agent_hallucination_04_tool_guardrail.drawio -->
 
-![工具调用约束链路](https://file1.kamacoder.com/i/web/20260515094543_agent_hallucination_04_tool_guardrail.png)
+![工具调用约束链路](https://file1.kamacoder.com/i/web/20260515094543_agent_hallucination_04_tool_guardrail.png?v=20261005)
 
 
 ## 五、第三层：证据约束，让回答有据可依
@@ -381,7 +381,7 @@ Top-K 拉得太大，噪声文档混进来，模型反而更容易被带偏。
 
 <!-- drawio源文件: ./drawio/agent_hallucination_05_evidence_loop.drawio -->
 
-![证据约束闭环](https://file1.kamacoder.com/i/web/20260515094544_agent_hallucination_05_evidence_loop.png)
+![证据约束闭环](https://file1.kamacoder.com/i/web/20260515094544_agent_hallucination_05_evidence_loop.png?v=20261005)
 
 
 ## 六、第四层：输出校验，生成完不是结束
@@ -533,7 +533,7 @@ Top-K 拉得太大，噪声文档混进来，模型反而更容易被带偏。
 
 <!-- drawio源文件: ./drawio/agent_hallucination_06_fallback_flow.drawio -->
 
-![Agent幻觉兜底流程](https://file1.kamacoder.com/i/web/20260515094545_agent_hallucination_06_fallback_flow.png)
+![Agent幻觉兜底流程](https://file1.kamacoder.com/i/web/20260515094545_agent_hallucination_06_fallback_flow.png?v=20261005)
 
 
 ## 八、工程上怎么长期治理幻觉

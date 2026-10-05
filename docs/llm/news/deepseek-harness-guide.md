@@ -23,7 +23,7 @@ tags: [DeepSeek, DeepSeek Harness, AI Agent, AI编程, Agent工程]
 
 DeepSeek Harness github 仓库：https://github.com/deepseek-ai/deepseek-harness
 
-![](https://file1.kamacoder.com/i/web/2026-08-18_10-44-56.jpg)
+![](https://file1.kamacoder.com/i/web/2026-08-18_10-44-56.jpg?v=20261005)
 
 目前已经 15.6k star了！！
 
@@ -105,7 +105,7 @@ http://127.0.0.1:3080
 
 第一次打开，会先看到 0.1 版本的内测声明：
 
-![Harness内测声明](https://file1.kamacoder.com/i/web/20260818103916.png)
+![Harness内测声明](https://file1.kamacoder.com/i/web/20260818103916.png?v=20261005)
 
 这个弹窗不是普通的欢迎页。它是在提醒你，核心插件和基础 API 仍会快速迭代。打算把它接进生产系统的录友，升级前一定要先锁版本、跑回归测试。
 
@@ -129,11 +129,11 @@ npx @deepseek-ai/dsh web --port 3081
 
 首次启动会直接弹出密钥输入框：
 
-![Harness首次密钥配置](https://file1.kamacoder.com/i/web/20260818103918.png)
+![Harness首次密钥配置](https://file1.kamacoder.com/i/web/20260818103918.png?v=20261005)
 
 如果当时点了“稍后配置”，也可以从左下角进入 `设置 → 模型`：
 
-![DeepSeek模型配置](https://file1.kamacoder.com/i/web/20260818103919.png)
+![DeepSeek模型配置](https://file1.kamacoder.com/i/web/20260818103919.png?v=20261005)
 
 这里除了 DeepSeek 官方路线，也能添加其他提供方和自定义提供方。API Key 输入框在截图中保持为空，正式配置时也别把带明文 Key 的页面发给别人。
 
@@ -172,7 +172,7 @@ npx @deepseek-ai/dsh web --port 3081
 
 这才是在测试 Harness，不是在测试它会不会聊天。
 
-![Harness最小任务配置](https://file1.kamacoder.com/i/web/20260818103924.png)
+![Harness最小任务配置](https://file1.kamacoder.com/i/web/20260818103924.png?v=20261005)
 
 发送前检查四个地方：左侧工作区是不是目标项目，顶部是不是标准模式，输入框下方是不是 `Workspace Write`，右下角模型和推理等级是否符合任务。**先把执行边界选对，再按发送。**
 
@@ -188,7 +188,7 @@ npx @deepseek-ai/dsh web --port 3081
 
 当前内置了标准模式、PTC 模式、极简模式和创造模式：
 
-![Harness四种Agent预设](https://file1.kamacoder.com/i/web/20260818103921.png)
+![Harness四种Agent预设](https://file1.kamacoder.com/i/web/20260818103921.png?v=20261005)
 
 - **标准模式**：完整的编码 Agent，第一次使用选它；
 - **PTC 模式**：通过 TypeScript 程序组合多步工具操作，适合步骤多、工具调用密集的任务；

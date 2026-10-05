@@ -25,7 +25,7 @@ tags: [DeepSeek, 多模态, 视觉模型, DeepSeek Harness, AI编程, Agent, 大
 
 我测试时，npm 上最新的 Harness 已经是 `0.1.1-rc.2`。官方 `/models` 接口也直接返回了 `deepseek-v4-flash-vision-exp`。
 
-![Vision实测环境](https://file1.kamacoder.com/i/web/20260823165020.png)
+![Vision实测环境](https://file1.kamacoder.com/i/web/20260823165020.png?v=20261005)
 
 所以这次走的是 DeepSeek 官方 API，不是外挂一个视觉模型识图，再把文字转给 [DeepSeek V4-Flash](./deepseek-v4-flash-official.md)。
 
@@ -43,7 +43,7 @@ JPEG、PNG、GIF、WebP 都支持。只有 Vision-Exp 接受图片，普通 Flas
 
 官方公布了同一套模型在文本 Agent 和多模态 Agent 基准上的成绩。
 
-![官方多模态跑分](https://file1.kamacoder.com/i/web/20260823165024.png)
+![官方多模态跑分](https://file1.kamacoder.com/i/web/20260823165024.png?v=20261005)
 
 从图里看，Vision-Exp 的文本 Agent 能力确实没有因为加视觉而掉下去。
 
@@ -69,7 +69,7 @@ Terminal Bench 2.1 从 82.7 到 83.9，DeepSWE 从 54.4 到 59.3，Toolathlon-Ve
 
 这张图不只是一个大标题。里面有中英文混排、小字号导航、十个导航入口、八个蓝色链接，以及 `C++`、`agent`、`rag`、`transformer` 这种 OCR 很容易抄错的技术名词。
 
-![卡码笔记网站首屏](https://file1.kamacoder.com/i/web/20260823172734.png)
+![卡码笔记网站首屏](https://file1.kamacoder.com/i/web/20260823172734.png?v=20261005)
 
 提示词里我明确要求它不要搜索，只看图识别站点、导航、主副标题、八个链接标题和三个易错细节。
 
@@ -85,7 +85,7 @@ Terminal Bench 2.1 从 82.7 到 83.9，DeepSWE 从 54.4 到 59.3，Toolathlon-Ve
 
 唯一的漏字是把「真实面经（含大模型）」截成了「真实面经」。`C++` 和说明文字里的 `agent`、`rag`、`transformer` 都抄对了。
 
-![网页OCR结果](https://file1.kamacoder.com/i/web/20260823172735.png)
+![网页OCR结果](https://file1.kamacoder.com/i/web/20260823172735.png?v=20261005)
 
 这轮我的结论是：**普通网页截图里的中文、小字号和中英文技术名词已经能用，但括号里的补充信息仍可能漏掉。**
 
@@ -99,7 +99,7 @@ Terminal Bench 2.1 从 82.7 到 83.9，DeepSWE 从 54.4 到 59.3，Toolathlon-Ve
 
 这轮它不但把 11 行全部抄对，减法也全部正确。
 
-![图表识别结果](https://file1.kamacoder.com/i/web/20260823165028.png)
+![图表识别结果](https://file1.kamacoder.com/i/web/20260823165028.png?v=20261005)
 
 它算出的最大提升是 ApexBench，`36.5 - 26.2 = 10.3`。
 
@@ -115,13 +115,13 @@ Terminal Bench 2.1 从 82.7 到 83.9，DeepSWE 从 54.4 到 59.3，Toolathlon-Ve
 
 我把卡码笔记首页的 K Logo 单独拿出来，让它限制在 48 个等宽字符内，只用纯 ASCII 重新画。
 
-![卡码笔记K Logo](https://file1.kamacoder.com/i/web/20260823172737.jpg)
+![卡码笔记K Logo](https://file1.kamacoder.com/i/web/20260823172737.jpg?v=20261005)
 
 它确实画出了一块代码窗口，括号、斜杠和下方横线都能辨认。
 
 但如果只看相似度，这轮明显不及格。原图最有辨识度的 K 形斜面直接丢了，输出更像一个普通的矩形代码图标。
 
-![ASCII重绘结果](https://file1.kamacoder.com/i/web/20260823172738.png)
+![ASCII重绘结果](https://file1.kamacoder.com/i/web/20260823172738.png?v=20261005)
 
 所以“看懂图片”和“用字符重新表现图片”，明显不是同一个难度。
 
@@ -139,7 +139,7 @@ DeepSeek 能抓住内部元素，但压缩成 ASCII 后，连品牌图形最关�
 
 最终生成的是一份 1.7 KB 的纯 SVG。
 
-![SVG重绘对比](https://file1.kamacoder.com/i/web/20260823172739.png)
+![SVG重绘对比](https://file1.kamacoder.com/i/web/20260823172739.png?v=20261005)
 
 深蓝色 K 形主体、白色代码窗口、括号、斜杠和两条横线都保住了，说明它确实理解了原图结构和配色。
 

@@ -8,7 +8,7 @@ tags: [大模型应用, 大模型微调, SFT, RLHF, DPO, 大模型面试]
 # SFT、RLHF、DPO：微调方法全景认知
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇我们讲了 [Agent 怎么评估](./agent_evaluation.md)。
@@ -80,7 +80,7 @@ tags: [大模型应用, 大模型微调, SFT, RLHF, DPO, 大模型面试]
 
 <!-- drawio源文件: ./drawio/finetuning_methods_01_training_map.drawio -->
 
-![从Base Model到业务可用模型的微调训练链路](https://file1.kamacoder.com/i/web/20260608192039_finetuning_methods_01_training_map_compressed.png)
+![从Base Model到业务可用模型的微调训练链路](https://file1.kamacoder.com/i/web/20260608192039_finetuning_methods_01_training_map_compressed.png?v=20261005)
 
 这张图回答的是：从 Base Model 到可用助手，SFT、RLHF、DPO 分别改变哪一层能力。
 
@@ -196,7 +196,7 @@ SFT 最大的坑是数据质量。
 
 <!-- drawio源文件: ./drawio/finetuning_methods_05_sft_data_funnel.drawio -->
 
-![SFT数据治理漏斗和脏数据污染路径](https://file1.kamacoder.com/i/web/20260608192039_finetuning_methods_05_sft_data_funnel_compressed.png)
+![SFT数据治理漏斗和脏数据污染路径](https://file1.kamacoder.com/i/web/20260608192039_finetuning_methods_05_sft_data_funnel_compressed.png?v=20261005)
 
 这张图回答的是：为什么 SFT 的关键不是“数据越多越好”，而是原始业务数据必须经过清洗、去旧、去隐私、统一示范格式，最后再进入训练和评测。
 
@@ -328,7 +328,7 @@ DPO 直接吃这种数据。
 
 <!-- drawio源文件: ./drawio/finetuning_methods_02_preference_paths.drawio -->
 
-![RLHF和DPO偏好优化路径对比](https://file1.kamacoder.com/i/web/20260608192039_finetuning_methods_02_preference_paths_compressed.png)
+![RLHF和DPO偏好优化路径对比](https://file1.kamacoder.com/i/web/20260608192039_finetuning_methods_02_preference_paths_compressed.png?v=20261005)
 
 这张图回答的是：RLHF 和 DPO 都在做偏好优化，但工程路径不同。
 
@@ -433,7 +433,7 @@ RL 更宽。
 
 <!-- drawio源文件: ./drawio/finetuning_methods_06_agent_rl_reward_loop.drawio -->
 
-![Agent场景中RL通过环境反馈优化多步决策](https://file1.kamacoder.com/i/web/20260608192039_finetuning_methods_06_agent_rl_reward_loop_compressed.png)
+![Agent场景中RL通过环境反馈优化多步决策](https://file1.kamacoder.com/i/web/20260608192039_finetuning_methods_06_agent_rl_reward_loop_compressed.png?v=20261005)
 
 这张图回答的是：Agent 场景里 RL 为什么不是“让模型更会聊天”，而是把工具选择、参数合法性、任务完成率、越权风险这些环境反馈变成 reward，再反过来优化多步决策。
 
@@ -451,7 +451,7 @@ RL 更宽。
 
 <!-- drawio源文件: ./drawio/finetuning_methods_03_selection_path.drawio -->
 
-![Prompt、RAG、SFT、DPO和RL的选型判断路径](https://file1.kamacoder.com/i/web/20260608192039_finetuning_methods_03_selection_path_compressed.png)
+![Prompt、RAG、SFT、DPO和RL的选型判断路径](https://file1.kamacoder.com/i/web/20260608192039_finetuning_methods_03_selection_path_compressed.png?v=20261005)
 
 这张图回答的是：一个大模型应用问题进来后，应该先判断它到底是格式问题、知识问题、行为问题、偏好问题，还是可验证决策问题。
 
@@ -575,7 +575,7 @@ Prompt 能稳定解决，就不要训练。
 
 <!-- drawio源文件: ./drawio/finetuning_methods_07_value_shift.drawio -->
 
-![基模变强后微调价值从补能力转向控行为](https://file1.kamacoder.com/i/web/20260608192039_finetuning_methods_07_value_shift_compressed.png)
+![基模变强后微调价值从补能力转向控行为](https://file1.kamacoder.com/i/web/20260608192039_finetuning_methods_07_value_shift_compressed.png?v=20261005)
 
 这张图回答的是：基模变强后，哪些微调价值会被抹平，哪些价值会留下来。
 
@@ -593,7 +593,7 @@ Prompt 能稳定解决，就不要训练。
 
 <!-- drawio源文件: ./drawio/finetuning_methods_04_eval_loop.drawio -->
 
-![大模型微调的数据评测上线和反馈闭环](https://file1.kamacoder.com/i/web/20260608192039_finetuning_methods_04_eval_loop_compressed.png)
+![大模型微调的数据评测上线和反馈闭环](https://file1.kamacoder.com/i/web/20260608192039_finetuning_methods_04_eval_loop_compressed.png?v=20261005)
 
 这张图回答的是：微调不是训练一次就结束，而是数据治理、训练、离线评测、灰度上线、线上监控、失败样本回流的闭环。
 

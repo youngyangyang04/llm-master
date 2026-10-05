@@ -10,7 +10,7 @@ tags: [大模型入门, 模型蒸馏, 大模型微调, 模型压缩, LLM部署]
 
 在[知识星球](https://programmercarl.com/other/kstar.html) 里有录友向我提问offer选择的问题：
 
-![](https://file1.kamacoder.com/i/web/2026-05-26_10-47-00.jpg)  
+![](https://file1.kamacoder.com/i/web/2026-05-26_10-47-00.jpg?v=20261005)  
 
 这里他在面百度千帆大模型开发的之后，就问过他蒸馏相关的问题。
 
@@ -28,7 +28,7 @@ tags: [大模型入门, 模型蒸馏, 大模型微调, 模型压缩, LLM部署]
 
 如果**大家最近有有看过 姚顺宇 的采访视频，他其实也委婉点名了，一些公司是 硬蒸，一些公司是 聪明的蒸**（我这里就把它称为软蒸吧）
 
-![姚顺宇 的采访视频](https://file1.kamacoder.com/i/web/2026-05-26_10-54-20.jpg)
+![姚顺宇 的采访视频](https://file1.kamacoder.com/i/web/2026-05-26_10-54-20.jpg?v=20261005)
 
 一些录友其实还没搞明白：**蒸馏到底是个啥？**
 
@@ -44,7 +44,7 @@ tags: [大模型入门, 模型蒸馏, 大模型微调, 模型压缩, LLM部署]
 
 这就是蒸馏。
 
-![模型蒸馏迁移的是输出行为，不是模型本体](https://file1.kamacoder.com/i/web/20260517195701_model_distillation_01_teacher_student_compressed.png)
+![模型蒸馏迁移的是输出行为，不是模型本体](https://file1.kamacoder.com/i/web/20260517195701_model_distillation_01_teacher_student_compressed.png?v=20261005)
 
 ## 蒸馏到底在蒸什么？
 
@@ -72,7 +72,7 @@ tags: [大模型入门, 模型蒸馏, 大模型微调, 模型压缩, LLM部署]
 
 这就是知识蒸馏的核心。
 
-![模型蒸馏是数据质量驱动的闭环](https://file1.kamacoder.com/i/web/20260517195704_model_distillation_02_flow_compressed.png)
+![模型蒸馏是数据质量驱动的闭环](https://file1.kamacoder.com/i/web/20260517195704_model_distillation_02_flow_compressed.png?v=20261005)
 
 ## 为什么要做蒸馏？
 
@@ -154,7 +154,7 @@ C：5%
 
 所以你听到有人说"蒸馏其他厂商模型"，多数时候不是严格意义上的软蒸，而是黑盒硬蒸，或者响应蒸馏。
 
-![硬蒸馏和软蒸馏的区别](https://file1.kamacoder.com/i/web/20260517195705_model_distillation_03_hard_soft_compressed.png)
+![硬蒸馏和软蒸馏的区别](https://file1.kamacoder.com/i/web/20260517195705_model_distillation_03_hard_soft_compressed.png?v=20261005)
 
 ## 白盒蒸馏和黑盒蒸馏
 
@@ -191,7 +191,7 @@ C：5%
 
 **黑盒蒸馏技术上不复杂，麻烦的是成本、质量、规模、合规。** 
 
-![白盒蒸馏和黑盒蒸馏的区别](https://file1.kamacoder.com/i/web/20260517195706_model_distillation_04_white_black_compressed.png)
+![白盒蒸馏和黑盒蒸馏的区别](https://file1.kamacoder.com/i/web/20260517195706_model_distillation_04_white_black_compressed.png?v=20261005)
 
 ## 蒸馏其他厂商模型，是不是公开的秘密？
 
@@ -241,7 +241,7 @@ Anthropic 的说法是，这些公司/实验室通过大约 24000 个欺诈账�
 
 这个没有依据，不能把部分坚持自己做模型的公司一棒打死。
 
-![蒸馏闭源强模型的灰色链路](https://file1.kamacoder.com/i/web/20260517195708_model_distillation_05_gray_chain_compressed.png)
+![蒸馏闭源强模型的灰色链路](https://file1.kamacoder.com/i/web/20260517195708_model_distillation_05_gray_chain_compressed.png?v=20261005)
 
 ## 蒸馏其他大模型有哪些方法？
 
@@ -385,7 +385,7 @@ CoT 就是 Chain of Thought，思维链。
 
 它能学到一些解题套路，但底层知识结构和能力上限不一样。
 
-![模型蒸馏能学到什么学不到什么](https://file1.kamacoder.com/i/web/20260517195710_model_distillation_07_can_cannot_compressed.png)
+![模型蒸馏能学到什么学不到什么](https://file1.kamacoder.com/i/web/20260517195710_model_distillation_07_can_cannot_compressed.png?v=20261005)
 
 ## 蒸馏和微调、量化、剪枝有什么区别？
 
@@ -434,7 +434,7 @@ CoT 就是 Chain of Thought，思维链。
 - 量化：降低精度
 - 剪枝：减少结构
 
-![模型蒸馏微调量化剪枝的区别](https://file1.kamacoder.com/i/web/20260517195711_model_distillation_08_method_compare_compressed.png)
+![模型蒸馏微调量化剪枝的区别](https://file1.kamacoder.com/i/web/20260517195711_model_distillation_08_method_compare_compressed.png?v=20261005)
 
 ## 蒸馏有哪些应用场景？
 
@@ -518,7 +518,7 @@ Agent 系统里，很多判断不需要最强模型。
 
 **真正成熟的系统，不是所有请求都砸给最强模型，而是把不同难度的任务分给不同模型。**
 
-![模型蒸馏在大模型系统中的应用场景](https://file1.kamacoder.com/i/web/20260517195713_model_distillation_09_scenarios_compressed.png)
+![模型蒸馏在大模型系统中的应用场景](https://file1.kamacoder.com/i/web/20260517195713_model_distillation_09_scenarios_compressed.png?v=20261005)
 
 ## 面试里怎么回答模型蒸馏？
 

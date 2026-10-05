@@ -187,7 +187,7 @@ AI 的建议是通用的，你的决策是具体的。**通用建议和具体场
 
 **前者是防守型思路，越守越窄。后者是驱动型思路，越用越强。**
 
-![五大优势驱动框架](https://file1.kamacoder.com/i/web/vibe_101_1778210317.png)
+![五大优势驱动框架](https://file1.kamacoder.com/i/web/vibe_101_1778210317.png?v=20261005)
 
 ---
 
@@ -210,7 +210,7 @@ AI 的建议是通用的，你的决策是具体的。**通用建议和具体场
 
 **成本差距有多大？** 大模型的输出价格是小模型的近 20 倍。如果一个 70% 的任务能用小模型解决，整体成本能降 60% 以上。
 
-![模型路由策略](https://file1.kamacoder.com/i/web/vibe_102_1778210318.png)
+![模型路由策略](https://file1.kamacoder.com/i/web/vibe_102_1778210318.png?v=20261005)
 
 当然，模型路由不是让你手动选。Claude Code 内部已经在做这件事——简单补全走轻量模型，复杂推理走主力模型。[Claude Code 深度解析](./claude_code_deep_dive.md) 里有讲它的双模型策略。
 
@@ -235,7 +235,7 @@ AI 的建议是通用的，你的决策是具体的。**通用建议和具体场
 
 还有一个容易忽略的点：**AI 读到的无关代码越多，生成质量反而越差**。因为无关信息会干扰模型的注意力，让它关注到不该关注的地方。所以上下文管理不只是省钱，也是在提升质量。
 
-![上下文管理对比](https://file1.kamacoder.com/i/web/vibe_103_1778210320.png)
+![上下文管理对比](https://file1.kamacoder.com/i/web/vibe_103_1778210320.png?v=20261005)
 
 **面试怎么说**："我会主动管理上下文，只给 AI 相关的代码片段而不是整个项目。修改用户模块就只给用户模块的代码和它依赖的接口定义。这样做 Token 消耗能降 3-5 倍，而且 AI 生成质量反而更好——因为无关信息少了，模型不容易被干扰。"
 
@@ -256,7 +256,7 @@ AI 的建议是通用的，你的决策是具体的。**通用建议和具体场
 
 **成本对比**：一次精确 Prompt 可能 500 Token，四轮模糊 Prompt 可能 12000 Token——差 24 倍。这还没算时间的浪费。
 
-![Prompt优化对比](https://file1.kamacoder.com/i/web/vibe_104_1778210321.png)
+![Prompt优化对比](https://file1.kamacoder.com/i/web/vibe_104_1778210321.png?v=20261005)
 
 之前写过一篇 [Harness Engineering 面试题](./harness_interview.md)，核心观点就是 AI 编程的重心正在从 Prompt Engineering 转向 Context Engineering——不是你怎么说，是你给什么信息。录友们可以连着看。
 
@@ -403,7 +403,7 @@ AI 编程工具都有代码上传的行为——你的代码会发送到模型�
 
 "AI 需要你"是驱动，越用越强。
 
-![两种思路对比](https://file1.kamacoder.com/i/web/vibe_105_1778210322.png)
+![两种思路对比](https://file1.kamacoder.com/i/web/vibe_105_1778210322.png?v=20261005)
 
 **你的优势不是比 AI 写得好，是让 AI 写得更好。**
 

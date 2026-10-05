@@ -8,7 +8,7 @@ tags: ["大模型应用", "AI Agent", "MCP", "工具调用", "大模型面试"]
 # MCP协议：Agent工具调用的新标准
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇我们讲了 [工具设计决定 Agent 上限](./agent_tool_design.md)。
@@ -53,7 +53,7 @@ tags: ["大模型应用", "AI Agent", "MCP", "工具调用", "大模型面试"]
 
 它更像是 Agent 时代的“工具接入协议”。
 
-![MCP解决的问题：不要让每个AI应用重复接每个工具](https://file1.kamacoder.com/i/web/20260520112737_mcp_protocol_01_integration_problem_compressed.png)
+![MCP解决的问题：不要让每个AI应用重复接每个工具](https://file1.kamacoder.com/i/web/20260520112737_mcp_protocol_01_integration_problem_compressed.png?v=20261005)
 
 ## 一、为什么会有 MCP
 
@@ -157,7 +157,7 @@ MCP 更像“AI 应用和工具服务器之间的一套连接协议”。
 
 很多 AI 应用会先通过 MCP 发现工具，再把这些工具转换成模型可用的 Function Calling / Tool Use 格式，让模型决定调用哪一个。
 
-![MCP 和 Function Calling 的关系：一个管工具接入，一个管模型调用](https://file1.kamacoder.com/i/web/20260520112738_mcp_protocol_02_fc_relation_compressed.png)
+![MCP 和 Function Calling 的关系：一个管工具接入，一个管模型调用](https://file1.kamacoder.com/i/web/20260520112738_mcp_protocol_02_fc_relation_compressed.png?v=20261005)
 
 这也是面试里最容易问的点。
 
@@ -252,7 +252,7 @@ Server 只负责按 MCP 协议提供能力。
 
 后面我们单独讲。
 
-![MCP 核心架构：Host 管应用，Client 管连接，Server 提供能力](https://file1.kamacoder.com/i/web/20260520112740_mcp_protocol_03_host_client_server_compressed.png)
+![MCP 核心架构：Host 管应用，Client 管连接，Server 提供能力](https://file1.kamacoder.com/i/web/20260520112740_mcp_protocol_03_host_client_server_compressed.png?v=20261005)
 
 这套架构最大的好处是隔离。
 
@@ -329,7 +329,7 @@ Prompt 获取可以是 `prompts/get`。
 
 这种方式适合远程服务、多用户场景、需要认证授权的场景。
 
-![MCP 两层结构：数据层定义语义，传输层负责通信](https://file1.kamacoder.com/i/web/20260520112741_mcp_protocol_04_layers_transport_compressed.png)
+![MCP 两层结构：数据层定义语义，传输层负责通信](https://file1.kamacoder.com/i/web/20260520112741_mcp_protocol_04_layers_transport_compressed.png?v=20261005)
 
 所以你面试时不要只说：
 
@@ -416,7 +416,7 @@ Prompt 可以告诉模型应该怎么使用某些工具和资源。
 
 **Prompts 解决“Agent 应该按什么套路做事”。**
 
-![MCP 三类核心能力：Tools负责动作，Resources负责上下文，Prompts负责套路](https://file1.kamacoder.com/i/web/20260520112742_mcp_protocol_05_primitives_compressed.png)
+![MCP 三类核心能力：Tools负责动作，Resources负责上下文，Prompts负责套路](https://file1.kamacoder.com/i/web/20260520112742_mcp_protocol_05_primitives_compressed.png?v=20261005)
 
 这里有一个很好的记法：
 
@@ -490,7 +490,7 @@ MCP 在这里负责的是工具接入和调用协议。
 
 Agent 的规划、判断、反思，仍然由 Host 里的模型和应用逻辑负责。
 
-![MCP 工具调用流程：初始化、发现工具、调用工具、根据结果继续判断](https://file1.kamacoder.com/i/web/20260520112743_mcp_protocol_06_call_flow_compressed.png)
+![MCP 工具调用流程：初始化、发现工具、调用工具、根据结果继续判断](https://file1.kamacoder.com/i/web/20260520112743_mcp_protocol_06_call_flow_compressed.png?v=20261005)
 
 注意一个细节：
 
@@ -568,7 +568,7 @@ Host 把这些能力聚合后，模型可以围绕一个任务组合使用。
 
 这就是 Agent 需要的能力。
 
-![MCP 让 Agent 更适合多工具组合：不同 Server 暴露不同能力，Host 统一聚合](https://file1.kamacoder.com/i/web/20260520112744_mcp_protocol_07_agent_value_compressed.png)
+![MCP 让 Agent 更适合多工具组合：不同 Server 暴露不同能力，Host 统一聚合](https://file1.kamacoder.com/i/web/20260520112744_mcp_protocol_07_agent_value_compressed.png?v=20261005)
 
 但这里也要注意。
 
@@ -628,7 +628,7 @@ Host 启动一个本地进程，通过标准输入输出通信。
 
 缺点是要处理认证、授权、网络延迟、审计和多租户隔离。
 
-![本地 MCP 和远程 MCP：一个贴近开发环境，一个适合平台服务](https://file1.kamacoder.com/i/web/20260520112746_mcp_protocol_08_local_remote_compressed.png)
+![本地 MCP 和远程 MCP：一个贴近开发环境，一个适合平台服务](https://file1.kamacoder.com/i/web/20260520112746_mcp_protocol_08_local_remote_compressed.png?v=20261005)
 
 所以选型可以这么讲：
 
@@ -691,7 +691,7 @@ Server 不应该默认读取所有上下文。
 
 应该有权限限制、用户确认和审计记录。
 
-![MCP 安全边界：Host 管权限，Server 暴露有限能力，高风险动作要确认](https://file1.kamacoder.com/i/web/20260520112747_mcp_protocol_09_security_boundary_compressed.png)
+![MCP 安全边界：Host 管权限，Server 暴露有限能力，高风险动作要确认](https://file1.kamacoder.com/i/web/20260520112747_mcp_protocol_09_security_boundary_compressed.png?v=20261005)
 
 所以你要记住：
 

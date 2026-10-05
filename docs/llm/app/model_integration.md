@@ -8,7 +8,7 @@ tags: ["大模型应用", "API调用"]
 # 大模型怎么接入真实应用？从聊天框到业务系统的完整链路
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 很多人对大模型应用的理解，还停留在像豆包、ChatGPT那样陪聊的阶段。但在真实的应用环境里，后台发生的故事远比调一次API要精彩得多，它是一套完整的链路设计；不是能返回答案就够，而是要保证返回的答案能用、稳定、符合业务需求。今天我们就来拆解一下，大模型是如何从聊天框走进复杂的业务系统。
@@ -82,7 +82,7 @@ Prompt构建好后，就到了喜闻乐见的调API环节，它不是“发送�
 核心依赖关系：用户交互模块→Prompt工程模块（依赖数据支撑模块）→模型调用模块（依赖部署服务）→输出处理模块（依赖业务系统接口）→业务系统动作（反馈给用户）。
 
 
-![业务全景图](https://file1.kamacoder.com/i/web/20260512155053_mi01.png)
+![业务全景图](https://file1.kamacoder.com/i/web/20260512155053_mi01.png?v=20261005)
 
 
 

@@ -50,7 +50,7 @@ Multi-Head Attention 的思路很直接：
 这些头并行运算，最后把结果拼在一起，就能让模型同时"从多个角度"理解这句话。
 
 
-![单头注意力关注关系示意图](https://file1.kamacoder.com/i/algo/173c684a-4950-420e-a41e-d27aa8617fa4.webp)
+![单头注意力关注关系示意图](https://file1.kamacoder.com/i/algo/173c684a-4950-420e-a41e-d27aa8617fa4.webp?v=20261005)
 
 
 
@@ -79,7 +79,7 @@ Multi-Head Attention 的思路很直接：
 
 **总计算量和单头基本持平**，但同时"看"了 8 个不同的子空间。
 
-![多头注意力从多个角度观察Token关系示意图](https://file1.kamacoder.com/i/algo/5678999c-0469-46eb-bfa7-dced9c8ce9c0.webp)
+![多头注意力从多个角度观察Token关系示意图](https://file1.kamacoder.com/i/algo/5678999c-0469-46eb-bfa7-dced9c8ce9c0.webp?v=20261005)
 
 
 

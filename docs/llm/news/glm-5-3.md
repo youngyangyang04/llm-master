@@ -21,7 +21,7 @@ tags: [GLM, 智谱, 大模型发布, AI编程, Agent, 开源大模型, 网络安
 
 下面不是我整理的海报，是 2026 年 8 月 14 日 [智谱官方发布页](https://z.ai/blog/glm-5.3) 的首屏截图。
 
-![GLM-5.3官方发布页](https://file1.kamacoder.com/i/web/20260820102252.png)
+![GLM-5.3官方发布页](https://file1.kamacoder.com/i/web/20260820102252.png?v=20261005)
 
 官方把第一句话加了粗：`Scaling post-training is all we did for GLM-5.3.`
 
@@ -75,7 +75,7 @@ GLM-5.3 的训练任务更像真实工程：拿到代码仓、内部文档、计
 
 先看官方公开图。
 
-![GLM-5.3公开跑分对比](https://file1.kamacoder.com/i/web/20260820102254.png)
+![GLM-5.3公开跑分对比](https://file1.kamacoder.com/i/web/20260820102254.png?v=20261005)
 
 几个提升很直观：
 
@@ -96,7 +96,7 @@ GLM-5.3 的训练任务更像真实工程：拿到代码仓、内部文档、计
 
 更有意思的是 Token 效率。
 
-![Agent编程效果与Token关系](https://file1.kamacoder.com/i/web/20260820102259.png)
+![Agent编程效果与Token关系](https://file1.kamacoder.com/i/web/20260820102259.png?v=20261005)
 
 在 Z.ai Code Bench 上：
 
@@ -124,7 +124,7 @@ GLM-5.3 的训练任务更像真实工程：拿到代码仓、内部文档、计
 
 结果继续 Scaling 后，模型不只会指出单点问题，还开始串联漏洞分析、验证和完整利用链。
 
-![GLM-5.3安全能力跑分](https://file1.kamacoder.com/i/web/20260820102301.png)
+![GLM-5.3安全能力跑分](https://file1.kamacoder.com/i/web/20260820102301.png?v=20261005)
 
 三项数据要分开看：
 
@@ -166,7 +166,7 @@ Coding Plan 已经全量切到 5.3，并改成积分额度；工作日 14:00—1
 
 但准备把 API 从 5.2 改到 5.3 的录友，别只换模型 ID。
 
-![GLM-5.3 API迁移参数](https://file1.kamacoder.com/i/web/20260820102304.png)
+![GLM-5.3 API迁移参数](https://file1.kamacoder.com/i/web/20260820102304.png?v=20261005)
 
 GLM-5.3 强制开启思考。
 

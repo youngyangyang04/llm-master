@@ -23,11 +23,11 @@ tags: [大模型入门, token计费, Prompt Cache, AI编程]
 
 使用 Claude Opus 4.8 ，在我的卡码笔记项目里输入一个：“你好”。
 
-![](https://file1.kamacoder.com/i/web/2026-06-28_15-44-18.jpg)
+![](https://file1.kamacoder.com/i/web/2026-06-28_15-44-18.jpg?v=20261005)
 
 在后台看一下 计费：
 
-![](https://file1.kamacoder.com/i/web/2026-06-28_15-11-27.jpg)
+![](https://file1.kamacoder.com/i/web/2026-06-28_15-11-27.jpg?v=20261005)
 
 （这个计费截图是  [apidock.ai](https://apidock.ai/) 的后端截图）
 
@@ -46,7 +46,7 @@ tags: [大模型入门, token计费, Prompt Cache, AI编程]
 
 <!-- drawio源文件: ./drawio/15_hello_payload.drawio -->
 
-![一次请求的真实载荷构成：用户眼里只发了一句你好约几十token，模型每轮实际收到的是系统提示词、工具定义、项目规则CLAUDE.md、记忆和历史对话加起来的一大坨，这才是十万token的真正来源](https://file1.kamacoder.com/i/web/202606281535551.png)
+![一次请求的真实载荷构成：用户眼里只发了一句你好约几十token，模型每轮实际收到的是系统提示词、工具定义、项目规则CLAUDE.md、记忆和历史对话加起来的一大坨，这才是十万token的真正来源](https://file1.kamacoder.com/i/web/202606281535551.png?v=20261005)
 
 > 用不了Claude opus 4.8的录友，可以试试 [apidock.ai](https://apidock.ai/) ，我目前用的是这个，比较稳定 
 
@@ -159,7 +159,7 @@ Claude Code 能读文件、改文件、跑命令、搜索代码、调 MCP……�
 
 <!-- drawio源文件: ./drawio/16_cache_cost_trend.drawio -->
 
-![缓存创建vs缓存读的多轮会话成本走势：第一轮大量缓存创建是给整个会话铺路看着贵，第2、3、4轮那一大坨上下文转为缓存读便宜约10倍，越往后摊得越薄](https://file1.kamacoder.com/i/web/202606281535562.png)
+![缓存创建vs缓存读的多轮会话成本走势：第一轮大量缓存创建是给整个会话铺路看着贵，第2、3、4轮那一大坨上下文转为缓存读便宜约10倍，越往后摊得越薄](https://file1.kamacoder.com/i/web/202606281535562.png?v=20261005)
 
 所以「发一句你好花十万 token」这个现象，本质是：
 

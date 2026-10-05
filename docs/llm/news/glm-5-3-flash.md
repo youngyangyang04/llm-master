@@ -22,7 +22,7 @@ tags: [GLM, 智谱, 大模型发布, 多模态, AI编程, Agent, 开源大模型
 
 下面这张图，是 2026 年 8 月 26 日 [智谱官方发布页](https://z.ai/blog/glm-5.3-flash) 的首屏截图。
 
-![GLM-5.3-Flash发布页](https://file1.kamacoder.com/i/web/20260827152737.jpg)
+![GLM-5.3-Flash发布页](https://file1.kamacoder.com/i/web/20260827152737.jpg?v=20261005)
 
 *截图说明：官方首屏给出了四个关键信息——320B 总参数、18B 激活参数、原生多模态，以及接近 Claude Opus 4.8 的 Coding 与 Agent 能力。发布前匿名测试的 `ox-alpha`，也在这里正式认领。*
 
@@ -70,7 +70,7 @@ GLM-5.3 的输入是 1.4 美元，输出是 4.4 美元。
 
 按标准价算，Flash 确实接近它的十分之一；促销期内还要再打五折。
 
-![GLM-5.3-Flash价格](https://file1.kamacoder.com/i/web/20260827152747.jpg)
+![GLM-5.3-Flash价格](https://file1.kamacoder.com/i/web/20260827152747.jpg?v=20261005)
 
 *截图说明：官方价格表同时列出了 Flash、GLM-5.3 和 GLM-5.2。删除线是标准价，绿色提示里的五折活动截止到 2026 年 9 月 9 日 24:00（UTC+8）。*
 
@@ -90,7 +90,7 @@ GLM Coding Plan 也已经全量开放 Flash，同一订阅下可用额度是 GLM
 
 先看官方总表截图。
 
-![GLM-5.3-Flash跑分](https://file1.kamacoder.com/i/web/20260827152739.jpg)
+![GLM-5.3-Flash跑分](https://file1.kamacoder.com/i/web/20260827152739.jpg?v=20261005)
 
 *截图说明：上半部分是 Artificial Analysis 的能力—成本帕累托图，Flash 在促销价下每任务 0.045 美元、指数 57；下半部分是智谱汇总的六项 Coding 与 Agent 评测。*
 
@@ -113,7 +113,7 @@ Flash 在六项里全部超过 GLM-5.2，部分项目也超过了 Opus 4.8。
 
 再看智谱自己的 Z.ai Code Bench，边界就更清楚了。
 
-![GLM-5.3-Flash编程效率](https://file1.kamacoder.com/i/web/20260827152741.jpg)
+![GLM-5.3-Flash编程效率](https://file1.kamacoder.com/i/web/20260827152741.jpg?v=20261005)
 
 *截图说明：紫线是 GLM-5.3-Flash。`max` 档正确率 29.0%，接近 Claude Opus 4.8 的 29.5%，但平均输出接近 14 万 Token；GLM-5.3 本体是 34.5%，而且输出更短。*
 
@@ -133,7 +133,7 @@ GLM-5.3-Flash 的 18B 激活参数当然重要，但只看 MoE 还解释不了 1
 
 真正的变化在注意力结构。
 
-![GLM-5.3-Flash架构](https://file1.kamacoder.com/i/web/20260827152743.jpg)
+![GLM-5.3-Flash架构](https://file1.kamacoder.com/i/web/20260827152743.jpg?v=20261005)
 
 *截图说明：官方架构图左侧是三层线性注意力与一层稀疏注意力交替，右侧对比了 1M 上下文下的 KV Cache 和注意力计算量。相对 GLM-5.3，Flash 分别降低约 4.44 倍和 3.01 倍。*
 
@@ -159,7 +159,7 @@ GLM-5.3-Flash 支持图片、视频和文件输入，不是外挂一个 OCR 再�
 
 它把视觉能力直接放进 Coding Loop：写前端、做游戏或搭 3D 场景时，模型可以看渲染结果，发现布局、交互和视觉问题，再继续改代码。
 
-![GLM-5.3-Flash视觉闭环](https://file1.kamacoder.com/i/web/20260827152745.jpg)
+![GLM-5.3-Flash视觉闭环](https://file1.kamacoder.com/i/web/20260827152745.jpg?v=20261005)
 
 *截图说明：官方案例左边是存在布局问题的初版，右边是模型经过视觉自检后的版本。重点不是“会识图”，而是观察、修改、再次验证形成闭环。*
 

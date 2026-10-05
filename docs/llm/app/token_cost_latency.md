@@ -8,7 +8,7 @@ tags: [大模型应用, Token, 成本优化, 延迟优化, 大模型面试]
 # Token、成本与延迟：大模型应用的三个硬约束
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[《大模型同步、异步、流式输出怎么选》](./streaming_output.md)讲了结果怎么交付。流式输出能让用户更早看到内容，但它没有让模型少算一个Token，也没有让总生成时间凭空消失。
@@ -49,7 +49,7 @@ tags: [大模型应用, Token, 成本优化, 延迟优化, 大模型面试]
 
 <!-- drawio源文件: ./drawio/token_cost_latency_01_request_chain.drawio -->
 
-![Token成本与延迟链路](https://file1.kamacoder.com/i/web/20260720165101_token_cost_latency_01_request_chain_compressed.png)
+![Token成本与延迟链路](https://file1.kamacoder.com/i/web/20260720165101_token_cost_latency_01_request_chain_compressed.png?v=20261005)
 
 这张图回答的是：一个请求里的Token，怎么同时影响成本和延迟。输入越长，Prefill通常越重，TTFT越高；输出越长，Decode步数越多，费用和总耗时一起增加。流式输出只是提前交付已生成的Token，不会抹掉后面的Decode过程。
 
@@ -91,7 +91,7 @@ tags: [大模型应用, Token, 成本优化, 延迟优化, 大模型面试]
 
 <!-- drawio源文件: ./drawio/token_cost_latency_02_cost_amplification.drawio -->
 
-![大模型请求成本放大链](https://file1.kamacoder.com/i/web/20260720165101_token_cost_latency_02_cost_amplification_compressed.png)
+![大模型请求成本放大链](https://file1.kamacoder.com/i/web/20260720165101_token_cost_latency_02_cost_amplification_compressed.png?v=20261005)
 
 这张图回答的是：为什么一个看起来不贵的API，到了生产环境账单会突然放大。业务请求量会放大总调用量；重试、Agent多步调用和低命中请求，则会把一次业务请求扩成多次付费模型调用。
 
@@ -137,7 +137,7 @@ tags: [大模型应用, Token, 成本优化, 延迟优化, 大模型面试]
 
 <!-- drawio源文件: ./drawio/token_cost_latency_03_optimization_loop.drawio -->
 
-![成本与延迟优化闭环](https://file1.kamacoder.com/i/web/20260720165101_token_cost_latency_03_optimization_loop_compressed.png)
+![成本与延迟优化闭环](https://file1.kamacoder.com/i/web/20260720165101_token_cost_latency_03_optimization_loop_compressed.png?v=20261005)
 
 这张图回答的是：优化动作应该怎么选。先用质量门槛拦住“便宜但答错”的方案，再分别检查输入、输出、模型和并发；优化后回到线上指标验证，避免把成本问题转成质量问题，或者把吞吐问题转成P99延迟问题。
 

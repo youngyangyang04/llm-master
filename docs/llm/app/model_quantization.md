@@ -8,7 +8,7 @@ tags: [大模型应用, 大模型部署, 模型量化, 推理优化, 大模型�
 # 量化不是只看4bit/8bit：权重、激活和KV Cache怎么选
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[《KV Cache为什么会吃光显存？从PagedAttention到Prefix Cache》](./kv_cache_paged_attention.md)讲了：模型权重装进GPU，只是拿到了入场券。上下文变长、并发升高以后，KV Cache照样可能把剩余显存吃光。
@@ -67,7 +67,7 @@ tags: [大模型应用, 大模型部署, 模型量化, 推理优化, 大模型�
 
 <!-- drawio源文件: ./drawio/model_quantization_01_objects_path.drawio -->
 
-![大模型量化对象关系](https://file1.kamacoder.com/i/web/20260820104948.png)
+![大模型量化对象关系](https://file1.kamacoder.com/i/web/20260820104948.png?v=20261005)
 
 这张图回答的是：权重、激活和KV Cache分别位于推理链路的哪里。权重量化主要压缩常驻参数，激活量化影响层内计算，KV Cache量化影响上下文容量；只写“4bit”无法说明另外两块数据发生了什么。
 
@@ -106,7 +106,7 @@ x_hat = scale × (q - zero_point)
 
 <!-- drawio源文件: ./drawio/model_quantization_02_scale_error.drawio -->
 
-![量化档位与误差机制](https://file1.kamacoder.com/i/web/20260820104950.png)
+![量化档位与误差机制](https://file1.kamacoder.com/i/web/20260820104950.png?v=20261005)
 
 这张图回答的是：为什么同样是4bit，误差也可能完全不同。全局Scale被异常值拉宽后，普通值会挤在少数档位；分组、校准和敏感值保护，本质上是在重新分配有限的低精度表达能力。
 
@@ -175,7 +175,7 @@ x_hat = scale × (q - zero_point)
 
 <!-- drawio源文件: ./drawio/model_quantization_03_selection_loop.drawio -->
 
-![大模型量化选型路径](https://file1.kamacoder.com/i/web/20260820104952.png)
+![大模型量化选型路径](https://file1.kamacoder.com/i/web/20260820104952.png?v=20261005)
 
 这张图回答的是：量化选型为什么要先过容量和硬件两道门。模型放不下时优先缩权重，计算瓶颈要匹配原生Kernel，长上下文瓶颈要单独处理KV；所有候选最后都回到同一套质量、性能和成本验证。
 

@@ -8,7 +8,7 @@ tags: ["Agent面经", "大模型面试", "LLM面试", "AI求职"]
 # OpenClaw、Hermes Agent、Claude Code三框架横评：面试必懂的对比
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 现在大厂面Agent开发岗，面试官动不动就问："**你了解哪些Agent框架？它们的记忆机制、工具调用、上下文管理有什么不同**？"
@@ -76,7 +76,7 @@ Claude Code是Anthropic官方推出的AI编程助手，和Cursor、Windsurf是�
 | Hermes Agent | 自进化Agent | 学习闭环，越用越强 |
 | Claude Code | 产品级编程Agent | 工程化极致，安全最完善 |
 
-![三框架定位与演进](https://file1.kamacoder.com/i/web/framework_01_20260507112903887779000.png)
+![三框架定位与演进](https://file1.kamacoder.com/i/web/framework_01_20260507112903887779000.png?v=20261005)
 
 ---
 
@@ -106,7 +106,7 @@ Hermes在单Agent循环的基础上，加了子Agent并行委派能力——主A
 
 这让Hermes不是简单的"跑完就忘"，而是越跑越强。
 
-![Hermes学习闭环](https://file1.kamacoder.com/i/web/framework_03_20260507112907605928000.png)
+![Hermes学习闭环](https://file1.kamacoder.com/i/web/framework_03_20260507112907605928000.png?v=20261005)
 
 **Claude Code：while循环 + 三种子Agent**
 
@@ -135,7 +135,7 @@ while (true) {
 | 复杂任务处理 | 靠Prompt拆解 | 子Agent并行 | 子Agent隔离执行 |
 | 语言 | TypeScript | Python | TypeScript |
 
-![三框架Agent Loop对比](https://file1.kamacoder.com/i/web/framework_02_20260507112906426307000.png)
+![三框架Agent Loop对比](https://file1.kamacoder.com/i/web/framework_02_20260507112906426307000.png?v=20261005)
 
 ### 面试答法
 
@@ -181,7 +181,7 @@ Claude Code的记忆系统有三个层次：
 
 CLAUDE.md还有层级结构：根目录的`CLAUDE.md`全局生效，子目录的`CLAUDE.md`只在进入该目录时注入。这样不同模块可以有不同的规范。
 
-![CLAUDE.md注入机制](https://file1.kamacoder.com/i/web/framework_05_20260507112910032056000.png)
+![CLAUDE.md注入机制](https://file1.kamacoder.com/i/web/framework_05_20260507112910032056000.png?v=20261005)
 
 **第二层：.claude/目录（会话状态）**——Agent的中间状态、任务进度、分析结论都外化到文件系统。这就是Harness Engineering里说的"状态外化"——不在上下文窗口里存状态，而是写到文件里。
 
@@ -200,7 +200,7 @@ CLAUDE.md还有层级结构：根目录的`CLAUDE.md`全局生效，子目录的
 | 跨会话 | 不支持 | 支持（FTS5 + Honcho） | 支持（文件系统外化） |
 | 记忆检索 | 无 | FTS5全文搜索 + 语义匹配 | 文件读取（Read工具） |
 
-![三框架记忆分层对比](https://file1.kamacoder.com/i/web/framework_04_20260507112908825672000.png)
+![三框架记忆分层对比](https://file1.kamacoder.com/i/web/framework_04_20260507112908825672000.png?v=20261005)
 
 ### 面试答法
 
@@ -268,7 +268,7 @@ Claude Code还做了一个设计：**专用工具优先于通用命令**。系�
 | 工具选择策略 | Prompt驱动 | 动态白名单 | 工具描述即规则 + 专用工具优先 |
 | 技能复用 | 社区市场下载 | 自动生成 + 社区标准 | Skill调用预定义工作流 |
 
-![工具调用流程对比](https://file1.kamacoder.com/i/web/framework_06_20260507112911226609000.png)
+![工具调用流程对比](https://file1.kamacoder.com/i/web/framework_06_20260507112911226609000.png?v=20261005)
 
 ### 面试答法
 
@@ -325,7 +325,7 @@ Claude Code的上下文管理是三个框架里最工程化的，分三层：
 
 就像遇到内存泄漏时的做法——不拼命优化内存，直接重启进程，从磁盘恢复状态。**重启胜过修补。**
 
-![Context Reset流程](https://file1.kamacoder.com/i/web/framework_09_20260507112914810095000.png)
+![Context Reset流程](https://file1.kamacoder.com/i/web/framework_09_20260507112914810095000.png?v=20261005)
 
 ### 上下文管理对比表
 
@@ -337,7 +337,7 @@ Claude Code的上下文管理是三个框架里最工程化的，分三层：
 | 历史对话管理 | 裁剪旧内容 | FTS5检索相关片段 | 摘要压缩 |
 | 子Agent上下文 | 不支持 | 并行子Agent共享 | 子Agent独立窗口，结果摘要返回 |
 
-![上下文管理策略对比](https://file1.kamacoder.com/i/web/framework_08_20260507112913628365000.png)
+![上下文管理策略对比](https://file1.kamacoder.com/i/web/framework_08_20260507112913628365000.png?v=20261005)
 
 ### 面试答法
 
@@ -422,7 +422,7 @@ Hook的本质是**在工具调用的前后插入自定义逻辑**。它的工作
 
 这段配置的意思是：每次调用Bash工具前，先跑`check-dangerous-cmd.sh`检查命令是否危险；每次Write工具执行后，跑`scan-secrets.sh`扫描有没有写入敏感信息。
 
-![Hook机制](https://file1.kamacoder.com/i/web/framework_07_20260507112912437700000.png)
+![Hook机制](https://file1.kamacoder.com/i/web/framework_07_20260507112912437700000.png?v=20261005)
 
 **Hook为什么重要？** 因为它把安全规则从"写在Prompt里靠模型自觉遵守"变成了"硬编码到执行层强制执行"。模型想绕过Prompt里的规则是有可能的，但绕不过Hook——Hook在代码层面拦截，模型看不到也改不了。
 
@@ -437,7 +437,7 @@ Hook的本质是**在工具调用的前后插入自定义逻辑**。它的工作
 | 敏感信息防护 | 沙箱隔离 | 校验层 | 23层内容审查 + Hook扫描 |
 | 自定义安全逻辑 | 无 | linter规则 | Hook脚本 |
 
-![安全机制对比](https://file1.kamacoder.com/i/web/framework_10_20260507112916012083000.png)
+![安全机制对比](https://file1.kamacoder.com/i/web/framework_10_20260507112916012083000.png?v=20261005)
 
 ### 面试答法
 
@@ -453,7 +453,7 @@ Hook是加分点——说清楚Hook在工具调用前后插入自定义逻辑，
 
 ### 按场景选
 
-![框架选择决策图](https://file1.kamacoder.com/i/web/framework_11_20260507112917210256000.png)
+![框架选择决策图](https://file1.kamacoder.com/i/web/framework_11_20260507112917210256000.png?v=20261005)
 
 **选OpenClaw**——你需要一个**全平台在线的AI助手**，能在微信、飞书、Discord、Telegram上随时随地响应。本地运行，隐私有保障。个人使用场景最合适。
 

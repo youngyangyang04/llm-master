@@ -27,7 +27,7 @@ RAG 的完整链路是什么？今天我们就把它讲清楚。
 
 先用一张图把整条链路建立起来，再逐段拆解：现在逐段拆解这条链路上的每个环节。整条链路分两段：离线侧负责"把知识存进去"，在线侧负责"把相关知识找出来、组合出答案"。
 
-![RAG离线到在线完整链路图](https://file1.kamacoder.com/i/bagu/rag_complete_pipeline.png)
+![RAG离线到在线完整链路图](https://file1.kamacoder.com/i/bagu/rag_complete_pipeline.png?v=20261005)
 
 ------
 
@@ -71,7 +71,7 @@ RAG 系统的知识来源可以多种多样：PDF 报告、Word 文档、网页�
 
 下面这张图单独展示在线检索链路的各个环节，以及常见的优化分叉点：
 
-![RAG在线检索与生成流程图](https://file1.kamacoder.com/i/bagu/rag_online_retrieval_detail.png)
+![RAG在线检索与生成流程图](https://file1.kamacoder.com/i/bagu/rag_online_retrieval_detail.png?v=20261005)
 
 
 

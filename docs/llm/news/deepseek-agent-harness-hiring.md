@@ -9,7 +9,7 @@ tags: [DeepSeek, AI Agent, Agent工程, 大模型求职, 大模型动态]
 
 
 <a href="https://notes.kamacoder.com/qita/0021.gpt-5-6-sol-terra-luna-domestic-guide.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 
@@ -21,7 +21,7 @@ tags: [DeepSeek, AI Agent, Agent工程, 大模型求职, 大模型动态]
 
 Harness 团队负责人，在各大平台公开招人：
 
-![DeepSeek Harness团队负责人公开招聘Agent Harness工程师](https://file1.kamacoder.com/i/web/2026-07-01_15-46-19.jpg)
+![DeepSeek Harness团队负责人公开招聘Agent Harness工程师](https://file1.kamacoder.com/i/web/2026-07-01_15-46-19.jpg?v=20261005)
 
 DeepSeek 从 V3、R1 到 [DeepSeek V4](./deepseek-v4.md)，一直都是用很强的模型能力和很低的价格打市场。现在模型有了，调用量有了，下一步一定不是只继续堆参数。
 
@@ -49,7 +49,7 @@ DeepSeek 从 V3、R1 到 [DeepSeek V4](./deepseek-v4.md)，一直都是用很强
 
 <!-- drawio源文件: ./drawio/deepseek_agent_harness_boundary.drawio -->
 
-![Agent Harness把大模型推理连接到上下文、工具、状态、权限和验证的运行底座](https://file1.kamacoder.com/i/web/20260701160013_deepseek_agent_harness_boundary_compressed.png)
+![Agent Harness把大模型推理连接到上下文、工具、状态、权限和验证的运行底座](https://file1.kamacoder.com/i/web/20260701160013_deepseek_agent_harness_boundary_compressed.png?v=20261005)
 
 这张图要表达的是：**模型负责推理，Harness 负责把推理接到真实环境里。**
 
@@ -90,7 +90,7 @@ DeepSeek 从 V3、R1 到 [DeepSeek V4](./deepseek-v4.md)，一直都是用很强
 
 <!-- drawio源文件: ./drawio/deepseek_agent_harness_loop.drawio -->
 
-![稳定Agent执行闭环包含任务输入、上下文选择、模型决策、工具执行、结果观察、验证器和失败恢复](https://file1.kamacoder.com/i/web/20260701160013_deepseek_agent_harness_loop_compressed.png)
+![稳定Agent执行闭环包含任务输入、上下文选择、模型决策、工具执行、结果观察、验证器和失败恢复](https://file1.kamacoder.com/i/web/20260701160013_deepseek_agent_harness_loop_compressed.png?v=20261005)
 
 这张图回答的是：**Agent 为什么不是“模型想一步，工具跑一步”这么简单。**
 
@@ -142,7 +142,7 @@ Harness 是一组工程职责。
 
 <!-- drawio源文件: ./drawio/deepseek_agent_harness_learning_path.drawio -->
 
-![Agent Harness学习路线从LLM API和结构化输出到工具调用、状态管理、可观测性、评测和失败恢复](https://file1.kamacoder.com/i/web/20260701160013_deepseek_agent_harness_learning_path_compressed.png)
+![Agent Harness学习路线从LLM API和结构化输出到工具调用、状态管理、可观测性、评测和失败恢复](https://file1.kamacoder.com/i/web/20260701160013_deepseek_agent_harness_learning_path_compressed.png?v=20261005)
 
 这张图回答的是：**Harness 学习不是背框架，而是逐层补齐工程闭环。**
 

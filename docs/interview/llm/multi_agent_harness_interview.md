@@ -11,7 +11,7 @@ tags: [Agent面经, Harness Engineering, 大模型面试, LLM面试, AI求职]
 
 [知识星球](https://programmercarl.com/other/kstar.html)里有一位录友，研究生方向就是 Multi-Agent，这个方向还是不错的，有很大的应用前景。
 
-![知识星球录友分享Multi-Agent多智能体方向](https://file1.kamacoder.com/i/web/2026-05-27_11-10-10.jpg)
+![知识星球录友分享Multi-Agent多智能体方向](https://file1.kamacoder.com/i/web/2026-05-27_11-10-10.jpg?v=20261005)
 
 什么是Multi-Agent，也就是大家听说的，负责 开发代码的Agent，负责写需求的Agent，负责产品的Agent，负责测试的Agent。
 
@@ -132,7 +132,7 @@ Multi-Agent Demo 很容易做。
 
 <!-- drawio源文件: ./drawio/harness_stable_01_demo_vs_production.drawio -->
 
-![Agent Demo 到生产级 Harness 的鸿沟](https://file1.kamacoder.com/i/web/20260519175443_harness_stable_01_demo_vs_production.png)
+![Agent Demo 到生产级 Harness 的鸿沟](https://file1.kamacoder.com/i/web/20260519175443_harness_stable_01_demo_vs_production.png?v=20261005)
 
 
 ## 二、Harness 到底是什么
@@ -190,7 +190,7 @@ Model 是大脑。
 
 <!-- drawio源文件: ./drawio/harness_stable_02_architecture.drawio -->
 
-![生产级 Multi-Agent Harness 总体架构](https://file1.kamacoder.com/i/web/20260519175444_harness_stable_02_architecture.png)
+![生产级 Multi-Agent Harness 总体架构](https://file1.kamacoder.com/i/web/20260519175444_harness_stable_02_architecture.png?v=20261005)
 
 
 ## 三、面试官真正想考什么
@@ -389,7 +389,7 @@ Agent 最怕没有边界。
 
 <!-- drawio源文件: ./drawio/harness_stable_03_control_boundary.drawio -->
 
-![Agent 和 Harness 的决策权边界](https://file1.kamacoder.com/i/web/20260519175445_harness_stable_03_control_boundary.png)
+![Agent 和 Harness 的决策权边界](https://file1.kamacoder.com/i/web/20260519175445_harness_stable_03_control_boundary.png?v=20261005)
 
 
 ## 五、第二层：工具治理，Tool Registry 是安全边界
@@ -456,7 +456,7 @@ Agent 的能力，绝大部分来自工具。
 
 <!-- drawio源文件: ./drawio/harness_stable_04_tool_registry.drawio -->
 
-![Tool Registry 工具治理链路](https://file1.kamacoder.com/i/web/20260519175447_harness_stable_04_tool_registry.png)
+![Tool Registry 工具治理链路](https://file1.kamacoder.com/i/web/20260519175447_harness_stable_04_tool_registry.png?v=20261005)
 
 
 ## 六、第三层：状态与记忆，记住该记的，忘掉该忘的
@@ -549,7 +549,7 @@ Memory 生命周期长，关心相关性。
 
 <!-- drawio源文件: ./drawio/harness_stable_05_state_memory.drawio -->
 
-![Multi-Agent 状态与记忆分层](https://file1.kamacoder.com/i/web/20260519175449_harness_stable_05_state_memory.png)
+![Multi-Agent 状态与记忆分层](https://file1.kamacoder.com/i/web/20260519175449_harness_stable_05_state_memory.png?v=20261005)
 
 
 ## 七、第四层：评估体系，不要只看答案，要看轨迹
@@ -660,7 +660,7 @@ Multi-Agent 不一样。
 
 <!-- drawio源文件: ./drawio/harness_stable_06_eval_layers.drawio -->
 
-![Multi-Agent Eval 四层评估体系](https://file1.kamacoder.com/i/web/20260519175450_harness_stable_06_eval_layers.png)
+![Multi-Agent Eval 四层评估体系](https://file1.kamacoder.com/i/web/20260519175450_harness_stable_06_eval_layers.png?v=20261005)
 
 
 ## 八、第五层：成本控制，Token Budget 是生命线
@@ -759,7 +759,7 @@ Planner 生成计划，Worker 执行步骤，Reviewer 审查输出。
 
 <!-- drawio源文件: ./drawio/harness_stable_07_token_budget.drawio -->
 
-![Token Budget 成本控制状态机](https://file1.kamacoder.com/i/web/20260519175451_harness_stable_07_token_budget.png)
+![Token Budget 成本控制状态机](https://file1.kamacoder.com/i/web/20260519175451_harness_stable_07_token_budget.png?v=20261005)
 
 
 ## 九、第六层：MCP 接入，标准化不等于裸奔
@@ -844,7 +844,7 @@ Agent 不能直接看到 MCP Server 暴露的所有工具。
 
 <!-- drawio源文件: ./drawio/harness_stable_08_mcp_gateway.drawio -->
 
-![MCP 接入 Harness 安全网关](https://file1.kamacoder.com/i/web/20260519175453_harness_stable_08_mcp_gateway.png)
+![MCP 接入 Harness 安全网关](https://file1.kamacoder.com/i/web/20260519175453_harness_stable_08_mcp_gateway.png?v=20261005)
 
 
 ## 十、第七层：可观测性和落地路线

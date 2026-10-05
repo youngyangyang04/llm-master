@@ -9,7 +9,7 @@ tags: [Harness Engineering面经, 大模型面试, LLM面试, AI求职, 大模�
 
 卡哥昨天在[代码随想录B站](https://space.bilibili.com/525438321?spm_id_from=333.788.0.0)直播在讲Harness Engineering，直播非常火爆：
 
-![此图来自 GPTImages 2.0](https://file1.kamacoder.com/i/web/卡哥直播.jpg) 
+![此图来自 GPTImages 2.0](https://file1.kamacoder.com/i/web/卡哥直播.jpg?v=20261005) 
 
 （不开玩笑了，此图来此 GPTImages 2.0）
 
@@ -88,7 +88,7 @@ AI 系统也一样。LLM 很强，Agent 很能干，但如果没有一套东西�
 这个公式把 Harness 的边界划得清清楚楚。
 
 <!-- drawio源文件: ./drawio/harness_01_model_plus_harness.drawio -->
-![Agent = Model + Harness](https://file1.kamacoder.com/i/web/20260422213747.png)
+![Agent = Model + Harness](https://file1.kamacoder.com/i/web/20260422213747.png?v=20261005)
 
 ### 面试核心点
 
@@ -106,7 +106,7 @@ AI 系统也一样。LLM 很强，Agent 很能干，但如果没有一套东西�
 
 在聊工程重心怎么转移之前，先看一眼 Agent 本身经历了什么变化——因为正是 Agent 的形态变了，才逼着工程方法跟着变。
 
-![Agent演进：从聊天机器人到自进化Agent](https://file1.kamacoder.com/i/web/2026-04-22_21-44-10.jpg)
+![Agent演进：从聊天机器人到自进化Agent](https://file1.kamacoder.com/i/web/2026-04-22_21-44-10.jpg?v=20261005)
 
 最早是**聊天机器人**——你问我答，单轮对话，模型说啥就是啥，不需要任何工程化手段。
 
@@ -159,7 +159,7 @@ Anthropic 的 Agent Skills 就是这个思路——一开始只给模型看"目�
 
 这就是 Harness Engineering 要解决的问题。前两代工程关注的是"怎么让模型更会想"，Harness 关注的是**"怎么让模型不跑偏、跑得稳、出了错还能爬起来"**。
 
-![Harness Engineering面试问题截图](https://file1.kamacoder.com/i/web/2026-04-22_21-44-12.png)
+![Harness Engineering面试问题截图](https://file1.kamacoder.com/i/web/2026-04-22_21-44-12.png?v=20261005)
 
 ---
 
@@ -172,7 +172,7 @@ Anthropic 的 Agent Skills 就是这个思路——一开始只给模型看"目�
 一个成熟的 Harness 大致可以拆成六层，按"它在干啥"分成三组：
 
 <!-- drawio源文件: ./drawio/harness_03_six_layers.drawio -->
-![Harness六层核心组件](https://file1.kamacoder.com/i/web/20260422213752.png)
+![Harness六层核心组件](https://file1.kamacoder.com/i/web/20260422213752.png?v=20261005)
 
 **输入侧**（让模型看到正确的东西）：上下文精细化管理 + 记忆与状态管理
 
@@ -287,7 +287,7 @@ Cognition（做 Devin 的公司）在用 Claude Sonnet 4.5 重做 Devin 时，�
 真正解开这个结的关键动作叫 **Context Reset**——直接把旧的上下文窗口整个丢掉，换一个干净的接手。
 
 <!-- drawio源文件: ./drawio/harness_04_context_reset.drawio -->
-![Context Reset：重启胜过修补](https://file1.kamacoder.com/i/web/20260422213756.png)状态全部外化到文件系统，新窗口从文件里读进度，立刻知道"现在到哪一步"。这特别像工程里遇到内存泄漏时的做法——不拼命优化内存，直接重启进程，从磁盘恢复状态。
+![Context Reset：重启胜过修补](https://file1.kamacoder.com/i/web/20260422213756.png?v=20261005)状态全部外化到文件系统，新窗口从文件里读进度，立刻知道"现在到哪一步"。这特别像工程里遇到内存泄漏时的做法——不拼命优化内存，直接重启进程，从磁盘恢复状态。
 
 **原则：重启胜过修补，状态沉到文件里。**
 
@@ -361,7 +361,7 @@ Harness Engineering 是"方法论 / 架构思想"，Hermes Agent 和 OpenClaw �
 
 面试时先把这个结构说出来，面试官就知道你分得清"思想"和"产品"。
 
-![Harness Engineering与Hermes Agent、Claude Code、OpenClaw的关系](https://file1.kamacoder.com/i/web/2026-04-22_21-44-11.jpg)
+![Harness Engineering与Hermes Agent、Claude Code、OpenClaw的关系](https://file1.kamacoder.com/i/web/2026-04-22_21-44-11.jpg?v=20261005)
 
 ### OpenClaw（小龙虾）
 
@@ -391,7 +391,7 @@ Hermes 做了一个非常关键的升级：**从"工具执行系统" → "自进
 它和 OpenClaw 最大的区别，就是内置了一个**学习闭环（Learning Loop）**：
 
 <!-- drawio源文件: ./drawio/harness_05_hermes_vs_openclaw.drawio -->
-![Hermes学习闭环 vs OpenClaw线性执行](https://file1.kamacoder.com/i/web/20260422213759.png)
+![Hermes学习闭环 vs OpenClaw线性执行](https://file1.kamacoder.com/i/web/20260422213759.png?v=20261005)
 
 ```
 执行任务 → 总结经验 → 生成 skill → 存入记忆 → 下次复用

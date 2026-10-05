@@ -8,7 +8,7 @@ tags: [GPT-5.5, 大模型发布, AI编程, OpenAI]
 # GPT-5.5发布：OpenAI最强Agent编程模型，稳定自主运行7小时，价格翻倍值不值？
 
 <a href="https://notes.kamacoder.com/qita/0021.gpt-5-6-sol-terra-luna-domestic-guide.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 
@@ -18,23 +18,23 @@ tags: [GPT-5.5, 大模型发布, AI编程, OpenAI]
 
 结果今天凌晨，OpenAI直接甩出GPT-5.5。看看X上的介绍：
 
-![GPT-5.5发布信息截图](https://file1.kamacoder.com/i/web/2026-04-24_11-24-05.jpg)
+![GPT-5.5发布信息截图](https://file1.kamacoder.com/i/web/2026-04-24_11-24-05.jpg?v=20261005)
 
 现在大家在 chatgpt的网页端和codex上用起来了。
 
 我这里已经更新：
 
-![GPT-5.5能力说明截图](https://file1.kamacoder.com/i/web/2026-04-24_11-27-24.jpg)
+![GPT-5.5能力说明截图](https://file1.kamacoder.com/i/web/2026-04-24_11-27-24.jpg?v=20261005)
 
 codex也通知更新：
 
-![GPT-5.5性能指标截图](https://file1.kamacoder.com/i/web/2026-04-24_11-32-43.jpg)
+![GPT-5.5性能指标截图](https://file1.kamacoder.com/i/web/2026-04-24_11-32-43.jpg?v=20261005)
 
 OpenAI团队原话：**这是我们迄今为止最智能、最直观易用的模型**。
 
 Sam Altman本人的评价更直接：**根据我的经验，它知道该做什么**。
 
-![GPT-5.5模型特性截图](https://file1.kamacoder.com/i/web/2026-04-24_11-38-06.jpg)
+![GPT-5.5模型特性截图](https://file1.kamacoder.com/i/web/2026-04-24_11-38-06.jpg?v=20261005)
 
 "知道该做什么"，用过Agent的录友应该能get到——现在大部分模型的问题不是"不会做"，而是"不知道该做什么"。它需要你把每一步都安排好，少说一句它就跑偏。
 
@@ -46,7 +46,7 @@ GPT-5.5想解决的就是这个问题。
 
 先看硬数据。
 
-![GPT-5.5上下文能力截图](https://file1.kamacoder.com/i/web/2026-04-24_12-01-29.jpg)
+![GPT-5.5上下文能力截图](https://file1.kamacoder.com/i/web/2026-04-24_12-01-29.jpg?v=20261005)
 
 图里那些英文评测名字，大部分录友可能看不懂，逐个解释一下：
 
@@ -109,7 +109,7 @@ OpenAI这次反复强调的词是"Agentic"。
 
 在Terminal-Bench 2.0、Expert-SWE (Internal) 可以看到 5.5的较大进步。 （这两个评测不知道啥意思的话，可以看本篇开头的介绍）
 
-![GPT-5.5价格信息截图](https://file1.kamacoder.com/i/web/2026-04-24_13-18-57.jpg)
+![GPT-5.5价格信息截图](https://file1.kamacoder.com/i/web/2026-04-24_13-18-57.jpg?v=20261005)
 
 GPT-5.5在**智能体编程、计算机使用、知识型工作、早期科学研究**领域提升最显著——共同特点是：需要跨上下文推理和持续自主行动。
 
@@ -165,7 +165,7 @@ AI 写作平台 Every 创始人 Dan Shipper 给了一个很具体的案例：他
 
 这些案例说明一件事：**Codex + GPT-5.5 的组合，让 AI 从"帮你写代码"变成了"帮你干活"。** 这才是 OpenAI 这次想讲的核心故事。
 
-![Codex升级：从代码补全到自主工作台](https://file1.kamacoder.com/i/web/2026-04-24_13-18-58.jpg)
+![Codex升级：从代码补全到自主工作台](https://file1.kamacoder.com/i/web/2026-04-24_13-18-58.jpg?v=20261005)
 
 ## 四、速度与效率：比GPT-5.4更省token
 
@@ -207,7 +207,7 @@ GPT-5.5比GPT-5.4**贵了一倍**。
 
 ## 六、与Claude Opus 4.7 各有所长
 
-![GPT-5.5模型对比截图](https://file1.kamacoder.com/i/web/2026-04-24_13-29-21.jpg)
+![GPT-5.5模型对比截图](https://file1.kamacoder.com/i/web/2026-04-24_13-29-21.jpg?v=20261005)
 
 上周刚写的[Opus 4.7](https://mp.weixin.qq.com/s/QJZ34IOWf8vdEiFqugNsMw)，编码能力暴涨、视觉3倍提升、xhigh档位。现在GPT-5.5来了，怎么选？
 
@@ -237,7 +237,7 @@ GPT-5.5发布的时间点很有意思——Claude Code最近性能变差的事�
 
 Anthropic反应很快：GPT-5.5发布当天，发长文宣布**已修复降智问题**，并且**重置所有订阅用户的使用限制**。
 
-![GPT-5.5使用建议截图](https://file1.kamacoder.com/i/web/2026-04-24_13-18-59.jpg)
+![GPT-5.5使用建议截图](https://file1.kamacoder.com/i/web/2026-04-24_13-18-59.jpg?v=20261005)
 
 修复和重置是真的，但时机也确实是被迫的——用户刚在抱怨Claude变笨，竞品就发布了新品，不动作不行。
 

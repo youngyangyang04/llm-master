@@ -9,15 +9,15 @@ tags: ["面经", "大模型", "Agent开发"]
 
 以下是[知识星球](https://programmercarl.com/other/kstar.html)里一位录友分享自己刚刚上岸字节 agent开发岗暑期实习的经历。 
 
-![字节跳动Agent开发岗面经截图](https://file1.kamacoder.com/i/web/2026-05-06_17-37-27.jpg)
+![字节跳动Agent开发岗面经截图](https://file1.kamacoder.com/i/web/2026-05-06_17-37-27.jpg?v=20261005)
 
 他是去年（25年）3月份加入的[知识星球](https://programmercarl.com/other/kstar.html)，当初准备的是 C++开发，辅助Go。做的是星球里的分布式仿微信项目。
 
 去年9月份，他还在星球里分享了 腾讯（Go）、momenta（C++）的面经，当然都是凉经。
 
-![腾讯](https://file1.kamacoder.com/i/web/2026-03-27_10-56-06.jpg)
+![腾讯](https://file1.kamacoder.com/i/web/2026-03-27_10-56-06.jpg?v=20261005)
 
-![momenta](https://file1.kamacoder.com/i/web/2026-03-27_10-56-31.jpg)
+![momenta](https://file1.kamacoder.com/i/web/2026-03-27_10-56-31.jpg?v=20261005)
 
 最后去了一家，偏硬件的企业，做agent,他入职实习后，在业务上接触了agent，所以是边做边学的。
 
@@ -27,7 +27,7 @@ tags: ["面经", "大模型", "Agent开发"]
 
 如果想了解Agent相关知识，大家可以做做[知识星球](https://programmercarl.com/other/kstar.html)里的agent项目（JChatMind）。
 
-![image](https://file1.kamacoder.com/i/web/2026-03-27_11-00-45.jpg)
+![image](https://file1.kamacoder.com/i/web/2026-03-27_11-00-45.jpg?v=20261005)
 
 以及看看卡码笔记上的大模型八股：https://notes.kamacoder.com/llm/
 
@@ -109,7 +109,7 @@ AI 写代码这块，平时你怎么用的、踩过什么坑、自己琢磨出�
 
 大家可以去知识星球里看到分享的原贴（https://t.zsxq.com/qb3Sr），里面有他记录的所有面试问题。
 
-![字节跳动Agent开发岗面经截图](https://file1.kamacoder.com/i/web/2026-05-06_17-37-27.jpg)
+![字节跳动Agent开发岗面经截图](https://file1.kamacoder.com/i/web/2026-05-06_17-37-27.jpg?v=20261005)
 
 ## 目录
 
@@ -212,7 +212,7 @@ Structured Output 就是让模型按你指定的格式输出，而不是自由�
 
 ### Function Calling 与 RAG 的区别和联系是什么？什么时候用 Function Calling，什么时候用 RAG？
 
-![Function Calling vs RAG](https://file1.kamacoder.com/i/web/bytedance_03_fc_vs_rag_20260506160626014288000.png)
+![Function Calling vs RAG](https://file1.kamacoder.com/i/web/bytedance_03_fc_vs_rag_20260506160626014288000.png?v=20261005)
 
 两者都是让模型"基于真实数据回答"，但方式完全不同。
 
@@ -246,7 +246,7 @@ Embedding 是 RAG 的"翻译官"，把文本转成向量，语义相近的文本
 
 ### Agent 是如何结合工具、知识和规划自主运行的？
 
-![Agent 自主运行流程](https://file1.kamacoder.com/i/web/bytedance_01_agent_execution_flow_20260506160623610602000.png)
+![Agent 自主运行流程](https://file1.kamacoder.com/i/web/bytedance_01_agent_execution_flow_20260506160623610602000.png?v=20261005)
 
 Agent 的本质 = **思维链 + Function Calling + 循环**。
 
@@ -262,7 +262,7 @@ Agent 的执行过程：第一步调天气 API 查北京明天天气 → 发现�
 
 ### 多 Agent 架构下，主 Agent 和子 Agent 的通信链路应该如何设计？如何处理异常？
 
-![多 Agent 架构通信链路](https://file1.kamacoder.com/i/web/bytedance_02_multi_agent_architecture_20260506160624815808000.png)
+![多 Agent 架构通信链路](https://file1.kamacoder.com/i/web/bytedance_02_multi_agent_architecture_20260506160624815808000.png?v=20261005)
 
 多 Agent 架构一般是一个主 Agent 做调度，多个子 Agent 各司其职——一个负责搜索、一个负责代码、一个负责数据分析。
 
@@ -362,7 +362,7 @@ RLHF 的破局点是**从人工标注走向自动反馈**，比如用 Verifiable
 
 ### 如何在有限的上下文窗口内放入关键内容？如何做短期和长期记忆压缩？
 
-![分层记忆结构](https://file1.kamacoder.com/i/web/bytedance_05_memory_layers_20260506160628415313000.png)
+![分层记忆结构](https://file1.kamacoder.com/i/web/bytedance_05_memory_layers_20260506160628415313000.png?v=20261005)
 
 上下文窗口有限，但需要放的东西越来越多——System Prompt、对话历史、RAG 检索结果、工具返回值，全塞进去很快就不行了。
 
@@ -384,7 +384,7 @@ RLHF 的破局点是**从人工标注走向自动反馈**，比如用 Verifiable
 
 ### 混合路由和限流器在多 Agent 系统中为什么重要？
 
-![混合路由与限流器](https://file1.kamacoder.com/i/web/bytedance_06_hybrid_router_20260506160629612538000.png)
+![混合路由与限流器](https://file1.kamacoder.com/i/web/bytedance_06_hybrid_router_20260506160629612538000.png?v=20261005)
 
 混合路由解决的是**用什么模型处理什么请求**的问题。
 
@@ -472,7 +472,7 @@ Key 泄露防护：
 
 ### 结合开发经历，谈谈传统 Web 应用和 AI Agent 应用有什么不同？
 
-![传统 Web vs AI Agent](https://file1.kamacoder.com/i/web/bytedance_04_web_vs_agent_20260506160627198430000.png)
+![传统 Web vs AI Agent](https://file1.kamacoder.com/i/web/bytedance_04_web_vs_agent_20260506160627198430000.png?v=20261005)
 
 最核心的区别：**传统 Web 是确定性的，Agent 是概率性的**。
 

@@ -44,7 +44,7 @@ Claude 报错，切到 Grok，还是报错；再打开 ChatGPT，连 Codex 也�
 
 OpenAI 状态页显示，这次事件影响了 ChatGPT 的 15 个组件和 Codex 的 4 个组件。
 
-![ChatGPT故障状态](https://file1.kamacoder.com/i/web/20260904120620.jpg)
+![ChatGPT故障状态](https://file1.kamacoder.com/i/web/20260904120620.jpg?v=20261005)
 
 这是 OpenAI 事件页的最终状态。截图使用北京时间显示：事件在 9 月 4 日 00:55 被标记为已解决。
 
@@ -62,7 +62,7 @@ Claude 这次影响更早，也更久。
 
 Anthropic 最初只列出 Mythos 5.1、Fable 5.1 和 Opus 5，随后补充确认 Mythos/Fable 5、Opus 4.8、Opus 4.6 等模型也受到影响。
 
-![Claude故障状态](https://file1.kamacoder.com/i/web/20260904120621.jpg)
+![Claude故障状态](https://file1.kamacoder.com/i/web/20260904120621.jpg?v=20261005)
 
 官方事件页最后写得很清楚：受影响的不只是 Claude.ai，还包括 **Claude API、Claude Code 和 Claude Cowork**。
 
@@ -76,7 +76,7 @@ Anthropic 表示已经找到原因并部署修复，但没有公开根因细节�
 
 Grok 的官方记录最直白。
 
-![Grok故障状态](https://file1.kamacoder.com/i/web/20260904120622.jpg)
+![Grok故障状态](https://file1.kamacoder.com/i/web/20260904120622.jpg?v=20261005)
 
 北京时间 21:30 开始调查，次日 01:05 宣布流量恢复，持续 **3 小时 35 分钟**。
 

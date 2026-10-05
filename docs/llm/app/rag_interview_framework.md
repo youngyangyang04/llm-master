@@ -45,7 +45,7 @@ RAG项目面试，可以抓住五个落点：
 
 <!-- drawio源文件: ./drawio/rag_interview_framework_01_question_ladder.drawio -->
 
-![RAG面试问题沿项目逐层下钻，应用开发者必须守住链路、选型、排障和指标答线](https://file1.kamacoder.com/i/web/20260727103412_rag_interview_framework_01_question_ladder_compressed.png)
+![RAG面试问题沿项目逐层下钻，应用开发者必须守住链路、选型、排障和指标答线](https://file1.kamacoder.com/i/web/20260727103412_rag_interview_framework_01_question_ladder_compressed.png?v=20261005)
 
 这张图回答的是：RAG面试的追问深度怎么递进，以及应用开发者必须守住哪条回答线。链路、选型、排障和指标都属于必答区；索引算法源码、Embedding训练目标等底层细节，知道原理和工程影响即可，不要硬装成算法专家。
 
@@ -69,7 +69,7 @@ RAG项目面试，可以抓住五个落点：
 
 <!-- drawio源文件: ./drawio/rag_interview_framework_02_answer_evidence_chain.drawio -->
 
-![RAG回答沿证据轴补全结论、项目事实、方案取舍、指标证据和适用边界](https://file1.kamacoder.com/i/web/20260727103414_rag_interview_framework_02_answer_evidence_chain_compressed.png)
+![RAG回答沿证据轴补全结论、项目事实、方案取舍、指标证据和适用边界](https://file1.kamacoder.com/i/web/20260727103414_rag_interview_framework_02_answer_evidence_chain_compressed.png?v=20261005)
 
 这张图回答的是：一句泛泛的技术结论，怎么逐步变成可信的项目回答。工具名只能说明“用过”，项目事实、取舍和指标才能证明“做过”。
 
@@ -192,7 +192,7 @@ Rerank发生在候选池之后。它用更精细的相关性模型重新排序�
 
 <!-- drawio源文件: ./drawio/rag_interview_framework_03_diagnosis_loop.drawio -->
 
-![RAG答案错误时根据Top-K证据分流检索侧和生成侧并形成单变量优化闭环](https://file1.kamacoder.com/i/web/20260727103416_rag_interview_framework_03_diagnosis_loop_compressed.png)
+![RAG答案错误时根据Top-K证据分流检索侧和生成侧并形成单变量优化闭环](https://file1.kamacoder.com/i/web/20260727103416_rag_interview_framework_03_diagnosis_loop_compressed.png?v=20261005)
 
 这张图回答的是：RAG答案错误时，怎么用Top-K证据把问题分流到检索侧或生成侧，再通过单变量实验和指标形成优化闭环。
 

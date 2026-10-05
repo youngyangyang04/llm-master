@@ -8,7 +8,7 @@ tags: ["RAG", "大模型应用"]
 # 向量数据库解决了什么问题：为什么不能用 MySQL 做向量检索、ANN 索引原理
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 ## 一、从一个问题出发
@@ -38,7 +38,7 @@ tags: ["RAG", "大模型应用"]
 传统数据库的索引结构（B-Tree、Hash Index）对这类问题完全无效，因为它们设计之初没有考虑"高维几何相似度"这个维度。即便 PostgreSQL 的 pgvector 扩展支持向量存储，在大规模场景下的性能仍然远不如专门的向量数据库。
 
 
-![两种数据库查询的逻辑差异](https://file1.kamacoder.com/i/bagu/traditional_vs_vector_db.png)
+![两种数据库查询的逻辑差异](https://file1.kamacoder.com/i/bagu/traditional_vs_vector_db.png?v=20261005)
 
 
 ## 三、向量索引：ANN 如何在速度和精度之间取得平衡
@@ -53,7 +53,7 @@ tags: ["RAG", "大模型应用"]
 
 HNSW 构建了一个层级结构的图：最顶层是少量节点，形成"高速公路"；底层是所有节点，形成"街道网络"。检索时从顶层入口进入，沿图中的邻居边快速导航，逐层下降，像 GPS 导航一样越来越精细，最终定位到目标附近的最近邻。
 
-![HNSW 分层导航](https://file1.kamacoder.com/i/bagu/hnsw_index_navigation.png)
+![HNSW 分层导航](https://file1.kamacoder.com/i/bagu/hnsw_index_navigation.png?v=20261005)
 
 HNSW 的优势是查询速度极快、精度高，是 Milvus、Qdrant、Weaviate 等主流向量数据库的默认索引。代价是构建索引时内存占用较大。
 

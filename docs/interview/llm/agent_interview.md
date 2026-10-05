@@ -21,7 +21,7 @@ faq:
 # Agent大厂面试题汇总：ReAct、Function Calling、MCP、RAG高频问题
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 现在无论是什么岗位，都要求了解一些AI，Agent相关的内容。
@@ -97,7 +97,7 @@ P(token_n | token_1, token_2, ..., token_{n-1})
 **LLM 告诉你怎么做，Agent 直接帮你做完。** 这就是本质区别。
 
 <!-- drawio源文件: ./drawio/01_llm_vs_agent.drawio -->
-![图1：LLM vs Agent 对比图](https://file1.kamacoder.com/i/web/20260414163251.png)
+![图1：LLM vs Agent 对比图](https://file1.kamacoder.com/i/web/20260414163251.png?v=20261005)
 
 ### 面试加分点：Agent 的完整四模块
 
@@ -116,7 +116,7 @@ Agent 由四个模块组合而成：**LLM（大脑）**负责理解意图、推�
 这两者最核心的分歧只有一点：**Workflow 的控制权在代码手里，Agent 的控制权在 LLM 手里。**
 
 <!-- drawio源文件: ./drawio/02_workflow_vs_agent.drawio -->
-![图2：Workflow vs Agent 流程对比图](https://file1.kamacoder.com/i/web/20260414170247.png)
+![图2：Workflow vs Agent 流程对比图](https://file1.kamacoder.com/i/web/20260414170247.png?v=20261005)
 
 ### Workflow 详解
 
@@ -161,7 +161,7 @@ Agent 接收到**目标**，自主规划执行路径。
 Agent 有四种主流工作模式，先看总览，再逐一细读。
 
 <!-- drawio源文件: ./drawio/04_react_loop.drawio -->
-![图3：ReAct 工作模式循环图](https://file1.kamacoder.com/i/web/20260414171449.png)
+![图3：ReAct 工作模式循环图](https://file1.kamacoder.com/i/web/20260414171449.png?v=20261005)
 
 ### 模式一：ReAct（推理 + 行动）
 
@@ -222,7 +222,7 @@ ReAct 的问题是每一步都要重新思考全局，Token 消耗太大。Plan-
 两阶段工作：第一阶段，Planner LLM 一次性生成完整计划（比如"搜集竞品列表 → 逐个分析功能 → 对比价格策略 → 分析用户评价 → 生成对比报告"）；第二阶段，Executor 按计划逐步执行，每步只需完成当前任务，不用重新思考全局。
 
 <!-- drawio源文件: ./drawio/05_plan_execute.drawio -->
-![Plan-and-Execute 两阶段工作模式](https://file1.kamacoder.com/i/web/05_plan_execute.png)
+![Plan-and-Execute 两阶段工作模式](https://file1.kamacoder.com/i/web/05_plan_execute.png?v=20261005)
 
 **Token 消耗对比**：ReAct 每步都思考全局，消耗 100%；Plan-and-Execute 规划一次执行省力，消耗约 20%。
 
@@ -233,7 +233,7 @@ ReAct 的问题是每一步都要重新思考全局，Token 消耗太大。Plan-
 Reflection 的思路是：**让一个 Agent 生成，另一个 Agent 审查，循环迭代直到质量达标**。
 
 <!-- drawio源文件: ./drawio/06_reflection.drawio -->
-![Reflection 自我反思工作模式](https://file1.kamacoder.com/i/web/20260414171450.png)
+![Reflection 自我反思工作模式](https://file1.kamacoder.com/i/web/20260414171450.png?v=20261005)
 
 用代码 Review 类比最容易理解：Writer Agent 生成代码 → Reviewer Agent 发现问题（安全漏洞、性能问题）→ Writer Agent 修改 → Reviewer Agent 确认通过 → 最终输出。
 
@@ -244,7 +244,7 @@ Reflection 的思路是：**让一个 Agent 生成，另一个 Agent 审查，�
 ### 模式四：Multi-Agent（多智能体协作）
 
 <!-- drawio源文件: ./drawio/07_multi_agent.drawio -->
-![Multi-Agent 多智能体协作架构](https://file1.kamacoder.com/i/web/20260414171451.png)
+![Multi-Agent 多智能体协作架构](https://file1.kamacoder.com/i/web/20260414171451.png?v=20261005)
 
 多个专业 Agent 协作完成复杂任务：Orchestrator（协调 Agent）负责理解需求、分配任务、汇总结果，下面挂 Research Agent（搜集资料、分析数据）、Coder Agent（写代码、跑测试）、Reviewer Agent（代码审查、安全检查）等。
 
@@ -272,7 +272,7 @@ Function Call 是让 LLM **输出结构化的工具调用指令**，而非普通
 **关键认知：LLM 自己并不执行函数！** 它只告诉你"我想调用什么函数、传什么参数"，真正执行的是你的代码。
 
 <!-- drawio源文件: ./drawio/08_function_call_flow.drawio -->
-![图4：Function Call 四步工作流程图](https://file1.kamacoder.com/i/web/20260414171453.png)
+![图4：Function Call 四步工作流程图](https://file1.kamacoder.com/i/web/20260414171453.png?v=20261005)
 
 ### Function Call 四步流程
 
@@ -396,7 +396,7 @@ GPT-4o 和 Claude 3.5+ 都支持**一次返回多个工具调用**，可以并�
 MCP 把这个问题变成了 N + M：每个应用只需接入 MCP 协议，每个工具只需实现一个 MCP Server，总共 3 + 3 = 6 套代码。
 
 <!-- drawio源文件: ./drawio/10_mcp_architecture.drawio -->
-![图5：MCP 架构对比图](https://file1.kamacoder.com/i/web/20260414171454.png)
+![图5：MCP 架构对比图](https://file1.kamacoder.com/i/web/20260414171454.png?v=20261005)
 
 ### MCP 架构详解
 
@@ -527,7 +527,7 @@ allowed-tools:
 用"新员工入职"来类比：**Function Call 是打电话的基础能力，MCP 是公司统一的通讯录和电话系统，Skills 是岗位培训手册。**
 
 <!-- drawio源文件: ./drawio/11_three_layers.drawio -->
-![图6：Function Call、MCP、Skills 三层分工图](https://file1.kamacoder.com/i/web/20260414171454.png)
+![图6：Function Call、MCP、Skills 三层分工图](https://file1.kamacoder.com/i/web/20260414171454.png?v=20261005)
 
 ### 技术层面的三维对比
 
@@ -568,7 +568,7 @@ Agent A 想请求 Agent B 帮忙完成一个子任务，面临的问题：不知
 这些问题 MCP 没有设计解决，因为 **MCP 的设计目标是工具，不是 Agent**。
 
 <!-- drawio源文件: ./drawio/12_a2a_flow.drawio -->
-![图7：A2A + MCP 完整协议生态图](https://file1.kamacoder.com/i/web/20260414171455.png)
+![图7：A2A + MCP 完整协议生态图](https://file1.kamacoder.com/i/web/20260414171455.png?v=20261005)
 
 ### A2A 核心概念
 
@@ -609,7 +609,7 @@ Agent A 想请求 Agent B 帮忙完成一个子任务，面临的问题：不知
 ### 记忆的两种层次
 
 <!-- drawio源文件: ./drawio/13_memory_system.drawio -->
-![图8：Agent 记忆系统分层图](https://file1.kamacoder.com/i/web/20260414171456.png)
+![图8：Agent 记忆系统分层图](https://file1.kamacoder.com/i/web/20260414171456.png?v=20261005)
 
 Agent 的记忆分为两大层：
 
@@ -674,7 +674,7 @@ class AgentMemory:
 ### 安全威胁模型
 
 <!-- drawio源文件: ./drawio/14_security_defense.drawio -->
-![Agent 安全防御体系](https://file1.kamacoder.com/i/web/20260414171457.png)
+![Agent 安全防御体系](https://file1.kamacoder.com/i/web/20260414171457.png?v=20261005)
 
 Agent 面临四大安全威胁：
 

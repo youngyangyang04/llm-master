@@ -21,7 +21,7 @@ faq:
 # Claude Code大厂面试题汇总：源码泄露、Agent Loop、系统提示词全拆解|深度解析Claude Code工作原理
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 > 不少读者问我，如何充值Claude会员，我在这里篇单独讲一下：[国内Claude充值会员的方法](../../qita/0002.claudepay.md)
@@ -92,7 +92,7 @@ Anthropic在几小时内修复了这个问题，但源码已经被社区完整�
 
 Claude Code的工作流程可以用一句话概括：**不断循环"思考-行动-观察"，直到任务完成。**
 
-![Agent Loop核心循环：思考→行动→观察](https://file1.kamacoder.com/i/web/20260428112055_01.png)
+![Agent Loop核心循环：思考→行动→观察](https://file1.kamacoder.com/i/web/20260428112055_01.png?v=20261005)
 
 用伪代码表示：
 
@@ -127,7 +127,7 @@ while (true) {
 
 这是AI编程工具和普通ChatGPT对话的本质区别。
 
-![普通对话 vs Agent Loop](https://file1.kamacoder.com/i/web/20260428112058_02.png)
+![普通对话 vs Agent Loop](https://file1.kamacoder.com/i/web/20260428112058_02.png?v=20261005)
 
 普通对话是**一问一答**：你问一个问题，AI回答一次，结束。
 
@@ -171,7 +171,7 @@ Claude Code没有发明新东西，它只是把ReAct模式做到了工程化极�
 
 ### 8,700 Token的构成
 
-![系统提示词8700 Token构成](https://file1.kamacoder.com/i/web/20260428112100_03.png)
+![系统提示词8700 Token构成](https://file1.kamacoder.com/i/web/20260428112100_03.png?v=20261005)
 
 系统提示词不是一整块文本，而是由多个模块拼接而成：
 
@@ -223,7 +223,7 @@ Claude Code的系统提示词有一个特别的设计：**安全规则不只写�
 
 ### 工具全景图
 
-![18+工具五大分类](https://file1.kamacoder.com/i/web/20260428112103_04.png)
+![18+工具五大分类](https://file1.kamacoder.com/i/web/20260428112103_04.png?v=20261005)
 
 按功能分类：
 
@@ -313,7 +313,7 @@ Bash是Claude Code里最强大的工具——理论上它能执行任何shell命
 
 ### 三种子Agent
 
-![子Agent架构：Explore信息漏斗](https://file1.kamacoder.com/i/web/20260428112105_05.png)
+![子Agent架构：Explore信息漏斗](https://file1.kamacoder.com/i/web/20260428112105_05.png?v=20261005)
 
 | 类型 | 模型 | 能力 | 适用场景 |
 |---|---|---|---|
@@ -385,7 +385,7 @@ Claude Code的上下文窗口是200K token。听起来很大，但在实际编�
 
 ### 三层压缩机制
 
-![200K上下文消耗与三层压缩](https://file1.kamacoder.com/i/web/20260428112107_06.png)
+![200K上下文消耗与三层压缩](https://file1.kamacoder.com/i/web/20260428112107_06.png?v=20261005)
 
 当上下文接近容量上限（92-95%）时，Claude Code会触发压缩机制。这个机制分三层：
 
@@ -432,7 +432,7 @@ Claude Code用一套23层的安全检查机制来防止这类事故。
 
 ### 权限模型：deny > ask > allow
 
-![权限检查流程：deny>ask>allow](https://file1.kamacoder.com/i/web/20260428112110_07.png)
+![权限检查流程：deny>ask>allow](https://file1.kamacoder.com/i/web/20260428112110_07.png?v=20261005)
 
 Claude Code的权限评估遵循严格的优先级：
 
@@ -455,7 +455,7 @@ Claude Code的权限评估遵循严格的优先级：
 
 Claude Code的安全规则不是集中在一个地方，而是**分散嵌入在系统的各个层面**：
 
-![四层安全规则嵌入](https://file1.kamacoder.com/i/web/20260428112119_08.png)
+![四层安全规则嵌入](https://file1.kamacoder.com/i/web/20260428112119_08.png?v=20261005)
 
 **第一层：系统提示词**
 ```
@@ -579,7 +579,7 @@ Claude Code的记忆系统用文件存储这些信息：
 
 ### 记忆的核心原则："可疑索引，不是可信真相"
 
-![三层CLAUDE.md + 记忆系统](https://file1.kamacoder.com/i/web/20260428112119_09.png)
+![三层CLAUDE.md + 记忆系统](https://file1.kamacoder.com/i/web/20260428112119_09.png?v=20261005)
 
 这是记忆系统设计中最重要的一点：**记忆是索引，不是真相。**
 
@@ -611,7 +611,7 @@ Claude Code不是只用一个模型，而是用两个模型配合工作。这是
 
 ### 两个模型，两种角色
 
-![Haiku vs Opus/Sonnet双模型协作](https://file1.kamacoder.com/i/web/20260428112119_10.png)
+![Haiku vs Opus/Sonnet双模型协作](https://file1.kamacoder.com/i/web/20260428112119_10.png?v=20261005)
 
 | 模型 | 角色 | 负责什么 | 成本 |
 |---|---|---|---|

@@ -8,14 +8,14 @@ tags: [Kimi, 月之暗面, 大模型发布, AI编程, 前端开发, 多模态, �
 # Kimi K3 发布：2.8 万亿参数只是前菜，前端审美才是最狠的
 
 <a href="https://notes.kamacoder.com/qita/0021.gpt-5-6-sol-terra-luna-domestic-guide.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 前面写 [Kimi K2.7-Code](./kimi-k2-7-code.md) 时，我说月之暗面开始卷一件很实际的事：**让模型少想废话，把代码更快交出来。**
 
 现在 K3 来了。
 
-![](https://file1.kamacoder.com/i/web/2026-07-17_17-47-50.jpg)
+![](https://file1.kamacoder.com/i/web/2026-07-17_17-47-50.jpg?v=20261005)
 
 2.8 万亿总参数，100 万 Token 上下文，原生视觉理解，完整权重最晚在 2026 年 7 月 27 日放出。
 
@@ -61,7 +61,7 @@ Kimi K3 是月之暗面新一代旗舰模型，核心规格很猛：
 
 K3 发布后，最炸眼的成绩来自 Arena AI 的 Frontend Code Arena。
 
-![Kimi K3在Frontend Code Arena公开盲测中排名第一](https://file1.kamacoder.com/i/web/20260717170519_01-arena_compressed.png)
+![Kimi K3在Frontend Code Arena公开盲测中排名第一](https://file1.kamacoder.com/i/web/20260717170519_01-arena_compressed.png?v=20261005)
 
 K3 拿到 1679 分，排在第一。
 
@@ -110,7 +110,7 @@ X 上的实测给了 K3 一个很简单的参考：一座中式屋檐，下方�
 
 再补一次提示后，K3 把屋檐比例、纸张质感、竖排节奏、文字密度和留白都收了回来。
 
-![Kimi K3复刻中式屋檐与可交互竖排文字珠帘效果](https://file1.kamacoder.com/i/web/20260717170519_06-curtain-output_compressed.jpg)
+![Kimi K3复刻中式屋檐与可交互竖排文字珠帘效果](https://file1.kamacoder.com/i/web/20260717170519_06-curtain-output_compressed.jpg?v=20261005)
 
 这张图看着安静，但背后不是一张静态海报。
 
@@ -136,7 +136,7 @@ X 上的实测给了 K3 一个很简单的参考：一座中式屋檐，下方�
 
 几个小时后，K3 做出了一个叫“云驰 Aeris”的专注 App 原型。
 
-![Kimi K3生成的云驰Aeris专注App界面](https://file1.kamacoder.com/i/web/20260717170519_05-aeris_compressed.jpg)
+![Kimi K3生成的云驰Aeris专注App界面](https://file1.kamacoder.com/i/web/20260717170519_05-aeris_compressed.jpg?v=20261005)
 
 这不是换个皮肤的番茄钟。
 
@@ -169,7 +169,7 @@ Three.js 一直是检验前端模型成色的好地方。
 
 挖得越深，矿越稀有，但温度和塌方风险也会升高；矿车还必须沿真实轨道运行。
 
-![Kimi K3生成的Emberhold熔火矿城3D经营场景](https://file1.kamacoder.com/i/web/20260717170519_03-emberhold_compressed.png)
+![Kimi K3生成的Emberhold熔火矿城3D经营场景](https://file1.kamacoder.com/i/web/20260717170519_03-emberhold_compressed.png?v=20261005)
 
 这类任务最怕“美术是美术，系统是系统”。
 
@@ -181,7 +181,7 @@ K3 的完成度高，是因为它把两边接上了：**经营数值推动场景
 
 但测试者认为，K3 的场景氛围、镜头、光影和交互反馈更有设计味道。
 
-![同一前端任务中Kimi K3与GPT-5.6 Sol的设计实现对比](https://file1.kamacoder.com/i/web/20260717170519_04-design-comparison_compressed.jpg)
+![同一前端任务中Kimi K3与GPT-5.6 Sol的设计实现对比](https://file1.kamacoder.com/i/web/20260717170519_04-design-comparison_compressed.jpg?v=20261005)
 
 这类评价当然带主观性，不能当标准跑分。
 
@@ -217,7 +217,7 @@ K3 原生支持视觉理解，意味着它可以先读构图、字体、色彩�
 
 X 上的真实项目测试中，K3 先读取运维文档和多智能体说明，再定位多个用户反馈，开 8 路 Agent 研究，筛出 7 个值得做的任务，随后开启 7 个工作区并行开发。
 
-![Kimi Code读取项目文档并并行分析多个开发任务](https://file1.kamacoder.com/i/web/20260717170519_08-kimi-code_compressed.png)
+![Kimi Code读取项目文档并并行分析多个开发任务](https://file1.kamacoder.com/i/web/20260717170519_08-kimi-code_compressed.png?v=20261005)
 
 测试者记录的是：约 1 个半小时完成开发，随后提 PR、过 CI、合入主分支，整个流程约 2 小时结束。
 
@@ -237,7 +237,7 @@ K3 引入了 Kimi Delta Attention 和 Attention Residuals。
 - Attention Residuals 负责让信息穿过很深的网络时少失真
 - Stable LatentMoE 用 896 个专家承载容量，每次只激活 16 个控制计算成本
 
-![Kimi K3的KDA、Attention Residuals与Stable LatentMoE架构](https://file1.kamacoder.com/i/web/20260717170519_02-architecture_compressed.png)
+![Kimi K3的KDA、Attention Residuals与Stable LatentMoE架构](https://file1.kamacoder.com/i/web/20260717170519_02-architecture_compressed.png?v=20261005)
 
 月之暗面称，这套结构和训练配方让 K3 相比 K2 的整体扩展效率提高约 2.5 倍。
 

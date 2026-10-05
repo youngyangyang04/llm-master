@@ -8,7 +8,7 @@ tags: [长鑫科技, DRAM, 存储芯片, 半导体, 国产芯片, 大模型动�
 # 长鑫科技上市暴涨466%：存储芯片为什么不是有钱就能造
 
 <a href="https://notes.kamacoder.com/qita/0021.gpt-5-6-sol-terra-luna-domestic-guide.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 2026年7月27日，长鑫科技登陆科创板。
@@ -21,7 +21,7 @@ tags: [长鑫科技, DRAM, 存储芯片, 半导体, 国产芯片, 大模型动�
 
 **长鑫科技为什么值这么多钱？存储芯片真的这么难吗？国内有钱的公司这么多，为什么不能多砸几座厂，直接把DRAM造出来？**
 
-![存储芯片制造壁垒卡通](https://file1.kamacoder.com/i/web/20260731111230.jpg)
+![存储芯片制造壁垒卡通](https://file1.kamacoder.com/i/web/20260731111230.jpg?v=20261005)
 
 先说结论：**钱当然重要，但钱只能买到入场券。**
 
@@ -31,7 +31,7 @@ DRAM真正的壁垒，是把资金、设备、材料、人才、专利、工艺�
 
 ## 一、先分清：存储芯片不是一种芯片
 
-![DRAM与NAND区别卡通](https://file1.kamacoder.com/i/web/20260731111232.jpg)
+![DRAM与NAND区别卡通](https://file1.kamacoder.com/i/web/20260731111232.jpg?v=20261005)
 
 大家平时说“存储芯片”，其实经常把两类东西混在一起。
 
@@ -52,7 +52,7 @@ NAND像档案仓库。电脑关机了，照片、代码和系统文件还得继�
 
 ## 二、DRAM到底怎么记住一个比特
 
-![DRAM一晶体管一电容原理卡通](https://file1.kamacoder.com/i/web/20260731111234.jpg)
+![DRAM一晶体管一电容原理卡通](https://file1.kamacoder.com/i/web/20260731111234.jpg?v=20261005)
 
 DRAM最基本的存储单元，可以粗略理解为 **一个晶体管加一个电容，也就是1T1C**。
 
@@ -72,7 +72,7 @@ DRAM最基本的存储单元，可以粗略理解为 **一个晶体管加一个�
 
 ## 三、难的不是造出一颗，是几十亿个单元都别出错
 
-![DRAM晶圆良率卡通](https://file1.kamacoder.com/i/web/20260731111235.jpg)
+![DRAM晶圆良率卡通](https://file1.kamacoder.com/i/web/20260731111235.jpg?v=20261005)
 
 实验室里造出一个能读写的存储单元，不等于能卖货。
 
@@ -94,7 +94,7 @@ DRAM最基本的存储单元，可以粗略理解为 **一个晶体管加一个�
 
 ## 四、设备可以买，工艺配方买不到
 
-![DRAM工艺配方壁垒卡通](https://file1.kamacoder.com/i/web/20260731111238.jpg)
+![DRAM工艺配方壁垒卡通](https://file1.kamacoder.com/i/web/20260731111238.jpg?v=20261005)
 
 很多人理解芯片制造，会把它简化成买光刻机、刻蚀机、沉积设备。
 
@@ -118,7 +118,7 @@ DRAM最基本的存储单元，可以粗略理解为 **一个晶体管加一个�
 
 ## 五、良率不是一个公式，是用量产数据喂出来的
 
-![DRAM量产学习曲线卡通](https://file1.kamacoder.com/i/web/20260731111240.jpg)
+![DRAM量产学习曲线卡通](https://file1.kamacoder.com/i/web/20260731111240.jpg?v=20261005)
 
 一批晶圆跑出来，工程才刚开始。
 
@@ -142,7 +142,7 @@ DRAM最基本的存储单元，可以粗略理解为 **一个晶体管加一个�
 
 ## 六、存储周期是一台残酷的淘汰机器
 
-![DRAM行业周期卡通](https://file1.kamacoder.com/i/web/20260731111243.jpg)
+![DRAM行业周期卡通](https://file1.kamacoder.com/i/web/20260731111243.jpg?v=20261005)
 
 如果DRAM只是在技术上难，或许还有很多有钱公司愿意试。
 
@@ -164,7 +164,7 @@ DRAM最基本的存储单元，可以粗略理解为 **一个晶体管加一个�
 
 ## 七、到底有哪些公司能造DRAM
 
-![全球DRAM厂商格局](https://file1.kamacoder.com/i/web/20260731111246.jpg)
+![全球DRAM厂商格局](https://file1.kamacoder.com/i/web/20260731111246.jpg?v=20261005)
 
 这里必须纠正题目里的一个说法。
 
@@ -196,7 +196,7 @@ HBM还要再加一道门槛。它不只是把普通DRAM改个名字，而是要�
 
 ## 八、长鑫真正跨过了什么门槛
 
-![长鑫DRAM规模化量产卡通](https://file1.kamacoder.com/i/web/20260731111248.jpg)
+![长鑫DRAM规模化量产卡通](https://file1.kamacoder.com/i/web/20260731111248.jpg?v=20261005)
 
 长鑫成立于2016年。不到十年，它最重要的成绩不是发布了一张参数表，而是把DRAM做成了一门规模化生意。
 
@@ -223,7 +223,7 @@ HBM还要再加一道门槛。它不只是把普通DRAM改个名字，而是要�
 
 ## 九、为什么上市第一天就值3.28万亿元
 
-![长鑫科技高估值原因卡通](https://file1.kamacoder.com/i/web/20260731111251.jpg)
+![长鑫科技高估值原因卡通](https://file1.kamacoder.com/i/web/20260731111251.jpg?v=20261005)
 
 先把几个容易混淆的估值数字拆开。
 
@@ -261,7 +261,7 @@ HBM还要再加一道门槛。它不只是把普通DRAM改个名字，而是要�
 
 ## 十、有钱为什么还是堆不出存储芯片
 
-![DRAM资本与长期量产卡通](https://file1.kamacoder.com/i/web/20260731111253.jpg)
+![DRAM资本与长期量产卡通](https://file1.kamacoder.com/i/web/20260731111253.jpg?v=20261005)
 
 现在可以回答最开始的问题了。
 

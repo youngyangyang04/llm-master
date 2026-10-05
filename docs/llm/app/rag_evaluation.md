@@ -60,7 +60,7 @@ RAG评估分为**检索侧评估**和**生成侧评估**两个层次,每一层�
 
 <!-- drawio源文件: ./drawio/rag_evaluation_01_retrieval_metrics.drawio -->
 
-![检索评估四大指标](https://file1.kamacoder.com/i/web/20260721194159_01.png)
+![检索评估四大指标](https://file1.kamacoder.com/i/web/20260721194159_01.png?v=20261005)
 
 这张图展示了检索评估的四个核心指标如何从不同角度衡量检索质量:Recall看覆盖、Precision看纯度、MRR看首位、NDCG看排序。
 
@@ -144,7 +144,7 @@ RAGAS(Retrieval Augmented Generation Assessment)框架提出了一套基于LLM�
 
 <!-- drawio源文件: ./drawio/rag_evaluation_02_ragas_framework.drawio -->
 
-![RAGAS框架四维度](https://file1.kamacoder.com/i/web/20260721194201_02.png)
+![RAGAS框架四维度](https://file1.kamacoder.com/i/web/20260721194201_02.png?v=20261005)
 
 这张图展示了RAGAS框架的四个核心维度如何从不同角度评估生成质量:Faithfulness防幻觉、Answer Relevancy看回答、Context Relevancy看检索、Context Recall看覆盖。
 
@@ -430,7 +430,7 @@ RAGAS的四个指标都需要调用LLM做判断,这会带来额外延迟:
 
 <!-- drawio源文件: ./drawio/rag_evaluation_03_optimization_loop.drawio -->
 
-![评估驱动优化闭环](https://file1.kamacoder.com/i/web/20260721194203_03.png)
+![评估驱动优化闭环](https://file1.kamacoder.com/i/web/20260721194203_03.png?v=20261005)
 
 这张图展示了基于评估的RAG优化闭环:从建立baseline开始,通过评估定位问题,针对性优化,再次评估验证,形成数据驱动的迭代循环。
 

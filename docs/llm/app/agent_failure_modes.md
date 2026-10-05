@@ -8,7 +8,7 @@ tags: ["大模型应用", "AI Agent", "Agent可靠性", "大模型面试"]
 # Agent为什么容易翻车？
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 前几篇我们把 Agent 的核心能力一路讲下来了。
@@ -52,7 +52,7 @@ Agent 错了，经常是整个执行过程都跑偏：
 
 **Agent 翻车不是偶然 bug，而是自由度带来的必然风险。**
 
-![Agent翻车的根因：自由度越高，越需要工程边界](https://file1.kamacoder.com/i/web/20260526193353_agent_failure_01_core_tradeoff_compressed.png)
+![Agent翻车的根因：自由度越高，越需要工程边界](https://file1.kamacoder.com/i/web/20260526193353_agent_failure_01_core_tradeoff_compressed.png?v=20261005)
 
 ## 一、Agent 为什么比普通应用更容易不稳定
 
@@ -195,7 +195,7 @@ Agent 不知道什么时候应该停。
 
 它不知道当前信息已经不足以继续推进，应该转向追问用户。
 
-![死循环不是一直运行，而是没有停止条件和失败记忆](https://file1.kamacoder.com/i/web/20260526193354_agent_failure_02_loop_reason_compressed.png)
+![死循环不是一直运行，而是没有停止条件和失败记忆](https://file1.kamacoder.com/i/web/20260526193354_agent_failure_02_loop_reason_compressed.png?v=20261005)
 
 ### 怎么兜底
 
@@ -305,7 +305,7 @@ Agent 拿到一段自然语言后，还要自己猜下一步。
 
 猜错了，就会继续错。
 
-![误调用的根因：工具边界不清，Agent 就会把咨询当执行](https://file1.kamacoder.com/i/web/20260526193355_agent_failure_03_wrong_tool_compressed.png)
+![误调用的根因：工具边界不清，Agent 就会把咨询当执行](https://file1.kamacoder.com/i/web/20260526193355_agent_failure_03_wrong_tool_compressed.png?v=20261005)
 
 ### 怎么兜底
 
@@ -407,7 +407,7 @@ Agent 做简单任务还好。
 
 前面查到的证据，后面忘了。
 
-![多步任务中断：没有任务状态，Agent 会提前交付或丢证据](https://file1.kamacoder.com/i/web/20260526193357_agent_failure_04_task_state_compressed.png)
+![多步任务中断：没有任务状态，Agent 会提前交付或丢证据](https://file1.kamacoder.com/i/web/20260526193357_agent_failure_04_task_state_compressed.png?v=20261005)
 
 ### 怎么兜底
 
@@ -503,7 +503,7 @@ Agent 却把它当成事实。
 
 模型说“可能是数据库问题”，如果不标记为假设，很容易被后面当事实。
 
-![上下文污染：假设、噪音和过期信息混进事实区](https://file1.kamacoder.com/i/web/20260526193358_agent_failure_05_context_pollution_compressed.png)
+![上下文污染：假设、噪音和过期信息混进事实区](https://file1.kamacoder.com/i/web/20260526193358_agent_failure_05_context_pollution_compressed.png?v=20261005)
 
 ### 怎么兜底
 
@@ -587,7 +587,7 @@ Agent 从“建议”直接跳到“执行”。
 
 这就很危险。
 
-![权限越界：从建议到执行，中间必须有确认和审计](https://file1.kamacoder.com/i/web/20260526193359_agent_failure_06_permission_boundary_compressed.png)
+![权限越界：从建议到执行，中间必须有确认和审计](https://file1.kamacoder.com/i/web/20260526193359_agent_failure_06_permission_boundary_compressed.png?v=20261005)
 
 ### 怎么兜底
 
@@ -707,7 +707,7 @@ Agent 翻车还有一个很常见的场景：
 
 不是换个工具继续试。
 
-![错误恢复：失败不是一句系统异常，而是给 Agent 下一步动作](https://file1.kamacoder.com/i/web/20260526193400_agent_failure_07_error_recovery_compressed.png)
+![错误恢复：失败不是一句系统异常，而是给 Agent 下一步动作](https://file1.kamacoder.com/i/web/20260526193400_agent_failure_07_error_recovery_compressed.png?v=20261005)
 
 ## 八、Agent 兜底不是一个开关，而是一套护栏
 
@@ -745,7 +745,7 @@ Agent 翻车还有一个很常见的场景：
 
 最终回答前检查：目标是否完成？证据是否足够？有没有未验证假设？
 
-![Agent兜底不是一个开关，而是多层护栏](https://file1.kamacoder.com/i/web/20260526193401_agent_failure_08_guardrails_compressed.png)
+![Agent兜底不是一个开关，而是多层护栏](https://file1.kamacoder.com/i/web/20260526193401_agent_failure_08_guardrails_compressed.png?v=20261005)
 
 这里要特别强调一点。
 

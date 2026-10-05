@@ -8,7 +8,7 @@ tags: ["大模型应用", "AI Agent", "Agent记忆", "RAG", "大模型面试"]
 # Agent的记忆：短期、长期、RAG到底什么关系？
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇我们讲了 [Agent 为什么容易翻车](./agent_failure_modes.md)。
@@ -43,7 +43,7 @@ tags: ["大模型应用", "AI Agent", "Agent记忆", "RAG", "大模型面试"]
 
 这篇我们就把短期记忆、长期记忆、RAG、Session State 之间的关系讲清楚。
 
-![Agent 记忆分层与上下文污染关系](https://file1.kamacoder.com/i/web/20260526175836_agent_memory_01_memory_layers_compressed.png)
+![Agent 记忆分层与上下文污染关系](https://file1.kamacoder.com/i/web/20260526175836_agent_memory_01_memory_layers_compressed.png?v=20261005)
 
 ## 一、先搞清楚：Agent 为什么需要记忆
 
@@ -229,7 +229,7 @@ Agent 在需要时检索相关资料，再放进上下文。
 
 **Agent 对用户、任务、历史经验的持久记录。**
 
-![Agent 短期记忆、Session State、长期记忆和外部知识库四类记忆对比](https://file1.kamacoder.com/i/web/20260526175837_agent_memory_02_four_types_compressed.png)
+![Agent 短期记忆、Session State、长期记忆和外部知识库四类记忆对比](https://file1.kamacoder.com/i/web/20260526175837_agent_memory_02_four_types_compressed.png?v=20261005)
 
 ## 三、短期记忆不是越长越好
 
@@ -271,7 +271,7 @@ Agent 在需要时检索相关资料，再放进上下文。
 
 它应该更像一份“当前任务摘要”。
 
-![短期记忆从长对话中过滤关键任务摘要的过程](https://file1.kamacoder.com/i/web/20260526175838_agent_memory_03_short_memory_filter_compressed.png)
+![短期记忆从长对话中过滤关键任务摘要的过程](https://file1.kamacoder.com/i/web/20260526175838_agent_memory_03_short_memory_filter_compressed.png?v=20261005)
 
 举个例子。
 
@@ -335,7 +335,7 @@ Agent 每一步都能对照它推进。
 
 而不是靠模型自己在长上下文里找重点。
 
-![Session State 记录目标、假设、事实和下一步动作](https://file1.kamacoder.com/i/web/20260526175840_agent_memory_04_session_state_compressed.png)
+![Session State 记录目标、假设、事实和下一步动作](https://file1.kamacoder.com/i/web/20260526175840_agent_memory_04_session_state_compressed.png?v=20261005)
 
 很多生产系统里的 Agent，其实都要做状态管理。
 
@@ -412,7 +412,7 @@ Agent 每一步都能对照它推进。
 
 需要权限、用途和删除机制。
 
-![长期记忆写入前的稳定性、有用性、确认和合规筛选](https://file1.kamacoder.com/i/web/20260526175841_agent_memory_05_write_gate_compressed.png)
+![长期记忆写入前的稳定性、有用性、确认和合规筛选](https://file1.kamacoder.com/i/web/20260526175841_agent_memory_05_write_gate_compressed.png?v=20261005)
 
 长期记忆要像数据库写入。
 
@@ -461,7 +461,7 @@ Agent 每一步都能对照它推进。
 4. 只把关键记忆放进上下文。
 5. 生成回答后，根据需要更新记忆。
 
-![长期记忆按当前任务检索、过滤、使用和更新的流程](https://file1.kamacoder.com/i/web/20260526175843_agent_memory_06_memory_retrieval_compressed.png)
+![长期记忆按当前任务检索、过滤、使用和更新的流程](https://file1.kamacoder.com/i/web/20260526175843_agent_memory_06_memory_retrieval_compressed.png?v=20261005)
 
 这和 RAG 很像。
 
@@ -530,7 +530,7 @@ RAG 更适合做外部知识库：
 - 已确认的项目背景
 - Agent 自己需要跨会话保留的状态
 
-![RAG 外部知识库和 Agent 长期记忆的边界区别](https://file1.kamacoder.com/i/web/20260526175844_agent_memory_07_rag_vs_memory_compressed.png)
+![RAG 外部知识库和 Agent 长期记忆的边界区别](https://file1.kamacoder.com/i/web/20260526175844_agent_memory_07_rag_vs_memory_compressed.png?v=20261005)
 
 所以面试时别说：
 
@@ -589,7 +589,7 @@ Agent 也要会忘。
 - 用户删除
 - 低价值记忆清理
 
-![Agent 长期记忆过期、冲突和噪音的更新遗忘机制](https://file1.kamacoder.com/i/web/20260526175846_agent_memory_08_forgetting_update_compressed.png)
+![Agent 长期记忆过期、冲突和噪音的更新遗忘机制](https://file1.kamacoder.com/i/web/20260526175846_agent_memory_08_forgetting_update_compressed.png?v=20261005)
 
 记忆不是仓库。
 
@@ -658,7 +658,7 @@ Agent 也要会忘。
 
 这才是完整闭环。
 
-![Agent 记忆系统从定义类型到写入、检索、使用和遗忘的闭环](https://file1.kamacoder.com/i/web/20260526175848_agent_memory_09_memory_lifecycle_compressed.png)
+![Agent 记忆系统从定义类型到写入、检索、使用和遗忘的闭环](https://file1.kamacoder.com/i/web/20260526175848_agent_memory_09_memory_lifecycle_compressed.png?v=20261005)
 
 ## 十、面试时怎么回答 Agent 记忆
 

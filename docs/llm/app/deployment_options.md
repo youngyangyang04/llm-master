@@ -8,7 +8,7 @@ tags: [大模型应用, 大模型部署, 推理服务, 工程化, 大模型面�
 # 云API、托管推理还是自部署？大模型部署方案怎么选
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[《面试官怎么问微调？应用开发者该怎么答》](./finetuning_interview.md)讲清了一个边界：应用开发者不一定亲手训练模型，但必须能判断什么时候值得微调。
@@ -52,7 +52,7 @@ tags: [大模型应用, 大模型部署, 推理服务, 工程化, 大模型面�
 
 <!-- drawio源文件: ./drawio/deployment_options_01_ownership_boundary.drawio -->
 
-![大模型部署责任边界](https://file1.kamacoder.com/i/web/20260731111433.png)
+![大模型部署责任边界](https://file1.kamacoder.com/i/web/20260731111433.png?v=20261005)
 
 这张图回答的是：云API、托管推理和自部署真正改变了什么。三种模式处理的是同一条请求链，差别不是有没有API，而是责任边界从哪一层切开；vLLM、SGLang等推理引擎只位于服务栈内部。
 
@@ -140,7 +140,7 @@ tags: [大模型应用, 大模型部署, 推理服务, 工程化, 大模型面�
 
 <!-- drawio源文件: ./drawio/deployment_options_02_decision_path.drawio -->
 
-![大模型部署决策路径](https://file1.kamacoder.com/i/web/20260731111434.png)
+![大模型部署决策路径](https://file1.kamacoder.com/i/web/20260731111434.png?v=20261005)
 
 这张图回答的是：部署选型应该按什么顺序做。数据和模型许可先做硬门槛，业务验证与流量再决定是否值得承担固定资源，最后才进入托管或自部署的工程选择；本地离线是另一条由设备边界触发的分支。
 
@@ -189,7 +189,7 @@ tags: [大模型应用, 大模型部署, 推理服务, 工程化, 大模型面�
 
 <!-- drawio源文件: ./drawio/deployment_options_03_validation_loop.drawio -->
 
-![大模型部署验证闭环](https://file1.kamacoder.com/i/web/20260731111436.png)
+![大模型部署验证闭环](https://file1.kamacoder.com/i/web/20260731111436.png?v=20261005)
 
 这张图回答的是：为什么选型不是一次拍板。业务约束先产生候选方案，统一压测生成质量、性能和成本证据；不满足门槛就调整部署模式、引擎或配置，只有三类指标同时过线才进入上线方案。
 

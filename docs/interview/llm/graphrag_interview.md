@@ -78,7 +78,7 @@ tags: [GraphRAG面经, LightRAG面经, RAG面试, 大模型面试, LLM面试, AI
 
 这才是 GraphRAG 要解决的问题。
 
-![RAG VS GraphRAG](https://file1.kamacoder.com/i/web/2026-04-23_20-17-26.jpg)
+![RAG VS GraphRAG](https://file1.kamacoder.com/i/web/2026-04-23_20-17-26.jpg?v=20261005)
 
 ---
 
@@ -98,7 +98,7 @@ tags: [GraphRAG面经, LightRAG面经, RAG面试, 大模型面试, LLM面试, AI
 
 演进逻辑特别清晰：**Naive RAG 的问题是"找不准"→ Advanced RAG 把检索策略调到最好 → 但有些问题不是找文本块能解决的 → GraphRAG 换了检索范式。**
 
-![RAG三代演进：从找文本到找关系](https://file1.kamacoder.com/i/web/20260427160315.png)
+![RAG三代演进：从找文本到找关系](https://file1.kamacoder.com/i/web/20260427160315.png?v=20261005)
 
 ### 一句话定位 GraphRAG
 
@@ -175,7 +175,7 @@ GraphRAG 提供两种查询方式，对应两类完全不同的问题：
 
 **这就是 GraphRAG 的核心价值：它不是在查询时现拼，而是在索引阶段就把全局理解预先算好了。**
 
-![GraphRAG 的完整链路](https://file1.kamacoder.com/i/web/2026-04-23_20-40-57.jpg)
+![GraphRAG 的完整链路](https://file1.kamacoder.com/i/web/2026-04-23_20-40-57.jpg?v=20261005)
 
 ---
 
@@ -201,7 +201,7 @@ GraphRAG 提供两种查询方式，对应两类完全不同的问题：
 
 这意味着：**新增 10% 的文档，可能需要重跑 30-50% 的索引流程**（重新做社区检测、重新生成社区摘要）。
 
-![增量更新导致社区重组](https://file1.kamacoder.com/i/web/20260427160318.png)
+![增量更新导致社区重组](https://file1.kamacoder.com/i/web/20260427160318.png?v=20261005)
 
 微软在 2024 年 10 月推出了 DRIFT 搜索模式（Dynamic Reasoning and Inference with Flexible Traversal），这是本地查询和全局查询之外的**第三种查询方式**——先用社区摘要做全局预判，再沿着图谱做局部深挖，在成本和深度之间找平衡。
 
@@ -264,7 +264,7 @@ LightRAG 不搞社区检测那一套，它建的是一个**双层图谱**：
 
 两层图谱都带有向量嵌入，检索时走"图遍历 + 向量相似度"的混合方式。
 
-![LightRAG：双层图谱+四种查询模式](https://file1.kamacoder.com/i/web/20260427160320.png)
+![LightRAG：双层图谱+四种查询模式](https://file1.kamacoder.com/i/web/20260427160320.png?v=20261005)
 
 ### 四种查询模式
 
@@ -343,7 +343,7 @@ GraphRAG 像"先花大价钱修一条高速公路"——前期投入大，但跑
 
 面试时别只说"我用了 GraphRAG"，要说清楚**为什么选它**——你的数据规模多大、更新频率多高、查询类型偏什么、预算多少。选型的逻辑比选型本身更重要。
 
-![GraphRAG vs LightRAG 选型决策树](https://file1.kamacoder.com/i/web/20260427161003.png)
+![GraphRAG vs LightRAG 选型决策树](https://file1.kamacoder.com/i/web/20260427161003.png?v=20261005)
 
 ---
 

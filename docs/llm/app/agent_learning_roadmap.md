@@ -8,7 +8,7 @@ tags: ["大模型", "AI Agent", "学习路线"]
 # AI Agent 学习路线：程序员怎么从零学 Agent 开发，该按什么顺序学
 
 <a href="https://apidock.ai/">
-  <img src="https://file1.kamacoder.com/i/web/2026-07-10_19-29-47.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-07-10_19-29-47.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 
@@ -20,7 +20,7 @@ tags: ["大模型", "AI Agent", "学习路线"]
 
 整段路线先放在这，下面六步逐个拆：
 
-![AI Agent 学习路线：从打地基到工程兜底的六个步骤](https://file1.kamacoder.com/i/web/20260616160117_agentroadmap.png)
+![AI Agent 学习路线：从打地基到工程兜底的六个步骤](https://file1.kamacoder.com/i/web/20260616160117_agentroadmap.png?v=20261005)
 
 ## 学 Agent 之前，先承认一个事实
 

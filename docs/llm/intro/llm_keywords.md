@@ -13,7 +13,7 @@ tags: ["大模型", "应用开发"]
 
 这篇文章，我不按字母顺序讲，**按"从简单到复杂"的顺序讲**。每个概念，都是因为上一个"不够用了"，才被逼出来的。你跟着走一遍，这些词就不再是散落的名词，而是一条完整的进化线。
 
-![大模型关键词进化线](https://file1.kamacoder.com/i/web/20260430182632_01.png)
+![大模型关键词进化线](https://file1.kamacoder.com/i/web/20260430182632_01.png?v=20261005)
 
 ## 目录
 
@@ -73,7 +73,7 @@ Prompt 就是你输入给大模型的内容。你在聊天框里打"帮我写一
 
 Token 是大模型处理文本的最小单位。一个汉字通常是 1-2 个 Token，一个英文单词可能是 1-3 个 Token。代码、标点、特殊符号，各有各的切分规则。
 
-![Token切分示意](https://file1.kamacoder.com/i/web/20260430182633_02.png)
+![Token切分示意](https://file1.kamacoder.com/i/web/20260430182633_02.png?v=20261005)
 
 为什么要知道这个？因为 **大模型的一切都按 Token 计量**：
 
@@ -91,7 +91,7 @@ Token 是大模型处理文本的最小单位。一个汉字通常是 1-2 个 To
 
 而这个窗口有大小限制，这就是**上下文窗口（Context Window）**。
 
-![上下文窗口](https://file1.kamacoder.com/i/web/20260430182633_03.png)
+![上下文窗口](https://file1.kamacoder.com/i/web/20260430182633_03.png?v=20261005)
 
 比如 GPT-5.5 的上下文窗口是 1M Token，Claude Opus 4.7 是 200K，DeepSeek V4 是 1M。看起来很大，但实际用起来你会发现很快就被填满：
 
@@ -122,7 +122,7 @@ Token 是大模型处理文本的最小单位。一个汉字通常是 1-2 个 To
 
 幻觉不是 Bug，是大模型工作方式的"副产物"——它本质上是在预测"下一个最可能出现的 Token"，而不是在"检索事实"。
 
-![幻觉vs有约束](https://file1.kamacoder.com/i/web/20260430182633_04.png)
+![幻觉vs有约束](https://file1.kamacoder.com/i/web/20260430182633_04.png?v=20261005)
 
 幻觉的存在，直接催生了后面的一系列技术：
 
@@ -159,7 +159,7 @@ Token 是大模型处理文本的最小单位。一个汉字通常是 1-2 个 To
 
 **Function Calling** 就是解决这个问题的：你给模型定义一组"工具"（函数），模型在回答时可以决定调用哪个工具，你的代码负责执行，再把结果返回给模型。
 
-![Function Calling流程](https://file1.kamacoder.com/i/web/20260430182633_05.png)
+![Function Calling流程](https://file1.kamacoder.com/i/web/20260430182633_05.png?v=20261005)
 
 流程是这样的：
 
@@ -183,7 +183,7 @@ Token 是大模型处理文本的最小单位。一个汉字通常是 1-2 个 To
 
 这就是 **RAG（Retrieval-Augmented Generation）**，检索增强生成：
 
-![RAG两阶段](https://file1.kamacoder.com/i/web/20260430182634_06.png)
+![RAG两阶段](https://file1.kamacoder.com/i/web/20260430182634_06.png?v=20261005)
 
 1. **离线阶段**：把你的文档切成片段，转成向量，存进数据库
 2. **在线阶段**：用户提问时，检索最相关的片段，塞进上下文，模型基于这些片段回答
@@ -202,7 +202,7 @@ RAG 说要"检索最相关的片段"，但怎么判断"相关"？
 
 **Embedding** 就是把文本"翻译"成一组数字（向量），语义越相近的文本，向量距离越近。
 
-![Embedding向量空间](https://file1.kamacoder.com/i/web/20260430182634_07.png)
+![Embedding向量空间](https://file1.kamacoder.com/i/web/20260430182634_07.png?v=20261005)
 
 "苹果公司发布新手机"和"Apple launches new iPhone"用词完全不同，但 Embedding 之后的向量非常接近——因为语义一样。
 
@@ -230,7 +230,7 @@ RAG 说要"检索最相关的片段"，但怎么判断"相关"？
 
 没那么简单。微调和 RAG 解决的是不同的问题：
 
-![RAG vs 微调](https://file1.kamacoder.com/i/web/20260430182634_08.png)
+![RAG vs 微调](https://file1.kamacoder.com/i/web/20260430182634_08.png?v=20261005)
 
 | | RAG | 微调 |
 |---|---|---|
@@ -254,7 +254,7 @@ RAG 说要"检索最相关的片段"，但怎么判断"相关"？
 
 **Agent 就是把"你判断下一步"这件事交给模型自己做。**
 
-![Agent循环](https://file1.kamacoder.com/i/web/20260430182634_09.png)
+![Agent循环](https://file1.kamacoder.com/i/web/20260430182634_09.png?v=20261005)
 
 一个典型的 Agent 循环：
 
@@ -279,7 +279,7 @@ Agent 能调工具了，但问题来了：每接一个新工具，就要写一�
 
 **MCP（Model Context Protocol）** 就是 AI 领域的"USB-C"：一个标准化的协议，让任何模型都能用统一的方式连接外部工具和数据源。
 
-![MCP Before/After](https://file1.kamacoder.com/i/web/20260430182635_10.png)
+![MCP Before/After](https://file1.kamacoder.com/i/web/20260430182635_10.png?v=20261005)
 
 有了 MCP：
 - 工具开发者只需要实现一次 MCP 协议，所有支持 MCP 的模型都能用

@@ -37,7 +37,7 @@ tags: [生产级Agent, Harness Engineering, Agent架构, 大模型面试, AI求�
 
 不是加法，是乘法。任何一项接近零，最后的落地效果都会接近零。
 
-![Demo 能跑，上线翻车](https://file1.kamacoder.com/i/web/2026-07-21_17-54-52.jpg)
+![Demo 能跑，上线翻车](https://file1.kamacoder.com/i/web/2026-07-21_17-54-52.jpg?v=20261005)
 
 
 ## 一、生产级的标准，不是“它成功过一次”
@@ -164,7 +164,7 @@ Human in the Loop 不是在页面上摆一个“找人工”按钮。
 2. 人接手时能看到哪些证据；
 3. 人处理完以后，Agent 从哪里继续。
 
-![生产级 Agent 不是只装一个聪明大脑](https://file1.kamacoder.com/i/web/2026-07-21_17-55-05.jpg)
+![生产级 Agent 不是只装一个聪明大脑](https://file1.kamacoder.com/i/web/2026-07-21_17-55-05.jpg?v=20261005)
 
 
 ## 三、Harness 工程：把“希望模型做到”变成“系统保证做到”
@@ -263,7 +263,7 @@ Agent 越自主，任务规格越不能模糊。
 
 **每次失败都让 Harness 变强一点，这才叫工程复利。**
 
-![Harness 把失败变成护栏](https://file1.kamacoder.com/i/web/2026-07-21_17-55-21.jpg)
+![Harness 把失败变成护栏](https://file1.kamacoder.com/i/web/2026-07-21_17-55-21.jpg?v=20261005)
 卡通插画提示词 3：Harness 把失败变成护栏
 
 
@@ -414,7 +414,7 @@ Agent 最后有没有创造价值，场景团队最清楚。
 
 这比“所有 Agent 都归 AI 团队”靠谱得多。
 
-![生产级 Agent 是一支维修站团队](https://file1.kamacoder.com/i/web/2026-07-21_17-55-33.jpg)
+![生产级 Agent 是一支维修站团队](https://file1.kamacoder.com/i/web/2026-07-21_17-55-33.jpg?v=20261005)
 
 
 ## 七、人才怎么变：稀缺的不是“最会写 Prompt 的人”
@@ -475,7 +475,7 @@ Agent 不是技术团队自己玩出来的。
 
 **真正稀缺的，不是能写一句神奇 Prompt 的人，而是能把组织经验变成 Agent 可读取、可执行、可验证资产的人。**
 
-![工程师从亲自搬砖变成设计工厂](https://file1.kamacoder.com/i/web/2026-07-21_17-55-49.jpg)
+![工程师从亲自搬砖变成设计工厂](https://file1.kamacoder.com/i/web/2026-07-21_17-55-49.jpg?v=20261005)
 
 
 ## 八、企业从 0 到 1，应该按什么顺序落地
@@ -545,7 +545,7 @@ MVP 阶段的目标不是追求全自动，而是看清失败分布。
 
 业务差异留在场景层，通用能力沉到平台层。
 
-![Agent 自治是一段有闸门的上坡路](https://file1.kamacoder.com/i/web/2026-07-21_17-56-09.jpg)
+![Agent 自治是一段有闸门的上坡路](https://file1.kamacoder.com/i/web/2026-07-21_17-56-09.jpg?v=20261005)
 
 
 ## 九、面试时怎么回答“生产级 Agent 怎么设计”

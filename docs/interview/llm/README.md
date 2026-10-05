@@ -27,7 +27,7 @@ tags:
 # 大模型面经汇总：Agent、RAG、Transformer、AI编程大厂面试题
 
 <a href="https://programmercarl.com/xunlian/damoxing.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-03-02_18-13-50.jpg" style="width:100%;cursor:pointer;" alt="卡码大模型应用开发训练营">
+  <img src="https://file1.kamacoder.com/i/web/2026-03-02_18-13-50.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="卡码大模型应用开发训练营">
 </a>
 
 这里整理了 2026 年**大模型方向的高频面试题和真实面经**，覆盖 **Agent、RAG、Transformer、模型微调、AI 编程（Vibe Coding / Claude Code）** 五大块。不管你投的是大模型应用开发、Agent 开发、LLM 工程还是 AI 后端，这些都是大厂面试官反复深挖的考点。

@@ -13,13 +13,13 @@ tags: [Claude, 大模型发布, AI编程]
 
 昨天（2026年4月16日）日常逛一下X，结果就被打脸了。
 
-![Claude Opus 4.7发布信息截图](https://file1.kamacoder.com/i/web/2026-04-17_09-41-23.jpg)
+![Claude Opus 4.7发布信息截图](https://file1.kamacoder.com/i/web/2026-04-17_09-41-23.jpg?v=20261005)
 
 Anthropic发布了Claude Opus 4.7！ 
 
 现在CLI端，model里还不能选 4.7，还是只能用4.6，估计这两天就可以切了。
 
-![Claude Opus 4.7能力对比截图](https://file1.kamacoder.com/i/web/c73aeb2bce23c755070acc57957b8a82.png)
+![Claude Opus 4.7能力对比截图](https://file1.kamacoder.com/i/web/c73aeb2bce23c755070acc57957b8a82.png?v=20261005)
 
 网页版可以切 4.7了，不过还是只有agent才能发挥模型的实力。web端要差很多。
 
@@ -40,7 +40,7 @@ Anthropic发布了Claude Opus 4.7！
 
 先看数据：
 
-![Opus 4.7 vs 4.6 核心升级对比](https://file1.kamacoder.com/i/web/20260417093411_opus47_compare_v2.png)
+![Opus 4.7 vs 4.6 核心升级对比](https://file1.kamacoder.com/i/web/20260417093411_opus47_compare_v2.png?v=20261005)
 
 几个最硬的数字：
 
@@ -89,7 +89,7 @@ Opus 4.7引入了一个新的effort等级：**xhigh**（extra high），插在hi
 
 5个等级，各自适合什么场景：
 
-![Effort等级选择指南](https://file1.kamacoder.com/i/web/20260417093413_opus47_effort_v2.png)
+![Effort等级选择指南](https://file1.kamacoder.com/i/web/20260417093413_opus47_effort_v2.png?v=20261005)
 
 **xhigh为什么重要？**
 

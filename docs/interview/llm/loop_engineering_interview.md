@@ -19,7 +19,7 @@ faq:
 # Loop详解：从ReAct到Loop Engineering，Agent到底在循环什么
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 前面在 [Agent 大厂面试题汇总](./agent_interview.md) 里讲过 ReAct，把它当作四种 Agent 工作模式之一，知道了"思考-行动-观察"这个三步循环；在 [Claude Code 深度拆解](./claude_code_deep_dive.md) 里又看到，一个真实的 AI 编程工具，核心就是一个 while 循环。
@@ -118,7 +118,7 @@ Loop Engineering 时代，循环是"系统"——Prompt 怎么写当然还重要
 好的答案："表面上循环的是思考-行动-观察，但工程上真正在每一圈流动和变化的，是五类变量。Loop Engineering 就是分别治理这五个。" 然后逐个展开。
 
 <!-- drawio源文件: ./drawio/loop_01_the_loop.drawio -->
-![Agent Loop：循环的不是文本，是一圈圈被治理的系统状态——预算、工具、上下文、状态、终止五个治理点挂在循环的各个环节上](https://file1.kamacoder.com/i/web/20260623113716_loop01.png)
+![Agent Loop：循环的不是文本，是一圈圈被治理的系统状态——预算、工具、上下文、状态、终止五个治理点挂在循环的各个环节上](https://file1.kamacoder.com/i/web/20260623113716_loop01.png?v=20261005)
 
 ### 变量一：上下文（Context）——循环里要选、要压、要截
 
@@ -177,7 +177,7 @@ Loop Engineering 时代，循环是"系统"——Prompt 怎么写当然还重要
 把前面拆的东西收成一张对比，面试时能照着这个框架答：
 
 <!-- drawio源文件: ./drawio/loop_02_naked_vs_controlled.drawio -->
-![同一个循环内核，差的是外面这套治理：裸 ReAct 循环发散，上下文越滚越大、停不下来；Loop Engineering 循环收敛，预算受控、状态独立、判断收敛退出](https://file1.kamacoder.com/i/web/20260623113717_loop02.png)
+![同一个循环内核，差的是外面这套治理：裸 ReAct 循环发散，上下文越滚越大、停不下来；Loop Engineering 循环收敛，预算受控、状态独立、判断收敛退出](https://file1.kamacoder.com/i/web/20260623113717_loop02.png?v=20261005)
 
 | 维度 | ReAct（2022，Prompt 范式） | Loop Engineering（生产范式） |
 |------|---------------------------|------------------------------|

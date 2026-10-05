@@ -72,7 +72,7 @@ tags:
 
 生怕 Fable 5 太吞金，我新建了一个空文件夹，启动 Fable 5：
 
-![在空文件夹中启动Claude Fable 5进行简单测试](https://file1.kamacoder.com/i/web/2026-07-02_17-58-17.jpg)
+![在空文件夹中启动Claude Fable 5进行简单测试](https://file1.kamacoder.com/i/web/2026-07-02_17-58-17.jpg?v=20261005)
 
 为什么不用现有项目？因为 Claude 一启动，就会读取本地 `CLAUDE.md`，顺便把项目文档扫一遍。
 
@@ -82,7 +82,7 @@ tags:
 
 如上图，我就发了一句话。token 消耗，计费如图：
 
-![Claude Fable 5一次简单对话产生的token消耗和账单](https://file1.kamacoder.com/i/web/2026-07-02_18-04-36.jpg)
+![Claude Fable 5一次简单对话产生的token消耗和账单](https://file1.kamacoder.com/i/web/2026-07-02_18-04-36.jpg?v=20261005)
 
 0.3 刀就花出去了。
 

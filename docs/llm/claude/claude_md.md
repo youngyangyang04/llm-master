@@ -153,7 +153,7 @@ Claude Code 读到它之后，里面的规则会参与后续推理。
 不是越长越好。
 
 <!-- drawio源文件: ./drawio/claude_md_01_positioning.drawio -->
-![图1：临时聊天规则会被上下文稀释，CLAUDE.md 能把长期规则沉淀成稳定约束](https://file1.kamacoder.com/i/web/20260527112101_claude_md_01_positioning_compressed.png)
+![图1：临时聊天规则会被上下文稀释，CLAUDE.md 能把长期规则沉淀成稳定约束](https://file1.kamacoder.com/i/web/20260527112101_claude_md_01_positioning_compressed.png?v=20261005)
 
 ## 三、它和 README、Prompt、Memory 有什么区别？
 
@@ -212,7 +212,7 @@ Claude Code 的 memory 有多种层级，比如用户级、项目级、企业级
 团队共享规则，才适合放项目里的 `CLAUDE.md`。
 
 <!-- drawio源文件: ./drawio/claude_md_02_boundaries.drawio -->
-![图2：不同类型的信息要分流到 README、Prompt、CLAUDE.md 和用户记忆](https://file1.kamacoder.com/i/web/20260527112102_claude_md_02_boundaries_compressed.png)
+![图2：不同类型的信息要分流到 README、Prompt、CLAUDE.md 和用户记忆](https://file1.kamacoder.com/i/web/20260527112102_claude_md_02_boundaries_compressed.png?v=20261005)
 
 一句话区分：
 
@@ -323,7 +323,7 @@ project/
 能引用关键文档很好，滥用 import 就会把上下文变成垃圾桶。
 
 <!-- drawio源文件: ./drawio/claude_md_03_scope.drawio -->
-![图3：多级 CLAUDE.md 按任务路径加载，避免无关模块规则污染上下文](https://file1.kamacoder.com/i/web/20260527112104_claude_md_03_scope_compressed.png)
+![图3：多级 CLAUDE.md 按任务路径加载，避免无关模块规则污染上下文](https://file1.kamacoder.com/i/web/20260527112104_claude_md_03_scope_compressed.png?v=20261005)
 
 ## 五、什么内容值得写进去？
 
@@ -469,7 +469,7 @@ AI 不知道。
 放在 `CLAUDE.md` 里，价值很高。
 
 <!-- drawio源文件: ./drawio/claude_md_04_decision.drawio -->
-![图4：一条信息能不能写进 CLAUDE.md，要经过反复性、行动性和可维护性判断](https://file1.kamacoder.com/i/web/20260527112106_claude_md_04_decision_compressed.png)
+![图4：一条信息能不能写进 CLAUDE.md，要经过反复性、行动性和可维护性判断](https://file1.kamacoder.com/i/web/20260527112106_claude_md_04_decision_compressed.png?v=20261005)
 
 ## 六、什么内容不要写进去？
 
@@ -667,7 +667,7 @@ repo/
 **不是让模型看见更多，而是让它看见更有价值的信息。**
 
 <!-- drawio源文件: ./drawio/claude_md_05_context_budget.drawio -->
-![图5：大项目拆分 CLAUDE.md 的核心价值是减少无关规则占用上下文预算](https://file1.kamacoder.com/i/web/20260527112108_claude_md_05_context_budget_compressed.png)
+![图5：大项目拆分 CLAUDE.md 的核心价值是减少无关规则占用上下文预算](https://file1.kamacoder.com/i/web/20260527112108_claude_md_05_context_budget_compressed.png?v=20261005)
 
 ## 九、CLAUDE.md 和上下文窗口有什么关系？
 

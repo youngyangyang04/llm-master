@@ -59,7 +59,7 @@ BERT、GPT、T5、Llama 这些名字看起来完全不同的模型，为什么�
 ## 二、为什么 RNN 不适合今天的大模型？
 
 
-![RNN处理序列信息的局限示意图](https://file1.kamacoder.com/i/algo/efd64033-a7c6-49de-9ca7-9416a9c8bc86.webp)
+![RNN处理序列信息的局限示意图](https://file1.kamacoder.com/i/algo/efd64033-a7c6-49de-9ca7-9416a9c8bc86.webp?v=20261005)
 
 
 
@@ -101,7 +101,7 @@ RNN 还有一个经典问题：  一句话太长时，前面的信息传到后�
 
 ## 三、为什么 CNN 也没有成为大模型的主流底座？
 
-![Transformer并行建模长距离依赖示意图](https://file1.kamacoder.com/i/algo/a34ac634-854a-44c9-81bb-a40d66179d59.webp)
+![Transformer并行建模长距离依赖示意图](https://file1.kamacoder.com/i/algo/a34ac634-854a-44c9-81bb-a40d66179d59.webp?v=20261005)
 
 
 那有人又会问：

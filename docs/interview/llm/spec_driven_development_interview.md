@@ -55,7 +55,7 @@ Spec-Driven Development，简称 SDD，想做的是另一件事：
 
 现在是“先把意图变成可检查的规约，再让 Coding Agent 沿着规约执行”。
 
-![想法到代码之间，不再靠猜](https://file1.kamacoder.com/i/web/2026-07-20_15-02-27.jpg)
+![想法到代码之间，不再靠猜](https://file1.kamacoder.com/i/web/2026-07-20_15-02-27.jpg?v=20261005)
 
 
 ## 一、Spec-Driven Development 到底是什么？
@@ -158,7 +158,7 @@ GitHub 在 2025 年 9 月发布开源 [Spec Kit](https://github.blog/ai-and-ml/g
 
 规约从“给人看的文档”，开始变成“人和 Agent 共同执行的接口”。
 
-![AI把模糊需求里的猜测批量放大](https://file1.kamacoder.com/i/web/2026-07-20_15-03-48.jpg)
+![AI把模糊需求里的猜测批量放大](https://file1.kamacoder.com/i/web/2026-07-20_15-03-48.jpg?v=20261005)
 
 
 ## 三、没有规约，AI 开发最容易出现什么问题？
@@ -365,7 +365,7 @@ GitHub Spec Kit 当前的基础流程是 `Spec → Plan → Tasks → Implement`
  └────── 发现与反馈回流 ──────┘
 ```
 
-![规约驱动不是瀑布，而是一条有反馈的装配线](https://file1.kamacoder.com/i/web/2026-07-20_15-04-06.jpg)
+![规约驱动不是瀑布，而是一条有反馈的装配线](https://file1.kamacoder.com/i/web/2026-07-20_15-04-06.jpg?v=20261005)
 
 
 ## 五、SDD 为什么重要？
@@ -433,7 +433,7 @@ AI 越来越擅长把一个明确方案翻译成代码。
 
 这会显著降低“产品只改了一个规则，开发漏改三个地方”的概率。
 
-![AI越快，越需要规约当护栏](https://file1.kamacoder.com/i/web/2026-07-20_15-04-20.jpg)
+![AI越快，越需要规约当护栏](https://file1.kamacoder.com/i/web/2026-07-20_15-04-20.jpg?v=20261005)
 
 
 ## 六、SDD 和 PRD、TDD、BDD、瀑布模型有什么区别？
@@ -524,7 +524,7 @@ BDD 强调用业务可读的场景描述系统行为，常用 Given-When-Then �
 
 **需求的不确定性越高、改动的影响半径越大、错误代价越高，规约就应该越完整。**
 
-![不同风险的任务走不同通道](https://file1.kamacoder.com/i/web/2026-07-20_15-04-37.jpg)
+![不同风险的任务走不同通道](https://file1.kamacoder.com/i/web/2026-07-20_15-04-37.jpg?v=20261005)
 
 ## 九、落地 SDD 最容易踩哪些坑？
 
@@ -650,7 +650,7 @@ AI 可以帮你发现遗漏、整理结构，但业务目标和取舍必须由�
 
 **人负责定义问题、做业务和技术取舍、审查规约、处理冲突并对验收负责；Agent 负责研究、拆解、实现和执行验证。AI 可以生成规约草稿，但不能替团队决定什么才是正确需求。**
 
-![人负责方向与验收，AI负责高效施工](https://file1.kamacoder.com/i/web/2026-07-20_15-04-50.jpg)
+![人负责方向与验收，AI负责高效施工](https://file1.kamacoder.com/i/web/2026-07-20_15-04-50.jpg?v=20261005)
 
 ## 最后
 

@@ -8,7 +8,7 @@ tags: [Claude, Claude Code, AI编程, 大模型动态, 账号风控]
 # Claude大规模封号：Claude账号被封后，我又被迫切回中转站
 
 <a href="https://notes.kamacoder.com/qita/0021.gpt-5-6-sol-terra-luna-domestic-guide.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 
@@ -22,13 +22,13 @@ tags: [Claude, Claude Code, AI编程, 大模型动态, 账号风控]
 
 结果今天早上起来，果然有惊喜：
 
-![Claude账号登录后提示账号被封禁](https://file1.kamacoder.com/i/web/2026-06-28_18-32-60.jpg)
+![Claude账号登录后提示账号被封禁](https://file1.kamacoder.com/i/web/2026-06-28_18-32-60.jpg?v=20261005)
 
 上午又去注册邮箱，又去注册一个Claude，心想着，养一养吧，先别上来就冲pro。
 
 结果过了一个小时。喜提 account_banned
 
-![新注册Claude账号一小时后再次出现account_banned封禁提示](https://file1.kamacoder.com/i/web/2026-06-28_18-32-61.jpg)
+![新注册Claude账号一小时后再次出现account_banned封禁提示](https://file1.kamacoder.com/i/web/2026-06-28_18-32-61.jpg?v=20261005)
 
 绝了，妥妥的AI难民
 

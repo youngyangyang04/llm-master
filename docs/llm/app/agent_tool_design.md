@@ -8,7 +8,7 @@ tags: ["大模型应用", "AI Agent", "工具调用", "大模型面试"]
 # 工具设计决定 Agent 上限
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 前几篇我们把 Agent 的基础逻辑讲清楚了。
@@ -39,7 +39,7 @@ tags: ["大模型应用", "AI Agent", "工具调用", "大模型面试"]
 
 这篇就专门讲：**Agent 的工具到底应该怎么设计。**
 
-![工具设计决定 Agent 上限：含糊工具让 Agent 乱猜，清晰工具让 Agent 稳定行动](https://file1.kamacoder.com/i/web/20260520110147_agent_tool_design_01_bad_vs_good_tool_compressed.png)
+![工具设计决定 Agent 上限：含糊工具让 Agent 乱猜，清晰工具让 Agent 稳定行动](https://file1.kamacoder.com/i/web/20260520110147_agent_tool_design_01_bad_vs_good_tool_compressed.png?v=20261005)
 
 ## 一、工具不是 API 列表，而是 Agent 的行动边界
 
@@ -180,7 +180,7 @@ Agent 工具是给模型决策用的。
 
 **工具描述就是 Agent 的使用说明书。**
 
-![工具描述要写出使用边界：能做什么、不能做什么、什么时候优先用](https://file1.kamacoder.com/i/web/20260520110153_agent_tool_design_05_description_boundary_compressed.png)
+![工具描述要写出使用边界：能做什么、不能做什么、什么时候优先用](https://file1.kamacoder.com/i/web/20260520110153_agent_tool_design_05_description_boundary_compressed.png?v=20261005)
 
 ## 三、参数设计：别把脏活都丢给模型
 
@@ -270,7 +270,7 @@ Agent 工具是给模型决策用的。
 
 **它是为了把模型的自由度约束在合理范围内。**
 
-![参数 Schema 把模型自由度收窄到可控范围](https://file1.kamacoder.com/i/web/20260520110154_agent_tool_design_06_parameter_schema_funnel_compressed.png)
+![参数 Schema 把模型自由度收窄到可控范围](https://file1.kamacoder.com/i/web/20260520110154_agent_tool_design_06_parameter_schema_funnel_compressed.png?v=20261005)
 
 参数设计有几个很实用的原则。
 
@@ -433,7 +433,7 @@ Agent 很喜欢写模糊表达：
 
 工具返回值设计，至少要包含三类信息。
 
-![工具返回值要能驱动 Agent 下一步判断](https://file1.kamacoder.com/i/web/20260520110156_agent_tool_design_07_return_value_decision_compressed.png)
+![工具返回值要能驱动 Agent 下一步判断](https://file1.kamacoder.com/i/web/20260520110156_agent_tool_design_07_return_value_decision_compressed.png?v=20261005)
 
 **第一，状态字段。**
 
@@ -482,7 +482,7 @@ Agent 很喜欢写模糊表达：
 
 把这些动作提示写在工具返回里，比让模型凭空猜稳定得多。
 
-![好工具是一份清晰契约：描述、参数、返回值和错误语义缺一不可](https://file1.kamacoder.com/i/web/20260520110149_agent_tool_design_02_tool_contract_compressed.png)
+![好工具是一份清晰契约：描述、参数、返回值和错误语义缺一不可](https://file1.kamacoder.com/i/web/20260520110149_agent_tool_design_02_tool_contract_compressed.png?v=20261005)
 
 ## 五、工具粒度：太细会跑断，太粗会失控
 
@@ -569,7 +569,7 @@ Agent 调用之后，里面到底做了什么，它不知道。
 
 这句话很好用。
 
-![工具粒度：太细会跑断，太粗会失控](https://file1.kamacoder.com/i/web/20260520110150_agent_tool_design_03_tool_granularity_compressed.png)
+![工具粒度：太细会跑断，太粗会失控](https://file1.kamacoder.com/i/web/20260520110150_agent_tool_design_03_tool_granularity_compressed.png?v=20261005)
 
 ## 六、有副作用的工具，必须单独设计边界
 
@@ -689,7 +689,7 @@ Agent 工具大致可以分两类：
 
 这就是工具边界带来的稳定性。
 
-![有副作用的工具必须加边界：先草稿、再确认、最后执行和审计](https://file1.kamacoder.com/i/web/20260520110152_agent_tool_design_04_side_effect_boundary_compressed.png)
+![有副作用的工具必须加边界：先草稿、再确认、最后执行和审计](https://file1.kamacoder.com/i/web/20260520110152_agent_tool_design_04_side_effect_boundary_compressed.png?v=20261005)
 
 ## 七、错误信息要能让 Agent 恢复
 
@@ -752,7 +752,7 @@ Agent 可以根据错误类型决定下一步：
 
 而是从工具返回值太差开始的。
 
-![错误信息要告诉 Agent 怎么恢复](https://file1.kamacoder.com/i/web/20260520110158_agent_tool_design_08_error_recovery_compressed.png)
+![错误信息要告诉 Agent 怎么恢复](https://file1.kamacoder.com/i/web/20260520110158_agent_tool_design_08_error_recovery_compressed.png?v=20261005)
 
 ## 八、不要一次性把所有工具都塞给 Agent
 
@@ -810,7 +810,7 @@ Workflow 可以先判断任务类型，再给 Agent 分配对应工具箱。
 
 这样会稳很多。
 
-![动态工具箱：按任务类型给 Agent 分配相关工具](https://file1.kamacoder.com/i/web/20260520110200_agent_tool_design_09_dynamic_toolbox_compressed.png)
+![动态工具箱：按任务类型给 Agent 分配相关工具](https://file1.kamacoder.com/i/web/20260520110200_agent_tool_design_09_dynamic_toolbox_compressed.png?v=20261005)
 
 ## 九、工具设计不好，Agent 会出现哪些症状
 

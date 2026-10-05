@@ -8,7 +8,7 @@ tags: [Claude Code面经, AI编程面试, Agent面经, RAG面试, 大模型面�
 # Claude Code为什么不用RAG检索代码？Grep、Glob、Read与代码检索设计哲学
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 最近[知识星球](https://programmercarl.com/other/kstar.html)有录友问了一个很容易被面试官拿来深挖的问题：
@@ -119,7 +119,7 @@ grep 本身很普通。
 
 <!-- drawio源文件: ./drawio/claude_grep_01_code_search_problem.drawio -->
 
-![代码检索要解决的是符号、入口、调用链和最新状态](https://file1.kamacoder.com/i/web/20260523142701_claude_grep_01_code_search_problem_compressed.png)
+![代码检索要解决的是符号、入口、调用链和最新状态](https://file1.kamacoder.com/i/web/20260523142701_claude_grep_01_code_search_problem_compressed.png?v=20261005)
 
 
 ## 二、代码检索和文档检索，根本不是一类问题
@@ -256,7 +256,7 @@ RAG 的第一步是切块。
 
 <!-- drawio源文件: ./drawio/claude_grep_07_exact_vs_vector.drawio -->
 
-![向量召回相似函数和 grep 精确命中目标函数的区别](https://file1.kamacoder.com/i/web/20260523142710_claude_grep_07_exact_vs_vector_compressed.png)
+![向量召回相似函数和 grep 精确命中目标函数的区别](https://file1.kamacoder.com/i/web/20260523142710_claude_grep_07_exact_vs_vector_compressed.png?v=20261005)
 
 没有底线，召回越多越乱。
 
@@ -288,7 +288,7 @@ RAG 的第一步是切块。
 
 <!-- drawio源文件: ./drawio/claude_grep_08_index_stale.drawio -->
 
-![RAG索引滞后和Read实时读取磁盘的差异](https://file1.kamacoder.com/i/web/20260523142712_claude_grep_08_index_stale_compressed.png)
+![RAG索引滞后和Read实时读取磁盘的差异](https://file1.kamacoder.com/i/web/20260523142712_claude_grep_08_index_stale_compressed.png?v=20261005)
 
 ### 4. Top-K 是一次性下注，Agent 需要边走边看
 
@@ -324,7 +324,7 @@ RAG 的第一步是切块。
 
 <!-- drawio源文件: ./drawio/claude_grep_02_rag_pain_points.drawio -->
 
-![RAG Chunking 会把代码函数结构切碎](https://file1.kamacoder.com/i/web/20260523142703_claude_grep_02_rag_pain_points_compressed.png)
+![RAG Chunking 会把代码函数结构切碎](https://file1.kamacoder.com/i/web/20260523142703_claude_grep_02_rag_pain_points_compressed.png?v=20261005)
 
 
 ## 四、Claude Code 为什么把检索拆成三件套
@@ -379,7 +379,7 @@ Claude Code 把这几个动作拆成专用工具，至少有三层考虑。
 
 <!-- drawio源文件: ./drawio/claude_grep_10_controlled_tool.drawio -->
 
-![专用Grep工具相比万能Bash的权限边界和输出控制](https://file1.kamacoder.com/i/web/20260523142714_claude_grep_10_controlled_tool_compressed.png)
+![专用Grep工具相比万能Bash的权限边界和输出控制](https://file1.kamacoder.com/i/web/20260523142714_claude_grep_10_controlled_tool_compressed.png?v=20261005)
 
 
 ## 五、Grep 不是简单 grep，而是受控的代码搜索工具
@@ -470,7 +470,7 @@ Grep 和 Glob 配合，就能让模型逐步缩小范围。
 
 <!-- drawio源文件: ./drawio/claude_grep_03_tool_triad.drawio -->
 
-![Glob、Grep、Read三件套逐步收敛代码上下文](https://file1.kamacoder.com/i/web/20260523142705_claude_grep_03_tool_triad_compressed.png)
+![Glob、Grep、Read三件套逐步收敛代码上下文](https://file1.kamacoder.com/i/web/20260523142705_claude_grep_03_tool_triad_compressed.png?v=20261005)
 
 
 ## 六、Glob 和 Read 解决的是"文件入口"和"上下文边界"
@@ -560,7 +560,7 @@ Claude Code 大概率不是直接写代码。
 
 <!-- drawio源文件: ./drawio/claude_grep_09_login_trace.drawio -->
 
-![登录接口加验证码任务的代码检索轨迹](https://file1.kamacoder.com/i/web/20260523142713_claude_grep_09_login_trace_compressed.png)
+![登录接口加验证码任务的代码检索轨迹](https://file1.kamacoder.com/i/web/20260523142713_claude_grep_09_login_trace_compressed.png?v=20261005)
 
 
 ## 七、真正关键的是多轮循环，不是某个工具
@@ -623,7 +623,7 @@ Agent 检索是：
 
 <!-- drawio源文件: ./drawio/claude_grep_04_agent_loop_vs_rag.drawio -->
 
-![RAG一次性Top-K和Agent多轮检索的差异](https://file1.kamacoder.com/i/web/20260523142706_claude_grep_04_agent_loop_vs_rag_compressed.png)
+![RAG一次性Top-K和Agent多轮检索的差异](https://file1.kamacoder.com/i/web/20260523142706_claude_grep_04_agent_loop_vs_rag_compressed.png?v=20261005)
 
 
 ## 八、子 Agent：把探索过程隔离出去
@@ -722,7 +722,7 @@ Anthropic 官方文档也明确讲了 subagents 的价值：子 Agent 有独立�
 
 <!-- drawio源文件: ./drawio/claude_grep_05_subagent_isolation.drawio -->
 
-![子Agent隔离搜索噪声并向主Agent返回压缩结论](https://file1.kamacoder.com/i/web/20260523142707_claude_grep_05_subagent_isolation_compressed.png)
+![子Agent隔离搜索噪声并向主Agent返回压缩结论](https://file1.kamacoder.com/i/web/20260523142707_claude_grep_05_subagent_isolation_compressed.png?v=20261005)
 
 
 ## 九、grep 方案也有边界，什么时候 RAG 仍然有价值
@@ -827,7 +827,7 @@ RAG 可以承载长期知识。
 
 <!-- drawio源文件: ./drawio/claude_grep_06_when_to_use_what.drawio -->
 
-![grep、RAG和混合检索的适用场景决策图](https://file1.kamacoder.com/i/web/20260523142709_claude_grep_06_when_to_use_what_compressed.png)
+![grep、RAG和混合检索的适用场景决策图](https://file1.kamacoder.com/i/web/20260523142709_claude_grep_06_when_to_use_what_compressed.png?v=20261005)
 
 
 ## 十、面试怎么答

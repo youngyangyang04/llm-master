@@ -8,7 +8,7 @@ tags: [大模型应用, AI Agent, Multi-Agent, 上下文工程, Token治理, 大
 # 多Agent上下文、消息和Token怎么治理
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[《Planner、Worker、Reviewer怎么分工》](./multi_agent_roles.md)讲了角色边界：Planner定义任务，Worker交付Artifact和证据，Reviewer负责验收，编排器执行硬约束。
@@ -50,7 +50,7 @@ tags: [大模型应用, AI Agent, Multi-Agent, 上下文工程, Token治理, 大
 
 <!-- drawio源文件: ./drawio/multi_agent_context_governance_01_context_message_budget.drawio -->
 
-![多Agent上下文治理链路](https://file1.kamacoder.com/i/web/20260908103526.png)
+![多Agent上下文治理链路](https://file1.kamacoder.com/i/web/20260908103526.png?v=20261005)
 
 这张图回答的是：一个子任务从编排器派发到最终汇总，如何通过独立Thread隔离过程、通过Artifact与事件引用交接结果，并让所有并行分支共同受全局预算和递归边界约束。
 
@@ -70,7 +70,7 @@ A的一句“可能是连接池问题”会进入B的上下文，B后面更容�
 
 **共享历史会让并行探索变成相互暗示，多个Agent看似独立，错误却高度相关。**
 
-![多Agent共享历史混乱](https://file1.kamacoder.com/i/web/20260908111558.jpg)
+![多Agent共享历史混乱](https://file1.kamacoder.com/i/web/20260908111558.jpg?v=20261005)
 
 更稳的做法是每个Agent维护独立Thread：
 
@@ -200,7 +200,7 @@ Worker A在10:00:03完成，Worker B在10:00:02完成，并不能说明B的结�
 
 多Agent真正消耗的是一整棵任务树：
 
-![多Agent预算闸门](https://file1.kamacoder.com/i/web/20260908111601.jpg)
+![多Agent预算闸门](https://file1.kamacoder.com/i/web/20260908111601.jpg?v=20261005)
 
 ```text
 总消耗 = 根Agent输入输出

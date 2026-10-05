@@ -8,7 +8,7 @@ tags: ["大模型应用", "AI Agent", "Workflow", "大模型面试"]
 # Agent vs Workflow：什么时候根本不需要 Agent？
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 前两篇我们把 Agent 的基础讲了一遍。
@@ -31,7 +31,7 @@ tags: ["大模型应用", "AI Agent", "Workflow", "大模型面试"]
 
 **Agent 和 Workflow 到底怎么选？什么时候根本不需要 Agent？**
 
-![Agent vs Workflow：选型看的是路径确定性](https://file1.kamacoder.com/i/web/20260517200409_agent_workflow_01_decision_overview_compressed.png)
+![Agent vs Workflow：选型看的是路径确定性](https://file1.kamacoder.com/i/web/20260517200409_agent_workflow_01_decision_overview_compressed.png?v=20261005)
 
 ## 一、先说结论：流程能写死，就优先 Workflow
 
@@ -112,7 +112,7 @@ Workflow 的核心价值，是把业务流程变成一条可控链路。
 
 而 Workflow 的好处是：**规则一旦写清楚，每次都会稳定执行。**
 
-![Workflow：规则分支不是 Agent，能写清楚就固定执行](https://file1.kamacoder.com/i/web/20260517200412_agent_workflow_02_workflow_refund_compressed.png)
+![Workflow：规则分支不是 Agent，能写清楚就固定执行](https://file1.kamacoder.com/i/web/20260517200412_agent_workflow_02_workflow_refund_compressed.png?v=20261005)
 
 ## 三、Agent 解决的是“路径不确定时动态决策”
 
@@ -163,7 +163,7 @@ Workflow 的核心价值，是把业务流程变成一条可控链路。
 
 **路径不确定、需要中途判断、需要多工具探索，才考虑 Agent。**
 
-![Agent：路径不确定时，根据结果继续探索](https://file1.kamacoder.com/i/web/20260517200414_agent_workflow_03_agent_open_fault_compressed.png)
+![Agent：路径不确定时，根据结果继续探索](https://file1.kamacoder.com/i/web/20260517200414_agent_workflow_03_agent_open_fault_compressed.png?v=20261005)
 
 ## 四、别把“有分支”误判成“需要 Agent”
 
@@ -283,7 +283,7 @@ Agent 出问题，经常要看整条 trace。
 
 **Agent 的自由度更高，也意味着你要付出更多成本去约束它。**
 
-![过度 Agent 化：把简单流程做复杂，系统会变贵变慢变难控](https://file1.kamacoder.com/i/web/20260517200416_agent_workflow_04_over_agentization_compressed.png)
+![过度 Agent 化：把简单流程做复杂，系统会变贵变慢变难控](https://file1.kamacoder.com/i/web/20260517200416_agent_workflow_04_over_agentization_compressed.png?v=20261005)
 
 ## 六、一个简单判断：这件事能不能画成固定流程图
 
@@ -323,7 +323,7 @@ Agent 出问题，经常要看整条 trace。
 
 这时 Agent 才有意义。
 
-![一个简单判断：这件事该不该上 Agent](https://file1.kamacoder.com/i/web/20260517200418_agent_workflow_05_selection_tree_compressed.png)
+![一个简单判断：这件事该不该上 Agent](https://file1.kamacoder.com/i/web/20260517200418_agent_workflow_05_selection_tree_compressed.png?v=20261005)
 
 ## 七、最稳的方案，往往是 Workflow + Agent
 
@@ -369,7 +369,7 @@ Agent 出问题，经常要看整条 trace。
 
 让它在真正需要判断的地方发挥作用。
 
-![最稳的方案：Workflow 控主流程，Agent 处理开放节点](https://file1.kamacoder.com/i/web/20260517200419_agent_workflow_06_hybrid_architecture_compressed.png)
+![最稳的方案：Workflow 控主流程，Agent 处理开放节点](https://file1.kamacoder.com/i/web/20260517200419_agent_workflow_06_hybrid_architecture_compressed.png?v=20261005)
 
 ## 八、面试时怎么回答 Agent vs Workflow
 

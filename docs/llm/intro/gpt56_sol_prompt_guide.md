@@ -11,7 +11,7 @@ tags: [GPT-5.6, OpenAI, Prompt工程, AI编程, Agent, 大模型应用]
 
 OpenAI 搞 Codex 的大佬已经提醒大家了，之前用 GPT-5.5 的提示词，不再适用于 GPT 5.6 ，同时他也给出官方  Prompt 指南
 
-![](https://file1.kamacoder.com/i/web/2026-07-23_16-38-48.jpg) 
+![](https://file1.kamacoder.com/i/web/2026-07-23_16-38-48.jpg?v=20261005) 
 
 很多录友把模型换到GPT-5.6 Sol之后，Prompt一个字没动。
 
@@ -35,7 +35,7 @@ GPT-5.6 Sol确实比前代更深入、更全面，但这不等于Prompt也要写
 
 OpenAI官方给出的方向恰好相反：**把结果、关键约束、可用证据和完成标准说清楚，然后给模型选择高效路径的空间。**
 
-![GPT-5.6目标优先对比](https://file1.kamacoder.com/i/web/20260723163611_gpt56-prompt-v2-01-outcome-first-compressed.jpg)
+![GPT-5.6目标优先对比](https://file1.kamacoder.com/i/web/20260723163611_gpt56-prompt-v2-01-outcome-first-compressed.jpg?v=20261005)
 
 这张图回答的是：为什么5.6 Sol不需要你拿着一卷步骤清单遥控。旧写法把模型困在过程里；新写法把终点、护栏和验收标准交代清楚，让模型自己选择路径。
 
@@ -141,7 +141,7 @@ OpenAI在内部编码Agent评测中观察到，更精简的系统Prompt让评测
 
 如果删掉一句话，跑同一组评测完全没有变化，这句话才有资格继续被删。
 
-![Prompt精简行李隐喻](https://file1.kamacoder.com/i/web/20260723163612_gpt56-prompt-v2-02-lean-prompt-compressed.jpg)
+![Prompt精简行李隐喻](https://file1.kamacoder.com/i/web/20260723163612_gpt56-prompt-v2-02-lean-prompt-compressed.jpg?v=20261005)
 
 这张图回答的是：精简Prompt到底在删什么。左边不是“信息更完整”，而是重复纸卷把人和机器人一起困住；右边保留目标、护栏、证据和验收这些关键装备，反而走得更稳。
 
@@ -172,7 +172,7 @@ GPT-5.6可以更主动、更持续地完成多步任务。
 
 **边界要集中写一次，安全动作和高风险动作要分清楚。**
 
-![Agent自治边界工作室](https://file1.kamacoder.com/i/web/20260723163613_gpt56-prompt-v2-03-autonomy-boundary-compressed.jpg)
+![Agent自治边界工作室](https://file1.kamacoder.com/i/web/20260723163613_gpt56-prompt-v2-03-autonomy-boundary-compressed.jpg?v=20261005)
 
 这张图回答的是：自治不等于没有边界。护栏内的读文件、修改和测试可以连续推进；真正走到红色闸门，也就是外部写入、重要权限或扩大范围时，再由人明确放行。
 
@@ -211,7 +211,7 @@ GPT-5.6可以更主动、更持续地完成多步任务。
 
 它适合过滤、去重、排序、聚合这类边界明确的批处理。一次工具调用就够、每个结果都会改变下一步判断、涉及审批或必须保留原生引用时，直接工具调用反而更合适。
 
-![Agent工具路由车站](https://file1.kamacoder.com/i/web/20260723163615_gpt56-prompt-v2-04-tool-routing-compressed.jpg)
+![Agent工具路由车站](https://file1.kamacoder.com/i/web/20260723163615_gpt56-prompt-v2-04-tool-routing-compressed.jpg?v=20261005)
 
 这张图回答的是：工具路由为什么要由任务条件决定。机器人不是把所有工具一股脑搬上车，而是先看任务，再扳动道岔，把请求送到资料、执行或验证那条真正需要的轨道。
 
@@ -268,7 +268,7 @@ Pro mode也不是一句“请深度思考”。
 
 它是Responses API里的执行模式，适合复杂优化、高价值代码审查和困难分析。它会增加延迟和模型工作量，应该和标准模式在同一批任务上比较质量、完整性、Token、延迟和成本，而不是凭感觉常开。
 
-![推理档位与任务难度](https://file1.kamacoder.com/i/web/20260723163616_gpt56-prompt-v2-05-reasoning-effort-compressed.jpg)
+![推理档位与任务难度](https://file1.kamacoder.com/i/web/20260723163616_gpt56-prompt-v2-05-reasoning-effort-compressed.jpg?v=20261005)
 
 这张图回答的是：reasoning effort为什么不能全局拉满。平路、山路和雪山需要的动力不同；在日常任务上背着整套登山装备，只会增加负担，不会自动让结果更好。
 

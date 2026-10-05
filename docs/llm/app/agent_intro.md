@@ -8,7 +8,7 @@ tags: ["大模型应用", "AI Agent", "Agent入门", "大模型面试"]
 # Agent到底是什么？和普通大模型问答有什么区别？
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 前段时间有个录友面试大模型应用岗，项目里写了一个"智能客服 Agent"。
@@ -25,7 +25,7 @@ tags: ["大模型应用", "AI Agent", "Agent入门", "大模型面试"]
 
 所以这篇先把最基础的问题讲清楚：**Agent 到底是什么？它和普通大模型问答到底差在哪？**
 
-![普通问答 vs Agent：差别不在会不会说，而在会不会做](https://file1.kamacoder.com/i/web/20260515162836_agent_intro_01_qa_vs_agent_compressed.png)
+![普通问答 vs Agent：差别不在会不会说，而在会不会做](https://file1.kamacoder.com/i/web/20260515162836_agent_intro_01_qa_vs_agent_compressed.png?v=20261005)
 
 ## 一、普通大模型问答，本质是"你问我答"
 
@@ -113,7 +113,7 @@ Agent 的核心产物是"完成任务的过程和结果"。
 
 这才是 Agent 的味道。
 
-![从回答到行动：Agent 不是更会说，而是更会做](https://file1.kamacoder.com/i/web/20260515162838_agent_intro_02_capability_ladder_compressed.png)
+![从回答到行动：Agent 不是更会说，而是更会做](https://file1.kamacoder.com/i/web/20260515162838_agent_intro_02_capability_ladder_compressed.png?v=20261005)
 
 ## 三、Agent 至少要有四个能力
 
@@ -218,7 +218,7 @@ Agent 和普通程序最大的区别之一，是它会根据中间结果调整�
 
 Reasoning 是思考，Acting 是行动，中间靠 Observation 把工具结果带回来。
 
-![Agent 的四个核心能力：规划、工具、执行、反馈](https://file1.kamacoder.com/i/web/20260515162839_agent_intro_03_four_capabilities_loop_compressed.png)
+![Agent 的四个核心能力：规划、工具、执行、反馈](https://file1.kamacoder.com/i/web/20260515162839_agent_intro_03_four_capabilities_loop_compressed.png?v=20261005)
 
 ## 四、一个简单判断：它有没有"自己决定下一步"
 
@@ -306,7 +306,7 @@ Agent 的自由度更高，但不代表更可靠。
 
 自由度越高，越需要约束、评估、权限控制和失败恢复。
 
-![什么时候用 Workflow，什么时候才需要 Agent](https://file1.kamacoder.com/i/web/20260515162840_agent_intro_04_workflow_agent_matrix_compressed.png)
+![什么时候用 Workflow，什么时候才需要 Agent](https://file1.kamacoder.com/i/web/20260515162840_agent_intro_04_workflow_agent_matrix_compressed.png?v=20261005)
 
 ## 六、Agent 不是一个模型，而是一套系统
 
@@ -340,7 +340,7 @@ Agent 的自由度更高，但不代表更可靠。
 
 差距往往不在模型本身，而在工具设计、上下文管理、执行编排、评估观测这些工程细节。
 
-![Agent 不是一个模型，而是一套工程系统](https://file1.kamacoder.com/i/web/20260515162842_agent_intro_05_system_components_compressed.png)
+![Agent 不是一个模型，而是一套工程系统](https://file1.kamacoder.com/i/web/20260515162842_agent_intro_05_system_components_compressed.png?v=20261005)
 
 ## 七、面试时怎么回答"Agent 是什么"
 

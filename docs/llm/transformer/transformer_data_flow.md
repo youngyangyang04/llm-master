@@ -31,7 +31,7 @@ tags: ["Transformer", "数据流"]
 （假设词表为512维，则每个Token为1*512维的向量， 假设输入序列长L）  
 得到【远，方，有，颗，苹，果，树】（分词结果可能由于embedding模型不同而不同, 则$$L=7$$）
 
-![Transformer输入序列分词示意图](https://file1.kamacoder.com/i/web/2026-04-15_11-21-38.jpg)
+![Transformer输入序列分词示意图](https://file1.kamacoder.com/i/web/2026-04-15_11-21-38.jpg?v=20261005)
  
 
 ## step2. 输入文本经过embedding变成高维向量，加上位置编码  

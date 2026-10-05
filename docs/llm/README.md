@@ -10,12 +10,12 @@ tags: [大模型, 应用开发, LLM, AI教程]
 > 这里是「卡码大模型」专栏，一条给程序员的大模型学习路线。
 
 <a href="https://programmercarl.com/xunlian/damoxing.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-03-02_18-13-50.jpg" style="width:100%;cursor:pointer;" alt="卡码大模型应用开发训练营">
+  <img src="https://file1.kamacoder.com/i/web/2026-03-02_18-13-50.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="卡码大模型应用开发训练营">
 </a>
 
 本专栏持续更新中，目前最新文章发布在公众号：卡码大模型
 
-<p align="center"><img src="https://file1.kamacoder.com/i/web/卡码大模型二维码.jpg" width="200" alt="卡码大模型公众号二维码"/></p>
+<p align="center"><img src="https://file1.kamacoder.com/i/web/卡码大模型二维码.jpg?v=20261005" width="200" alt="卡码大模型公众号二维码"/></p>
 
 我在[知识星球](https://programmercarl.com/other/kstar.html)里辅导过太多录友，对每年求职变化非常了解。
 
@@ -216,6 +216,6 @@ tags: [大模型, 应用开发, LLM, AI教程]
 
 **每日更新**首发在公众号「卡码大模型」，定期同步至网站。
 
-<p align="center"><img src="https://file1.kamacoder.com/i/web/卡码大模型二维码.jpg" width="200" alt="卡码大模型公众号二维码"/></p>
+<p align="center"><img src="https://file1.kamacoder.com/i/web/卡码大模型二维码.jpg?v=20261005" width="200" alt="卡码大模型公众号二维码"/></p>
 
 扫码关注，每日更新不错过。

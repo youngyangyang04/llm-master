@@ -43,7 +43,7 @@ $$
 
 以原始 Transformer 论文为例，d_model = 512，中间层 d_ff = 2048，**正好是 4 倍**。我们等下会专门讲为什么要这样设计。
 
-![FFN第一层线性变换代码输出图](https://file1.kamacoder.com/i/algo/article12_421_p1.png)
+![FFN第一层线性变换代码输出图](https://file1.kamacoder.com/i/algo/article12_421_p1.png?v=20261005)
 
 ## 第一步：准备输入
 
@@ -171,7 +171,7 @@ print(f"形状一致:  {x.shape == output.shape}")
 
 输入是 `(7, 8)`，输出也是 `(7, 8)`，**形状完全一致**。这也是为什么 FFN 可以嵌在每一层 Transformer Block 里——它不会改变数据的"外形"，只改变内在的"信息含量"。
 
-![FFN激活函数代码输出图](https://file1.kamacoder.com/i/algo/article12_421_p2.png)
+![FFN激活函数代码输出图](https://file1.kamacoder.com/i/algo/article12_421_p2.png?v=20261005)
 
 ## 为什么要扩 4 倍？
 
@@ -195,7 +195,7 @@ print(f"形状一致:  {x.shape == output.shape}")
 
 这也解释了一个常见的事实：**Transformer 参数量里，FFN 往往占大头**（约三分之二）。模型里真正的"知识存储"，很大一部分就藏在 FFN 的这两个大矩阵里。
 
-![FFN第二层线性变换代码输出图](https://file1.kamacoder.com/i/algo/article12_421_p3.png)
+![FFN第二层线性变换代码输出图](https://file1.kamacoder.com/i/algo/article12_421_p3.png?v=20261005)
 
 ## 完整代码：把四步打包成一个类
 

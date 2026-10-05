@@ -8,7 +8,7 @@ tags: [大模型应用, AI Agent, Browser Agent, 上下文工程, 工具调用, 
 # Browser Agent怎么读取大型网页
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[《多Agent上下文、消息和Token怎么治理》](./multi_agent_context_governance.md)讲了一个原则：大结果留在外部，Agent之间只传任务需要的摘要、状态和引用。Browser Agent也一样。
@@ -53,7 +53,7 @@ DOM是浏览器的实现结构，不是给模型准备的阅读稿。一个用�
 3. **隐藏内容制造冲突。** PC和移动端副本、未展开菜单、模板节点可能同时进入上下文。
 4. **节点引用很快过期。** 页面一重渲染，旧DOM路径或序号就可能指向另一个元素。
 
-![原始DOM噪声困境](https://file1.kamacoder.com/i/web/20260911094725.jpg)
+![原始DOM噪声困境](https://file1.kamacoder.com/i/web/20260911094725.jpg?v=20261005)
 
 基础清洗可以先移除`script`、`style`、`noscript`、注释、纯装饰节点和重复模板，再规范空白与URL；但链接目标、表头、label、ARIA属性、控件状态和iframe边界要保留。也不能把“当前viewport之外”直接等同于“无关”，虚拟列表的目标内容可能要滚动后才出现。
 
@@ -144,7 +144,7 @@ Agent看到`重试策略`位于`r7`，再调用`read_region(ref="r7", query="重
 
 大型页面经常不是一次加载完成的。消息列表滚到底才加载下一页，表格只渲染viewport附近几十行，单页应用点击标签后URL甚至不变。此时“一次DOM快照”只代表某个时刻、某个视口的状态。
 
-![动态页面旧引用风险](https://file1.kamacoder.com/i/web/20260911094726.jpg)
+![动态页面旧引用风险](https://file1.kamacoder.com/i/web/20260911094726.jpg?v=20261005)
 
 增量读取要记录三样东西：
 

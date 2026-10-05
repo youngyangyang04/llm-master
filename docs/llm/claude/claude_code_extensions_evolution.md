@@ -25,7 +25,7 @@ tags: [Claude Code, AI编程, Agent Skills, 多Agent, 上下文工程, 大模型
 
 <!-- drawio源文件: ./drawio/claude_code_extensions_01_evolution.drawio -->
 
-![Claude Code从CLAUDE.md常驻规则演进到Hooks事件控制、Skills按需能力和Subagents独立角色](https://file1.kamacoder.com/i/web/20260713152556_claude_code_extensions_01_evolution_compressed.png)
+![Claude Code从CLAUDE.md常驻规则演进到Hooks事件控制、Skills按需能力和Subagents独立角色](https://file1.kamacoder.com/i/web/20260713152556_claude_code_extensions_01_evolution_compressed.png?v=20261005)
 
 这张图回答的是：为什么项目从几条规则开始，最后会长出自动检查、专项流程和多个 Agent。后面的能力不是替换前面的能力，而是把“写给模型看的要求”一步步外化成控制点、能力包和独立执行单元。
 
@@ -78,7 +78,7 @@ Hooks 插在 Claude Code 的生命周期里。一次工具调用不是模型想�
 
 <!-- drawio源文件: ./drawio/claude_code_extensions_02_hooks_loop.drawio -->
 
-![Hooks在Claude Code工具调用前后和结束验收时插入控制点并将失败证据反馈给Agent](https://file1.kamacoder.com/i/web/20260713152556_claude_code_extensions_02_hooks_loop_compressed.png)
+![Hooks在Claude Code工具调用前后和结束验收时插入控制点并将失败证据反馈给Agent](https://file1.kamacoder.com/i/web/20260713152556_claude_code_extensions_02_hooks_loop_compressed.png?v=20261005)
 
 这张图回答的是：Hooks 到底插在 Agent 循环哪里。它不是循环外的一份说明，而是卡在“准备行动、行动完成、准备结束”这些节点上的闸门；不满足条件，就把错误或证据送回 Claude，让它继续修。
 
@@ -179,7 +179,7 @@ skills:
 
 <!-- drawio源文件: ./drawio/claude_code_extensions_03_subagent_isolation.drawio -->
 
-![主Agent将测试安全和性能任务委派给独立上下文的Subagents并只接收带证据的结论](https://file1.kamacoder.com/i/web/20260713152556_claude_code_extensions_03_subagent_isolation_compressed.png)
+![主Agent将测试安全和性能任务委派给独立上下文的Subagents并只接收带证据的结论](https://file1.kamacoder.com/i/web/20260713152556_claude_code_extensions_03_subagent_isolation_compressed.png?v=20261005)
 
 这张图回答的是：独立上下文到底省掉了什么。测试、安全、性能三个 Agent 各自在干净窗口里工作，过程噪声留在各自上下文，只有带证据的结论回到主 Agent；执行者和审查者也被结构性地分开。
 
@@ -200,7 +200,7 @@ skills:
 
 <!-- drawio源文件: ./drawio/claude_code_extensions_04_decision.drawio -->
 
-![根据常驻知识事件触发专项方法和上下文隔离判断一条要求应该放进CLAUDE.md、Hooks、Skills还是Subagents](https://file1.kamacoder.com/i/web/20260713152556_claude_code_extensions_04_decision_compressed.png)
+![根据常驻知识事件触发专项方法和上下文隔离判断一条要求应该放进CLAUDE.md、Hooks、Skills还是Subagents](https://file1.kamacoder.com/i/web/20260713152556_claude_code_extensions_04_decision_compressed.png?v=20261005)
 
 这张图回答的是：如何根据“是否每次都要知道、是否必须自动发生、是否需要专项推理、是否需要隔离上下文”逐层判断。它不是让你四选一，而是帮你找到一条要求最主要的归属层。
 

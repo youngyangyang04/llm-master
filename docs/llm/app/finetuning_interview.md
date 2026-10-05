@@ -8,7 +8,7 @@ tags: [大模型应用, 大模型微调, 大模型面试, AI求职, 选型决策
 # 面试官怎么问微调？应用开发者该怎么答
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 微调这一章，前面三篇该讲的都讲透了。
@@ -58,7 +58,7 @@ tags: [大模型应用, 大模型微调, 大模型面试, AI求职, 选型决策
 
 <!-- drawio源文件: ./drawio/finetuning_interview_01_question_ladder.drawio -->
 
-![面试官从简历一句话开始逐层追问微调的提问梯度图，标出应用开发者必答区和算法岗深水区的分界线](https://file1.kamacoder.com/i/web/20260627102921_ft_interview_01.png)
+![面试官从简历一句话开始逐层追问微调的提问梯度图，标出应用开发者必答区和算法岗深水区的分界线](https://file1.kamacoder.com/i/web/20260627102921_ft_interview_01.png?v=20261005)
 
 这张图回答的是：面试官对微调的追问是怎么一层层加深的，以及应用开发者该守住哪条线。
 
@@ -76,7 +76,7 @@ tags: [大模型应用, 大模型微调, 大模型面试, AI求职, 选型决策
 
 <!-- drawio源文件: ./drawio/finetuning_interview_03_four_lines.drawio -->
 
-![把微调高频面试问题归类到选型数据评估成本四条主线上的归类解码图](https://file1.kamacoder.com/i/web/20260627102924_ft_interview_03.png)
+![把微调高频面试问题归类到选型数据评估成本四条主线上的归类解码图](https://file1.kamacoder.com/i/web/20260627102924_ft_interview_03.png?v=20261005)
 
 这张图回答的是：面试官五花八门的微调追问，怎么归到四条主线上。
 
@@ -164,7 +164,7 @@ RLHF 和 DPO 都是偏好对齐，解决的是‘没有唯一正确答案、但�
 
 <!-- drawio源文件: ./drawio/finetuning_interview_02_eval_compare.drawio -->
 
-![微调收益用对比实验证明：基线模型与微调后模型跑同一测试集，再从任务质量成本风险四维度对比并配回归集兜底的示意图](https://file1.kamacoder.com/i/web/20260627102922_ft_interview_02.png)
+![微调收益用对比实验证明：基线模型与微调后模型跑同一测试集，再从任务质量成本风险四维度对比并配回归集兜底的示意图](https://file1.kamacoder.com/i/web/20260627102922_ft_interview_02.png?v=20261005)
 
 这张图回答的是：怎么用工程方法证明微调有收益，而不是靠「感觉」。
 

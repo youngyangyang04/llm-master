@@ -17,7 +17,7 @@ tags: [AI编程, Claude Code, Cursor, Codex, Agent]
 
 我问了一下，他怎么用的，结果他说他用的是 **对话框**。。。。
 
-![Claude Code和Claude.ai对比截图](https://file1.kamacoder.com/i/web/2026-04-15_11-21-37.jpg)
+![Claude Code和Claude.ai对比截图](https://file1.kamacoder.com/i/web/2026-04-15_11-21-37.jpg?v=20261005)
 
 不是说对话框里的模型降智，**而是你用对话框，根本用不出来这个模型的威力**。
 
@@ -53,7 +53,7 @@ Cursor 稍微好点，因为它本体就是个编辑器，但它现在也有 Web
 
 解开这个结，需要把一个产品拆成三层来看。
 
-![AI编程产品三层架构中的模型层](https://file1.kamacoder.com/i/web/20260415111207_1.png)
+![AI编程产品三层架构中的模型层](https://file1.kamacoder.com/i/web/20260415111207_1.png?v=20261005)
 
 ## 第一层：模型
 
@@ -67,7 +67,7 @@ Cursor 稍微好点，因为它本体就是个编辑器，但它现在也有 Web
 
 这种"读文件 → 推理 → 写文件 → 跑工具 → 再推理"的循环，就是 agent loop。**模型负责决定做什么，内核负责执行和编排循环。** 这两层有重叠，不是完全解耦的——后面会讲到。
 
-![Claude Code与Cursor模型层对比图](https://file1.kamacoder.com/i/web/20260415121336_model_layer.png)
+![Claude Code与Cursor模型层对比图](https://file1.kamacoder.com/i/web/20260415121336_model_layer.png?v=20261005)
 
 ## 第二层：Agent 内核
 
@@ -89,7 +89,7 @@ Claude Code 有自己的 agent 内核，Codex 有自己的，Cursor 有自己的
 
 更有意思的是反过来。**同一个 agent 内核，可以在多种外壳里跑。** Claude Code 的内核在 CLI、VS Code 插件、JetBrains 插件、桌面 app、网页云端、手机 app 里都是同一套，只是外面包的交互不同。所以你从 CLI 切到 IDE 插件时不会觉得在"重新学一个工具"——它们本来就是一个工具。
 
-![AI编程产品Agent内核层示意图](https://file1.kamacoder.com/i/web/20260415111210_2.png)
+![AI编程产品Agent内核层示意图](https://file1.kamacoder.com/i/web/20260415111210_2.png?v=20261005)
 
 ## 第三层：外壳
 
@@ -101,7 +101,7 @@ Claude Code 有自己的 agent 内核，Codex 有自己的，Cursor 有自己的
 
 以 Claude Code 为例。CLI 外壳给你的是一个文本流——看到什么就是模型看到什么，很原始、很直接。IDE 插件外壳把改动变成可审阅的 diff，还带行内建议。桌面 app 外壳把 agent 能力和聊天能力融在一起，让你可以一边闲聊一边派活。云端 Web 外壳则把整个 agent 运行环境托管到服务器上，你关掉电脑它也能继续跑。
 
-![AI编程产品模型Agent内核外壳三层架构图](https://file1.kamacoder.com/i/web/20260415120542_three_layers.png)
+![AI编程产品模型Agent内核外壳三层架构图](https://file1.kamacoder.com/i/web/20260415120542_three_layers.png?v=20261005)
 
 ## 最后
 

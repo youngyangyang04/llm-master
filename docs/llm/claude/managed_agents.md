@@ -21,7 +21,7 @@ Anthropic 刚发了一篇博客《building with Claude Managed Agents》，把�
 
 要理解 Managed Agents 解决了什么，得先看清楚我们是从哪一步走过来的。
 
-![Agent架构演进](https://file1.kamacoder.com/i/web/20260616203446_managed_agents_evolution.png)
+![Agent架构演进](https://file1.kamacoder.com/i/web/20260616203446_managed_agents_evolution.png?v=20261005)
 
 **2023 年，简单 API 时代。** 最早的 Claude API 故意做得很朴素：tokens in, tokens out（喂进去 token，吐出来 token）。模型只负责思考，至于怎么让它调工具、跑循环、连文件系统——那套「外壳」（harness）全得开发者自己搭。
 
@@ -41,7 +41,7 @@ Anthropic 刚发了一篇博客《building with Claude Managed Agents》，把�
 
 Managed Agents 的解法很干脆：**把大脑和双手拆开，放到不同的地方，中间用一个 session 连接。**
 
-![大脑和双手解耦](https://file1.kamacoder.com/i/web/20260616203448_managed_agents_decouple.png)
+![大脑和双手解耦](https://file1.kamacoder.com/i/web/20260616203448_managed_agents_decouple.png?v=20261005)
 
 这个 session 是关键——它是**一条 append-only 的日志，记录每一次模型调用、每一次工具调用、每一个返回结果**。大脑在一边推理，双手在另一边执行，两边通过这条只追加、不修改的事件流对话。这条 append-only 日志，跟我们在 [Claude Skills 实战](./claude_skills.md) 里讲的「让 Claude 读自己的历史」是同一个思路，只不过这里把它抬到了整个运行架构的层面。
 
@@ -61,7 +61,7 @@ Managed Agents 的解法很干脆：**把大脑和双手拆开，放到不同的
 
 **第二，延迟大降。** 拆掉了「每次都冷启动容器」这块开销，**首 token 时间（time-to-first-token）中位数（p50）降了大约 60%，最慢的那批（p95）降了 90% 以上。** 这个数字很能说明问题——以前用户等的，很多根本不是模型在想，是容器在启动。
 
-![首token时间改前改后对比](https://file1.kamacoder.com/i/web/20260616203449_managed_agents_latency.png)
+![首token时间改前改后对比](https://file1.kamacoder.com/i/web/20260616203449_managed_agents_latency.png?v=20261005)
 
 **第三，会话可持久、可恢复。** session 是一条持续的事件流，你能**实时看到 Agent 干活时的每一步**，也能在之后任意时刻**把某个 session 接着跑下去**。容器崩了不再等于从头再来。
 

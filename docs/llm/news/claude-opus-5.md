@@ -12,11 +12,11 @@ tags: [Claude, Claude Code, AI编程, Agent, 大模型发布]
 
 opus5 在7月25日凌晨正式发布：
 
-![](https://file1.kamacoder.com/i/web/2026-07-25_16-34-20.jpg)
+![](https://file1.kamacoder.com/i/web/2026-07-25_16-34-20.jpg?v=20261005)
 
 这次 Anthropic 发布 Claude Opus 5，重点更直接：**尽量接近 Fable 5 的能力，但把价格压回 Opus 4.8 的档位。**
 
-![Claude Opus 5 与 Fable 5 的性能和成本比较](https://file1.kamacoder.com/i/web/20260725154944_1.jpg)
+![Claude Opus 5 与 Fable 5 的性能和成本比较](https://file1.kamacoder.com/i/web/20260725154944_1.jpg?v=20261005)
 
 先说结论：**Opus 5 不等于 Fable 5 的完全替代，更像是把“高频干活”这一档模型做得更划算。** 日常写代码、排 Bug、跑 Agent、做知识工作，可以优先上它；真遇到失败代价极高、需要最强能力上限的任务，Fable 5 仍然有自己的位置。
 
@@ -34,7 +34,7 @@ Fast mode 约为默认速度的 2.5 倍，价格也翻倍。这个逻辑和 [Opu
 
 这里补一个边界：Fast mode 目前是 Claude API 的研究预览，不能想当然地认为 Bedrock、Google Cloud、Microsoft Foundry 都能直接开。上线前先查你使用的平台能力，别把压测环境跑通了，生产环境才发现没有这个档位。
 
-![Claude Opus 5 API 价格与 Fast mode 说明](https://file1.kamacoder.com/i/web/20260725154946_2.jpg)
+![Claude Opus 5 API 价格与 Fast mode 说明](https://file1.kamacoder.com/i/web/20260725154946_2.jpg?v=20261005)
 
 不过这里也说明一下，图中 看上去 GLM5.2 便宜了不少，但真实使用体感来说，花钱速度没有比 opus4.8，gpt5.6 便宜很多。
 
@@ -48,7 +48,7 @@ Anthropic 的宣传里有很多评测图，录友看这种图要记住：厂商�
 
 不过这次几个指标指向同一件事：Opus 5 在软件工程和端到端工作流里，更强调主动检查、反复验证和持续推进。
 
-![Claude Opus 5 在软件工程评测中的成本性能表现](https://file1.kamacoder.com/i/web/20260725154948_3.jpg)
+![Claude Opus 5 在软件工程评测中的成本性能表现](https://file1.kamacoder.com/i/web/20260725154948_3.jpg?v=20261005)
 
 这比“会不会生成一段代码”重要得多。
 
@@ -73,7 +73,7 @@ Opus 5 继续提供 Effort 档位。简单说，就是让你决定这次任务�
 
 ## 别把旧模型的“复核咒语”继续塞给 Opus 5
 
-![重复复核增加Token成本](https://file1.kamacoder.com/i/web/20260725161228_5.jpg)
+![重复复核增加Token成本](https://file1.kamacoder.com/i/web/20260725161228_5.jpg?v=20261005)
 
 Opus 5 的一个变化很反直觉：它本来就会主动验证和修正自己的工作。
 
@@ -95,7 +95,7 @@ Opus 5 的一个变化很反直觉：它本来就会主动验证和修正自己�
 
 还有一个不起眼但很实在的成本变化：Opus 5 的 Prompt 缓存最小长度降到 **512 Token**，Opus 4.8 是 1024 Token。以前短到不够资格缓存的固定指令、工具说明，现在可能不用改代码就能命中缓存。
 
-![Claude Opus 5 的安全行为评估与模型回退机制](https://file1.kamacoder.com/i/web/20260725154950_4.png)
+![Claude Opus 5 的安全行为评估与模型回退机制](https://file1.kamacoder.com/i/web/20260725154950_4.png?v=20261005)
 
 这意味着你的 Agent 编排可以更清楚：低风险任务走 Opus 5，高风险请求触发限制时走回退分支，最终把失败状态、耗时和成本记录下来。
 

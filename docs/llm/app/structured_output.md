@@ -8,7 +8,7 @@ tags: ["大模型调用", "结构化输出"]
 # 大模型结构化输出：为什么自然语言不稳定，JSON Schema怎么约束
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 前段时间有个录友来找我复盘，他面了字节的大模型应用岗，简历项目里做了一套信息提取与入库系统。
@@ -74,7 +74,7 @@ tags: ["大模型调用", "结构化输出"]
 
 **混入解释性文字：** 模型喜欢在给出结构化内容之前或之后，加上"好的，以下是提取结果："或者"希望这对你有帮助！"这类内容。
 
-![自然语言输出不稳定](https://file1.kamacoder.com/i/web/20260510165453.png)
+![自然语言输出不稳定](https://file1.kamacoder.com/i/web/20260510165453.png?v=20261005)
 
 ## 三、什么是结构化输出？
 
@@ -98,7 +98,7 @@ OpenAI、Anthropic等主流模型API都支持 `response_format` 或 `tool_use` �
 
 在Python生态里，Pydantic是最常用的schema定义工具。你用Pydantic定义一个数据模型，框架（比如Instructor、LangChain）会自动把它转成JSON Schema传给模型，拿到输出后再自动反序列化成Python对象。整个过程对业务代码几乎透明。
 
-![结构化输出三种方式](https://file1.kamacoder.com/i/web/20260510165454.png)
+![结构化输出三种方式](https://file1.kamacoder.com/i/web/20260510165454.png?v=20261005)
 
 ## 四、结构化输出适合哪些业务场景？
 

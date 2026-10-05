@@ -11,7 +11,7 @@ tags: [大模型入门, LLM计费, API调用, 大模型选型]
 
 下面是GLM5-1的api定价：
 
-![大模型API价格表截图](https://file1.kamacoder.com/i/web/2026-04-21_10-50-59.jpg)
+![大模型API价格表截图](https://file1.kamacoder.com/i/web/2026-04-21_10-50-59.jpg?v=20261005)
 
 **输入单价、输出单价、上下文长度、缓存存储、缓存命中**——每个词都认识，组合在一起就是看不懂。
 
@@ -109,7 +109,7 @@ def hello():
 
 我们以 [GLM-5.1](https://www.bigmodel.cn/invite?icode=h5645fTH07PKdN0cj%2FTnKmczbXFgPRGIalpycrEwJ28%3D) 为例，给大家拆解一下，各个指标以及费用（下面在和 gpt、opus做对比）
 
-![大模型API价格表截图](https://file1.kamacoder.com/i/web/2026-04-21_10-50-59.jpg)
+![大模型API价格表截图](https://file1.kamacoder.com/i/web/2026-04-21_10-50-59.jpg?v=20261005)
 
 ### 输入单价（每百万 tokens）
 
@@ -212,7 +212,7 @@ RAG 系统每次请求的 prompt 长这样：
 ### 举个例子
 
 <!-- drawio: cache_hit_flow.drawio -->
-![缓存命中流程对比](https://file1.kamacoder.com/i/web/20260421172826.png)
+![缓存命中流程对比](https://file1.kamacoder.com/i/web/20260421172826.png?v=20261005)
 
 你做了一个 RAG 系统，每次请求的 prompt 组成：
 
@@ -320,9 +320,9 @@ RAG 系统每次请求的 prompt 长这样：
 
 大家可以先看一下官网价格：
 
-![claude opus](https://file1.kamacoder.com/i/web/2026-04-21_11-26-25.jpg)
+![claude opus](https://file1.kamacoder.com/i/web/2026-04-21_11-26-25.jpg?v=20261005)
 
-![GPT](https://file1.kamacoder.com/i/web/2026-04-21_11-26-40.jpg)
+![GPT](https://file1.kamacoder.com/i/web/2026-04-21_11-26-40.jpg?v=20261005)
 
 
 GPT API官网：https://developers.openai.com/api/docs/models/gpt-5.4 
@@ -332,7 +332,7 @@ Claude opus API官网：https://platform.claude.com/docs/en/about-claude/models/
 ### 基础单价对比
 
 <!-- drawio: model_price_compare.drawio -->
-![三大模型单价对比](https://file1.kamacoder.com/i/web/20260421172828.png)
+![三大模型单价对比](https://file1.kamacoder.com/i/web/20260421172828.png?v=20261005)
 
 | | GLM-5.1 | GPT-5.4 | Opus 4.7 |
 |---|---------|---------|----------|
@@ -358,7 +358,7 @@ Claude opus API官网：https://platform.claude.com/docs/en/about-claude/models/
 ### GPT-5.4 的坑：272K 跳价机制
 
 <!-- drawio: gpt_jump_pricing.drawio -->
-![GPT-5.4跳价悬崖图](https://file1.kamacoder.com/i/web/20260421172830.png)
+![GPT-5.4跳价悬崖图](https://file1.kamacoder.com/i/web/20260421172830.png?v=20261005)
 
 GPT-5.4 的 272K 分界点不是"超过部分按高价算"，而是**整条请求都按高价算**。
 

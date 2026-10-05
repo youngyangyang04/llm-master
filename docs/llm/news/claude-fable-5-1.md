@@ -13,7 +13,7 @@ tags: [Claude, 大模型发布, AI编程, Agent, Claude Code, 大模型评测]
 
 9 月 1 日，Anthropic 发布 Claude Fable 5.1 和 Mythos 5.1。这次不是简单补丁：**能力继续往上推，缓存价格直接砍掉 75%，安全误判和数据留存也一起改了。**
 
-![Fable 5.1发布首屏](https://file1.kamacoder.com/i/web/20260902104543.jpg)
+![Fable 5.1发布首屏](https://file1.kamacoder.com/i/web/20260902104543.jpg?v=20261005)
 
 *截图说明：Anthropic 官方发布页首屏，发布日期为 2026 年 9 月，页面本身标注由 Fable 5.1 制作。*
 
@@ -43,7 +43,7 @@ tags: [Claude, 大模型发布, AI编程, Agent, Claude Code, 大模型评测]
 
 Anthropic 用 2026 年 8 月四周真实用量估算：典型 Fable 工作负载总成本下降约 25%，上下文和工具调用密集的 Agent 工作负载最多下降约 45%。
 
-![Fable 5.1成本结构](https://file1.kamacoder.com/i/web/20260902104547.jpg)
+![Fable 5.1成本结构](https://file1.kamacoder.com/i/web/20260902104547.jpg?v=20261005)
 
 *截图说明：左边是典型任务，成本指数从 100 降到 75；右边是高 Agent 化任务，从 100 降到 55。阴影部分代表缓存读取成本。*
 
@@ -62,7 +62,7 @@ Anthropic 用 2026 年 8 月四周真实用量估算：典型 Fable 工作负载
 - Opus 5：29.0%
 - GPT-5.6 Sol：22.4%
 
-![Fable 5.1科学任务曲线](https://file1.kamacoder.com/i/web/20260902104544.jpg)
+![Fable 5.1科学任务曲线](https://file1.kamacoder.com/i/web/20260902104544.jpg?v=20261005)
 
 *截图说明：横轴是单任务平均成本，纵轴是正确率。Fable 5.1 从 Low 到 Max 的整条曲线都在 Fable 5 上方。*
 
@@ -80,7 +80,7 @@ Fable 5.1 的 Low 档是 26.3%，已经略高于 Fable 5 Max 的 24.7%，单任�
 
 官方总表里，Fable 5.1 在列出的项目上全部领先 Fable 5，也在多数项目上高于 Opus 5 和 GPT-5.6 Sol：
 
-![Fable 5.1官方跑分](https://file1.kamacoder.com/i/web/20260902104545.jpg)
+![Fable 5.1官方跑分](https://file1.kamacoder.com/i/web/20260902104545.jpg?v=20261005)
 
 *截图说明：官方对比覆盖科研 Agent、终端编程、知识工作、电脑操作、综合推理、业务工作流和 Cursor 编程评测。绿色列为 Fable 5.1。*
 

@@ -21,7 +21,7 @@ tags: [RAG, Agentic RAG, AI Agent, 大模型应用, 大模型面试]
 
 **传统 RAG 把检索写死在流程里，Agentic RAG 则把检索变成 Agent 可以按需使用、反复使用的工具。**
 
-![RAG到Agentic RAG演进](https://file1.kamacoder.com/i/web/20260819110919.jpg)
+![RAG到Agentic RAG演进](https://file1.kamacoder.com/i/web/20260819110919.jpg?v=20261005)
 
 先把定义说清楚：**Agentic RAG 不是某一个固定算法，也不是某个框架的专属功能，而是一类架构模式。**
 
@@ -94,7 +94,7 @@ Agent 接到的不再只是一个待搜索的 Query，而是一个需要完成�
 
 Agentic RAG 解决的是：**这次该不该查、该查几次、查什么、结果不够时下一步怎么办。**
 
-![传统RAG固定检索困境](https://file1.kamacoder.com/i/web/20260819110922.jpg)
+![传统RAG固定检索困境](https://file1.kamacoder.com/i/web/20260819110922.jpg?v=20261005)
 
 ### 1. 一个 Query 装不下复杂问题
 
@@ -138,7 +138,7 @@ Agentic RAG 会先评估证据。相关性低、来源冲突或关键字段缺�
 4. **证据评估**：检查相关性、完整性、来源可靠性和相互一致性。
 5. **停止与生成**：证据足够就组织带引用的回答；证据不足且预算耗尽就拒答或请用户补充信息。
 
-![Agentic RAG检索验证](https://file1.kamacoder.com/i/web/20260819110924.jpg)
+![Agentic RAG检索验证](https://file1.kamacoder.com/i/web/20260819110924.jpg?v=20261005)
 
 它的运行过程，可以压缩成这个循环：
 

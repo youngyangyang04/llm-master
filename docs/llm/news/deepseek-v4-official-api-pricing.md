@@ -13,7 +13,7 @@ tags: [DeepSeek, 大模型发布, API价格, AI编程, Agent, 大模型动态]
 
 **DeepSeek V4 全系列模型正式版上线，API 将在北京时间 2026 年 8 月 17 日 00:00 执行新价格。**
 
-![DeepSeek V4全系列API新定价](https://file1.kamacoder.com/i/web/20260814231456_265_57.jpg)
+![DeepSeek V4全系列API新定价](https://file1.kamacoder.com/i/web/20260814231456_265_57.jpg?v=20261005)
 
 表面看，是高峰时段价格翻倍。
 

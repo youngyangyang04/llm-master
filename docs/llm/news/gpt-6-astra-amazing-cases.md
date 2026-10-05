@@ -28,7 +28,7 @@ ashe 用 Astra 创建了一个 [3D 人体解剖网站](https://x.com/ashebytes/s
 
 按作者的说法，这个人体模型包含 **2234 个部件**。用户可以旋转模型、隐藏外层结构，再顺着自己感兴趣的部位一层层往里看。
 
-![3D人体解剖模型](https://file1.kamacoder.com/i/web/20260908142459.jpg)
+![3D人体解剖模型](https://file1.kamacoder.com/i/web/20260908142459.jpg?v=20261005)
 
 这个案例最打动我的，不是“零代码做了一个网页”。
 
@@ -48,7 +48,7 @@ Dilum Sanjaya 给 Astra 的任务，是制作一个细节丰富、可以交互�
 
 注意，这里的 V8 是机械发动机，和 Chrome 里的 JavaScript V8 引擎没有关系。
 
-![V8发动机可视化](https://file1.kamacoder.com/i/web/20260908142500.jpg)
+![V8发动机可视化](https://file1.kamacoder.com/i/web/20260908142500.jpg?v=20261005)
 
 相比一张发动机剖面图，可交互模型给了讲解者更多空间。
 
@@ -64,7 +64,7 @@ Tom Krcha 的玩法很直接：给 Astra 一张旧的蒸汽火车图片，让它
 
 按作者描述，几分钟后，项目里已经出现了 **3295 个可以编辑的对象**。
 
-![蒸汽火车三维重建](https://file1.kamacoder.com/i/web/20260908142502.jpg)
+![蒸汽火车三维重建](https://file1.kamacoder.com/i/web/20260908142502.jpg?v=20261005)
 
 重点注意“可以编辑”这几个字。
 
@@ -84,7 +84,7 @@ Tom Krcha 的玩法很直接：给 Astra 一张旧的蒸汽火车图片，让它
 
 作者让 Astra 根据品牌视觉完成页面设计，并且直接操作 Figma 把结果做出来。
 
-![Figma页面设计](https://file1.kamacoder.com/i/web/20260908142504.jpg)
+![Figma页面设计](https://file1.kamacoder.com/i/web/20260908142504.jpg?v=20261005)
 
 他对成品的评价很高，甚至说这次结果动摇了自己此前对 AI 设计能力的判断。
 
@@ -108,7 +108,7 @@ Kai Yang 展示的是让 Astra 在 [KiCad 中做 PCB 布局](https://x.com/ChihY
 
 视频只有约 18 秒，截至 2026 年 9 月 8 日却已经拿到约 **5028 个赞、94 万次浏览**。
 
-![KiCad电路板布局](https://file1.kamacoder.com/i/web/20260908142506.jpg)
+![KiCad电路板布局](https://file1.kamacoder.com/i/web/20260908142506.jpg?v=20261005)
 
 这类专业软件案例很值得留意。
 
@@ -126,7 +126,7 @@ Kai Yang 展示的是让 Astra 在 [KiCad 中做 PCB 布局](https://x.com/ChihY
 
 Theo 展示了一个 [一次任务生成的 3D 游戏](https://x.com/theo/status/2095599934766764338)，完成后直接在浏览器里运行。
 
-![浏览器3D游戏](https://file1.kamacoder.com/i/web/20260908142508.jpg)
+![浏览器3D游戏](https://file1.kamacoder.com/i/web/20260908142508.jpg?v=20261005)
 
 这种演示的传播力非常强。
 
@@ -142,7 +142,7 @@ Flavio Adamo 展示的是一个 [Minecraft 风格的浏览器作品](https://x.c
 
 作者在回复中补充，项目使用了 Three.js、自制 JavaScript 体素引擎和程序化地形，还包含挖掘、合成、生物 AI、localStorage 存档和 Vite 构建。
 
-![Minecraft风格游戏](https://file1.kamacoder.com/i/web/20260908142510.jpg)
+![Minecraft风格游戏](https://file1.kamacoder.com/i/web/20260908142510.jpg?v=20261005)
 
 这比“做一个像 Minecraft 的页面”复杂得多。
 
@@ -156,7 +156,7 @@ Flavio Adamo 展示的是一个 [Minecraft 风格的浏览器作品](https://x.c
 
 Anshu 的 [3D 场景案例](https://x.com/anshuc/status/2096008083826725132) 很抓眼球。作者称，首版用了 45 分钟。
 
-![Blender游戏场景](https://file1.kamacoder.com/i/web/20260908142511.jpg)
+![Blender游戏场景](https://file1.kamacoder.com/i/web/20260908142511.jpg?v=20261005)
 
 但我更想展开的是他的制作方法：
 
@@ -182,7 +182,7 @@ Matt Shumer 的题材更大：让 Astra 在 [Unreal Engine 中搭建曼哈顿街
 
 作者称，这个项目持续了一周，并且按街道不断完善。
 
-![Unreal曼哈顿街区](https://file1.kamacoder.com/i/web/20260908142513.jpg)
+![Unreal曼哈顿街区](https://file1.kamacoder.com/i/web/20260908142513.jpg?v=20261005)
 
 它很容易让人联想到 Astra 的长任务能力。
 

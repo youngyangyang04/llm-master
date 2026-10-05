@@ -31,7 +31,7 @@ Token ID
 
 核心变化只有一个：一开始输入是整数 Token ID，经过 Embedding 后变成向量；之后所有模块都在处理 `(L, d_model)` 这个矩阵。
 
-![Tiny Transformer完整结构代码图](https://file1.kamacoder.com/i/algo/article14_0428_p1.drawio.png)
+![Tiny Transformer完整结构代码图](https://file1.kamacoder.com/i/algo/article14_0428_p1.drawio.png?v=20261005)
 
 ## 第一步：Embedding
 
@@ -148,7 +148,7 @@ print(x.shape)  # (4, 8)
 
 堆两层、六层、十二层，本质都是重复同一个结构。只要每层输入输出 shape 一致，就可以一直往下接。
 
-![Tiny Transformer前向运行结果图](https://file1.kamacoder.com/i/algo/article14_0428_p2.drawio.png)
+![Tiny Transformer前向运行结果图](https://file1.kamacoder.com/i/algo/article14_0428_p2.drawio.png?v=20261005)
 
 ## 第五步：输出层
 

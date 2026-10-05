@@ -16,7 +16,7 @@ Anthropic 昨天发布了 Claude Opus 4.8。
 
 官方链接在这里：https://www.anthropic.com/news/claude-opus-4-8
 
-![](https://file1.kamacoder.com/i/web/2026-05-29_10-54-52.jpg)
+![](https://file1.kamacoder.com/i/web/2026-05-29_10-54-52.jpg?v=20261005)
 
 这次发布很有意思。
 
@@ -49,7 +49,7 @@ Anthropic 发布页的大表里写的是：
 | Claude Opus 4.8 | 74.6% |
 | GPT-5.5 | 78.2% |
 
-![](https://file1.kamacoder.com/i/web/2026-05-29_10-42-42.jpg)
+![](https://file1.kamacoder.com/i/web/2026-05-29_10-42-42.jpg?v=20261005)
 
 你没看错。
 
@@ -59,7 +59,7 @@ Anthropic 发布页的大表里写的是：
 
 Anthropic 在脚注里补充：GPT-5.5 在 Codex CLI harness 下的公开成绩是 **83.4%**。
 
-![](https://file1.kamacoder.com/i/web/2026-05-29_10-44-13.jpg)
+![](https://file1.kamacoder.com/i/web/2026-05-29_10-44-13.jpg?v=20261005)
 
 这说明什么
 
@@ -174,7 +174,7 @@ Agent 任务里，模型报错不可怕。
 
 **不要让一个 Agent 从头干到尾，而是让主 Agent 拆任务，再调度多个 subagents 并行处理，最后汇总和验证。**
 
-![](https://file1.kamacoder.com/i/web/2026-05-29_10-46-48.jpg)
+![](https://file1.kamacoder.com/i/web/2026-05-29_10-46-48.jpg?v=20261005)
 
 这其实更接近真实工程协作。
 
@@ -301,7 +301,7 @@ Opus 4.8 稍微好了点。
 
 我个人还是觉得 Opus 4.6 的表达最自然。
 
-![](https://file1.kamacoder.com/i/web/2026-05-29_10-53-04.jpg)
+![](https://file1.kamacoder.com/i/web/2026-05-29_10-53-04.jpg?v=20261005)
 
 ## 七、和DeepSeek V4怎么选
 

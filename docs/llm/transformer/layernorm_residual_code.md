@@ -30,7 +30,7 @@ $F(x)$ 是子层的输出（比如 Attention 或 FFN 的结果），$x$ 是这�
 
 残差连接的巧妙在于：它给梯度提供了一条**"高速公路"**，可以绕过中间层直接流回去，不需要每一层都"乘一遍"。
 
-![LayerNorm代码计算流程示意图](https://file1.kamacoder.com/i/algo/article13_423_p1.drawio.png)
+![LayerNorm代码计算流程示意图](https://file1.kamacoder.com/i/algo/article13_423_p1.drawio.png?v=20261005)
 
 代码里实现残差非常直接：
 
@@ -93,7 +93,7 @@ $$
 
 其中 $\epsilon$ 是一个很小的数（比如 1e-5），防止分母为 0。
 
-![残差连接代码计算流程示意图](https://file1.kamacoder.com/i/algo/article13_423_p2.drawio.png)
+![残差连接代码计算流程示意图](https://file1.kamacoder.com/i/algo/article13_423_p2.drawio.png?v=20261005)
 
 ```python
 class LayerNorm:

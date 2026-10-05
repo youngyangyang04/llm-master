@@ -87,7 +87,7 @@ Q、K、V 的形状都是 `(L, d_model)`，和单头完全一样。
 
 
 
-![Multi-Head Attention分头计算代码输出图](https://file1.kamacoder.com/i/algo/article11_419_p1.png)
+![Multi-Head Attention分头计算代码输出图](https://file1.kamacoder.com/i/algo/article11_419_p1.png?v=20261005)
 
 
 
@@ -143,7 +143,7 @@ V_heads: (2, 7, 4)
 这样第 0 个头和第 1 个头就可以**独立并行地做 Attention 计算**了。
 
 
-![Multi-Head Attention拼接合并代码输出图](https://file1.kamacoder.com/i/algo/article11_419_p2.png)
+![Multi-Head Attention拼接合并代码输出图](https://file1.kamacoder.com/i/algo/article11_419_p2.png?v=20261005)
 
 
 

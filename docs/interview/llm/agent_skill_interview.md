@@ -108,7 +108,7 @@ Skill 解决的是：
 
 <!-- drawio源文件: ./drawio/skill_01_positioning.drawio -->
 
-![Agent Skill 在工程体系中的定位](https://file1.kamacoder.com/i/web/20260521103624_skill_01_positioning.png)
+![Agent Skill 在工程体系中的定位](https://file1.kamacoder.com/i/web/20260521103624_skill_01_positioning.png?v=20261005)
 
 
 ## 二、Skill 到底是什么
@@ -285,7 +285,7 @@ Skill 是局部任务能力。
 
 <!-- drawio源文件: ./drawio/skill_02_structure.drawio -->
 
-![高质量 Skill 的组成结构](https://file1.kamacoder.com/i/web/20260521103625_skill_02_structure.png)
+![高质量 Skill 的组成结构](https://file1.kamacoder.com/i/web/20260521103625_skill_02_structure.png?v=20261005)
 
 ### 1. 适用场景
 
@@ -436,7 +436,7 @@ Harness 和 Tool Registry 才是强制执行。
 
 <!-- drawio源文件: ./drawio/skill_03_iteration_loop.drawio -->
 
-![从失败案例到 Skill 迭代闭环](https://file1.kamacoder.com/i/web/20260521103627_skill_03_iteration_loop.png)
+![从失败案例到 Skill 迭代闭环](https://file1.kamacoder.com/i/web/20260521103627_skill_03_iteration_loop.png?v=20261005)
 
 ### 1. 从重复任务里提炼
 
@@ -541,7 +541,7 @@ Skill 多了以后，最大的问题不是怎么写。
 
 <!-- drawio源文件: ./drawio/skill_04_selection_flow.drawio -->
 
-![Skill 选择与注入流程](https://file1.kamacoder.com/i/web/20260521103628_skill_04_selection_flow.png)
+![Skill 选择与注入流程](https://file1.kamacoder.com/i/web/20260521103628_skill_04_selection_flow.png?v=20261005)
 
 ### 1. 显式指定
 
@@ -629,7 +629,7 @@ Skill 多了以后，会出现一个新问题：
 
 <!-- drawio源文件: ./drawio/skill_05_context_governance.drawio -->
 
-![Skill 上下文治理流程](https://file1.kamacoder.com/i/web/20260521103629_skill_05_context_governance.png)
+![Skill 上下文治理流程](https://file1.kamacoder.com/i/web/20260521103629_skill_05_context_governance.png?v=20261005)
 
 ### 1. 按需加载
 
@@ -762,7 +762,7 @@ Skill 不是孤立存在的。
 
 <!-- drawio源文件: ./drawio/skill_06_eval_metrics.drawio -->
 
-![Skill 效果评估指标体系](https://file1.kamacoder.com/i/web/20260521103630_skill_06_eval_metrics.png)
+![Skill 效果评估指标体系](https://file1.kamacoder.com/i/web/20260521103630_skill_06_eval_metrics.png?v=20261005)
 
 
 ### 1. 任务成功率
@@ -859,7 +859,7 @@ Skill 误召回率：不该用的时候有没有乱用。
 
 <!-- drawio源文件: ./drawio/skill_07_misuse_vs_best_practice.drawio -->
 
-![Skill 常见误区与正确治理方式](https://file1.kamacoder.com/i/web/20260521103632_skill_07_misuse_vs_best_practice.png)
+![Skill 常见误区与正确治理方式](https://file1.kamacoder.com/i/web/20260521103632_skill_07_misuse_vs_best_practice.png?v=20261005)
 
 ### 1. 把 Skill 写成超长 Prompt
 

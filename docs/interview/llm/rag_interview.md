@@ -76,7 +76,7 @@ RAG（Retrieval-Augmented Generation，检索增强生成）的本质就一句�
 
 ### RAG 七步链路
 
-![RAG七步链路](https://file1.kamacoder.com/i/web/20260420205128.png)
+![RAG七步链路](https://file1.kamacoder.com/i/web/20260420205128.png?v=20261005)
 
 **Query → 文档处理 → Chunking → Embedding → 检索 → Rerank → 生成**
 
@@ -178,7 +178,7 @@ cos(A, B) = (A · B) / (|A| × |B|)
 
 两路结果合并，取长补短。
 
-![混合检索+RRF合并流程](https://file1.kamacoder.com/i/web/20260420205132.png)
+![混合检索+RRF合并流程](https://file1.kamacoder.com/i/web/20260420205132.png?v=20261005)
 
 ### 合并策略：RRF（Reciprocal Rank Fusion）
 
@@ -220,7 +220,7 @@ def rrf_merge(vector_results, bm25_results, k=60):
 
 Rerank 用的是 Cross-Encoder：把问题和文档拼在一起送进模型，模型可以同时看到双方内容，做更精确的相关性判断。**代价是慢**——Cross-Encoder 不能预计算，每个 (问题, 文档) 对都要过一遍模型，所以只能对少量候选做精排。
 
-![Bi-Encoder vs Cross-Encoder](https://file1.kamacoder.com/i/web/20260420205135.png)
+![Bi-Encoder vs Cross-Encoder](https://file1.kamacoder.com/i/web/20260420205135.png?v=20261005)
 
 ### Rerank 的效果
 
@@ -412,7 +412,7 @@ Agentic RAG 把 [Agent](./agent_interview.md) 的规划能力引入 RAG——LLM
 | 复杂问题 | 容易答偏 | 可以拆解子问题分步检索 |
 | Token 消耗 | 低 | 高（多次推理） |
 
-![Agentic RAG循环流程](https://file1.kamacoder.com/i/web/20260420205138.png)
+![Agentic RAG循环流程](https://file1.kamacoder.com/i/web/20260420205138.png?v=20261005)
 
 ### Agentic RAG 的工作流程
 

@@ -9,7 +9,7 @@ tags: [ChatGPT, OpenAI, Codex, GPT-6 Astra, AI编程, 大模型动态]
 
 GPT-6 Astra 需求过大，导致 OpenAI 停售 pro 20X。
 
-![](https://file1.kamacoder.com/i/web/d1ca3c402ba6cf688ef71ca01d608273.jpg) 
+![](https://file1.kamacoder.com/i/web/d1ca3c402ba6cf688ef71ca01d608273.jpg?v=20261005) 
 
 前几天写 [GPT-6 Astra](./gpt-6-astra.md) 时，最现实的问题还是“什么时候轮到我的账号”。
 
@@ -19,18 +19,18 @@ GPT-6 Astra 需求过大，导致 OpenAI 停售 pro 20X。
 
 目前国内知名的ChatGPT代充平台 [PayAI.plus](https://payai.plus/chatgpt) ，也显示 20x全面缺货：
 
-![](https://file1.kamacoder.com/i/web/20260911094411-av8nss.png) 
+![](https://file1.kamacoder.com/i/web/20260911094411-av8nss.png?v=20261005) 
 
 **但 5x 依然可以购买，大家需要pro 5x ，可以抓紧去  [PayAI.plus](https://payai.plus/chatgpt) 冲，估计 5x也很快就没货了**。 
 
-![](https://file1.kamacoder.com/i/web/20260911094445-buzfvg.png)
+![](https://file1.kamacoder.com/i/web/20260911094445-buzfvg.png?v=20261005)
 
 
 ## 购买页已经置灰：20X有钱也暂时买不到
 
 用户公开的购买页截图里，20X 已经变灰，并提示“暂时不接受新购买，现有订阅不受影响”。
 
-![](https://file1.kamacoder.com/i/web/20260911095655-lapq99.png)
+![](https://file1.kamacoder.com/i/web/20260911095655-lapq99.png?v=20261005)
 
 OpenAI 帮助中心随后把边界写得更细：Free、Go、Plus 和 Pro 100 美元用户都不能在暂停期间升到 Pro 200 美元。
 
@@ -48,7 +48,7 @@ OpenAI 给出的直接原因不是支付问题，也不是套餐重做，而是 
 
 9 月 9 日，OpenAI 的 Tibo Sottiaux 已经公开预警：Astra 的需求“前所未有”，团队在调动所有能用的资源；如果需求继续上涨，可能暂时停止新的 Pro 订阅，以优先保证现有用户体验。
 
-![](https://file1.kamacoder.com/i/web/ac95dff98ce278234583e1bf93f8e888.jpg)
+![](https://file1.kamacoder.com/i/web/ac95dff98ce278234583e1bf93f8e888.jpg?v=20261005)
 
 一天后，预警变成实际措施。
 

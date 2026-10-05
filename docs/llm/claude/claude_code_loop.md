@@ -23,11 +23,11 @@ tags: [Claude Code, AI编程, Agent Loop, Prompt工程, 大模型入门]
 
 **“我已经不写 prompt 了，我写 loop。”**
 
-![](https://file1.kamacoder.com/i/web/2026-06-09_11-33-20.jpg) 
+![](https://file1.kamacoder.com/i/web/2026-06-09_11-33-20.jpg?v=20261005) 
 
 完整采访视频，大家可以去B站搜一下，选一个带字母的，看起来舒服一下。
 
-![](https://file1.kamacoder.com/i/web/2026-06-09_11-35-50.jpg)
+![](https://file1.kamacoder.com/i/web/2026-06-09_11-35-50.jpg?v=20261005)
 
 过去很多人以为，AI 编程的核心能力是“怎么写一句更聪明的提示词”。
 
@@ -35,7 +35,7 @@ tags: [Claude Code, AI编程, Agent Loop, Prompt工程, 大模型入门]
 
 这就是今天要讲的重点。
 
-![Prompt 到 Loop 的 AI 编程范式迁移图](https://file1.kamacoder.com/i/web/20260609100829_claude_code_loop_01_prompt_to_loop_compressed.png)
+![Prompt 到 Loop 的 AI 编程范式迁移图](https://file1.kamacoder.com/i/web/20260609100829_claude_code_loop_01_prompt_to_loop_compressed.png?v=20261005)
 
 ## 一、为什么只写 Prompt 不够了？
 
@@ -118,7 +118,7 @@ Loop 不是玄学。
 
 这才叫 loop。
 
-![Agent Loop 的最小闭环结构图](https://file1.kamacoder.com/i/web/20260609100830_claude_code_loop_02_minimal_loop_compressed.png)
+![Agent Loop 的最小闭环结构图](https://file1.kamacoder.com/i/web/20260609100830_claude_code_loop_02_minimal_loop_compressed.png?v=20261005)
 
 你看，这和普通 prompt 的差别很大。
 
@@ -176,7 +176,7 @@ Loop 听起来高级，但坏 loop 很危险。
 
 脑补就会出事。
 
-![坏 Loop 和好 Loop 的差异路径图](https://file1.kamacoder.com/i/web/20260609100832_claude_code_loop_03_bad_vs_good_loop_compressed.png)
+![坏 Loop 和好 Loop 的差异路径图](https://file1.kamacoder.com/i/web/20260609100832_claude_code_loop_03_bad_vs_good_loop_compressed.png?v=20261005)
 
 好的 loop 至少要有四个东西：
 
@@ -243,7 +243,7 @@ Loop 听起来高级，但坏 loop 很危险。
 
 这更像工程能力。
 
-![Prompt 工程和 Loop 工程的能力边界对比图](https://file1.kamacoder.com/i/web/20260609100834_claude_code_loop_04_prompt_vs_loop_engineering_compressed.png)
+![Prompt 工程和 Loop 工程的能力边界对比图](https://file1.kamacoder.com/i/web/20260609100834_claude_code_loop_04_prompt_vs_loop_engineering_compressed.png?v=20261005)
 
 举个例子。
 
@@ -306,7 +306,7 @@ Claude Code 的价值，不是它把 Claude 模型搬进了终端。
 
 如果测试通过，就收束改动，给你结果。
 
-![Claude Code 从读代码到验证结果的 Agent Loop 工作流图](https://file1.kamacoder.com/i/web/20260609100836_claude_code_loop_05_claude_code_workflow_compressed.png)
+![Claude Code 从读代码到验证结果的 Agent Loop 工作流图](https://file1.kamacoder.com/i/web/20260609100836_claude_code_loop_05_claude_code_workflow_compressed.png?v=20261005)
 
 这套东西看起来像“AI 会自己干活”。
 
@@ -352,7 +352,7 @@ AI 编程最容易骗过人的地方是什么？
 
 **AI 的完成感，不等于工程上的完成。**
 
-![没有验证反馈的 AI 编程为什么容易表面完成图](https://file1.kamacoder.com/i/web/20260609100838_claude_code_loop_06_validation_failure_compressed.png)
+![没有验证反馈的 AI 编程为什么容易表面完成图](https://file1.kamacoder.com/i/web/20260609100838_claude_code_loop_06_validation_failure_compressed.png?v=20261005)
 
 真实项目里，我们判断一个改动能不能交付，不是看它解释得多漂亮。
 
@@ -403,7 +403,7 @@ AI 编程最容易骗过人的地方是什么？
 
 也就是把“人盯人”变成“系统约束”。
 
-![开发者从盯着 AI 到设计规则闭环的角色迁移图](https://file1.kamacoder.com/i/web/20260609100839_claude_code_loop_07_human_role_shift_compressed.png)
+![开发者从盯着 AI 到设计规则闭环的角色迁移图](https://file1.kamacoder.com/i/web/20260609100839_claude_code_loop_07_human_role_shift_compressed.png?v=20261005)
 
 比如以前你会反复提醒：
 
@@ -460,7 +460,7 @@ AI 编程最容易骗过人的地方是什么？
 
 这些东西合在一起，就是 loop 的骨架。
 
-![AI Coding 时代人、Agent、模型、工具的新分工图](https://file1.kamacoder.com/i/web/20260609100841_claude_code_loop_08_new_division_compressed.png)
+![AI Coding 时代人、Agent、模型、工具的新分工图](https://file1.kamacoder.com/i/web/20260609100841_claude_code_loop_08_new_division_compressed.png?v=20261005)
 
 模型负责生成。
 

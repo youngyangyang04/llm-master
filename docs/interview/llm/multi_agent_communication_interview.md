@@ -58,7 +58,7 @@ tags: [Agent面经, 大模型面试, LLM面试, AI求职, 多Agent]
 如果是**多Agent架构**，主Agent收到请求后，拆成三个子任务，分别交给不同的子Agent：搜索Agent负责信息检索，分析Agent负责数据处理和可视化，写作Agent负责撰写报告。三个子Agent并行工作，各自有独立的上下文，互不干扰。
 
 <!-- drawio源文件: ./drawio/multi_agent_01_single_vs_multi.drawio -->
-![单Agent vs 多Agent执行竞品分析报告](https://file1.kamacoder.com/i/web/20260513182730_multi_agent_01_single_vs_multi.png)
+![单Agent vs 多Agent执行竞品分析报告](https://file1.kamacoder.com/i/web/20260513182730_multi_agent_01_single_vs_multi.png?v=20261005)
 
 核心区别就一句话：**子Agent不是主Agent的"手"，而是有独立大脑的"协作者"**。主Agent负责规划和协调，子Agent负责执行和反馈。
 
@@ -124,7 +124,7 @@ tags: [Agent面经, 大模型面试, LLM面试, AI求职, 多Agent]
 ```
 
 <!-- drawio源文件: ./drawio/multi_agent_06_task_packet.drawio -->
-![主Agent发送给子Agent的任务包结构](https://file1.kamacoder.com/i/web/20260514100050_multi_agent_06_task_packet.png)
+![主Agent发送给子Agent的任务包结构](https://file1.kamacoder.com/i/web/20260514100050_multi_agent_06_task_packet.png?v=20261005)
 
 ### 第三步：子Agent独立执行
 
@@ -158,10 +158,10 @@ tags: [Agent面经, 大模型面试, LLM面试, AI求职, 多Agent]
 - **证据校验**：没有来源的结论不能直接进入最终答案
 
 <!-- drawio源文件: ./drawio/multi_agent_07_result_aggregation.drawio -->
-![多Agent结果回传与主Agent汇总验收](https://file1.kamacoder.com/i/web/20260514100050_multi_agent_07_result_aggregation.png)
+![多Agent结果回传与主Agent汇总验收](https://file1.kamacoder.com/i/web/20260514100050_multi_agent_07_result_aggregation.png?v=20261005)
 
 <!-- drawio源文件: ./drawio/multi_agent_02_communication_chain.drawio -->
-![主Agent与子Agent通信链路](https://file1.kamacoder.com/i/web/20260513182730_multi_agent_02_communication_chain.png)
+![主Agent与子Agent通信链路](https://file1.kamacoder.com/i/web/20260513182730_multi_agent_02_communication_chain.png?v=20261005)
 
 
 ## 三、编排模式：主Agent协调子Agent的四种方式
@@ -207,7 +207,7 @@ tags: [Agent面经, 大模型面试, LLM面试, AI求职, 多Agent]
 适用于：请求类型多样、每种类型有专门处理逻辑的场景。类似[Agent混合路由优化](./agent_hybrid_routing_interview.md)里讲的思想：先判断任务类型和复杂度，再选择最合适的执行路径。
 
 <!-- drawio源文件: ./drawio/multi_agent_03_orchestration_modes.drawio -->
-![多Agent四种编排模式](https://file1.kamacoder.com/i/web/20260513182731_multi_agent_03_orchestration_modes.png)
+![多Agent四种编排模式](https://file1.kamacoder.com/i/web/20260513182731_multi_agent_03_orchestration_modes.png?v=20261005)
 
 
 ## 四、Tool调用 vs 多Agent架构：本质区别在哪
@@ -229,7 +229,7 @@ Tool调用的输入输出通常会回到主Agent的上下文窗口里。所有To
 这带来两个好处：一是主Agent的上下文不会被子任务的大量中间结果污染；二是子Agent的上下文可以更大——因为不用和主Agent共享额度。
 
 <!-- drawio源文件: ./drawio/multi_agent_04_tool_vs_agent.drawio -->
-![Tool调用和多Agent上下文对比](https://file1.kamacoder.com/i/web/20260513182731_multi_agent_04_tool_vs_agent.png)
+![Tool调用和多Agent上下文对比](https://file1.kamacoder.com/i/web/20260513182731_multi_agent_04_tool_vs_agent.png?v=20261005)
 
 ### 3. 自主性：被动执行 vs 主动决策
 
@@ -303,7 +303,7 @@ Claude Code就是这种模式的典型实现。主Agent（Orchestrator）通过T
 - **需要隔离风险**：搜索、代码执行、外部写操作可以拆到不同子Agent里，用权限控制降低误操作概率
 
 <!-- drawio源文件: ./drawio/multi_agent_05_decision_tree.drawio -->
-![Tool还是多Agent决策树](https://file1.kamacoder.com/i/web/20260513182732_multi_agent_05_decision_tree.png)
+![Tool还是多Agent决策树](https://file1.kamacoder.com/i/web/20260513182732_multi_agent_05_decision_tree.png?v=20261005)
 
 
 ## 七、多Agent的代价：不是免费的午餐
@@ -311,7 +311,7 @@ Claude Code就是这种模式的典型实现。主Agent（Orchestrator）通过T
 面试里只讲多Agent的好处不讲代价，面试官会觉得你只做过demo没踩过坑。多Agent架构有几个必须正视的代价：
 
 <!-- drawio源文件: ./drawio/multi_agent_08_engineering_cost.drawio -->
-![多Agent架构的工程代价](https://file1.kamacoder.com/i/web/20260514100051_multi_agent_08_engineering_cost.png)
+![多Agent架构的工程代价](https://file1.kamacoder.com/i/web/20260514100051_multi_agent_08_engineering_cost.png?v=20261005)
 
 ### 1. 成本和延迟
 

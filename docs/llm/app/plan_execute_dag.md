@@ -8,7 +8,7 @@ tags: ["大模型应用", "AI Agent", "Agent设计", "任务调度", "大模型�
 # Plan-and-Execute怎么落地成DAG执行器
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[ReAct、Reflection、规划执行三种思路](./react_reflection_planning.md)讲了Plan-and-Execute的设计理念：先拆步骤，再按计划推进，适合复杂任务。
@@ -53,7 +53,7 @@ for循环执行的问题不是浅，是它回避了依赖、失败和纠错三�
 
 <!-- drawio源文件: ./drawio/plan_execute_dag_01_text_to_dag_flow.drawio -->
 
-![Plan-and-Execute执行流程](https://file1.kamacoder.com/i/web/20260901110210.png)
+![Plan-and-Execute执行流程](https://file1.kamacoder.com/i/web/20260901110210.png?v=20261005)
 
 这张图回答的是：文本计划要经过哪几层处理，才能变成可调度、可恢复的执行图。上层是规划校验（环检测→拓扑排序），下层是调度执行（并行调度→状态机→Checkpoint），两条虚线反馈分别处理成环和节点失败。
 

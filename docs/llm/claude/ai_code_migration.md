@@ -23,7 +23,7 @@ Anthropic 过去一个月一共迁了 10 个代码包，每个包都有数万到
 
 注意，这不是“Claude 一次把代码翻译对了”。**真正让规模迁移成立的，是它把迁移改造成了一条可以反复运行、机械验收、失败后继续收敛的生产线。**
 
-![代码迁移流水线](https://file1.kamacoder.com/i/web/20260722095637_code_migration_01_compressed.jpg)
+![代码迁移流水线](https://file1.kamacoder.com/i/web/20260722095637_code_migration_01_compressed.jpg?v=20261005)
 
 人不再追着每个文件改。人负责规则、裁判和异常模式，Agent 负责把队列烧完。
 
@@ -65,7 +65,7 @@ Mike 没有现成的跨语言测试，就做了 7 个真实场景的 parity harn
 
 Bun 迁移时，一个 Agent 按规则翻 3 个文件，另一个 Agent 像资深 Rust 工程师一样翻同样的文件，第三个 Agent 比较差异并补规则。只跑这轮小实验，就提前抓到两个会扩散到 1448 个文件的关键问题。
 
-![迁移规则压力测试](https://file1.kamacoder.com/i/web/20260722095640_code_migration_02_compressed.jpg)
+![迁移规则压力测试](https://file1.kamacoder.com/i/web/20260722095640_code_migration_02_compressed.jpg?v=20261005)
 
 这里最反直觉的是：**试迁出来的代码全部扔掉。** 这一轮的产物不是代码，是更可靠的规则。结构不保留的重设计也一样，先让对抗 Agent 攻击设计文档，再做一次可丢弃的端到端迁移。
 
@@ -79,7 +79,7 @@ Bun 迁移时，一个 Agent 按规则翻 3 个文件，另一个 Agent 像资�
 
 编译错误由 fixer agents 分批处理；崩溃交给冒烟测试；最后把新旧程序放到同一套测试或真实场景里比行为。昂贵的全量构建由单独的 build daemon 串行执行，避免几十个 Agent 同时抢着重编。
 
-![迁移故障反馈闭环](https://file1.kamacoder.com/i/web/20260722095642_code_migration_03_compressed.jpg)
+![迁移故障反馈闭环](https://file1.kamacoder.com/i/web/20260722095642_code_migration_03_compressed.jpg?v=20261005)
 
 这时人的注意力不该放在某一个红叉，而要看**哪些红叉总以同一种方式出现**。单点失败交给 loop 消耗，重复模式才值得人修改上游规则。
 

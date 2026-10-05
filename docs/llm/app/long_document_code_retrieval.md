@@ -76,7 +76,7 @@ AST 负责“不把结构切坏”，但不负责解决所有检索问题。READ
 
 <!-- drawio源文件: ./drawio/long_document_code_retrieval_01_hierarchical_flow.drawio -->
 
-![长文档与代码层级检索](https://file1.kamacoder.com/i/web/20260828142443.png)
+![长文档与代码层级检索](https://file1.kamacoder.com/i/web/20260828142443.png?v=20261005)
 
 这张图回答的是：长文档和代码如何从结构化建索引，到带版本、权限条件检索，再用父级补齐完整证据。主线不是“切得更细”，而是把精准召回、结构补全和访问边界放进同一条链路。
 

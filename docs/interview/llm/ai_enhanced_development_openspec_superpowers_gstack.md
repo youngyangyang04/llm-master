@@ -104,7 +104,7 @@ AI 增强开发不一样。
 - 失败样本沉淀成下一轮规则
 
 <!-- drawio源文件: ./drawio/ai_dev_01_vibe_vs_engineering.drawio -->
-![普通Vibe Coding和AI增强开发闭环的区别](https://file1.kamacoder.com/i/web/20260607114353_ai_dev_01_vibe_vs_engineering.png)
+![普通Vibe Coding和AI增强开发闭环的区别](https://file1.kamacoder.com/i/web/20260607114353_ai_dev_01_vibe_vs_engineering.png?v=20261005)
 
 所以面试时可以这样答：
 
@@ -157,7 +157,7 @@ AI 增强开发不一样。
 AI 增强开发三件套，就是把这些工程动作外化出来。
 
 <!-- drawio源文件: ./drawio/ai_dev_02_three_layers.drawio -->
-![三层外部工件给AI代码生成加门禁](https://file1.kamacoder.com/i/web/20260607114353_ai_dev_02_three_layers.png)
+![三层外部工件给AI代码生成加门禁](https://file1.kamacoder.com/i/web/20260607114353_ai_dev_02_three_layers.png?v=20261005)
 
 你可以把它们理解成三层：
 
@@ -377,7 +377,7 @@ gstack 把真实浏览器 QA 放进流程里，本质上是在提醒你：
 要按链路讲。
 
 <!-- drawio源文件: ./drawio/ai_dev_03_delivery_flow.drawio -->
-![需求到上线过程中规格执行和交付工件的流转](https://file1.kamacoder.com/i/web/20260607114353_ai_dev_03_delivery_flow.png)
+![需求到上线过程中规格执行和交付工件的流转](https://file1.kamacoder.com/i/web/20260607114353_ai_dev_03_delivery_flow.png?v=20261005)
 
 完整链路可以这样理解：
 
@@ -475,7 +475,7 @@ gstack 把真实浏览器 QA 放进流程里，本质上是在提醒你：
 - 上线后出错代价很高
 
 <!-- drawio源文件: ./drawio/ai_dev_04_when_to_use.drawio -->
-![按错误影响半径决定AI增强开发流程强度](https://file1.kamacoder.com/i/web/20260607114353_ai_dev_04_when_to_use.png)
+![按错误影响半径决定AI增强开发流程强度](https://file1.kamacoder.com/i/web/20260607114353_ai_dev_04_when_to_use.png?v=20261005)
 
 可以用一个判断标准：
 

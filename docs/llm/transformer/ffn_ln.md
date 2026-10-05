@@ -36,7 +36,7 @@ $$
 $$
 
 其中 $F(x)$ 是这一层学到的变换（比如 Self-Attention 的结果），$x$ 是这层的原始输入。
-![Transformer残差连接和LayerNorm位置示意图](https://file1.kamacoder.com/i/algo/761ac78d-7af3-4822-a21f-20af8e55b54d.webp)
+![Transformer残差连接和LayerNorm位置示意图](https://file1.kamacoder.com/i/algo/761ac78d-7af3-4822-a21f-20af8e55b54d.webp?v=20261005)
 
 
 这步加法带来了两个好处：
@@ -80,7 +80,7 @@ $$
 
 先残差相加，再 LayerNorm 归一化，每个子模块（Self-Attention 和 FFN）后面都跟一个这样的结构。
 
-![Transformer前馈网络FFN结构示意图](https://file1.kamacoder.com/i/algo/a7c59854-ed2d-4e0b-8c20-5fb9c8134955.webp)
+![Transformer前馈网络FFN结构示意图](https://file1.kamacoder.com/i/algo/a7c59854-ed2d-4e0b-8c20-5fb9c8134955.webp?v=20261005)
 
 
 

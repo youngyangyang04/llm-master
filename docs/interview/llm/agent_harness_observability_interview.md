@@ -8,7 +8,7 @@ tags: [Agent面经, Harness Engineering, 大模型面试, LLM面试, AI求职]
 # Agent Harness 可观测性：生产级 AI 项目必须补上的一课
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 前面我们聊过 [Harness Engineering](./harness_interview.md)，讲的是 Agent 不能只靠 Prompt，要靠一整套运行环境把模型、工具、上下文、状态、评估都管起来。
@@ -99,7 +99,7 @@ Demo 阶段，大家看的是："它能不能跑通一次？"
 如果没有可观测性，这些问题全都只能靠猜。
 
 <!-- drawio源文件: ./drawio/agent_observability_01_demo_to_production.drawio -->
-![Agent长链路执行中小偏差被逐步放大的过程](https://file1.kamacoder.com/i/web/20260602115939_agent_observability_01_demo_to_production_compressed.png)
+![Agent长链路执行中小偏差被逐步放大的过程](https://file1.kamacoder.com/i/web/20260602115939_agent_observability_01_demo_to_production_compressed.png?v=20261005)
 
 所以面试时可以这样回答：
 
@@ -158,7 +158,7 @@ Agent 先拆计划。
 **评估**：最终结果是否正确，中间轨迹是否合理。
 
 <!-- drawio源文件: ./drawio/agent_observability_02_scope.drawio -->
-![Agent Harness可观测性沿执行链路采集目标计划上下文工具和结果](https://file1.kamacoder.com/i/web/20260602120022_agent_observability_02_scope_compressed.png)
+![Agent Harness可观测性沿执行链路采集目标计划上下文工具和结果](https://file1.kamacoder.com/i/web/20260602120022_agent_observability_02_scope_compressed.png?v=20261005)
 
 这里有一个非常重要的判断：
 
@@ -219,7 +219,7 @@ Agent 最常见的问题是：
 而 Agent 可观测性还要解释：**它为什么这么做**。
 
 <!-- drawio源文件: ./drawio/agent_observability_03_logs_vs_trace.drawio -->
-![普通日志和Agent Trace在定位任务偏差上的区别](https://file1.kamacoder.com/i/web/20260602120106_agent_observability_03_logs_vs_trace_compressed.png)
+![普通日志和Agent Trace在定位任务偏差上的区别](https://file1.kamacoder.com/i/web/20260602120106_agent_observability_03_logs_vs_trace_compressed.png?v=20261005)
 
 举个例子。
 
@@ -304,7 +304,7 @@ Agent Trace 适合看任务有没有做对。
 - `eval_result`：本步是否合理
 
 <!-- drawio源文件: ./drawio/agent_observability_04_trace_schema.drawio -->
-![Agent Trace Schema如何支持失败任务回放和评测](https://file1.kamacoder.com/i/web/20260602120106_agent_observability_04_trace_schema_compressed.png)
+![Agent Trace Schema如何支持失败任务回放和评测](https://file1.kamacoder.com/i/web/20260602120106_agent_observability_04_trace_schema_compressed.png?v=20261005)
 
 这里面有几个字段特别重要。
 
@@ -375,7 +375,7 @@ Agent 是会改变环境的。它可能写文件、改数据库、创建工单�
 工具返回里有重要异常信号，但 Agent 后续步骤完全没引用，说明注意力可能被别的信息带偏了。
 
 <!-- drawio源文件: ./drawio/agent_observability_05_drift_detection.drawio -->
-![长链路Agent任务中根据轨迹与目标主线距离检测漂移](https://file1.kamacoder.com/i/web/20260602120106_agent_observability_05_drift_detection_compressed.png)
+![长链路Agent任务中根据轨迹与目标主线距离检测漂移](https://file1.kamacoder.com/i/web/20260602120106_agent_observability_05_drift_detection_compressed.png?v=20261005)
 
 工程上怎么做？
 
@@ -448,7 +448,7 @@ Agent 调用了不该调用的写操作。
 这类问题要记录工具返回摘要、证据引用、输出校验和评估结果。
 
 <!-- drawio源文件: ./drawio/agent_observability_06_tool_attribution.drawio -->
-![Agent工具调用故障从工具选择到结果理解的逐段归因路径](https://file1.kamacoder.com/i/web/20260602120154_agent_observability_06_tool_attribution_compressed.png)
+![Agent工具调用故障从工具选择到结果理解的逐段归因路径](https://file1.kamacoder.com/i/web/20260602120154_agent_observability_06_tool_attribution_compressed.png?v=20261005)
 
 所以工具调用可观测性要记录完整链路：
 
@@ -525,7 +525,7 @@ Agent 不断 Re-Planning，说明它对任务状态不确定，或者前面步�
 生产系统里，时间也是成本。Agent 跑 3 分钟才给结果，很多业务场景根本不能接受。
 
 <!-- drawio源文件: ./drawio/agent_observability_07_cost_breakdown.drawio -->
-![Agent成本失控来自循环重试和上下文膨胀的过程](https://file1.kamacoder.com/i/web/20260602120154_agent_observability_07_cost_breakdown_compressed.png)
+![Agent成本失控来自循环重试和上下文膨胀的过程](https://file1.kamacoder.com/i/web/20260602120154_agent_observability_07_cost_breakdown_compressed.png?v=20261005)
 
 成本控制不是简单砍 Token。
 
@@ -601,7 +601,7 @@ Agent 不断 Re-Planning，说明它对任务状态不确定，或者前面步�
 比如重复调用、成本异常、关键证据未引用、工具返回错误率升高。
 
 <!-- drawio源文件: ./drawio/agent_observability_08_failure_loop.drawio -->
-![线上Agent失败样本沉淀为评测规则和监控资产的闭环](https://file1.kamacoder.com/i/web/20260602120155_agent_observability_08_failure_loop_compressed.png)
+![线上Agent失败样本沉淀为评测规则和监控资产的闭环](https://file1.kamacoder.com/i/web/20260602120155_agent_observability_08_failure_loop_compressed.png?v=20261005)
 
 这就是 Harness Engineering 的核心精神：
 
@@ -681,7 +681,7 @@ Agent 犯错不可怕。
 把失败归因沉淀到 Prompt、工具描述、权限策略、上下文策略、评测集和 Harness 规则里。
 
 <!-- drawio源文件: ./drawio/agent_observability_09_system_architecture.drawio -->
-![生产级Agent可观测系统从Trace采集到Harness改进的架构闭环](https://file1.kamacoder.com/i/web/20260602120155_agent_observability_09_system_architecture_compressed.png)
+![生产级Agent可观测系统从Trace采集到Harness改进的架构闭环](https://file1.kamacoder.com/i/web/20260602120155_agent_observability_09_system_architecture_compressed.png?v=20261005)
 
 这个系统不是一天建成的。
 

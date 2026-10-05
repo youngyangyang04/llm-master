@@ -8,7 +8,7 @@ tags: ["大模型调用", "流式输出"]
 # 大模型同步、异步、流式输出怎么选？三种调用方式详解
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 ## 一、为什么调用方式很重要
@@ -72,7 +72,7 @@ Anthropic 官方API提供了Batch API，就是为了解决这类大批量异步�
 
 
 
-![大模型同步调用响应方式示意图](https://file1.kamacoder.com/i/bagu/Snipaste_2026-04-15_17-43-02.png)
+![大模型同步调用响应方式示意图](https://file1.kamacoder.com/i/bagu/Snipaste_2026-04-15_17-43-02.png?v=20261005)
 
 ------
 
@@ -84,7 +84,7 @@ Anthropic 官方API提供了Batch API，就是为了解决这类大批量异步�
 
 流式输出的核心价值，不是让总生成时间变短，而是**让用户感受到系统在工作**，让首字延迟降到极低（通常 200ms 以内），从而大幅提升主观体验。另一个实际价值是：如果用户发现生成方向不对，他可以提前打断，不必等到全部输出完再重试。
 
-![大模型流式输出响应方式示意图](https://file1.kamacoder.com/i/bagu/Snipaste_2026-04-15_17-43-49.png)
+![大模型流式输出响应方式示意图](https://file1.kamacoder.com/i/bagu/Snipaste_2026-04-15_17-43-49.png?v=20261005)
 
 ------
 

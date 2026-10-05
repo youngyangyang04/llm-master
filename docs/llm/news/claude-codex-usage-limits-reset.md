@@ -17,7 +17,7 @@ tags: [Claude Code, Codex, OpenAI, AI编程, Agent, 大模型动态]
 
 但这两件事真正值得看的，不是“送了多少”，而是：**额外额度按什么基准算；你的额度又究竟被什么消耗。**
 
-![Claude Code额度公告](https://file1.kamacoder.com/i/web/20260830200935.png)
+![Claude Code额度公告](https://file1.kamacoder.com/i/web/20260830200935.png?v=20261005)
 
 > 公告截图引用 ClaudeDevs 原帖内容，原帖链接见文末资料来源。
 
@@ -56,7 +56,7 @@ Tibo 在公开帖中说，会重置所有付费 Codex 和 ChatGPT Work 用户的
 
 注意这个口径：它不是套餐统一扩容，也不是“每个人多 50%”。这是对修复前后效率的估算，效果取决于你是否刚好踩中了这些问题。
 
-![Tibo公开的用量修复清单](https://file1.kamacoder.com/i/web/20260830200937.png)
+![Tibo公开的用量修复清单](https://file1.kamacoder.com/i/web/20260830200937.png?v=20261005)
 
 > 此图为 Tibo 公开帖在用量追踪页中的转载截图；原帖链接见文末资料来源。
 

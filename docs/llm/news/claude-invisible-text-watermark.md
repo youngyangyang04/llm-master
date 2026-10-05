@@ -18,7 +18,7 @@ Anthropic 近日公布了 AI 生成内容标记计划。为了落实欧盟《人
 - 生成文字：嵌入肉眼不可见、机器可读的水印。
 - 生成或处理文件：在支持的 SVG、PNG、JPG 等文件中附加数字签名的来源元数据。
 
-![Claude文字隐形水印](https://file1.kamacoder.com/i/web/20260812151227.jpg)
+![Claude文字隐形水印](https://file1.kamacoder.com/i/web/20260812151227.jpg?v=20261005)
 
 先说最容易被标题带偏的地方：**这不是所有 Claude 历史输出突然被统一盖章，也不是一个能直接判断“谁写了文章”的万能检测器。**
 
@@ -82,7 +82,7 @@ Anthropic 表示，会帮助用户和第三方检测 Claude 的文字水印与�
 
 **这份内容一定由 Claude 从头创作。**
 
-![Claude水印检测边界](https://file1.kamacoder.com/i/web/20260812151234.jpg)
+![Claude水印检测边界](https://file1.kamacoder.com/i/web/20260812151234.jpg?v=20261005)
 
 为什么？因为很多人会让 Claude 做校对、翻译、摘要或者文件转换。原始观点、数据甚至绝大多数文字可能来自人类，但只要内容经过支持的 Claude 模型重新输出，就可能带上标记。
 

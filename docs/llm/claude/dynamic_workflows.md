@@ -23,7 +23,7 @@ harness 是什么？就是控制 Claude **读什么、什么时候动手、产�
 
 <!-- drawio源文件: ./drawio/dynamic_workflows_01_harness.drawio -->
 
-![固定 harness 想通吃所有任务，对比动态工作流让 Claude 按任务现写专属 harness](https://file1.kamacoder.com/i/web/20260617184001_dw01.png)
+![固定 harness 想通吃所有任务，对比动态工作流让 Claude 按任务现写专属 harness](https://file1.kamacoder.com/i/web/20260617184001_dw01.png?v=20261005)
 
 这张图回答的是：默认 harness 是一套尺寸想套住所有任务，要做到极致只能你手搓；动态工作流则是 Claude 分析完任务，给调研、安全、评审各现写一套量身的外壳。
 
@@ -45,7 +45,7 @@ Claude 拿这几块积木，针对你的任务搭出一套编排：要不要开�
 
 <!-- drawio源文件: ./drawio/dynamic_workflows_02_isolation.drawio -->
 
-![单个上下文窗口扛全部任务会偷懒自夸跑偏，拆成多个隔离子Agent后各个击破](https://file1.kamacoder.com/i/web/20260617184002_dw02.png)
+![单个上下文窗口扛全部任务会偷懒自夸跑偏，拆成多个隔离子Agent后各个击破](https://file1.kamacoder.com/i/web/20260617184002_dw02.png?v=20261005)
 
 - **偷懒（agentic laziness）**：审 50 个文件审到 35 个就说「干完了」——不是模型坏了，是上下文塞满了，它把「差不多」当成了「做完」；
 - **自夸（self-preferential bias）**：让 Claude 验自己的活，它会偏向维护自己之前的结论，跟「让学生给自己的卷子打分」一个道理；

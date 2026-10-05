@@ -29,7 +29,7 @@ tags: [大模型入门, 大模型训练, 预训练, SFT微调, 大模型推理]
 
 后面所有概念，预训练、SFT、RLHF、DPO、推理、幻觉，都可以从这句话里展开。
 
-![大模型从数据到推理的完整链路](https://file1.kamacoder.com/i/web/20260519162007_llm_training_01_full_pipeline_compressed.png)
+![大模型从数据到推理的完整链路](https://file1.kamacoder.com/i/web/20260519162007_llm_training_01_full_pipeline_compressed.png?v=20261005)
 
 ## 本篇文章目录
 
@@ -116,7 +116,7 @@ tokenizer 会把文本切成 token，再把 token 映射成 id，模型拿到的
 
 **模型不是在字符层面理解世界，而是在 token 序列上学习规律。**
 
-![文本先被切成 token，模型看到的是数字序列](https://file1.kamacoder.com/i/web/20260519162009_llm_training_02_tokenization_compressed.png)
+![文本先被切成 token，模型看到的是数字序列](https://file1.kamacoder.com/i/web/20260519162009_llm_training_02_tokenization_compressed.png?v=20261005)
 
 ## 第二步：数据不是越多越好，脏数据会把模型带歪
 
@@ -198,7 +198,7 @@ loss 越大，说明预测越离谱。
 
 模型就在这个过程中，把语言规律和世界知识压进参数里。
 
-![预训练就是反复预测下一个 token 并更新参数](https://file1.kamacoder.com/i/web/20260519162010_llm_training_03_pretraining_next_token_compressed.png)
+![预训练就是反复预测下一个 token 并更新参数](https://file1.kamacoder.com/i/web/20260519162010_llm_training_03_pretraining_next_token_compressed.png?v=20261005)
 
 ## 模型参数到底是什么？
 
@@ -264,7 +264,7 @@ loss 会告诉模型：你这次错得有多离谱。
 
 训练后，这堆数字就能把输入上下文映射成合理的输出概率。
 
-![模型参数是训练过程中被不断调出来的内部权重](https://file1.kamacoder.com/i/web/20260519162011_llm_training_04_model_parameters_compressed.png)
+![模型参数是训练过程中被不断调出来的内部权重](https://file1.kamacoder.com/i/web/20260519162011_llm_training_04_model_parameters_compressed.png?v=20261005)
 
 ## 为什么参数越大，通常越强？
 
@@ -381,7 +381,7 @@ loss 会告诉模型：你这次错得有多离谱。
 
 它是在概率空间里生成最可能的后续内容。
 
-![下一个 token 任务逼模型学习多层规律](https://file1.kamacoder.com/i/web/20260519162012_llm_training_04_patterns_from_prediction_compressed.png)
+![下一个 token 任务逼模型学习多层规律](https://file1.kamacoder.com/i/web/20260519162012_llm_training_04_patterns_from_prediction_compressed.png?v=20261005)
 
 ## 预训练完的模型，还不是 ChatGPT
 
@@ -427,7 +427,7 @@ SFT，全称 Supervised Fine-Tuning，监督微调。
 
 这一步之后，模型才开始像一个聊天助手。
 
-![Base Model 通过 SFT 变成更会听指令的 Chat Model](https://file1.kamacoder.com/i/web/20260519162014_llm_training_05_base_to_chat_compressed.png)
+![Base Model 通过 SFT 变成更会听指令的 Chat Model](https://file1.kamacoder.com/i/web/20260519162014_llm_training_05_base_to_chat_compressed.png?v=20261005)
 
 ## SFT 解决的是“会不会按格式回答”，不是万能药
 
@@ -505,7 +505,7 @@ DPO 则更直接一些，可以用“好回答 / 坏回答”成对数据来优�
 
 比如更有帮助、更少胡说、更少攻击性、更愿意承认不确定、更符合安全边界。
 
-![SFT之后还要用偏好数据校准回答质量](https://file1.kamacoder.com/i/web/20260519162015_llm_training_06_alignment_compressed.png)
+![SFT之后还要用偏好数据校准回答质量](https://file1.kamacoder.com/i/web/20260519162015_llm_training_06_alignment_compressed.png?v=20261005)
 
 ## 推理阶段：模型不是一次性想好整篇答案
 
@@ -537,7 +537,7 @@ DPO 则更直接一些，可以用“好回答 / 坏回答”成对数据来优�
 
 “基于目前已经出现的内容，下一个 token 最可能是什么？”
 
-![推理阶段逐 token 生成答案的循环](https://file1.kamacoder.com/i/web/20260519162016_llm_training_07_inference_loop_compressed.png)
+![推理阶段逐 token 生成答案的循环](https://file1.kamacoder.com/i/web/20260519162016_llm_training_07_inference_loop_compressed.png?v=20261005)
 
 ## 那第一个输出 token 是怎么来的？
 
@@ -636,7 +636,7 @@ Redis 为什么快？ Redis 之所以
 
 **大模型不是从空白里猜第一个词，而是根据 prompt 预测回答的第一个 token。**
 
-![第一个输出 token 不是凭空生成，而是基于 prompt 上下文预测](https://file1.kamacoder.com/i/web/20260519162017_llm_training_08_first_output_token_compressed.png)
+![第一个输出 token 不是凭空生成，而是基于 prompt 上下文预测](https://file1.kamacoder.com/i/web/20260519162017_llm_training_08_first_output_token_compressed.png?v=20261005)
 
 ## 模型怎么知道要围绕问题回答？
 
@@ -776,7 +776,7 @@ Redis 快主要有几个原因……
 
 没有推理，训练好的能力也不会变成当前这次对话里的具体答案。
 
-![模型围绕问题回答，是训练学到模式，推理按当前上下文生成](https://file1.kamacoder.com/i/web/20260519162019_llm_training_09_question_to_answer_compressed.png)
+![模型围绕问题回答，是训练学到模式，推理按当前上下文生成](https://file1.kamacoder.com/i/web/20260519162019_llm_training_09_question_to_answer_compressed.png?v=20261005)
 
 ## temperature、top-p 到底控制什么？
 
@@ -877,7 +877,7 @@ KV Cache 则是推理加速的关键。
 - 做自动评测和人工抽检
 - 对高风险场景设置拒答边界
 
-![幻觉来自生成目标和真实校验之间的错位](https://file1.kamacoder.com/i/web/20260519162021_llm_training_08_hallucination_control_compressed.png)
+![幻觉来自生成目标和真实校验之间的错位](https://file1.kamacoder.com/i/web/20260519162021_llm_training_08_hallucination_control_compressed.png?v=20261005)
 
 ## 训练大模型和做大模型应用，是两回事
 

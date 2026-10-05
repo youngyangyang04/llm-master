@@ -8,7 +8,7 @@ tags: ["RAG", "大模型应用"]
 # RAG 切片策略：固定长度、递归字符、语义切分、结构感知四种方式对比
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 ## 一、为什么 Chunking 这么重要？
@@ -61,7 +61,7 @@ RAG 里的 Chunking，面对的就是这个核心矛盾：**chunk 太小，单�
 
 下面这张图展示了同一段文本用不同策略切出来的结果差异：
 
-![RAG四种Chunk切片策略对比图](https://file1.kamacoder.com/i/bagu/chunk_strategy.png)
+![RAG四种Chunk切片策略对比图](https://file1.kamacoder.com/i/bagu/chunk_strategy.png?v=20261005)
 
 ## 三、Overlap：被低估的关键参数
 
@@ -74,7 +74,7 @@ Overlap 的解决思路是：相邻 chunk 之间保留一段重叠的内容。�
 这样，边界附近的信息在两个 chunk 里都有备份，不管检索命中哪个，都能拿到完整的上下文。
 
 
-![overlap 的工作机制](https://file1.kamacoder.com/i/bagu/chunk_overlap.png)
+![overlap 的工作机制](https://file1.kamacoder.com/i/bagu/chunk_overlap.png?v=20261005)
 
 ------
 

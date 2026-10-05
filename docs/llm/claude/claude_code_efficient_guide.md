@@ -21,7 +21,7 @@ Claude Code 真正的价值不在「它能写代码」，而在于：你能把�
 
 <!-- drawio源文件: ./drawio/14_claude_code_solidify_ladder.drawio -->
 
-![Claude Code 高效使用的逐级固化阶梯：从聊天框到 CLAUDE.md、Skill、Hooks、子代理与动态工作流，越往上自动化程度越高越省心](https://file1.kamacoder.com/i/web/20260624112225.png)
+![Claude Code 高效使用的逐级固化阶梯：从聊天框到 CLAUDE.md、Skill、Hooks、子代理与动态工作流，越往上自动化程度越高越省心](https://file1.kamacoder.com/i/web/20260624112225.png?v=20261005)
 
 这张图回答的是：**怎么把 Claude Code 从「聊天框」一步步用高效**。底座那个红色「聊天框」就是大多数人停留的浅用法——问一句答一句、每次从零解释。往上每一级，都是把一类「重复劳动」固化下来：项目规则固化进 CLAUDE.md、专项流程固化成 Skill、必做动作固化成 Hooks、大任务固化成并行编排。固化得越多，你要操的心越少。下面就顺着这条阶梯一级一级讲。
 

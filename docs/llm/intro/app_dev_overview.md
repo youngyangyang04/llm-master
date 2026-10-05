@@ -67,7 +67,7 @@ Agent (智能体)：解决“执行”的问题，让模型从被动应答变为
 
 
 
-![问答数据流程](https://file1.kamacoder.com/i/bagu/Snipaste_2026-04-15_17-32-11.png)
+![问答数据流程](https://file1.kamacoder.com/i/bagu/Snipaste_2026-04-15_17-32-11.png?v=20261005)
 
 ------
 

@@ -101,7 +101,7 @@ Anthropic 在 2026 年 5 月 14 日发了一篇博客：How Claude Code works in
 
 你要给它入口。
 
-![图1：大代码库让 Agent 迷路的根因不是文件多，而是入口太多](https://file1.kamacoder.com/i/web/20260527192245_claude_large_codebase_01_complexity_compressed.png)
+![图1：大代码库让 Agent 迷路的根因不是文件多，而是入口太多](https://file1.kamacoder.com/i/web/20260527192245_claude_large_codebase_01_complexity_compressed.png?v=20261005)
 
 ## 二、Claude Code 不是靠索引背下整个仓库
 
@@ -141,7 +141,7 @@ Claude Code 的思路不一样。
 
 它是在开发者机器上的实时代码库里工作。
 
-![图2：活跃代码库里索引容易和现场错位，Claude Code 更依赖当前工作区实时搜索](https://file1.kamacoder.com/i/web/20260527192246_claude_large_codebase_02_index_drift_compressed.png)
+![图2：活跃代码库里索引容易和现场错位，Claude Code 更依赖当前工作区实时搜索](https://file1.kamacoder.com/i/web/20260527192246_claude_large_codebase_02_index_drift_compressed.png?v=20261005)
 
 这就是 Anthropic 说的 agentic search。
 
@@ -169,7 +169,7 @@ Agentic Search 听起来很高级，其实你可以把它理解成：
 6. 修改最小范围
 7. 跑对应测试
 
-![图3：Agentic Search 不是一次性搜索答案，而是根据新证据一步步缩小范围](https://file1.kamacoder.com/i/web/20260527192247_claude_large_codebase_03_agentic_search_compressed.png)
+![图3：Agentic Search 不是一次性搜索答案，而是根据新证据一步步缩小范围](https://file1.kamacoder.com/i/web/20260527192247_claude_large_codebase_03_agentic_search_compressed.png?v=20261005)
 
 这和工程师查 bug 很像。
 
@@ -245,7 +245,7 @@ Anthropic 文章里提到一个很重要的点：
 
 而是让它每一步都看得更准。
 
-![图4：上下文治理要避免太少导致盲搜，也要避免太多稀释注意力](https://file1.kamacoder.com/i/web/20260527192249_claude_large_codebase_04_context_governance_compressed.png)
+![图4：上下文治理要避免太少导致盲搜，也要避免太多稀释注意力](https://file1.kamacoder.com/i/web/20260527192249_claude_large_codebase_04_context_governance_compressed.png?v=20261005)
 
 ## 五、Harness：模型之外真正影响体验的工程支架
 
@@ -281,7 +281,7 @@ harness 负责把模型放到真实工程环境里。
 
 有 harness，Claude Code 才像一个接入了团队工程体系的 Agent。
 
-![图5：同一个任务有没有 Harness，Claude Code 的执行路径会完全不同](https://file1.kamacoder.com/i/web/20260527192250_claude_large_codebase_05_harness_paths_compressed.png)
+![图5：同一个任务有没有 Harness，Claude Code 的执行路径会完全不同](https://file1.kamacoder.com/i/web/20260527192250_claude_large_codebase_05_harness_paths_compressed.png?v=20261005)
 
 接下来我们一个个讲。
 
@@ -327,7 +327,7 @@ harness 负责把模型放到真实工程环境里。
 
 所以大代码库更需要分层 `CLAUDE.md`。
 
-![图6：根 CLAUDE.md 管方向，子目录 CLAUDE.md 和 Skills 负责局部知识按需加载](https://file1.kamacoder.com/i/web/20260527192251_claude_large_codebase_06_context_routing_compressed.png)
+![图6：根 CLAUDE.md 管方向，子目录 CLAUDE.md 和 Skills 负责局部知识按需加载](https://file1.kamacoder.com/i/web/20260527192251_claude_large_codebase_06_context_routing_compressed.png?v=20261005)
 
 这里和我们上一篇文章是连着的。
 
@@ -386,7 +386,7 @@ Hooks 不只是拦截错误，还可以让配置自我改进。
 
 这才是大团队落地 AI 编程需要的能力。
 
-![图7：Hooks 把提醒模型变成自动执行，并把经验反哺到项目规则里](https://file1.kamacoder.com/i/web/20260527192252_claude_large_codebase_07_hooks_feedback_compressed.png)
+![图7：Hooks 把提醒模型变成自动执行，并把经验反哺到项目规则里](https://file1.kamacoder.com/i/web/20260527192252_claude_large_codebase_07_hooks_feedback_compressed.png?v=20261005)
 
 ## 八、Skills：不要把所有专家知识塞进上下文
 
@@ -494,7 +494,7 @@ LSP 不一样。
 
 **探索噪音隔离，关键结论回传。**
 
-![图8：Plugins、MCP、LSP、Subagents 不是同一类东西，它们分别解决分发、接入、定位和隔离问题](https://file1.kamacoder.com/i/web/20260527192254_claude_large_codebase_08_component_boundaries_compressed.png)
+![图8：Plugins、MCP、LSP、Subagents 不是同一类东西，它们分别解决分发、接入、定位和隔离问题](https://file1.kamacoder.com/i/web/20260527192254_claude_large_codebase_08_component_boundaries_compressed.png?v=20261005)
 
 ## 十、大代码库应该按什么顺序配置 Claude Code？
 
@@ -599,7 +599,7 @@ Anthropic 文章里提到一个角色：agent manager。
 
 不是某个开发者的个人爱好。
 
-![图9：团队落地 Claude Code 的关键是把个人经验沉淀成可复用的工程资产](https://file1.kamacoder.com/i/web/20260527192255_claude_large_codebase_09_team_asset_loop_compressed.png)
+![图9：团队落地 Claude Code 的关键是把个人经验沉淀成可复用的工程资产](https://file1.kamacoder.com/i/web/20260527192255_claude_large_codebase_09_team_asset_loop_compressed.png?v=20261005)
 
 这里我觉得 Anthropic 说得很现实：
 

@@ -9,13 +9,13 @@ tags: [Codex, OpenAI, AI Agent, AI自动化, Computer Use, 大模型动态]
 
 
 <a href="https://notes.kamacoder.com/qita/0021.gpt-5-6-sol-terra-luna-domestic-guide.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 
 OpenAI在今天（6月19日） 又一个“Codex Thursday”，这次放出来的功能叫 **Record & Replay**。
 
-![](https://file1.kamacoder.com/i/web/2026-06-19_15-01-19.jpg) 
+![](https://file1.kamacoder.com/i/web/2026-06-19_15-01-19.jpg?v=20261005) 
 
 一句话先说清楚它干嘛：
 
@@ -35,7 +35,7 @@ OpenAI在今天（6月19日） 又一个“Codex Thursday”，这次放出来�
 
 <!-- drawio源文件: ./drawio/codex_record_replay_01_paradigm.drawio -->
 
-![Codex Record & Replay 范式转变：旧做法写 prompt 描述任务信息有损耗，新做法录一遍演示动作被忠实捕获](https://file1.kamacoder.com/i/web/20260619120844_rr_01_paradigm.png)
+![Codex Record & Replay 范式转变：旧做法写 prompt 描述任务信息有损耗，新做法录一遍演示动作被忠实捕获](https://file1.kamacoder.com/i/web/20260619120844_rr_01_paradigm.png?v=20261005)
 
 这张图说的就是这个转变。
 
@@ -49,7 +49,7 @@ OpenAI在今天（6月19日） 又一个“Codex Thursday”，这次放出来�
 
 Record & Replay 等于把自动化的入口，从“会写”挪到了“会做”。
 
-![Codex Record & Replay 插件卡片，给出录一遍操作打包成可复用 Skill 的示例提示，包括建一个 File Expense 报销技能](https://file1.kamacoder.com/i/web/codex_rr_card.jpg)
+![Codex Record & Replay 插件卡片，给出录一遍操作打包成可复用 Skill 的示例提示，包括建一个 File Expense 报销技能](https://file1.kamacoder.com/i/web/codex_rr_card.jpg?v=20261005)
 
 官方给的几个示例提示就很直白：“把我的工作流录下来，变成一个可复用技能”“看着我做这件事，据此生成一个技能”，甚至直接“录一个叫 File Expense 的报销技能”——你说一句、做一遍，剩下的交给它。
 
@@ -59,7 +59,7 @@ Record & Replay 等于把自动化的入口，从“会写”挪到了“会做�
 
 <!-- drawio源文件: ./drawio/codex_record_replay_02_pipeline.drawio -->
 
-![Codex Record & Replay 工作原理流程：演示、Codex 观察动作与窗口内容、生成可看可改的 Skill、用 Computer Use 浏览器插件回放](https://file1.kamacoder.com/i/web/20260619120844_rr_02_pipeline.png)
+![Codex Record & Replay 工作原理流程：演示、Codex 观察动作与窗口内容、生成可看可改的 Skill、用 Computer Use 浏览器插件回放](https://file1.kamacoder.com/i/web/20260619120844_rr_02_pipeline.png?v=20261005)
 
 按官方文档，整个过程是这样：
 
@@ -73,15 +73,15 @@ Record & Replay 等于把自动化的入口，从“会写”挪到了“会做�
 
 第一步，在 Codex 应用的插件页里把 Record & Replay 加进来：
 
-![在 Codex 应用插件页搜索并添加 Record & Replay 插件](https://file1.kamacoder.com/i/web/codex_rr_plugin.png)
+![在 Codex 应用插件页搜索并添加 Record & Replay 插件](https://file1.kamacoder.com/i/web/codex_rr_plugin.png?v=20261005)
 
 第二步，它会弹窗找你要权限——“辅助功能”用来读界面，“截屏”用来判断该点哪儿，这俩就是 Computer Use 干活的基础：
 
-![Codex 开启 Computer Use 的授权弹窗，需要辅助功能和截屏两项权限](https://file1.kamacoder.com/i/web/codex_rr_permission.png)
+![Codex 开启 Computer Use 的授权弹窗，需要辅助功能和截屏两项权限](https://file1.kamacoder.com/i/web/codex_rr_permission.png?v=20261005)
 
 第三步，你把活干完、说一句“录完了”，Codex 复盘一遍就吐出一份 `SKILL.md`，还会自检一句 “Skill is valid”：
 
-![Codex 录制结束后自动生成 SKILL.md 文件并提示 Skill is valid](https://file1.kamacoder.com/i/web/codex_rr_recordskill.png)
+![Codex 录制结束后自动生成 SKILL.md 文件并提示 Skill is valid](https://file1.kamacoder.com/i/web/codex_rr_recordskill.png?v=20261005)
 
 这里我要特别点一句，也是这张图中间画得最重的那块：
 
@@ -93,7 +93,7 @@ Record & Replay 生成的 Skill 是结构化的、能看懂的：什么时候用
 
 OpenAI 自己演示的那个 YouTube 上传例子就挺能说明问题：它学会的不只是“点这点那”，而是整套逻辑——选视频文件、填标题描述、传缩略图、设隐私是 Private 还是 Unlisted、处理 .srt 字幕。它理解了“这一步是在干嘛”，不是机械复读坐标。
 
-![演示中 Codex 在 Finder 里识别出成对的 mp4 视频文件和 srt 字幕文件并据此处理](https://file1.kamacoder.com/i/web/codex_rr_filesdemo.gif)
+![演示中 Codex 在 Finder 里识别出成对的 mp4 视频文件和 srt 字幕文件并据此处理](https://file1.kamacoder.com/i/web/codex_rr_filesdemo.gif?v=20261005)
 
 就像这段演示里，它自己在文件夹里把视频和对应的字幕文件认成了一套——“哪两个文件是一对的”这种你平时懒得用文字写清楚的隐性规则，做一遍它反而能看明白。
 
@@ -105,7 +105,7 @@ Record & Replay 真正的想象空间在**复用和共享**。
 
 <!-- drawio源文件: ./drawio/codex_record_replay_03_share.drawio -->
 
-![Codex Skill 团队共享：一个人录一遍生成一份 Skill，团队多人复用，还能打包成 Plugin 稳定分发](https://file1.kamacoder.com/i/web/20260619120845_rr_03_share.png)
+![Codex Skill 团队共享：一个人录一遍生成一份 Skill，团队多人复用，还能打包成 Plugin 稳定分发](https://file1.kamacoder.com/i/web/20260619120845_rr_03_share.png?v=20261005)
 
 一个人录一遍，产出的是一份 Skill。这份 Skill 可以共享给团队里的其他人；要更稳定地分发，还能把它打包成一个 Plugin，发给整个部门。
 

@@ -9,7 +9,7 @@ pageMeta: false
 # Claude学习专栏
 
 <a href="https://notes.kamacoder.com/qita/0024.claude-opus-5-china-guide.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-07-30_21-45-21.jpg" style="width:100%;cursor:pointer;" alt="">
+  <img src="https://file1.kamacoder.com/i/web/2026-07-30_21-45-21.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="">
 </a>
 
 

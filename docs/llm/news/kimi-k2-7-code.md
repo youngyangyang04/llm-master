@@ -9,7 +9,7 @@ tags: [Kimi, 月之暗面, 大模型发布, AI编程, Agent, 开源大模型]
 
 
 <a href="https://notes.kamacoder.com/qita/0021.gpt-5-6-sol-terra-luna-domestic-guide.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 
@@ -17,7 +17,7 @@ tags: [Kimi, 月之暗面, 大模型发布, AI编程, Agent, 开源大模型]
 
 如果你关注的是新一代旗舰模型，直接看这篇：[Kimi K3 发布实测](./kimi-k3.md)。K3 已经把战场从“省 Token 的编程模型”推到了“百万上下文 + 原生视觉 + 前端审美”。
 
-![Kimi 开源编程模型迭代：K2、K2.6、K2.7-Code 这条线](https://file1.kamacoder.com/i/web/20260615223554_kimi_k2_7_timeline.png)
+![Kimi 开源编程模型迭代：K2、K2.6、K2.7-Code 这条线](https://file1.kamacoder.com/i/web/20260615223554_kimi_k2_7_timeline.png?v=20261005)
 
 一句话先说清楚定位：
 
@@ -41,7 +41,7 @@ Kimi K2.7-Code 这次反过来了。
 
 **同样的活，thinking token 比上一代 K2.6 砍掉约 30%，效果还更好。**
 
-![同一个任务，Kimi K2.7-Code 思考 token 比 K2.6 少烧约 30%](https://file1.kamacoder.com/i/web/20260615223555_kimi_k2_7_token_efficiency.png)
+![同一个任务，Kimi K2.7-Code 思考 token 比 K2.6 少烧约 30%](https://file1.kamacoder.com/i/web/20260615223555_kimi_k2_7_token_efficiency.png?v=20261005)
 
 别小看这"少想 30%"。
 
@@ -140,7 +140,7 @@ API 价格（每百万 token）：
 
 卡哥的选型逻辑从来没变过：**不是站队，是算账。** 看三件事——失败成本、能不能自部署、量有多大。
 
-![模型选型：Opus 4.8 攻坚、Kimi K2.7-Code 与 GLM-5.2 自部署、DeepSeek 跑量怎么选](https://file1.kamacoder.com/i/web/20260615223555_kimi_k2_7_model_choice.png)
+![模型选型：Opus 4.8 攻坚、Kimi K2.7-Code 与 GLM-5.2 自部署、DeepSeek 跑量怎么选](https://file1.kamacoder.com/i/web/20260615223555_kimi_k2_7_model_choice.png?v=20261005)
 
 具体到 K2.7-Code，它的位置是这样：
 

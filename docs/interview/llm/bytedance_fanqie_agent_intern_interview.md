@@ -18,7 +18,7 @@ faq:
 
 这次[知识星球](https://programmercarl.com/other/kstar.html)里录友分享了是番茄小说 Agent 应用开发日常实习的面试题。
 
-![](https://file1.kamacoder.com/i/web/20260825111336-b561eb.png)
+![](https://file1.kamacoder.com/i/web/20260825111336-b561eb.png?v=20261005)
 
 题目有十几道，难度不低。
 
@@ -54,7 +54,7 @@ faq:
 
 当时还只是团队内测，激活用户 74 人，稳定周活约 41 人。检索结果的直接采用率从 52.8% 提升到 64.6%。样本量不算大，所以我当时只把它定义为内测阶段有效，没有包装成大规模线上结论。
 
-![混合检索与RRF融合](https://file1.kamacoder.com/i/web/20260420205132.png)
+![混合检索与RRF融合](https://file1.kamacoder.com/i/web/20260420205132.png?v=20261005)
 
 ### 二、需求文档和代码文件通常很大，怎么保证检索正确？怎么判断对错？
 
@@ -98,7 +98,7 @@ Planner 输出的不是自然语言步骤，而是结构化 DAG。每个节点�
 
 如果执行中发现计划有问题，就把异常返回 Planner，只重规划受影响的子图。Plan-and-Execute 不等于 DAG，DAG 只是我们把计划工程化、可并行和可恢复的一种方式。
 
-![Plan-and-Execute执行流程](https://file1.kamacoder.com/i/web/05_plan_execute.png)
+![Plan-and-Execute执行流程](https://file1.kamacoder.com/i/web/05_plan_execute.png?v=20261005)
 
 ### 六、Planner、Worker、Reviewer 的边界怎么设计？挂载的工具一样吗？
 
@@ -122,7 +122,7 @@ Reviewer 可以读需求、看 Diff、跑测试和静态检查，但原则上不
 
 工具结果默认分页截断，预算到 70% 后禁止继续派生，接近上限时强制收束。另外任务会记录祖先链，避免 A 调 B、B 又调 A 的递归环。
 
-![Token预算控制状态机](https://file1.kamacoder.com/i/web/20260519175451_harness_stable_07_token_budget.png)
+![Token预算控制状态机](https://file1.kamacoder.com/i/web/20260519175451_harness_stable_07_token_budget.png?v=20261005)
 
 ### 八、基模是什么？多个 Agent 的 system、user、assistant、tool 消息怎么编排，怎么保证不乱序？
 
@@ -164,7 +164,7 @@ MCP 只是接入协议，不代表工具一定在远端。我们的 MCP 里有 1
 
 多头注意力会把隐藏维度投影到多个子空间，每个头独立计算注意力，可以学习不同类型的关系。最后把各头结果拼接，再通过 `Wo` 投影回模型维度。它在序列长度上的主要瓶颈仍然是 O(n²)。
 
-![Self-Attention QKV流程](https://file1.kamacoder.com/i/web/1778232933.png)
+![Self-Attention QKV流程](https://file1.kamacoder.com/i/web/1778232933.png?v=20261005)
 
 ### 十二、算法题：最大无重复子串
 

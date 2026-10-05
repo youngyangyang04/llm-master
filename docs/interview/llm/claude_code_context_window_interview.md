@@ -8,7 +8,7 @@ tags: [Claude Code面经, AI编程面试, 大模型面试, Context Engineering, 
 # Claude Code上下文窗口面试详解：Auto-Compact、上下文压缩与Agent记忆管理
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 > 不少读者问我，如何充值Claude会员，我在这里篇单独讲一下：[国内Claude充值会员的方法](../../qita/0002.claudepay.md)
@@ -96,7 +96,7 @@ tags: [Claude Code面经, AI编程面试, 大模型面试, Context Engineering, 
 然后模型基于这批输入生成下一步响应。
 
 <!-- drawio源文件: ./drawio/claude_context_01_window.drawio -->
-![图1：上下文窗口不是记忆，而是一次推理能看到的输入空间](https://file1.kamacoder.com/i/web/20260526150958_claude_context_01_window_compressed.png)
+![图1：上下文窗口不是记忆，而是一次推理能看到的输入空间](https://file1.kamacoder.com/i/web/20260526150958_claude_context_01_window_compressed.png?v=20261005)
 
 这里有个关键点：**模型不是从脑子里掏出历史，而是每一轮都重新读一遍上下文。**
 
@@ -136,7 +136,7 @@ Claude Code 这种编程 Agent，一次任务里可能会做这些事：
 这不是聊天，这是**带执行轨迹的工作流**。
 
 <!-- drawio源文件: ./drawio/claude_context_02_agent_growth.drawio -->
-![图2：Agent循环中工具结果、文件内容和错误日志会持续撑大上下文](https://file1.kamacoder.com/i/web/20260526150959_claude_context_02_agent_growth_compressed.png)
+![图2：Agent循环中工具结果、文件内容和错误日志会持续撑大上下文](https://file1.kamacoder.com/i/web/20260526150959_claude_context_02_agent_growth_compressed.png?v=20261005)
 
 一个最典型的场景是修 bug。
 
@@ -200,7 +200,7 @@ Claude Code 这种编程 Agent，一次任务里可能会做这些事：
 Agent 做过的错误尝试、失败路径、旧假设，如果一直留在上下文里，会干扰后续判断。
 
 <!-- drawio源文件: ./drawio/claude_context_03_quality_drop.drawio -->
-![图3：上下文变长后，问题从容量不足变成注意力稀释和状态污染](https://file1.kamacoder.com/i/web/20260526151000_claude_context_03_quality_drop_compressed.png)
+![图3：上下文变长后，问题从容量不足变成注意力稀释和状态污染](https://file1.kamacoder.com/i/web/20260526151000_claude_context_03_quality_drop_compressed.png?v=20261005)
 
 所以，上下文管理不是等满了再救火。
 
@@ -219,7 +219,7 @@ Claude Code 的设计思路也是这样：**Auto-Compact 很重要，但它不�
 你要能说出每个方案的边界。
 
 <!-- drawio源文件: ./drawio/claude_context_04_common_limits.drawio -->
-![图4：常见上下文管理方案各有适用场景，但单独使用都解决不了Agent执行轨迹问题](https://file1.kamacoder.com/i/web/20260526151001_claude_context_04_common_limits_compressed.png)
+![图4：常见上下文管理方案各有适用场景，但单独使用都解决不了Agent执行轨迹问题](https://file1.kamacoder.com/i/web/20260526151001_claude_context_04_common_limits_compressed.png?v=20261005)
 
 ### 1. 滑动窗口：简单，但容易丢任务背景
 
@@ -329,7 +329,7 @@ Claude Code 的上下文治理，可以理解成五层防线。
 **它不是等窗口满了再压缩，而是从拿上下文的那一刻起就开始控制。**
 
 <!-- drawio源文件: ./drawio/claude_context_05_five_layers.drawio -->
-![图5：Claude Code上下文治理的五层防线，从精准取数到Auto-Compact](https://file1.kamacoder.com/i/web/20260526151003_claude_context_05_five_layers_compressed.png)
+![图5：Claude Code上下文治理的五层防线，从精准取数到Auto-Compact](https://file1.kamacoder.com/i/web/20260526151003_claude_context_05_five_layers_compressed.png?v=20261005)
 
 ### 第一层：精准取上下文，少读无关内容
 
@@ -387,7 +387,7 @@ Claude Code 可以让子 Agent 处理研究类任务。
 子 Agent 相当于一个信息过滤器：**把大范围探索变成小体积结论。**
 
 <!-- drawio源文件: ./drawio/claude_context_06_subagent_isolation.drawio -->
-![图6：子Agent用独立上下文完成探索，只把结论交回主Agent](https://file1.kamacoder.com/i/web/20260526151004_claude_context_06_subagent_isolation_compressed.png)
+![图6：子Agent用独立上下文完成探索，只把结论交回主Agent](https://file1.kamacoder.com/i/web/20260526151004_claude_context_06_subagent_isolation_compressed.png?v=20261005)
 
 ### 第四层：把稳定规则放到 CLAUDE.md 和 memory
 
@@ -448,7 +448,7 @@ Claude Code 里你也可以通过 `/context` 看当前上下文使用情况，�
 | `/clear` | 清空聊天历史 | 已切换任务，不需要旧上下文 |
 
 <!-- drawio源文件: ./drawio/claude_context_07_compact_trigger.drawio -->
-![图7：Auto-Compact会在接近上限时提前压缩，避免真正满窗后无法生成摘要](https://file1.kamacoder.com/i/web/20260526151005_claude_context_07_compact_trigger_compressed.png)
+![图7：Auto-Compact会在接近上限时提前压缩，避免真正满窗后无法生成摘要](https://file1.kamacoder.com/i/web/20260526151005_claude_context_07_compact_trigger_compressed.png?v=20261005)
 
 面试时这里可以加一句：
 
@@ -465,7 +465,7 @@ Claude Code 里你也可以通过 `/context` 看当前上下文使用情况，�
 要按信息价值分层讲。
 
 <!-- drawio源文件: ./drawio/claude_context_08_keep_drop.drawio -->
-![图8：Auto-Compact不是平均压缩，而是保留任务状态、丢弃执行噪音](https://file1.kamacoder.com/i/web/20260526151006_claude_context_08_keep_drop_compressed.png)
+![图8：Auto-Compact不是平均压缩，而是保留任务状态、丢弃执行噪音](https://file1.kamacoder.com/i/web/20260526151006_claude_context_08_keep_drop_compressed.png?v=20261005)
 
 ### 1. 优先压工具输出
 
@@ -591,7 +591,7 @@ Agent 在执行过程中会做很多判断。
 这类 prompt 的目标不是"短"，而是**可接续**。
 
 <!-- drawio源文件: ./drawio/claude_context_09_summary_schema.drawio -->
-![图9：压缩摘要应该按任务状态组织，而不是按聊天流水账组织](https://file1.kamacoder.com/i/web/20260526151008_claude_context_09_summary_schema_compressed.png)
+![图9：压缩摘要应该按任务状态组织，而不是按聊天流水账组织](https://file1.kamacoder.com/i/web/20260526151008_claude_context_09_summary_schema_compressed.png?v=20261005)
 
 面试时你可以这样说：
 
@@ -630,7 +630,7 @@ Agent 在执行过程中会做很多判断。
 - 后续按需加载：文件内容、路径规则、子目录规则、工具结果
 
 <!-- drawio源文件: ./drawio/claude_context_10_after_compact.drawio -->
-![图10：压缩后会用稳定规则、任务摘要和按需加载内容重建可执行上下文](https://file1.kamacoder.com/i/web/20260526151009_claude_context_10_after_compact_compressed.png)
+![图10：压缩后会用稳定规则、任务摘要和按需加载内容重建可执行上下文](https://file1.kamacoder.com/i/web/20260526151009_claude_context_10_after_compact_compressed.png?v=20261005)
 
 所以 Claude Code 压完还能继续，不是因为所有细节都保住了。
 
@@ -734,7 +734,7 @@ RAG 适合问"相关代码在哪里"，Auto-Compact 适合保留"当前任务做
 最后再配合子 Agent 隔离大范围探索，避免主上下文被噪音污染。
 
 <!-- drawio源文件: ./drawio/claude_context_11_interview_answer.drawio -->
-![图11：Claude Code上下文窗口面试回答框架](https://file1.kamacoder.com/i/web/20260526151010_claude_context_11_interview_answer_compressed.png)
+![图11：Claude Code上下文窗口面试回答框架](https://file1.kamacoder.com/i/web/20260526151010_claude_context_11_interview_answer_compressed.png?v=20261005)
 
 ## 十三、普通开发者怎么用得更稳？
 

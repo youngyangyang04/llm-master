@@ -8,7 +8,7 @@ tags: [DeepSeek, 大模型价格, AI编程, 大模型动态]
 # DeepSeek V4-Pro永久降价75%：5月22日悄悄改了API定价页，这不是特惠了
 
 <a href="https://notes.kamacoder.com/qita/0021.gpt-5-6-sol-terra-luna-domestic-guide.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 
@@ -18,13 +18,13 @@ tags: [DeepSeek, 大模型价格, AI编程, 大模型动态]
 
 [DeepSeek API 定价页](https://api-docs.deepseek.com/quick_start/pricing/)现在写的是：V4-Pro 在 75% 折扣活动结束后，API 价格会正式调整为原定价的 1/4。
 
-![DeepSeek V4 Pro降价公告截图](https://file1.kamacoder.com/i/web/2026-05-23_15-15-52.jpg)
+![DeepSeek V4 Pro降价公告截图](https://file1.kamacoder.com/i/web/2026-05-23_15-15-52.jpg?v=20261005)
 
 **这次不是短期促销了，是永久降价 75%。**
 
 这操作有点狠。
 
-![DeepSeek V4-Pro 价格锚点下移](https://file1.kamacoder.com/i/web/20260523160730_deepseek_v4_pro_price_anchor_v2_compressed.png)
+![DeepSeek V4-Pro 价格锚点下移](https://file1.kamacoder.com/i/web/20260523160730_deepseek_v4_pro_price_anchor_v2_compressed.png?v=20261005)
 
 ## 价格到底变成多少
 
@@ -72,7 +72,7 @@ DeepSeek V4-Pro 原价是：
 
 现在价格一降，很多“能不能做”的问题，变成了“值不值得做”。
 
-![DeepSeek V4-Pro永久降价后API成本可以长期规划](https://file1.kamacoder.com/i/web/20260523160730_deepseek_v4_cost_budget_v2_compressed.png)
+![DeepSeek V4-Pro永久降价后API成本可以长期规划](https://file1.kamacoder.com/i/web/20260523160730_deepseek_v4_cost_budget_v2_compressed.png?v=20261005)
 
 ## 但别把 V4-Pro 神化
 
@@ -105,7 +105,7 @@ V4-Pro 的强项很明确：
 
 不是 V4-Pro 不能做，是翻车成本不一样。
 
-![DeepSeek V4降价后模型工具箱分工](https://file1.kamacoder.com/i/web/20260523160730_deepseek_v4_model_toolbox_v2_compressed.png)
+![DeepSeek V4降价后模型工具箱分工](https://file1.kamacoder.com/i/web/20260523160730_deepseek_v4_model_toolbox_v2_compressed.png?v=20261005)
 
 ## V4-Flash 反而更值得普通录友关注
 

@@ -8,7 +8,7 @@ tags: [大模型应用, 大模型微调, LoRA, QLoRA, PEFT, 大模型面试]
 # LoRA/QLoRA：为什么低秩微调这么流行
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇我们讲了 [SFT、RLHF、DPO 微调方法全景认知](./finetuning_sft_rlhf_dpo.md)。
@@ -73,7 +73,7 @@ tags: [大模型应用, 大模型微调, LoRA, QLoRA, PEFT, 大模型面试]
 
 <!-- drawio源文件: ./drawio/lora_01_memory_breakdown.drawio -->
 
-![全参微调和LoRA的显存占用对比](https://file1.kamacoder.com/i/web/20260614152712_lora_01_memory_breakdown.png)
+![全参微调和LoRA的显存占用对比](https://file1.kamacoder.com/i/web/20260614152712_lora_01_memory_breakdown.png?v=20261005)
 
 这张图回答的是：全参微调的显存大头不是模型权重，而是梯度和优化器状态。
 
@@ -125,7 +125,7 @@ LoRA 不改 W，而是说：**这个变化量 ΔW，我用两个小矩阵的乘�
 
 <!-- drawio源文件: ./drawio/lora_02_full_vs_lora.drawio -->
 
-![全参微调更新整个权重矩阵，LoRA只训练旁路的低秩矩阵](https://file1.kamacoder.com/i/web/20260614152715_lora_02_full_vs_lora.png)
+![全参微调更新整个权重矩阵，LoRA只训练旁路的低秩矩阵](https://file1.kamacoder.com/i/web/20260614152715_lora_02_full_vs_lora.png?v=20261005)
 
 这张图回答的是：全参微调和 LoRA 到底改的是哪部分。
 
@@ -169,7 +169,7 @@ LoRA 如果取 r = 8，只需要更新 4096×8 + 8×4096 ≈ 6.5 万个参数。
 
 <!-- drawio源文件: ./drawio/lora_03_low_rank.drawio -->
 
-![低秩分解把大的增量矩阵拆成两个瘦长小矩阵](https://file1.kamacoder.com/i/web/20260614152718_lora_03_low_rank.png)
+![低秩分解把大的增量矩阵拆成两个瘦长小矩阵](https://file1.kamacoder.com/i/web/20260614152718_lora_03_low_rank.png?v=20261005)
 
 这张图回答的是：为什么两个瘦长的小矩阵相乘，能顶替一个大矩阵的更新。
 
@@ -274,7 +274,7 @@ QLoRA = Quantization + LoRA，量化 + 低秩适配。
 
 <!-- drawio源文件: ./drawio/lora_04_qlora.drawio -->
 
-![QLoRA用4bit量化压缩冻结的基座模型，LoRA适配器保持高精度训练](https://file1.kamacoder.com/i/web/20260614152721_lora_04_qlora.png)
+![QLoRA用4bit量化压缩冻结的基座模型，LoRA适配器保持高精度训练](https://file1.kamacoder.com/i/web/20260614152721_lora_04_qlora.png?v=20261005)
 
 这张图回答的是：QLoRA 到底量化了哪一部分。
 
@@ -333,7 +333,7 @@ QLoRA 省显存，但也有代价：
 
 <!-- drawio源文件: ./drawio/lora_05_multi_adapter.drawio -->
 
-![一个基座模型挂载多个LoRA适配器按业务切换](https://file1.kamacoder.com/i/web/20260614152724_lora_05_multi_adapter.png)
+![一个基座模型挂载多个LoRA适配器按业务切换](https://file1.kamacoder.com/i/web/20260614152724_lora_05_multi_adapter.png?v=20261005)
 
 这张图回答的是：为什么 LoRA 在多业务场景下特别省。
 

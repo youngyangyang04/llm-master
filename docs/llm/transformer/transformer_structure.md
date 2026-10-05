@@ -19,7 +19,7 @@ tags: ["Transformer", "核心组件"]
 - **前馈神经网络子层**（FFN Sublayer）
 
 每个子层外面，都包裹着两件固定的"外套"：**残差连接** 和 **层归一化**。
-![Transformer Block整体结构示意图](https://file1.kamacoder.com/i/algo/IMG_0415_1805.WEBP)
+![Transformer Block整体结构示意图](https://file1.kamacoder.com/i/algo/IMG_0415_1805.WEBP?v=20261005)
 
 
 
@@ -56,7 +56,7 @@ tags: ["Transformer", "核心组件"]
 > 多头注意力 = 多个注意力头并行计算 + 结果拼接 + 线性变换
 
 假设有 8 个注意力头，每个头负责不同的语义维度，最后把 8 个结果拼在一起，再做一次线性映射，输出和输入维度保持一致。
-![Transformer Block前向过程示意图](https://file1.kamacoder.com/i/algo/IMG_0415_1806.WEBP)
+![Transformer Block前向过程示意图](https://file1.kamacoder.com/i/algo/IMG_0415_1806.WEBP?v=20261005)
 
 
 ---

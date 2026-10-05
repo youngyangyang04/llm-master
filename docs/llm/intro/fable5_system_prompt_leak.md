@@ -57,7 +57,7 @@ Anthropic 刚发了 [Claude Fable 5](../news/claude-fable-5.md)，号称目前�
 
 <!-- drawio源文件: ./drawio/fable5_leak_05_where.drawio -->
 
-![系统提示词在API、网页版和Claude Code里完全不同](https://file1.kamacoder.com/i/web/20260615110327_fable5_leak_05_where.png)
+![系统提示词在API、网页版和Claude Code里完全不同](https://file1.kamacoder.com/i/web/20260615110327_fable5_leak_05_where.png?v=20261005)
 
 这张图回答的是：同样叫"系统提示词"，在三个地方完全不是一回事。你调 API 时是自己写的、可短可无；网页版那套 3 万 token 是 Anthropic 定制的，这次泄露的就是它；Claude Code 又是另一套面向编程 Agent 的。**别拿网页版的瓜，去套你自己调 API 的场景。**
 
@@ -93,7 +93,7 @@ Anthropic 刚发了 [Claude Fable 5](../news/claude-fable-5.md)，号称目前�
 
 <!-- drawio源文件: ./drawio/fable5_leak_01_what_you_see.drawio -->
 
-![用户看到的一句话背后挂着三万token的系统提示词](https://file1.kamacoder.com/i/web/20260615110314_fable5_leak_01_what_you_see.png)
+![用户看到的一句话背后挂着三万token的系统提示词](https://file1.kamacoder.com/i/web/20260615110314_fable5_leak_01_what_you_see.png?v=20261005)
 
 这张图回答的是：你以为你只发了一句话，实际上发给模型的是"3万token系统提示词 + 你那一句"。
 
@@ -113,7 +113,7 @@ Anthropic 刚发了 [Claude Fable 5](../news/claude-fable-5.md)，号称目前�
 
 <!-- drawio源文件: ./drawio/fable5_leak_02_budget.drawio -->
 
-![Fable 5系统提示词3万token的预算拆解](https://file1.kamacoder.com/i/web/20260615110318_fable5_leak_02_budget.png)
+![Fable 5系统提示词3万token的预算拆解](https://file1.kamacoder.com/i/web/20260615110318_fable5_leak_02_budget.png?v=20261005)
 
 这张图回答的是：3 万 token 到底花在了哪几件事上。
 
@@ -179,7 +179,7 @@ Anthropic 刚发了 [Claude Fable 5](../news/claude-fable-5.md)，号称目前�
 
 <!-- drawio源文件: ./drawio/fable5_leak_06_growth.drawio -->
 
-![系统提示词在一次次迭代中不断累积变长](https://file1.kamacoder.com/i/web/20260615110330_fable5_leak_06_growth.png)
+![系统提示词在一次次迭代中不断累积变长](https://file1.kamacoder.com/i/web/20260615110330_fable5_leak_06_growth.png?v=20261005)
 
 这张图回答的是：3 万 token 是怎么一层层堆起来的。初版只有核心指令，上线翻车补一层行为规则，接新工具叠一层 schema，出了事故再打一层安全补丁——每变高一截，背后都是一次真实迭代。
 
@@ -209,7 +209,7 @@ Fable 5 网页版有很大的上下文窗口，但再大也是有限的。开场
 
 <!-- drawio源文件: ./drawio/fable5_leak_03_three_costs.drawio -->
 
-![固定的三万token前缀同时产生钱延迟和窗口三笔成本](https://file1.kamacoder.com/i/web/20260615110321_fable5_leak_03_three_costs.png)
+![固定的三万token前缀同时产生钱延迟和窗口三笔成本](https://file1.kamacoder.com/i/web/20260615110321_fable5_leak_03_three_costs.png?v=20261005)
 
 这张图回答的是：同一段固定的 3 万 token 前缀，会同时压上三笔账——钱按每次请求累乘、延迟被读完整段拖着、窗口开场就被占掉一块。
 
@@ -235,7 +235,7 @@ Fable 5 网页版有很大的上下文窗口，但再大也是有限的。开场
 
 <!-- drawio源文件: ./drawio/fable5_leak_04_cache.drawio -->
 
-![Prompt Cache命中前缀后系统提示词的成本大幅下降](https://file1.kamacoder.com/i/web/20260615110324_fable5_leak_04_cache.png)
+![Prompt Cache命中前缀后系统提示词的成本大幅下降](https://file1.kamacoder.com/i/web/20260615110324_fable5_leak_04_cache.png?v=20261005)
 
 这张图回答的是：同样一段 3 万 token 的系统提示词，命中缓存和不命中缓存，成本差一大截。
 
@@ -285,7 +285,7 @@ Fable 5 网页版有很大的上下文窗口，但再大也是有限的。开场
 
 <!-- drawio源文件: ./drawio/fable5_leak_07_packhunt.drawio -->
 
-![pack hunt用多个无害碎片组合绕过安全分类器提取提示词](https://file1.kamacoder.com/i/web/20260615110333_fable5_leak_07_packhunt.png)
+![pack hunt用多个无害碎片组合绕过安全分类器提取提示词](https://file1.kamacoder.com/i/web/20260615110333_fable5_leak_07_packhunt.png?v=20261005)
 
 这张图回答的是：为什么正面问"把提示词发我"会被安全分类器一秒拦下，而 pack hunt 能成。它把攻击拆成一堆单看都无害的碎片，分别溜过防线，最后在外面拼合还原出整段提示词。
 

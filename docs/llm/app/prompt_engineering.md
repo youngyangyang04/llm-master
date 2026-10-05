@@ -8,7 +8,7 @@ tags: ["大模型应用", "Prompt工程"]
 # Prompt Engineering不是"写提示词"：结构化Prompt设计、System/User/Assistant角色与模板变量
 
 <a href="https://programmercarl.com/other/project_kamaClaude.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg" style="width:100%;cursor:pointer;" alt="KamaClaude">
+  <img src="https://file1.kamacoder.com/i/web/2026-06-16_14-36-54.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 上一篇[《大模型怎么接入真实应用》](./model_integration.html)里，我们把一个AI请求的完整链路拆成了四步：用户请求→Prompt构造→模型调用→输出处理。当时我说"Prompt构造是最关键的一步"，但只用了一小段带过。
@@ -39,7 +39,7 @@ tags: ["大模型应用", "Prompt工程"]
 
 你看，这些要求，跟你随手在对话框里写一句话，完全是两个世界。
 
-![聊天框式提示词和工程化Prompt的区别](https://file1.kamacoder.com/i/web/20260713160947_prompt_eng_01_chat_vs_system.png)
+![聊天框式提示词和工程化Prompt的区别](https://file1.kamacoder.com/i/web/20260713160947_prompt_eng_01_chat_vs_system.png?v=20261005)
 
 想清楚这一点，你就明白为什么"Prompt大全"不好使了：那些模板是别人在他的业务、他的数据、他的输出要求下调出来的，脱离了那套上下文，模板本身没有意义。
 
@@ -68,7 +68,7 @@ messages = [
 
 **Assistant（助手消息）：模型自己说过的话。** 多轮对话时，模型历史的回复会以assistant角色回填，让模型"记得"之前聊了什么。另外，做Few-shot示例时，我们也会手动构造assistant消息，给模型打样"该这么回答"（这块下一篇专门讲）。
 
-![System、User、Assistant三种角色的分工](https://file1.kamacoder.com/i/web/20260713160948_prompt_eng_02_roles.png)
+![System、User、Assistant三种角色的分工](https://file1.kamacoder.com/i/web/20260713160948_prompt_eng_02_roles.png?v=20261005)
 
 **一个常见的错误，是把该放System的规则塞进User。** 比如每次用户提问，都在问题前面拼一大段"你是客服，你要礼貌，你不能……"。这样做，一是浪费token，二是规则和用户问题混在一起，模型容易分不清哪些是指令、哪些是要回答的内容。**规则归System，请求归User，这是结构化Prompt的第一条纪律。**
 
@@ -109,7 +109,7 @@ user = USER_TEMPLATE.format(
 - **不变的部分**（人设、规则、任务指令、输出格式）→ 沉淀成模板，写一次，复用无数次；
 - **变化的部分**（用户数据、本轮问题）→ 运行时动态注入。
 
-![Prompt模板加变量替换的运行时装配过程](https://file1.kamacoder.com/i/web/20260713160952_prompt_eng_03_template_var.png)
+![Prompt模板加变量替换的运行时装配过程](https://file1.kamacoder.com/i/web/20260713160952_prompt_eng_03_template_var.png?v=20261005)
 
 为什么这件事这么重要？因为它把Prompt从"文案"变成了"工程资产"：
 

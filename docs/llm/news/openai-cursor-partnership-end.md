@@ -89,7 +89,7 @@ OpenAI 断掉的是 Cursor 的内置通道，**不是 OpenAI API 本身。**
 
 而且关于[APIDock](apidock.ai)有配置相关问题，可以直接在这里问客服。
 
-![](https://file1.kamacoder.com/i/web/2026-07-08_16-59-21.jpg)
+![](https://file1.kamacoder.com/i/web/2026-07-08_16-59-21.jpg?v=20261005)
 
 **第一步：注册并充值**
 

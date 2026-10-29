@@ -15,7 +15,7 @@ tags: ["大模型应用", "AI Agent", "工具调用", "大模型面试"]
 
 [Agent 到底是什么](./agent_intro.md)，核心是：**Agent 不是更会聊天，而是能围绕目标持续行动。**
 
-[ReAct、Reflection、规划执行](./react_reflection_planning.md)，核心是：**Agent 要能边做边判断，做完还要检查。**
+[ReAct、Reflection、规划执行](./react_reflection_planning.md)，核心是：**Agent 要能边做边判断，做完还要检查。** (这在章节导航里面是下一章)
 
 [Agent vs Workflow](./agent_vs_workflow.md)，核心是：**流程能写死，就别硬上 Agent；路径不确定，才让 Agent 动态决策。**
 

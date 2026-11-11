@@ -7,7 +7,7 @@ tags: [GLM, 智谱, 大模型发布, AI编程, Agent, 开源大模型]
 
 # GLM-5.2发布：智谱这次不放跑分表，先让你用上，开源、1M上下文、华为昇腾训练
 
-<a href="https://notes.kamacoder.com/qita/0021.gpt-5-6-sol-terra-luna-domestic-guide.html">
+<a href="https://notes.kamacoder.com/ai/chatgpt/recharge.html">
   <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 

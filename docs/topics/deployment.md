@@ -7,3 +7,7 @@
 5. [Token、成本与延迟](../llm/app/token_cost_latency.md)
 
 完成标准：能针对目标流量给出模型与部署方式、显存估算、TTFT/TPOT/P99 指标、压测方法、容量余量和降级策略。
+
+## 生产可靠性
+
+- [网关、限流、监控、灰度与回滚](../llm/app/production_reliability.md)

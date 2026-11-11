@@ -625,7 +625,143 @@ Host 要管权限。
 
 不要指望模型自己永远克制。
 
-## 七、错误不可恢复：失败后只会硬编
+## 六点五、递归派生与Token预算失控：子Agent越开越多，成本爆炸
+
+前面讲的翻车场景，都是单个Agent自己出问题。
+
+但还有一种更隐蔽的翻车：
+
+**Agent开子Agent，子Agent再开孙Agent，递归下去，成本和延迟直接爆掉。**
+
+这在Multi-Agent架构里很常见。
+
+比如一个Planner Agent拆出5个任务，每个任务派给一个Worker Agent。
+
+如果某个Worker遇到复杂子任务，它也可以再派生子Worker。
+
+理论上这很合理：复杂任务自动拆解，每一层只管自己这级的逻辑。
+
+但实际跑起来，经常出现两个问题。
+
+### 递归深度失控
+
+Agent A发现任务太复杂，派生Agent B。
+
+Agent B发现还是复杂，派生Agent C。
+
+Agent C又派生Agent D。
+
+没人知道递归会停在第几层。
+
+最后10个Token的任务，调了8层Agent，花了100万Token。
+
+**更要命的是：每层Agent都继承了上层的完整上下文。**
+
+第1层上下文2K，第2层变4K，第3层变8K……
+
+到第5层，一个请求就是几十K上下文。
+
+批次大了，显存直接爆。
+
+### Token预算没有全局视图
+
+单个Agent有步数限制。
+
+但没有全局Token预算。
+
+Planner派了10个Worker，每个Worker又派了3个子Worker，总共30个Agent在跑。
+
+每个Agent都觉得自己"只用了5K Token，还很节制"。
+
+但加起来150K Token。
+
+用户预期的是"一个查询10K Token"，实际账单是"150K Token"。
+
+**成本放大了15倍，没人提前发现。**
+
+### 子Agent上下文污染传播
+
+第1层Agent总结了一个错误结论。
+
+这个结论写进了第2层Agent的Prompt。
+
+第2层基于这个结论继续推理。
+
+第3层拿到的已经是"二手错误+三手推理"。
+
+**递归越深，错误传播越广，越难回溯。**
+
+### 怎么兜底
+
+递归派生和Token预算失控的兜底，核心是**全局控制**。
+
+**限制递归深度。**
+
+硬性规定最多3层或5层Agent。
+
+不是"每个Agent自己判断要不要派生"，而是"系统不允许超过N层"。
+
+到达深度上限后，Agent只能在当前层解决，或者明确告诉用户"任务太复杂，无法自动拆解"。
+
+**设置全局Token预算。**
+
+一个请求进来，预先分配总预算（如50K Token）。
+
+Planner拆任务时，要预估每个子任务的Token消耗，确保所有子任务加起来不超预算。
+
+如果某个Worker快用完自己的份额，它不能再派生子Agent，只能返回部分结果。
+
+系统需要一个**预算管理器**：
+
+```python
+class TokenBudgetManager:
+    def __init__(self, total_budget):
+        self.total = total_budget
+        self.used = 0
+        self.reserved = {}  # agent_id -> reserved_tokens
+    
+    def reserve(self, agent_id, estimate):
+        if self.used + sum(self.reserved.values()) + estimate > self.total:
+            raise BudgetExceededError("预算不足，拒绝派生子Agent")
+        self.reserved[agent_id] = estimate
+    
+    def consume(self, agent_id, actual):
+        self.used += actual
+        self.reserved.pop(agent_id, None)
+```
+
+派生前先reserve，执行完再consume。
+
+**记录完整派生树。**
+
+不只记录"Agent B调用了工具X"，还要记录：
+
+- Agent B是谁派生的
+- 派生原因（为什么要开子Agent）
+- 当前递归深度
+- 每一层的Token消耗
+
+这样出问题时，能快速定位哪一层、哪个Agent、哪次派生导致了失控。
+
+**熔断机制。**
+
+全局Token消耗超过阈值（如预算的80%），立即停止所有未完成的子Agent。
+
+已完成的结果保留，未完成的标记为"超预算中断"。
+
+**不要让每个Agent都能无限派生。**
+
+只有顶层Planner和明确标记为"可派生"的Agent才能开子Agent。
+
+普通Worker只能调工具，不能再派生。
+
+这是权限管理的一部分。
+
+**面试回答：**
+
+"Multi-Agent架构里，子Agent递归派生和Token预算容易失控。兜底方法是限制递归深度（如3层）、设置全局Token预算并在派生前预留、记录完整派生树用于审计、超预算时熔断未完成的子Agent。核心是把派生权限和预算管理从单个Agent的Prompt里提到系统层，用代码而不是靠模型自觉。"
+
+## 八、错误不可恢复：失败后只会硬编
 
 Agent 翻车还有一个很常见的场景：
 
@@ -709,7 +845,7 @@ Agent 翻车还有一个很常见的场景：
 
 ![错误恢复：失败不是一句系统异常，而是给 Agent 下一步动作](https://file1.kamacoder.com/i/web/20260526193400_agent_failure_07_error_recovery_compressed.png?v=20261005)
 
-## 八、Agent 兜底不是一个开关，而是一套护栏
+## 九、Agent 兜底不是一个开关，而是一套护栏
 
 很多人问：
 
@@ -759,7 +895,7 @@ Agent 翻车还有一个很常见的场景：
 
 能不能做生产级 Agent，差别就在这里。
 
-## 九、面试时怎么回答 Agent 翻车问题
+## 十、面试时怎么回答 Agent 翻车问题
 
 Agent 面试里，面试官很喜欢问这类问题。
 
@@ -801,7 +937,7 @@ Agent 面试里，面试官很喜欢问这类问题。
 
 它讲的是工程可靠性。
 
-## 十、Agent 翻车不可怕，没兜底才可怕
+## 十一、Agent 翻车不可怕，没兜底才可怕
 
 Agent 会翻车，这件事不用回避。
 

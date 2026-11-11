@@ -7,7 +7,7 @@ tags: [长鑫科技, DRAM, 存储芯片, 半导体, 国产芯片, 大模型动�
 
 # 长鑫科技上市暴涨466%：存储芯片为什么不是有钱就能造
 
-<a href="https://notes.kamacoder.com/qita/0021.gpt-5-6-sol-terra-luna-domestic-guide.html">
+<a href="https://notes.kamacoder.com/ai/chatgpt/recharge.html">
   <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 

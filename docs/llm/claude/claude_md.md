@@ -23,7 +23,7 @@ tags: [Claude Code, AI编程, Agent记忆, 上下文管理, 大模型入门]
 
 它把代码改完了，准备收工。
 
-> 不少读者问我，如何充值Claude会员，我在这里篇单独讲一下：[国内Claude充值会员的方法](../../qita/0002.claudepay.md)
+> 不少读者问我，如何充值Claude会员，我在这里篇单独讲一下：[国内Claude充值会员的方法](/ai/claude/recharge.md)
 
 这时候很多人会觉得：是不是模型不听话？
 

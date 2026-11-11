@@ -19,7 +19,7 @@ tags: [Claude Code, AI编程, Agent Loop, Prompt工程, 大模型入门]
 
 最近 Claude Code 作者 Boris Cherny 有一句话被很多人讨论：
 
-> 不少读者问我，如何充值Claude会员，我在这里篇单独讲一下：[国内Claude充值会员的方法](../../qita/0002.claudepay.md)
+> 不少读者问我，如何充值Claude会员，我在这里篇单独讲一下：[国内Claude充值会员的方法](/ai/claude/recharge.md)
 
 **“我已经不写 prompt 了，我写 loop。”**
 

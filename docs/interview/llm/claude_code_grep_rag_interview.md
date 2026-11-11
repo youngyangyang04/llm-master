@@ -68,7 +68,7 @@ tags: [Claude Code面经, AI编程面试, Agent面经, RAG面试, 大模型面�
 9. grep 方案也有边界，什么时候 RAG 仍然有价值
 10. 面试怎么答
 
-> 不少读者问我，如何充值Claude会员，我在这里篇单独讲一下：[国内Claude充值会员的方法](../../qita/0002.claudepay.md)
+> 不少读者问我，如何充值Claude会员，我在这里篇单独讲一下：[国内Claude充值会员的方法](/ai/claude/recharge.md)
 
 ## 一、先说结论：这不是 grep 赢了 RAG
 

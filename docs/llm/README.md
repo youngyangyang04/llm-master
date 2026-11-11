@@ -10,7 +10,7 @@ tags: [大模型, 应用开发, LLM, AI教程]
 > 这里是「卡码大模型」专栏，一条给程序员的大模型学习路线。
 
 <a href="https://programmercarl.com/xunlian/damoxing.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-03-02_18-13-50.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="卡码大模型应用开发训练营">
+  <img src="https://file1.kamacoder.com/i/web/20261020222117.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="卡码大模型应用开发训练营">
 </a>
 
 本专栏持续更新中，目前最新文章发布在公众号：卡码大模型
@@ -29,7 +29,7 @@ tags: [大模型, 应用开发, LLM, AI教程]
 
 **这个专栏，就是来补上这条学习路线的**：从大模型入门，到 Prompt、RAG、Agent，再到微调、部署、Transformer 原理，一步一步带你从"会用"走到"懂原理"。
 
-> 温馨提示：如果你还没有用过 Codex、Claude Code 这些Agent工具，那就是上古时期的程序员，赶紧用起来：[ChatGPT Plus、Pro，Claude Pro充值方法](https://github.com/youngyangyang04/gpt-daichong)
+> 温馨提示：如果你还没有用过 Codex、Claude Code 这些Agent工具，那就是上古时期的程序员，赶紧用起来：[AI编程工具使用教程](../ai/)
 
 ## 这个专栏讲什么
 
@@ -44,11 +44,17 @@ tags: [大模型, 应用开发, LLM, AI教程]
 
 ## 大模型应用开发全链路
 
+### 第零章：AI工具 
+
+* [ChatGPT会员](../ai/chatgpt/recharge.md) 
+* [国内使用Claude Code](../ai/claude/code-china-guide.md)
+
 ### 第一章：大模型入门——是什么、怎么学、岗位怎么选
 
 搞清楚大模型是什么、岗位怎么选、应用开发到底在做什么。
 
 - 👉 [大模型学习路线：程序员从零入门到上手项目，该按什么顺序学](./intro/llm_learning_roadmap.md)（**新手先看这篇**，整条路线的总览）
+- [LLM Master开源学习路线：150+篇大模型应用开发教程怎么学](./intro/llm_master_github.md)
 - [大模型关键词全解：从Prompt到Agent到MCP，一篇搞懂13个核心概念](./intro/llm_keywords.md)
 - [AI编程产品的三层架构](./intro/ai-coding-three-layers.md)
 - 👉 [Claude学习专栏：Claude Code从入门到工程实践完整教程](./claude/)（**想系统学习Claude Code看这里**）
@@ -68,6 +74,8 @@ tags: [大模型, 应用开发, LLM, AI教程]
 - [Few-shot、CoT与自我反思：示例、推理和自检怎么选](./app/prompt_fewshot_cot_reflection.md)
 - [结构化输出：JSON Schema怎么约束](./app/structured_output.md)
 - [上下文窗口有多大？Context Engineering入门](./app/context_engineering.md)
+- [Claude Fable 5系统提示词曝光：系统提示词、上下文预算与Prompt Cache](./intro/fable5_system_prompt_leak.md)
+- [Prompt、Context、Harness、Loop分别解决什么问题？](./app/prompt_context_harness_loop.md)
 - [同步、异步、流式输出怎么选](./app/streaming_output.md)
 - [Token、成本与延迟：大模型应用的三个硬约束](./app/token_cost_latency.md)
 - [Function Calling详解：大模型怎么调用工具](./app/function_calling.md)
@@ -112,7 +120,10 @@ tags: [大模型, 应用开发, LLM, AI教程]
 
 不亲手训，但要懂选型边界。面试必问。
 
-- 持续更新中……
+- [SFT、RLHF、DPO：微调方法全景认知](./app/finetuning_sft_rlhf_dpo.md)
+- [LoRA/QLoRA：为什么低秩微调这么流行](./app/lora_qlora.md)
+- [什么时候微调、什么时候RAG？选型决策框架](./app/finetuning_vs_rag.md)
+- [面试官怎么问微调？应用开发者该怎么答](./app/finetuning_interview.md)
 
 ### 第六章：大模型部署、推理与压测工程化
 
@@ -122,20 +133,23 @@ tags: [大模型, 应用开发, LLM, AI教程]
 - [KV Cache为什么会吃光显存？从PagedAttention到Prefix Cache](./app/kv_cache_paged_attention.md)
 - [量化不是只看4bit/8bit：权重、激活和KV Cache怎么选](./app/model_quantization.md)
 - [大模型服务怎么压测？TTFT、TPOT、吞吐与Goodput](./app/stress_testing.md)
-- 更多文章持续更新中……
+- [大模型应用怎么稳定上线？网关、限流、监控、灰度与回滚](./app/production_reliability.md)
 
 ### 第七章：多模态大模型入门
 
 不只是文本，了解多模态的原理、场景和工程挑战。
 
-- 持续更新中……
+- [多模态大模型：图片和语音是怎么被模型“看懂”的](./app/multimodal_intro.md)
+- [多模态能做什么？文档解析、图片问答、视频理解](./app/multimodal_use_cases.md)
+- [多模态落地：Token成本暴增怎么办？](./app/multimodal_cost.md)
+- 更多文章持续更新中……
 
 ### 第八章：Transformer 原理（应用开发者视角）
 
 拆开大模型看看里面是什么，从应用开发者视角理解Transformer。
 
 - [为什么都绕不开Transformer](./transformer/transformer_base_1.md)
-- [数据流动全解析：从输入到输出每一步](./transformer/transformer_data_flow.md)
+- [学Transformer先别看公式：先看懂数据怎么流动的](./transformer/transformer_data_flow.md)
 - [三种架构详解与对比](./transformer/transformer_base_encoder_decoder.md)
 - [Attention机制：Q、K、V是什么](./transformer/qkv.md)
 - [Attention计算全过程一步步拆解](./transformer/qkv_cal.md)
@@ -150,21 +164,39 @@ tags: [大模型, 应用开发, LLM, AI教程]
 
 - [手撕Attention：不依赖框架从零实现注意力机制](./transformer/attention_code.md)
 - [手撕Multi-Head Attention：从单头扩展到多头](./transformer/mha_code.md)
-- [手撕LayerNorm与残差连接](./transformer/layernorm_residual_code.md)
 - [手撕FFN：前馈网络代码实现](./transformer/fnn_code.md)
+- [手撕LayerNorm与残差连接](./transformer/layernorm_residual_code.md)
 - [手撕Transformer Block：把组件拼起来](./transformer/transformer_block_code.md)
 - [手撕Tiny Transformer：从零拼出完整模型](./transformer/tiny_transformer_code.md)
 
-### 第十章：大模型家族与 Llama 架构
+### 第十章：模型家族与架构演进
 
-从标准Transformer进化到主流模型架构，学会读技术报告。
+从标准Transformer到现代LLM的关键改动，理解架构选择的工程权衡。
 
-- 持续更新中……
+- [BERT：Encoder-only的代表](./transformer/bert.md)
+- [GPT：自回归生成为什么成为主流](./transformer/gpt_autoregressive.md)
+- [T5：Encoder-Decoder的代表作](./transformer/t5.md)
+- [MoE：稀疏模型为什么越来越流行](./transformer/moe.md)
+- [手撕MoE-FFN：极简稀疏专家网络](./transformer/moe_ffn_code.md)
+- [现代LLM的四大改进：RoPE、RMSNorm、SwiGLU、GQA](./transformer/modern_llm_improvements.md)
 
 ### 第十一章：大模型最新动态与模型评测
 
 大模型领域实时动态与产品分析。
 
+- [Claude Fable 5.2发布：降价20%，和Opus 5.5、GPT-6 Astra怎么选](./news/claude-fable-5-2.md)
+- [Claude风控收紧：不只Max，Pro也会触发KYC刷脸认证](./news/claude-pro-max-kyc-verification.md)
+- [DeepSeek开源Super-agent架构原型：Router与Worker如何持续干活](./news/deepseek-superagent-prototype.md)
+- [ChatGPT Pro所有档位额度翻倍：200美元档取消降额](./news/chatgpt-pro-usage-limits-doubled.md)
+- [GPT-6.1 Terra发布：Astra十分之一单价，日常Agent怎么选](./news/gpt-6-1-terra.md)
+- [DeepSeek V4.1 Flash新版发布：许愿式编程与搜索API计费](./news/deepseek-v4-1-flash-1017.md)
+- [GPT-6 Luna开始向免费用户推送：入口与GPT-5.6替换范围](./news/gpt-6-luna-free-rollout.md)
+- [Codex全面上云：真正值钱的不是“电脑可以关机”](./news/codex-cloud-reusable-environments.md)
+- [GPT-6.1 Sol发布：GPT-6 Sol才上线7天就被替了](./news/gpt-6-1-sol.md)
+- [OpenAI Dots发布：个人Agent开始24小时替你干活](./news/openai-dots-personal-agent.md)
+- [GPT-6 Sol、Luna与Claude Opus 5.5同日发布：价格、跑分与实测评价](./news/gpt-6-sol-luna-claude-opus-5-5.md)
+- [Jev正式开放：这个模型不陪你聊天，只负责替软件做决定](./news/jev-model-public-access.md)
+- [GPT-6 Astra来了，AGENTS.md和Skills该重新检查了](./news/gpt-6-astra-rethinking-skills-prompts.md)
 - [ChatGPT暂停Pro 20X新订阅：200美元套餐暂时停售](./news/chatgpt-pro-20x-subscription-pause.md)
 - [彻底杀疯了！分享9个让人惊艳的GPT-6 Astra案例](./news/gpt-6-astra-amazing-cases.md)
 - [GPT-6 Pro开始向Pro用户开放：100美元、200美元套餐先上车](./news/gpt-6-pro-rollout.md)
@@ -196,6 +228,8 @@ tags: [大模型, 应用开发, LLM, AI教程]
 - [GPT-5.5发布](./news/gpt-5-5.md)
 - [Claude Opus 4.7发布](./news/claude-opus-4-7.md)
 - [Claude Opus 4.8发布](./news/claude-opus-4-8.md)
+- [Claude Fable 5发布](./news/claude-fable-5.md)
+- [Claude Fable 5重新开放](./news/claude-fable-5-7-2.md)
 - [DeepSeek V4降价75%实测](./news/deepseek-v4-price.md)
 - [DeepSeek V4-Pro永久降价75%](./news/deepseek-v4-pro-permanent-price-cut.md)
 
@@ -208,7 +242,7 @@ tags: [大模型, 应用开发, LLM, AI教程]
 - [Agent 大厂面试题汇总](../interview/llm/agent_interview.md) ｜ [多 Agent 通信与编排面试详解](../interview/llm/multi_agent_communication_interview.md)
 - [SFT、RLHF、DPO 微调面试详解](../interview/llm/finetuning_sft_rlhf_interview.md)
 - [Claude Code 大厂面试题汇总](../interview/llm/claude_code_deep_dive.md) ｜ [Vibe Coding 大厂面试题汇总](../interview/llm/vibe_coding_interview.md)
-- [字节 Agent 开发四面面经](../interview/llm/20260506bytedance.md)
+- [字节 Agent 开发四面面经](../interview/llm/company/20260506bytedance.md)
 
 更多面经在[大模型面经汇总](../interview/llm/)里，按 Transformer、RAG、Agent、微调、AI 编程分好类，持续更新。
 

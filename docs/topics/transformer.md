@@ -16,3 +16,12 @@
 
 - 依次手写 [Attention](../llm/transformer/attention_code.md)、[多头注意力](../llm/transformer/mha_code.md)、[FFN](../llm/transformer/fnn_code.md)、[LayerNorm 与残差](../llm/transformer/layernorm_residual_code.md)、[Transformer Block](../llm/transformer/transformer_block_code.md) 和 [Tiny Transformer](../llm/transformer/tiny_transformer_code.md)。
 - 用 [Transformer 面试题](../interview/llm/transformer_interview.md)检查表达。
+
+## 模型家族与架构演进
+
+- [BERT：Encoder-only](../llm/transformer/bert.md)
+- [GPT：自回归生成](../llm/transformer/gpt_autoregressive.md)
+- [T5：Encoder-Decoder](../llm/transformer/t5.md)
+- [MoE 稀疏专家网络](../llm/transformer/moe.md)
+- [手撕 MoE-FFN](../llm/transformer/moe_ffn_code.md)
+- [现代 LLM 改进：RoPE、RMSNorm、SwiGLU、GQA](../llm/transformer/modern_llm_improvements.md)

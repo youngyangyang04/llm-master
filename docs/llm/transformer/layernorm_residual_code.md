@@ -1,66 +1,73 @@
 ---
-title: 手撕LayerNorm与残差连接：别让基础组件被忽略
-description: 手撕LayerNorm和残差连接代码实现，讲清LayerNorm均值方差计算、epsilon稳定项、可学习参数gamma和beta、残差连接加法操作以及它们在Transformer Block中的位置，帮助理解大模型训练稳定性和面试手撕代码。
-keywords: [手撕LayerNorm, LayerNorm代码实现, 残差连接代码, Residual Connection, 面试手撕代码, Transformer面试题]
+title: 手撕LayerNorm与残差连接：Add&Norm、Post-Norm与Pre-Norm代码实现
+description: 手撕LayerNorm和残差连接代码实现，讲清残差连接为什么能缓解深层网络梯度消失，LayerNorm按Token计算均值方差、epsilon稳定项、可学习参数gamma和beta，以及Add&Norm、Post-Norm与Pre-Norm的代码差异和训练稳定性取舍，对比BatchNorm和RMSNorm，适合Transformer手撕代码和大模型面试复习。
+keywords: [手撕LayerNorm, LayerNorm代码实现, 残差连接代码, Residual Connection, Add&Norm, Pre-Norm, Post-Norm, BatchNorm, RMSNorm, 梯度消失, 面试手撕代码, Transformer面试题, 大模型面试]
 tags: [Transformer, 手撕代码, 面试]
 ---
 
-# 手撕LayerNorm与残差连接：别让基础组件被忽略
+# 手撕LayerNorm与残差连接：Add&Norm、Post-Norm与Pre-Norm代码实现
 
-上一篇文章我们把 FFN 从零手撕了一遍，走完了升维 → 激活 → 降维的完整流程。
+上一篇[《手撕FFN》](./fnn_code.md)把前馈网络拆成了升维、激活、降维三步。到这里，Transformer Block 里负责"干活"的两个子层，Attention 和 FFN，都写完了。
 
-这篇文章我们来手撕两个**长期被"配角化"的组件**：**残差连接（Residual Connection）** 和 **层归一化（LayerNorm）**。
+但只有这两个子层，模型堆不深。面试官常问：**"残差连接和 LayerNorm 各自解决什么问题？Pre-Norm 和 Post-Norm 有什么区别？"**
 
-它们看起来简单，代码加起来不超过 20 行，但缺了任何一个，Transformer 就跑不深。
+很多录友会答："残差防止梯度消失，LayerNorm 做归一化。"
 
-## 残差连接
+方向没错，但太粗。面试官追问"LayerNorm 在哪个维度上算均值""为什么现在大模型都用 Pre-Norm"，就接不上了。**这两个组件代码加起来不到 20 行，考的是你知不知道每一行在稳定什么。**
+
+## 简要回答
+
+- **残差连接**：输出 = x + F(x)，给梯度一条不经过子层的直通路径，深层网络才训得动
+- **LayerNorm**：对每个 Token 自己的向量算均值和标准差，拉回均值 0、方差 1，再用 gamma、beta 缩放偏移
+- **Add&Norm**：原始 Transformer 每个子层后面都是 LayerNorm(x + F(x))，即 Post-Norm
+- **Pre-Norm**：x + F(LayerNorm(x))，残差路径上没有 Norm，深层训练更稳，现代大模型基本都用它
+
+**一句话：残差负责让梯度传得回去，LayerNorm 负责让数值不乱跑。**
+
+## 残差连接为什么一个加法就够了
+
 残差连接的公式只有一行：
 
 $$
-\text{输出} = F(x) + x
+\text{输出} = x + F(x)
 $$
 
-$F(x)$ 是子层的输出（比如 Attention 或 FFN 的结果），$x$ 是这一层的输入。两者**直接相加**。
+F(x) 是子层的输出（Attention 或 FFN），x 是这一层的输入，两者直接相加。
 
-就这么简单？就这么简单。
+它解决的是深层网络的**梯度消失**。反向传播时，梯度要从最后一层一路传回第一层。没有残差，每穿过一层就要乘一次这层的导数，几十层乘下来，前面的层几乎收不到训练信号。
 
-但它解决了一个深层网络的根本问题：**梯度消失**。
+加了残差，对 x 求导时多出一个恒等项：
 
-反向传播时，梯度需要从最后一层一路流回第一层。每穿过一层，就要乘一次该层的导数，如果导数很小（比如 Sigmoid 激活区域），链式相乘下来，梯度会指数级缩小，前面几层根本收不到有效的训练信号。
+$$
+\frac{\partial\, (x + F(x))}{\partial x} = 1 + \frac{\partial F(x)}{\partial x}
+$$
 
-残差连接的巧妙在于：它给梯度提供了一条**"高速公路"**，可以绕过中间层直接流回去，不需要每一层都"乘一遍"。
+**这个 1 就是梯度的直通路径。** 不管 F 的导数多小，梯度至少能原样传回去一份。
 
-![LayerNorm代码计算流程示意图](https://file1.kamacoder.com/i/algo/article13_423_p1.drawio.png?v=20261005)
+![残差连接与梯度](https://file1.kamacoder.com/i/web/20261030144713.png?v=20261005)
 
-代码里实现残差非常直接：
+
+上面红色梯度条每过一层减半，传到第 1 层只剩 0.03。下面绿色的绕行线就是残差路径，梯度沿着它直接回到前面，长度基本不变。数值是示意，真实网络的导数不会都一样，但"连乘会衰减"的趋势是一致的。
+
+代码就是一个加法：
 
 ```python
 import numpy as np
 
 def residual_connection(x, sublayer_output):
-    """
-    残差连接：直接相加
-    
-    参数：
-        x:               子层的输入, shape (L, d_model)
-        sublayer_output: 子层的输出, shape (L, d_model)
-    
-    返回：
-        shape (L, d_model)，和输入完全一致
-    """
+    """x 和 sublayer_output 形状都是 (L, d_model)"""
     return x + sublayer_output
 
-# 测试
 L, d_model = 7, 8
 np.random.seed(42)
 
 x = np.random.randn(L, d_model)             # 子层输入
-sublayer_out = np.random.randn(L, d_model)  # 子层输出（模拟）
+sublayer_out = np.random.randn(L, d_model)  # 模拟子层输出
 
 output = residual_connection(x, sublayer_out)
-print(f"输入形状:   {x.shape}")             # (7, 8)
-print(f"子层输出:   {sublayer_out.shape}")  # (7, 8)
-print(f"残差输出:   {output.shape}")        # (7, 8)
+print(f"输入形状:   {x.shape}")
+print(f"子层输出:   {sublayer_out.shape}")
+print(f"残差输出:   {output.shape}")
 ```
 
 **输出：**
@@ -70,64 +77,47 @@ print(f"残差输出:   {output.shape}")        # (7, 8)
 残差输出:   (7, 8)
 ```
 
-就是一个加法，形状完全不变。但正是这个加法，让 Transformer 能稳定地堆到 100 多层。
+**残差有一个硬约束：x 和 F(x) 形状必须一致。** 这也是为什么 Attention 和 FFN 都要把输出投影回 d_model。
 
-## LayerNorm
+## LayerNorm 到底在哪个维度上归一化
 
-残差相加之后，数值的范围可能变得很大或者很不均匀——有的维度值极大，有的极小。进入下一层计算时，这种不稳定会严重影响训练效果。
+残差相加之后，数值范围会越叠越乱：有的维度很大，有的很小。层数一多，下一层的输入分布一直在漂，训练就不稳。
 
-LayerNorm 要做的事，就是把每个 Token 的向量**归一化**：均值变成 0，方差变成 1。
-
-公式如下：
+LayerNorm 的做法是：**每个 Token 只看自己那一行向量**，算均值和标准差，把它拉回均值 0、方差 1。
 
 $$
-\text{LayerNorm}(x) = \frac{x - \mu}{\sigma + \epsilon} \cdot \gamma + \beta
+\text{LayerNorm}(x) = \gamma \cdot \frac{x - \mu}{\sigma + \epsilon} + \beta
 $$
 
-一共四步：
+- μ、σ：这个 Token 向量在 d_model 个维度上的均值和标准差
+- ε：很小的数（如 1e-5），防止除零
+- γ、β：可学习参数，形状 (d_model,)，让模型自己决定归一化后要不要再放大、平移
 
-1. 算这个向量的均值 $\mu$
-2. 算这个向量的标准差 $\sigma$
-3. 用 $(x - \mu) / \sigma$ 标准化，每个维度都"缩"到均值 0、方差 1
-4. 再乘 $\gamma$（缩放）、加 $\beta$（偏移）——这两个是可学习参数，让模型自己决定"归一化到什么程度"
+![LayerNorm与BatchNorm](https://file1.kamacoder.com/i/web/20261030144715.png?v=20261005)
 
-其中 $\epsilon$ 是一个很小的数（比如 1e-5），防止分母为 0。
 
-![残差连接代码计算流程示意图](https://file1.kamacoder.com/i/algo/article13_423_p2.drawio.png?v=20261005)
+左边绿色那一行就是 LayerNorm 的统计范围：只用「有」自己的 8 个维度。右边橙色那一列是 BatchNorm 的统计范围，要跨 batch 里所有样本的同一维度去算。文本长度不一、推理时 batch 常常是 1，BatchNorm 的统计量很难靠谱，所以 Transformer 选了 LayerNorm。
+
+代码里最关键的是 `axis=-1`，它决定了按行算：
 
 ```python
 class LayerNorm:
     def __init__(self, d_model, eps=1e-5):
-        """
-        LayerNorm
-        
-        参数：
-            d_model: 向量维度
-            eps:     防止除零的小常数
-        """
-        self.gamma = np.ones(d_model)   # 可学习缩放参数，初始化为 1
-        self.beta  = np.zeros(d_model)  # 可学习偏移参数，初始化为 0
+        self.gamma = np.ones(d_model)   # 可学习缩放，初始化为 1
+        self.beta  = np.zeros(d_model)  # 可学习偏移，初始化为 0
         self.eps   = eps
-    
+
     def forward(self, x):
-        """
-        x: shape (L, d_model)
-        """
-        # 对每个 Token（每一行）分别计算均值和标准差
-        mu    = x.mean(axis=-1, keepdims=True)          # (L, 1)
-        sigma = x.std(axis=-1, keepdims=True)           # (L, 1)
-        
-        # 标准化
-        x_norm = (x - mu) / (sigma + self.eps)          # (L, d_model)
-        
-        # 缩放 + 偏移（广播到每一行）
-        return self.gamma * x_norm + self.beta          # (L, d_model)
+        # x: (L, d_model)，每个 Token 单独算统计量
+        mu    = x.mean(axis=-1, keepdims=True)   # (L, 1)
+        sigma = x.std(axis=-1, keepdims=True)    # (L, 1)
+        x_norm = (x - mu) / (sigma + self.eps)   # (L, d_model)
+        return self.gamma * x_norm + self.beta
 
 
-# 测试
 np.random.seed(42)
 L, d_model = 7, 8
-x = np.random.randn(L, d_model) * 10  # 故意放大数值，模拟数值不稳定的情况
+x = np.random.randn(L, d_model) * 10  # 故意放大，模拟数值失控
 
 ln = LayerNorm(d_model)
 output = ln.forward(x)
@@ -139,117 +129,87 @@ print(f"输入形状: {x.shape}, 输出形状: {output.shape}")
 
 **输出：**
 ```
-归一化前 - 均值: -0.37, 标准差: 9.87
-归一化后 - 均值: 0.0000, 标准差: 1.0000
+归一化前 - 均值: -1.69, 标准差: 9.13
+归一化后 - 均值: -0.0000, 标准差: 1.0000
 输入形状: (7, 8), 输出形状: (7, 8)
 ```
 
-输入的标准差接近 10，归一化之后变成了 1——数值被"拉"回了合理范围，而形状完全不变。
+标准差从 9 左右拉回到 1，形状不变。**`keepdims=True` 不能漏**，否则 (L,) 和 (L, d_model) 广播会出错，这是手撕时最常见的 bug。
 
+## Add&Norm 和 Pre-Norm 差在哪一行
 
-## 把两者拼在一起 Add & Norm
-
-在 Transformer 里，残差连接和 LayerNorm 从来不分家，标准写法叫 **Add & Norm**：
-
-$$
-\text{输出} = \text{LayerNorm}(x + F(x))
-$$
-
-先加（残差），再归一化（LayerNorm）。每个子模块——无论是 Attention 还是 FFN——后面都跟一个这样的结构。
+原始 Transformer 把两者捆在一起，叫 **Add&Norm**，也就是 Post-Norm：先加残差，再归一化。
 
 ```python
-def add_and_norm(x, sublayer_output, layer_norm):
-    """
-    Add & Norm：残差连接 + LayerNorm
-    
-    参数：
-        x:               子层输入,  shape (L, d_model)
-        sublayer_output: 子层输出,  shape (L, d_model)
-        layer_norm:      LayerNorm 实例
-    
-    返回：
-        shape (L, d_model)
-    """
-    return layer_norm.forward(x + sublayer_output)
+# Post-Norm（原始 Transformer）
+def post_norm_sublayer(x, sublayer_fn, layer_norm):
+    return layer_norm.forward(x + sublayer_fn(x))
+
+# Pre-Norm（GPT-2 之后的主流大模型）
+def pre_norm_sublayer(x, sublayer_fn, layer_norm):
+    return x + sublayer_fn(layer_norm.forward(x))
+```
+
+两种写法只差 LayerNorm 的位置，但影响的是残差路径是否干净：
+
+- **Post-Norm**：每层输出都要过一次 LayerNorm，残差路径上也被 Norm 截了一刀，层数深时梯度不稳，通常要靠学习率 warmup 才训得起来
+- **Pre-Norm**：Norm 只作用在子层输入上，x 从第一层到最后一层一路直加，恒等路径完整，深层训练稳得多
+
+![Post-Norm与Pre-Norm](https://file1.kamacoder.com/i/web/20261030144716.png?v=20261005)
 
 
-# 完整测试
+左边残差线最后还要穿过 LayerNorm，这一刀就是 Post-Norm 深层不稳的来源。右边 x 绕开所有 Norm 一路直加，所以 Pre-Norm 结构的最后一层后面还要补一个 Final Norm，把累加起来的数值收一下。
+
+把 Pre-Norm 跑一遍，确认形状不变：
+
+```python
 np.random.seed(42)
 L, d_model = 7, 8
+x = np.random.randn(L, d_model)
+W_fake = np.random.randn(d_model, d_model) * 0.1
+fake_sublayer = lambda h: h @ W_fake    # 用一个线性层代替 Attention / FFN
 
-x            = np.random.randn(L, d_model)
-attn_output  = np.random.randn(L, d_model)  # 模拟 Attention 子层的输出
-ffn_output   = np.random.randn(L, d_model)  # 模拟 FFN 子层的输出
+ln1, ln2, final_ln = LayerNorm(d_model), LayerNorm(d_model), LayerNorm(d_model)
 
-ln1 = LayerNorm(d_model)
-ln2 = LayerNorm(d_model)
-
-# Attention 子层 → Add & Norm
-after_attn = add_and_norm(x, attn_output, ln1)
-print(f"Attention 子层后: {after_attn.shape}")  # (7, 8)
-
-# FFN 子层 → Add & Norm
-after_ffn  = add_and_norm(after_attn, ffn_output, ln2)
-print(f"FFN 子层后:       {after_ffn.shape}")   # (7, 8)
-
-print(f"\n输入形状:  {x.shape}")
-print(f"输出形状:  {after_ffn.shape}")
-print(f"形状一致:  {x.shape == after_ffn.shape}")
+h = pre_norm_sublayer(x, fake_sublayer, ln1)   # Attention 子层位置
+h = pre_norm_sublayer(h, fake_sublayer, ln2)   # FFN 子层位置
+out = final_ln.forward(h)                      # Pre-Norm 结构最后补一个 Norm
+print(f"输入: {x.shape}  输出: {out.shape}")
 ```
 
 **输出：**
 ```
-Attention 子层后: (7, 8)
-FFN 子层后:       (7, 8)
-
-输入形状:  (7, 8)
-输出形状:  (7, 8)
-形状一致:  True
+输入: (7, 8)  输出: (7, 8)
 ```
 
----
+**面试官问"为什么现代大模型用 Pre-Norm"，答案是：恒等路径不被 Norm 打断，梯度更容易传到底层，深层训练更稳定，对学习率 warmup 没那么敏感。** 代价是同样层数下最终效果可能略逊于调好的 Post-Norm，但大模型更看重能稳定训完。
 
-## Post-Norm vs Pre-Norm
+## 知识拓展
 
-上面写的是 **Post-Norm**，也就是原始论文的做法：先算子层，后归一化。
+**Q1：LayerNorm 的 γ、β 有什么用，能不能去掉？**
 
-$$
-\text{Post-Norm:} \quad x' = \text{LayerNorm}(x + F(x))
-$$
+归一化把每个 Token 强行拉到均值 0、方差 1，可能把有用的尺度信息也抹掉了。γ、β 让模型自己学"要不要恢复一些尺度和偏移"。极端情况下 γ = σ、β = μ，就等于没归一化。不建议去掉，参数量只有 2 × d_model，几乎不占资源。
 
-但现代大模型（比如 Llama、GPT-3）基本都改成了 **Pre-Norm**：先归一化，再算子层。
+**Q2：ε 为什么要加？加在哪里？**
 
-$$
-\text{Pre-Norm:} \quad x' = x + F(\text{LayerNorm}(x))
-$$
+如果某个 Token 的向量各维几乎相等，σ 接近 0，除下去会数值爆炸。ε 一般取 1e-5 或 1e-6。PyTorch 的 `nn.LayerNorm` 写法是 `(x - μ) / sqrt(var + ε)`，本文为了好读写成 `σ + ε`，两者在 ε 很小时几乎没差别，但面试时最好说出官方写法。
 
-两者差别只有一行代码，效果却不同：Pre-Norm 的训练更稳定，在层数很深（几十层以上）时尤为明显。
+**Q3：RMSNorm 和 LayerNorm 差在哪？**
 
-```python
-# Post-Norm（原始 Transformer）
-def post_norm(x, sublayer_fn, layer_norm):
-    return layer_norm.forward(x + sublayer_fn(x))
+RMSNorm 去掉了减均值这一步，也去掉了 β，只按均方根缩放：x / sqrt(mean(x²) + ε) · γ。计算更少，效果接近，Llama、Qwen 都用它。**原理上是"只管尺度，不管中心"。**
 
-# Pre-Norm（现代大模型）
-def pre_norm(x, sublayer_fn, layer_norm):
-    return x + sublayer_fn(layer_norm.forward(x))
-```
+**Q4：残差连接要求什么？**
 
-记住这两种写法的区别，面试或者读源码时会频繁遇到。
+x 和 F(x) 形状必须完全一致才能相加。所以 Multi-Head Attention 最后要乘 W_O 投影回 d_model，FFN 升维后也要降回 d_model。手撕时形状对不上，往往就是漏了这一步。
 
----
+**Q5：Dropout 一般放在哪？**
 
-## 步骤汇总
+原始 Transformer 放在子层输出、加残差之前：x + Dropout(F(x))。推理时 Dropout 关闭。很多大模型预训练时干脆把 Dropout 设为 0，数据量足够大时过拟合不是主要矛盾。
 
-| 组件 | 公式 | 核心作用 |
-|------|------|----------|
-| 残差连接 | $F(x) + x$ | 给梯度留高速公路，防止深层网络训练崩 |
-| LayerNorm | $\frac{x-\mu}{\sigma} \cdot \gamma + \beta$ | 把每个 Token 的向量拉回均值 0、方差 1 |
-| Add & Norm | $\text{LayerNorm}(x + F(x))$ | 两者捆绑，每个子层后面都挂一个 |
+**Q6：面试手撕要写到什么程度？**
 
+**LayerNorm 类 + Pre-Norm 和 Post-Norm 两个函数，15 行以内。** 重点是 `axis=-1`、`keepdims=True`、ε 的位置，再能说清两种 Norm 摆法对残差路径的影响，就够了。
 
----
+很多录友把残差和 LayerNorm 当成"顺手加上的配角"，面试时一句带过。
 
-到这里，Transformer Block 的所有零件——Multi-Head Attention、FFN、残差连接、LayerNorm——我们都手撕完了。
-
-下一篇文章，我们会把这些零件真正**拼成一个完整的 Transformer Encoder Block**，一行一行跑通完整的前向过程，大家点个关注不迷路～
+**真正拉开差距的，是能讲清那个"1"怎么让梯度传回去，以及 Norm 挪一格为什么就能让模型堆得更深。**

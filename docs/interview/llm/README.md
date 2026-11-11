@@ -27,8 +27,10 @@ tags:
 # 大模型面经汇总：Agent、RAG、Transformer、AI编程大厂面试题
 
 <a href="https://programmercarl.com/xunlian/damoxing.html">
-  <img src="https://file1.kamacoder.com/i/web/2026-03-02_18-13-50.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="卡码大模型应用开发训练营">
+  <img src="https://file1.kamacoder.com/i/web/20261020222117.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="卡码大模型应用开发训练营">
 </a>
+
+> 温馨提示：如果你还没有用过 Codex、Claude Code 这些Agent工具，那就是上古时期的程序员，先赶紧用起来：[AI编程工具使用教程](../../ai/)
 
 这里整理了 2026 年**大模型方向的高频面试题和真实面经**，覆盖 **Agent、RAG、Transformer、模型微调、AI 编程（Vibe Coding / Claude Code）** 五大块。不管你投的是大模型应用开发、Agent 开发、LLM 工程还是 AI 后端，这些都是大厂面试官反复深挖的考点。
 
@@ -39,7 +41,7 @@ tags:
 录友们可以按目标岗位挑方向刷，不用一上来全看：
 
 - **大模型应用开发 / LLM 工程岗**：[RAG](./rag_interview.md) + [Agent](./agent_interview.md) + [Transformer](./transformer_interview.md) 是地基，先把这三块吃透
-- **Agent 开发岗**：重点刷 [Agent 智能体篇](#agent-智能体篇)，再配合[字节 Agent 开发四面面经](./20260506bytedance.md)和[番茄小说 Agent 应用开发一面](./bytedance_fanqie_agent_intern_interview.md)感受项目连续深挖的节奏
+- **Agent 开发岗**：重点刷 [Agent 智能体篇](#agent-智能体篇)，再配合[字节 Agent 开发四面面经](./company/20260506bytedance.md)和[番茄小说 Agent 应用开发一面](./company/20260919bytedance_fanqie_agent_intern_interview.md)感受项目连续深挖的节奏
 - **想体现 AI 编程工程能力**：看 [AI 编程篇](#ai-编程篇)，重点是怎么把 AI 用出工程素养，而不是只会调 API
 - **查漏补缺**：每篇结尾都有"面试怎么答"，看完能直接在面试里说出来
 
@@ -93,8 +95,16 @@ Agent 是大模型岗最大的考察块，从 ReAct、Function Calling、MCP 这
 
 ## 真实面经
 
-- [字节Agent开发四面面经](./20260506bytedance.md) — 21道大模型面试题全解析，从Prompt到Agent到MCP
-- [字节番茄小说Agent应用开发实习一面](./bytedance_fanqie_agent_intern_interview.md) — ES混合检索、三层记忆、DAG编排、Token治理、QKV与算法题现场回答
+- [字节Agent开发四面面经](./company/20260506bytedance.md) — 21道大模型面试题全解析，从Prompt到Agent到MCP
+- [字节番茄小说Agent应用开发实习一面](./company/20260919bytedance_fanqie_agent_intern_interview.md) — ES混合检索、三层记忆、DAG编排、Token治理、QKV与算法题现场回答
+- [阿里淘天Agent研发岗面经](./company/20260818alibaba_taotian_agent_interview.md) — 代码Agent读改提交流程、模型与工具交互、RAG索引、Harness与Java并发基础
+- [理想智能应用研发一面面经](./company/20261010lixiang_intelligent_application_interview.md) — 滴滴实习项目的意图路由与资产查询连续追问，SDD与子Agent取舍，以及现场用AI完成四数之和、生成脚本和验证交付
+- [阿里千问AI应用研发一面](./company/20261015alibaba_qianwen_rag_interview.md) — 私人RAG项目的15道追问：CSV解析、切片、混合检索、多跳、权限、PII脱敏与Harness数据流
+- [快手Agent开发一面面经](./company/20260928kuaishou_agent_interview.md) — 单Agent取舍、MCP与CLI、可观测性与评测、代码检索、KV Cache、QPS压测、Kafka与最小覆盖子串
+- [小红书AI研发工程师一面面经](./company/20261012xiaohongshu_ai_engineer_interview.md) — 保留现场交锋口吻，拆解Agent采集协议、观测查询优化、评测回放、多智能体协同与最长公共子序列
+- [百度Agent开发岗面经](./company/20261020baidu_agent_interview.md) — 前端与Chat分工、Skill与Tool边界、大规模工具路由、MCP、分层记忆及Java、Go与两道算法题
+- [美团AI-Agent开发秋招一面](./company/20261015meituan_agent_campus_interview.md) — Markdown记忆更新、Agent Teams与Workflow取舍、无人审核验收、多工具调度及评测归因与回归
+- [美团Agent开发日常实习面经](./company/20261021meituan_agent_intern_interview.md) — 智能运维Agent的16道追问：RAG与grep取舍、短Query召回、父子索引、版本失效、冲突证据与上下文管理
 
 ## 大模型面试常见问题
 
@@ -102,7 +112,7 @@ Agent 是大模型岗最大的考察块，从 ReAct、Function Calling、MCP 这
 主要五块：[Transformer 原理](./transformer_interview.md)（Self-Attention、架构选择）、[RAG 检索增强](./rag_interview.md)（向量检索、Rerank、幻觉）、[Agent 智能体](./agent_interview.md)（ReAct、Function Calling、MCP）、[模型微调](./finetuning_sft_rlhf_interview.md)（SFT、RLHF、DPO）、以及 [AI 编程能力](./vibe_coding_interview.md)。应用开发岗更偏 RAG 和 Agent 工程，算法岗更偏 Transformer 和微调原理。
 
 **没有大模型项目经验，怎么准备 Agent / 大模型岗面试？**
-先把原理和回答思路吃透，再用一个小项目把链路跑通。面试官不一定要求你做过大厂级系统，但会追问细节——比如 RAG 的 Chunk 怎么切、Agent 的工具调用怎么兜底。可以对照[字节 Agent 开发四面面经](./20260506bytedance.md)看考察范围，再看[番茄小说 Agent 应用开发一面](./bytedance_fanqie_agent_intern_interview.md)学习怎么回答项目指标、Agent 边界和 Token 治理。
+先把原理和回答思路吃透，再用一个小项目把链路跑通。面试官不一定要求你做过大厂级系统，但会追问细节——比如 RAG 的 Chunk 怎么切、Agent 的工具调用怎么兜底。可以对照[字节 Agent 开发四面面经](./company/20260506bytedance.md)看考察范围，再看[番茄小说 Agent 应用开发一面](./company/20260919bytedance_fanqie_agent_intern_interview.md)学习怎么回答项目指标、Agent 边界和 Token 治理；代码Agent如何从需求走到Diff与验证，可以看[阿里淘天Agent研发岗面经](./company/20260818alibaba_taotian_agent_interview.md)。
 
 **RAG 和微调，面试时该重点准备哪个？**
 大部分应用开发岗 RAG 的权重更高，因为落地场景多。微调更多考"什么时候该微调、和 RAG/Prompt 怎么取舍"。两者的边界判断见 [SFT、RLHF、DPO 面试详解](./finetuning_sft_rlhf_interview.md)。

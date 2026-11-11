@@ -11,7 +11,7 @@ tags: [Agent面经, 大模型面试, LLM面试, AI求职, 大模型求职]
   <img src="../../assets/images/kama-claude.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
-之前分享了[录友四面字节Agent开发岗的面经](./20260506bytedance.md)，里面就有一个很不错的面试问题：“如何解决 Agent 的上下文漂移以及工具调用幻觉类问题”
+之前分享了[录友四面字节Agent开发岗的面经](./company/20260506bytedance.md)，里面就有一个很不错的面试问题：“如何解决 Agent 的上下文漂移以及工具调用幻觉类问题”
 
 有的面试官会这么问："你的 Agent 跑了10轮之后还靠谱吗" 
 

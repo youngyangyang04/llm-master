@@ -8,7 +8,7 @@ tags: [Agent面经, 大模型面试, LLM面试, AI求职, 多Agent]
 # 多Agent架构面试全解析：通信、编排、Tool取舍与工程代价
 
 
-之前分享了[录友四面字节Agent开发岗的面经](./20260506bytedance.md)，里面就有一个很不错的面试问题：
+之前分享了[录友四面字节Agent开发岗的面经](./company/20260506bytedance.md)，里面就有一个很不错的面试问题：
 
 "为什么你这里要拆多个 Agent？一个 Agent 多挂几个 Tool 不行吗？"
 

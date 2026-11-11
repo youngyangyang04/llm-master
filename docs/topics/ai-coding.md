@@ -17,3 +17,8 @@
 - [Spec-Driven Development](../interview/llm/spec_driven_development_interview.md)
 - [Vibe Coding 避坑](../interview/llm/vibe_coding_backup_engineering.md)
 - [AI 增强开发三件套](../interview/llm/ai_enhanced_development_openspec_superpowers_gstack.md)
+
+## 研发流程
+
+- [AI 原生软件研发工作流](../llm/claude/ai_native_sdlc_playbook.md)
+- [Prompt、Context、Harness 与 Loop 的分工](../llm/app/prompt_context_harness_loop.md)

@@ -17,11 +17,11 @@ GPT-6 Astra 需求过大，导致 OpenAI 停售 pro 20X。
 
 2026 年 9 月 10 日，OpenAI 暂停了 ChatGPT Pro 200 美元套餐，也就是 Pro 20X 的新订阅和升级。
 
-目前国内知名的ChatGPT代充平台 [PayAI.plus](https://payai.plus/chatgpt) ，也显示 20x全面缺货：
+目前国内知名的ChatGPT代充平台 [ChatGPT充值服务](https://payai.plus/chatgpt) ，也显示 20x全面缺货：
 
 ![](https://file1.kamacoder.com/i/web/20260911094411-av8nss.png?v=20261005) 
 
-**但 5x 依然可以购买，大家需要pro 5x ，可以抓紧去  [PayAI.plus](https://payai.plus/chatgpt) 冲，估计 5x也很快就没货了**。 
+**但 5x 依然可以购买，大家需要pro 5x ，可以抓紧去  [ChatGPT充值服务](https://payai.plus/chatgpt) 冲，估计 5x也很快就没货了**。 
 
 ![](https://file1.kamacoder.com/i/web/20260911094445-buzfvg.png?v=20261005)
 

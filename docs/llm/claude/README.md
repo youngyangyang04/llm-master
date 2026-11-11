@@ -54,6 +54,7 @@ Claude Code 不是把整个仓库塞进上下文。它需要搜索、读取、�
 最后再看规模化问题：怎么拆任务、怎么隔离执行环境、怎么验证迁移结果，以及怎样让 Agent 真正进入生产系统。
 
 - [百万行代码两周迁完：Anthropic如何用Claude Code做大规模代码迁移](./ai_code_migration.md)
+- [Claude Code写代码快到飞起，为什么你的研发流程反而更堵了？](./ai_native_sdlc_playbook.md)
 - [Claude Managed Agents详解：把Agent的“大脑”和“双手”拆开](./managed_agents.md)
 
 ## 第五阶段：看清AI编程真正改变了什么

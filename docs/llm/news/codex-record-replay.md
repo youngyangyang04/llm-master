@@ -8,7 +8,7 @@ tags: [Codex, OpenAI, AI Agent, AI自动化, Computer Use, 大模型动态]
 # Codex 这次发布的 Record & Replay，把“写 prompt”变成了“录一遍”
 
 
-<a href="https://notes.kamacoder.com/qita/0021.gpt-5-6-sol-terra-luna-domestic-guide.html">
+<a href="https://notes.kamacoder.com/ai/chatgpt/recharge.html">
   <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 

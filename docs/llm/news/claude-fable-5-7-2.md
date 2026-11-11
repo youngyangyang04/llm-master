@@ -1,6 +1,6 @@
 ---
 title: Claude Fable 5重新开放：很强，也真的很贵，国内如何用上Opus4.8 和Fable5？
-description: Claude Fable 5在6月中旬因安全和出口管制问题暂停后，7月1日重新开放。本文结合Fable 5解封背景、Claude账号封号严重、Opus和Fable的使用成本、APIDock中转站接入方式，聊聊国内用户为什么可以把靠谱中转站作为一个现实选择，以及Fable 5到底强在哪里。
+description: Claude Fable 5在6月中旬因安全和出口管制问题暂停后，7月1日重新开放。本文结合Fable 5解封背景、Claude账号封号严重、Opus和Fable的使用成本、中转服务接入方式，聊聊国内用户为什么可以把靠谱中转站作为一个现实选择，以及Fable 5到底强在哪里。
 keywords:
   - Claude Fable 5
   - Fable 5重新开放
@@ -10,7 +10,6 @@ keywords:
   - Claude Opus
   - Claude Opus 4.8
   - Claude中转站
-  - APIDock
   - 国内使用Claude
   - AI编程
   - Claude Code
@@ -23,7 +22,7 @@ tags:
 
 # 终于又能用Fable 5了，我体验了一下，发现用不起
 
-> 不少读者问我，如何Claude账号被封，如果用上Claude opus4.8，或者Fable5，充值Claude会员，我在这里单独讲一下：[没有Claude账号，怎么用上Opus模型](../../qita/0020.no-claude-account-use-opus-4-8-fable-5.md)
+> 不少读者问我，如何Claude账号被封，如果用上Claude opus4.8，或者Fable5，充值Claude会员，我在这里单独讲一下：[没有Claude账号，怎么用上Opus模型](/qita/0020.no-claude-account-use-opus-4-8-fable-5.md)
 
 话说 Fable 5 终于又能用了。这事不是普通的模型上线、下线、再上线。
 
@@ -55,7 +54,7 @@ tags:
 
 所以我前面也说过一个观点：**如果只是想稳定用 Opus、Fable 写代码，靠谱中转站确实是一个现实选择。**
 
-我现在用的是这个：[APIDock](https://apidock.ai/)。
+我现在用的是这个：[中转服务](https://apidock.ai/)。
 
 不是说中转站就适合所有人。如果你有稳定的官方账号、海外卡、干净网络环境，那当然可以继续走官方。
 

@@ -7,7 +7,7 @@ tags: [Claude, Claude Code, AI编程, 大模型动态, 账号风控]
 
 # Claude大规模封号：Claude账号被封后，我又被迫切回中转站
 
-<a href="https://notes.kamacoder.com/qita/0021.gpt-5-6-sol-terra-luna-domestic-guide.html">
+<a href="https://notes.kamacoder.com/ai/chatgpt/recharge.html">
   <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
@@ -32,7 +32,7 @@ tags: [Claude, Claude Code, AI编程, 大模型动态, 账号风控]
 
 绝了，妥妥的AI难民
 
-现在又被迫用上了 中转站（我用的是[apidock.ai](https://apidock.ai/)）。。
+现在又被迫用上了 中转站（我用的是[中转服务](https://apidock.ai/)）。。
 
 我之前Claude被封，就切成了Codex。
 

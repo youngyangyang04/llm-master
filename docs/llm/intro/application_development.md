@@ -13,7 +13,7 @@ tags: [大模型岗位, AI求职, 大模型应用开发]
 
 <p align="center"><img src="https://file1.kamacoder.com/i/web/82c17188e3042099eba30453796a4923.jpg?v=20261005" style="max-width:55%;" alt="大模型应用开发岗位方向示意图"/></p>
 
-我自己也搞 [卡码大模型应用开发训练营](https://mp.weixin.qq.com/s/-m6l3nLWzU3mbQihl7wlKQ)
+我自己也搞 [卡码大模型应用开发训练营](https://programmercarl.com/xunlian/damoxing.html)
 
 很多录友报名的时候，搞不懂 大模型应用开发就是是个啥？
 

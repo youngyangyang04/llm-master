@@ -7,7 +7,7 @@ tags: [Claude, 大模型发布, AI编程, Agent]
 
 # Claude Fable 5发布：最强模型来了，但先别急着把Opus 4.8换掉
 
-> 不少读者问我，如何Claude账号被封，如果用上Claude opus4.8，或者Fable5，充值Claude会员，我在这里单独讲一下：[没有Claude账号，怎么用上Opus模型](../../qita/0020.no-claude-account-use-opus-4-8-fable-5.md)
+> 不少读者问我，如何Claude账号被封，如果用上Claude opus4.8，或者Fable5，充值Claude会员，我在这里单独讲一下：[没有Claude账号，怎么用上Opus模型](/qita/0020.no-claude-account-use-opus-4-8-fable-5.md)
 
 
 6月9日，Anthropic 发布了 Claude Fable 5。

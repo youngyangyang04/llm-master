@@ -11,7 +11,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/youngyangyang04/llm-master?style=flat-square&logo=github&label=Stars)](https://github.com/youngyangyang04/llm-master/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/youngyangyang04/llm-master?style=flat-square&logo=github&label=Forks)](https://github.com/youngyangyang04/llm-master/network/members)
 [![License](https://img.shields.io/github/license/youngyangyang04/llm-master?style=flat-square&label=License)](LICENSE)
-[![Articles](https://img.shields.io/badge/教程-150%2B-1f6feb?style=flat-square)](docs/README.md)
+[![Articles](https://img.shields.io/badge/教程-180%2B-1f6feb?style=flat-square)](docs/README.md)
 [![Language](https://img.shields.io/badge/语言-中文-ea4aaa?style=flat-square)](#)
 
 [开始学习](docs/roadmap/README.md) · [全部教程](docs/README.md) · [专题索引](docs/topics/README.md) · [面试题库](docs/interview/llm/README.md)
@@ -145,7 +145,7 @@
 - [Agent 高频面试题](docs/interview/llm/agent_interview.md)
 - [微调面试详解](docs/interview/llm/finetuning_sft_rlhf_interview.md)
 - [Vibe Coding 面试题](docs/interview/llm/vibe_coding_interview.md)
-- [字节 Agent 开发四面面经](docs/interview/llm/20260506bytedance.md)
+- [字节 Agent 开发四面面经](docs/interview/llm/company/20260506bytedance.md)
 
 建议用统一结构回答项目题：**业务问题 → 技术选型 → 系统设计 → 评估指标 → 故障与优化 → 最终结果**。
 
@@ -154,7 +154,7 @@
 1. **第一次学习**：从[完整学习路线](docs/roadmap/README.md)开始，不建议直接刷全量目录。
 2. **正在做项目**：进入对应[专题索引](docs/topics/README.md)，按问题查缺补漏。
 3. **准备面试**：先补专题知识，再用[面试路线](docs/roadmap/interview.md)组织回答。
-4. **寻找某篇文章**：打开[全部资料索引](docs/README.md)，浏览 150+ 篇教程与面经。
+4. **寻找某篇文章**：打开[全部资料索引](docs/README.md)，浏览 180+ 篇教程与面经。
 
 ## 适合与不适合
 
@@ -167,6 +167,8 @@
 它不以纯算法研究和大规模预训练为主。如果你的目标是研究新型模型结构、训练基础模型或深入数学证明，建议将本仓库作为应用工程补充，而不是唯一资料。
 
 ## 持续更新
+
+最近内容同步：2026-11-11。当前同步公开正文 187 篇，另保留 2 篇旧路径文章；全部资料索引共 189 项。
 
 大模型领域变化很快，仓库会持续补充新的工程实践、项目经验与面试题。欢迎点击右上角 **Star** 收藏，也可以 **Watch** 获取更新提醒。
 

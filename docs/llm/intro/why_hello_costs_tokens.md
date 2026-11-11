@@ -29,7 +29,7 @@ tags: [大模型入门, token计费, Prompt Cache, AI编程]
 
 ![](https://file1.kamacoder.com/i/web/2026-06-28_15-11-27.jpg?v=20261005)
 
-（这个计费截图是  [apidock.ai](https://apidock.ai/) 的后端截图）
+（这个计费截图是  [中转服务](https://apidock.ai/) 的后端截图）
 
 - 输入 token：88
 - 缓存读：32690
@@ -48,7 +48,7 @@ tags: [大模型入门, token计费, Prompt Cache, AI编程]
 
 ![一次请求的真实载荷构成：用户眼里只发了一句你好约几十token，模型每轮实际收到的是系统提示词、工具定义、项目规则CLAUDE.md、记忆和历史对话加起来的一大坨，这才是十万token的真正来源](https://file1.kamacoder.com/i/web/202606281535551.png?v=20261005)
 
-> 用不了Claude opus 4.8的录友，可以试试 [apidock.ai](https://apidock.ai/) ，我目前用的是这个，比较稳定 
+> 用不了Claude opus 4.8的录友，可以试试 [中转服务](https://apidock.ai/) ，我目前用的是这个，比较稳定
 
 ## 一、模型没有记忆
 

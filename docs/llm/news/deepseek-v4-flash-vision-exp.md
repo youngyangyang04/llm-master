@@ -55,11 +55,11 @@ Terminal Bench 2.1 从 82.7 到 83.9，DeepSWE 从 54.4 到 59.3，Toolathlon-Ve
 
 官方还展示了 PPT、Harness 官网二次创作和前端 Mini Demo 三个案例。
 
-![官方PPT生成案例](https://api-docs.deepseek.com/zh-cn/img/v4_260821_case1.png)
+![官方PPT生成案例](https://api-docs.deepseek.com/zh-cn/img/v4_260821_case1.png?v=20261005)
 
-![Harness网页改造](https://api-docs.deepseek.com/zh-cn/img/v4_260821_case2.gif)
+![Harness网页改造](https://api-docs.deepseek.com/zh-cn/img/v4_260821_case2.gif?v=20261005)
 
-![黏土怪物Demo](https://api-docs.deepseek.com/zh-cn/img/v4_260821_case3.gif)
+![黏土怪物Demo](https://api-docs.deepseek.com/zh-cn/img/v4_260821_case3.gif?v=20261005)
 
 看着都不错，但官方 Demo 永远是挑过的。接下来还是自己跑。
 

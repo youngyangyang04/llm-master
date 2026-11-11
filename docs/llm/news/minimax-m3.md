@@ -8,7 +8,7 @@ tags: [MiniMax, 大模型发布, AI编程, Agent, 多模态大模型]
 # MiniMax M3评测：SWE-Bench Pro 59.0，1M上下文，原生多模态，真能替代Claude Code吗？
 
 
-<a href="https://notes.kamacoder.com/qita/0021.gpt-5-6-sol-terra-luna-domestic-guide.html">
+<a href="https://notes.kamacoder.com/ai/chatgpt/recharge.html">
   <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
@@ -143,7 +143,7 @@ MiniMax 的方案是做稀疏注意力。
 
 简单说，不是让每个 Query 都看所有 KV，而是先做一轮索引和筛选，找到更值得看的块，再对选中的块做注意力。
 
-![MiniMax Sparse Attention架构图，展示Index Branch和Sparse Branch如何筛选KV块](https://filecdn.minimax.chat/public/m3-msa-arch.png)
+![MiniMax Sparse Attention架构图，展示Index Branch和Sparse Branch如何筛选KV块](https://filecdn.minimax.chat/public/m3-msa-arch.png?v=20261005)
 
 官方给出的说法很激进：
 
@@ -184,7 +184,7 @@ MiniMax 把 ICLR 2025 Outstanding Paper Award 论文《Learning Dynamics of LLM 
 - 跑通核心实验
 - 复现 SFT 阶段趋势、DPO squeezing 效应和 Extend 缓解方法
 
-![MiniMax M3论文复现任务过程图，展示12小时内分阶段推进实验和得分变化](https://filecdn.minimax.chat/public/m3-paper-repro.png)
+![MiniMax M3论文复现任务过程图，展示12小时内分阶段推进实验和得分变化](https://filecdn.minimax.chat/public/m3-paper-repro.png?v=20261005)
 
 这个任务很适合展示 M3 的三件事：
 
@@ -311,7 +311,7 @@ Token Plan 三档：
 
 官方说，如果按相同价格算，约是 Claude 订阅的 15 倍用量。
 
-![MiniMax M3 Token Plan套餐图，展示Plus、Max、Ultra三档月度token用量](https://filecdn.minimax.chat/public/m3-token-plan-1.png)
+![MiniMax M3 Token Plan套餐图，展示Plus、Max、Ultra三档月度token用量](https://filecdn.minimax.chat/public/m3-token-plan-1.png?v=20261005)
 
 API 也按上下文长度分两档：
 
@@ -320,7 +320,7 @@ API 也按上下文长度分两档：
 | MiniMax M3 ≤512K | ¥4.20 / 百万 tokens | ¥16.80 / 百万 tokens | ¥0.84 / 百万 tokens |
 | MiniMax M3 512K-1M | ¥8.40 / 百万 tokens | ¥33.60 / 百万 tokens | ¥1.68 / 百万 tokens |
 
-![MiniMax M3 API价格图，展示512K以内和512K到1M两档输入输出缓存价格](https://filecdn.minimax.chat/public/20260601-101351-1780280055505.jpeg)
+![MiniMax M3 API价格图，展示512K以内和512K到1M两档输入输出缓存价格](https://filecdn.minimax.chat/public/20260601-101351-1780280055505.jpeg?v=20261005)
 
 这个价格对两类人特别有吸引力。
 

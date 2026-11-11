@@ -7,7 +7,7 @@ tags: [GPT-6, OpenAI, AI编程, Agent, Computer Use, 大模型发布, 大模型�
 
 # GPT-6 Astra发布：跑分几乎刷满，但我更在意它开始接管鼠标了
 
-> **想尽快体验 Astra，目前更直接的方式是升级 ChatGPT Pro。** 国内没有海外卡的录友，可以看这篇 [GPT-6 Astra开放 与 充值方法](./gpt-6-pro-rollout.md)，里面整理了 PayAI.plus 的 Pro 100 美元、Pro 200 美元两个充值入口和注意事项。需要提醒的是，Pro 用户现在也是有限灰度，并非充值后立刻出现；Plus 用户想在 Chat 里直接使用 GPT-6 Astra，还需要再等几天。
+> **想尽快体验 Astra，目前更直接的方式是升级 ChatGPT Pro。** 国内没有海外卡的录友，可以看这篇 [GPT-6 Astra开放 与 充值方法](./gpt-6-pro-rollout.md)，里面整理了 ChatGPT充值服务网站的 Pro 100 美元、Pro 200 美元两个充值入口和注意事项。需要提醒的是，Pro 用户现在也是有限灰度，并非充值后立刻出现；Plus 用户想在 Chat 里直接使用 GPT-6 Astra，还需要再等几天。
 
 两个月前写 [GPT-5.6](./gpt-5-6.md) 时，我说 OpenAI 正在把 ChatGPT 从聊天框改造成一个能持续干活的工作台。
 

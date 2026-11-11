@@ -7,12 +7,12 @@ tags: [GPT-5.5, 大模型发布, AI编程, OpenAI]
 
 # GPT-5.5发布：OpenAI最强Agent编程模型，稳定自主运行7小时，价格翻倍值不值？
 
-<a href="https://notes.kamacoder.com/qita/0021.gpt-5-6-sol-terra-luna-domestic-guide.html">
+<a href="https://notes.kamacoder.com/ai/chatgpt/recharge.html">
   <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
 
-> 如果大家想充值GPT会员，这里推荐一个[靠谱chatGPT代充](https://notes.kamacoder.com/qita/0001.gptpay.html)
+> 如果大家想充值GPT会员，这里推荐一个[靠谱chatGPT代充](https://notes.kamacoder.com/ai/chatgpt/recharge.html)
 
 上周刚写完[Claude Opus 4.7发布](https://mp.weixin.qq.com/s/QJZ34IOWf8vdEiFqugNsMw)，还在感叹Opus编码能力遥遥领先。
 

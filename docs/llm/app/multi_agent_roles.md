@@ -47,9 +47,11 @@ tags: ["大模型应用", "AI Agent", "Multi-Agent", "Agent架构", "大模型�
 
 **多Agent的价值不是让三个模型轮流说话，而是让计划、执行、验收互相制约，每一步都能追责和退回。**
 
-<!-- drawio源文件: ./drawio/multi_agent_roles_01_handoff_gate.drawio；待用户审核后导出、上传并插入图片 -->
+<!-- drawio源文件: ./drawio/multi_agent_roles_01_handoff_gate.drawio -->
 
-这张图回答的是：用户目标如何经过Planner的任务包、Worker的产物与证据、Reviewer的验收门禁变成可信结果，以及执行问题为什么必须带着具体原因退回Worker。
+![三角色协作交接流程](https://file1.kamacoder.com/i/web/20261109113948.jpg?v=20261005)
+
+这张图用"分析支付接口延迟"为例，展示一个任务如何从模糊目标经过Planner的结构化任务包、Worker的产物与证据、Reviewer的三岔路口验收（PASS 绿线放行、REVISE 红虚线退 Worker 补证据、BLOCKED 紫虚线退 Planner 重拆任务）变成可信结果。
 
 ## 为什么不能让一个Agent从头包到尾
 

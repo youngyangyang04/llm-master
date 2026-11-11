@@ -7,7 +7,7 @@ tags: [Claude, 大模型发布, AI编程]
 
 # Claude Opus 4.7 发布：编码能力暴涨、3倍高清视觉、新增xhigh档位，全面拆解
 
-> 不少读者问我，如何充值Claude会员，我在这里篇单独讲一下：[国内Claude充值会员的方法](../../qita/0002.claudepay.md)
+> 不少读者问我，如何充值Claude会员，我在这里篇单独讲一下：[国内Claude充值会员的方法](/ai/claude/recharge.md)
 
 之前还在说，我用[claude agent + cli + GLM-5.1，基本平替了 Opus4.6](https://mp.weixin.qq.com/s/PpTv8ww1aSjXY4TlLlo3Og)。 
 

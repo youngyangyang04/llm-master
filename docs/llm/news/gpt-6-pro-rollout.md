@@ -1,7 +1,7 @@
 ---
 title: GPT-6 Astra开始开放，Pro用户优先灰度，Plus用户再等等
-description: 截至北京时间2026年9月5日，由GPT-6 Astra驱动的GPT-6 Pro已在ChatGPT中分批开放，首批覆盖Pro 5x 100美元、Pro 20x 200美元及符合条件的Business、Enterprise用户。本文说明GPT-6 Pro开放范围、Plus用户现状、两个Pro套餐区别，以及国内通过PayAI.plus充值ChatGPT Pro的注意事项。
-keywords: [GPT-6 Pro, GPT6 Pro, GPT-6 Astra, ChatGPT Pro, ChatGPT Pro充值, GPT Pro充值, GPT-6开放, GPT-6怎么用, ChatGPT Pro 100美元, ChatGPT Pro 200美元, Pro 5x, Pro 20x, OpenAI, ChatGPT Business, ChatGPT Enterprise, PayAI, payai.plus, 国内充值ChatGPT, GPT会员充值]
+description: 截至北京时间2026年9月5日，由GPT-6 Astra驱动的GPT-6 Pro已在ChatGPT中分批开放，首批覆盖Pro 5x 100美元、Pro 20x 200美元及符合条件的Business、Enterprise用户。本文说明GPT-6 Pro开放范围、Plus用户现状、两个Pro套餐区别。
+keywords: [GPT-6 Pro, GPT6 Pro, GPT-6 Astra, ChatGPT Pro, ChatGPT Pro充值, GPT Pro充值, GPT-6开放, GPT-6怎么用, ChatGPT Pro 100美元, ChatGPT Pro 200美元, Pro 5x, Pro 20x, OpenAI, ChatGPT Business, ChatGPT Enterprise, 国内充值ChatGPT, GPT会员充值]
 tags: [GPT-6, GPT-6 Astra, OpenAI, ChatGPT Pro, ChatGPT充值, 大模型动态]
 ---
 
@@ -71,15 +71,10 @@ OpenAI 官方定价文档已经在 ChatGPT Work 和 Codex 的额度表中列出 
 
 真正卡住不少国内用户的，不是会不会使用 GPT-6，而是没有合适的海外支付方式。
 
-如果你的 ChatGPT 结账页可以正常使用官方支持的银行卡，优先直接订阅。没有海外信用卡，也不想折腾虚拟卡，可以查看 PayAI.plus 当前提供的 ChatGPT Pro 充值选项：
+如果你的 ChatGPT 结账页可以正常使用官方支持的银行卡，优先直接订阅。没有海外信用卡，也不想折腾虚拟卡，可以查看当前提供的 ChatGPT Pro 充值选项：
 
-👉 **[前往 PayAI.plus 充值 ChatGPT Pro 5x（100美元档）](https://payai.plus/chatgpt?product=chatgpt-pro-5x)**
+👉 **[前往充值 ChatGPT Pro 5x（100美元档）](../../ai/chatgpt/recharge.md)**
 
-👉 **[前往 PayAI.plus 充值 ChatGPT Pro 20x（200美元档）](https://payai.plus/chatgpt?product=chatgpt-pro)**
-
-截至本文发布时，PayAI 页面显示 Pro 5x 和 Pro 20x 两个套餐，支持人民币支付。页面价格、库存、交付方式和售后规则都可能变化，**下单前一定要再次核对套餐名称，别把 Plus、Pro 5x 和 Pro 20x 买混。**
-
-还要把边界说清楚：PayAI.plus 是第三方充值服务，不是 OpenAI 官方支付页面。完成 Pro 充值后，你拿到的是对应套餐资格；GPT-6 Pro 何时出现在模型列表里，仍然取决于 OpenAI 的账号灰度。
 
 ## 已经是Pro，为什么还看不到GPT-6 Pro？
 
@@ -107,7 +102,7 @@ Enterprise 还多一层管理员控制。OpenAI 官方工作区文档说明，As
 - 每天持续跑 Codex 和 Work，再考虑 Pro 20x；
 - 只想尝鲜，而且不着急，继续等 Plus 灰度最省钱。
 
-已经确定要升级的录友，可以直接去 **[PayAI.plus 的 ChatGPT Pro 充值页](https://payai.plus/chatgpt)** 看当前套餐。
+已经确定要升级的录友，可以直接去 **[ChatGPT Pro 充值页](https://payai.plus/chatgpt)** 看当前套餐。
 
 **GPT-6 Pro 已经开始上车了。真正需要它的人，别买错档；只想围观的人，也别被首发焦虑推着花钱。**
 
@@ -119,4 +114,3 @@ Enterprise 还多一层管理员控制。OpenAI 官方工作区文档说明，As
 
 * OpenAI ChatGPT Learn：GPT-6 Astra工作区开放与Enterprise管理员设置：https://learn.chatgpt.com/docs/enterprise/workspace-model-availability
 
-* PayAI.plus：ChatGPT Plus、Pro 5x与Pro 20x充值页面：https://payai.plus/chatgpt

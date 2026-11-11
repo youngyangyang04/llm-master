@@ -1,7 +1,7 @@
 ---
-title: OpenAI突然终止与Cursor合作：AI编程工具用户如何用APIDock中转继续接入GPT-5.6、GPT-4o和o1模型
-description: OpenAI在2026年8月正式终止与Cursor的合作关系，Cursor内置的OpenAI模型调用通道关闭。本文分析OpenAI终止合作的原因、对AI编程工具用户的影响，并提供通过APIDock中转服务继续在Cursor中使用GPT-5.6、GPT-4o、o1等OpenAI模型的完整配置方案。
-keywords: [OpenAI终止Cursor合作, Cursor无法使用GPT, Cursor GPT-5.6, Cursor接入OpenAI, APIDock, API中转服务, Cursor配置OpenAI API, AI编程工具, Claude Code, Cursor替代方案, GPT-4o Cursor, o1模型Cursor, OpenAI API Key, Cursor自定义模型]
+title: OpenAI突然终止与Cursor合作：AI编程工具用户如何用中转服务继续接入GPT-5.6、GPT-4o和o1模型
+description: OpenAI在2026年8月正式终止与Cursor的合作关系，Cursor内置的OpenAI模型调用通道关闭。本文分析OpenAI终止合作的原因、对AI编程工具用户的影响，并提供通过中转服务继续在Cursor中使用GPT-5.6、GPT-4o、o1等OpenAI模型的完整配置方案。
+keywords: [OpenAI终止Cursor合作, Cursor无法使用GPT, Cursor GPT-5.6, Cursor接入OpenAI, 中转服务, API中转服务, Cursor配置OpenAI API, AI编程工具, Claude Code, Cursor替代方案, GPT-4o Cursor, o1模型Cursor, OpenAI API Key, Cursor自定义模型]
 tags: [OpenAI, Cursor, AI编程, API中转, GPT, Claude Code]
 ---
 
@@ -69,31 +69,31 @@ OpenAI 断掉的是 Cursor 的内置通道，**不是 OpenAI API 本身。**
 
 中转服务的逻辑很简单：你通过中转商提供的 API Key 调用模型，中转商负责把请求转发给 OpenAI，再把结果返回给你。你不需要直接和 OpenAI 打交道，也不需要担心 IP 和支付问题。
 
-**[APIDock](apidock.ai) 是目前国内比较稳定的 OpenAI API 中转服务之一。**
+**[中转服务](apidock.ai) 是目前国内比较稳定的 OpenAI API 中转服务之一。**
 
 
 它支持 GPT-5.6、GPT-4o、o1 等主流模型，兼容 OpenAI 官方 API 格式，可以直接在 Cursor、Continue、Windsurf 等编辑器里配置使用。
 
-相比直接找 OpenAI，APIDock 有几个实际优势：
+相比直接找 OpenAI，中转服务有几个实际优势：
 
 - **国内直连，不需要代理。**
 - **支付宝、微信都能充值，不需要信用卡。**
 - **按量计费，用多少花多少，不用担心月费浪费。**
 - **账号稳定，不会因为 IP 问题被封。**
 
-当然，中转服务也有成本。APIDock 的价格会比 OpenAI 官方稍高一点，但考虑到省下的代理费用、注册成本和封号风险，对国内用户来说仍然是更划算的选择。
+当然，中转服务也有成本。中转服务的价格会比 OpenAI 官方稍高一点，但考虑到省下的代理费用、注册成本和封号风险，对国内用户来说仍然是更划算的选择。
 
-## 在Cursor里配置APIDock
+## 在Cursor里配置中转服务
 
 配置过程很简单，5 分钟就能搞定。
 
-而且关于[APIDock](apidock.ai)有配置相关问题，可以直接在这里问客服。
+而且关于[中转服务](apidock.ai)有配置相关问题，可以直接在这里问客服。
 
 ![](https://file1.kamacoder.com/i/web/2026-07-08_16-59-21.jpg?v=20261005)
 
 **第一步：注册并充值**
 
-访问 APIDock 官网（apidock.ai），注册账号，充值一笔金额。建议先充 50-100 元测试，确认稳定后再加。
+访问中转服务网站，注册账号，充值一笔金额。建议先充 50-100 元测试，确认稳定后再加。
 
 充值后，在控制台里找到你的 API Key。这个 Key 后面会用到。
 
@@ -109,8 +109,8 @@ OpenAI 断掉的是 Cursor 的内置通道，**不是 OpenAI API 本身。**
 
 填写以下信息：
 
-- **API Base URL**：`https://api.apidock.ai/v1`（具体地址以 APIDock 控制台显示为准）
-- **API Key**：粘贴你刚才复制的 APIDock API Key
+- **API Base URL**：`https://api.apidock.ai/v1`（具体地址以中转服务控制台显示为准）
+- **API Key**：粘贴你刚才复制的中转服务 API Key
 - **Model Name**：`gpt-5.6` 或 `gpt-4o`，根据你的需求选择
 
 保存后，在代码编辑器里选择刚才配置的模型，发一条测试消息。
@@ -135,7 +135,7 @@ OpenAI 断掉 Cursor，表面上是一次商业决策，**实际上是 AI 编程
 
 **工具和模型解耦，反而让我们有了更多选择。**
 
-想继续用 GPT？接 APIDock 中转。觉得 Claude 更适合？直接上 Claude Code。想本地部署？DeepSeek、Qwen 都可以。
+想继续用 GPT？接中转服务。觉得 Claude 更适合？直接上 Claude Code。想本地部署？DeepSeek、Qwen 都可以。
 
 别把自己的工作流绑死在一个工具或一个模型上。
 

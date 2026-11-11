@@ -38,7 +38,9 @@ tags: [大模型应用, AI Agent, Browser Agent, 上下文工程, 工具调用, 
 
 **Browser Agent读取大网页的本质，不是把网页压成一段更短的文本，而是把页面变成一张可逐层展开的语义地图。**
 
-<!-- drawio源文件: ./drawio/browser_agent_dom_context_01_progressive_reading.drawio；待用户审核后导出、上传并插入图片 -->
+<!-- drawio源文件: ./drawio/browser_agent_dom_context_01_progressive_reading.drawio -->
+
+![大型网页渐进式读取流程](https://file1.kamacoder.com/i/web/20260915112906.png?v=20261005)
 
 这张图回答的是：同一个大型页面如何根据阅读或操作任务生成不同的语义视图，再通过区域索引和预算闸门，只把当前所需部分送进Agent上下文；原始DOM直塞为什么会走向噪声和Token溢出。
 

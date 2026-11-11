@@ -18,3 +18,11 @@
 - 用 [部署专题](../topics/deployment.md)把 Demo 推向生产。
 
 阶段项目：实现一个支持流式响应、JSON Schema、工具调用、超时重试和成本统计的最小业务服务。
+
+## 多模态应用
+
+完成文本应用后，再按场景补齐多模态输入与成本控制：
+
+1. [多模态大模型入门](../llm/app/multimodal_intro.md)
+2. [多模态应用场景](../llm/app/multimodal_use_cases.md)
+3. [多模态成本与延迟](../llm/app/multimodal_cost.md)

@@ -37,7 +37,7 @@ Claude Code 为什么能在一个长会话里反复读代码、调用工具、�
 
 这件事听起来简单。
 
-> 不少读者问我，如何充值Claude会员，我在这里篇单独讲一下：[国内Claude充值会员的方法](../../qita/0002.claudepay.md)
+> 不少读者问我，如何充值Claude会员，我在这里篇单独讲一下：[国内Claude充值会员的方法](/ai/claude/recharge.md)
 
 但 Anthropic 这篇文章最有价值的地方在于，它把几个反直觉的工程结论讲出来了：
 

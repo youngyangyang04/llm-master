@@ -31,7 +31,7 @@ Anthropic 在 2026 年 5 月 14 日发了一篇博客：How Claude Code works in
 
 **Claude Code 在大代码库里能不能跑稳，不只看模型，还看你有没有给 Agent 铺好路。**
 
-> 不少读者问我，如何充值Claude会员，我在这里篇单独讲一下：[国内Claude充值会员的方法](../../qita/0002.claudepay.md)
+> 不少读者问我，如何充值Claude会员，我在这里篇单独讲一下：[国内Claude充值会员的方法](/ai/claude/recharge.md)
 
 模型是发动机。
 

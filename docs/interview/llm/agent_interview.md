@@ -850,7 +850,7 @@ RAG 负责补充知识，Agent 负责完成任务，两者不对立。RAG 是 Ag
 
 这些知识点不是孤立的，面试时要把它们串起来。比如面试官问"设计一个 Agent 系统"，你不能只说"用 ReAct + MCP"，要从工作模式选择、工具管理、记忆设计、安全防护、成本控制五个维度展开，才能拿到高分。
 
-这篇是 Agent 面试的总览，几个高频追问方向都有独立深挖：生产级 Agent 怎么被框架管住看 [Harness Engineering 大厂面试题汇总](./harness_interview.md)，多个 Agent 怎么协作看 [多 Agent 通信与编排面试详解](./multi_agent_communication_interview.md)，能力怎么沉淀复用看 [Agent Skill 面试详解](./agent_skill_interview.md)。想看真实面试现场，可以读[字节 Agent 开发四面面经](./20260506bytedance.md)和[字节番茄小说 Agent 应用开发实习一面](./bytedance_fanqie_agent_intern_interview.md)，后一篇重点看项目数据和多 Agent 工程细节怎么扛追问。
+这篇是 Agent 面试的总览，几个高频追问方向都有独立深挖：生产级 Agent 怎么被框架管住看 [Harness Engineering 大厂面试题汇总](./harness_interview.md)，多个 Agent 怎么协作看 [多 Agent 通信与编排面试详解](./multi_agent_communication_interview.md)，能力怎么沉淀复用看 [Agent Skill 面试详解](./agent_skill_interview.md)。想看真实面试现场，可以读[字节 Agent 开发四面面经](./company/20260506bytedance.md)和[字节番茄小说 Agent 应用开发实习一面](./company/20260919bytedance_fanqie_agent_intern_interview.md)，后一篇重点看项目数据和多 Agent 工程细节怎么扛追问。
 
 Agent 这条赛道还在快速演进，MCP 刚成事实标准，A2A 已经在追赶，新的框架和工具几乎每个月都在变。但底层的核心逻辑——**LLM 怎么调用工具、工具怎么标准化接入、Agent 之间怎么协作、怎么保证安全可靠**——这些是不会变的。把这些吃透，不管技术栈怎么演进，你都能快速跟上。
 

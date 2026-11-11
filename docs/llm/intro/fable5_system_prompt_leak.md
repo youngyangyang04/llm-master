@@ -7,7 +7,7 @@ tags: [Claude, 系统提示词, Context Engineering, Prompt Cache, 大模型成�
 
 # Claude Fable 5被破解了？12万字系统提示词全曝光
 
-> 不少读者问我，如何才能用上Claude pro（opus 4.8，Fable），我在这里篇单独讲一下：[国内Claude充值会员的方法](https://notes.kamacoder.com/qita/0002.claudepay.html)
+> 不少读者问我，如何才能用上Claude pro（opus 4.8，Fable），我在这里篇单独讲一下：[国内Claude充值会员的方法](https://notes.kamacoder.com/ai/claude/recharge.html)
 
 录友们好。
 

@@ -7,7 +7,7 @@ tags: [Kimi, 月之暗面, 大模型发布, AI编程, 前端开发, 多模态, �
 
 # Kimi K3 发布：2.8 万亿参数只是前菜，前端审美才是最狠的
 
-<a href="https://notes.kamacoder.com/qita/0021.gpt-5-6-sol-terra-luna-domestic-guide.html">
+<a href="https://notes.kamacoder.com/ai/chatgpt/recharge.html">
   <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 

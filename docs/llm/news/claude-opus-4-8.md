@@ -8,7 +8,7 @@ tags: [Claude, 大模型发布, AI编程, Agent]
 # Claude Opus 4.8发布：别被跑分带节奏，真正值得看的是Claude Code工作流
 
 
-> 不少读者问我，如何Claude账号被封，如果用上Claude opus4.8，或者Fable5，充值Claude会员，我在这里单独讲一下：[没有Claude账号，怎么用上Opus模型](../../qita/0020.no-claude-account-use-opus-4-8-fable-5.md)
+> 不少读者问我，如何Claude账号被封，如果用上Claude opus4.8，或者Fable5，充值Claude会员，我在这里单独讲一下：[没有Claude账号，怎么用上Opus模型](/qita/0020.no-claude-account-use-opus-4-8-fable-5.md)
 
 Anthropic 昨天发布了 Claude Opus 4.8。
 

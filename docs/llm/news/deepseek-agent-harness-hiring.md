@@ -8,7 +8,7 @@ tags: [DeepSeek, AI Agent, Agent工程, 大模型求职, 大模型动态]
 # DeepSeek大举招人，Agent Harness工程师火了：普通程序员怎么学Harness
 
 
-<a href="https://notes.kamacoder.com/qita/0021.gpt-5-6-sol-terra-luna-domestic-guide.html">
+<a href="https://notes.kamacoder.com/ai/chatgpt/recharge.html">
   <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 

@@ -11,6 +11,8 @@ tags: [AI编程面经, 规约驱动开发, Agent工程化, 大模型面试, AI�
 
 后面又聊了 [AI 增强开发三件套](./ai_enhanced_development_openspec_superpowers_gstack.md)，其中 OpenSpec 负责把模糊需求变成可审查的规格。
 
+想看面试里怎么讲，可以结合[理想智能应用研发一面](./company/20261010lixiang_intelligent_application_interview.md)：面试官从“SDD 是什么、是不是都用子 Agent”，接着要求现场用 AI 完成四数之和并生成验证脚本，正好把规约、实现和验收串起来。
+
 这篇继续往下挖一个更底层的问题：
 
 **为什么 AI 编程发展得越快，大家反而重新重视写规约？**

@@ -29,7 +29,7 @@ tags:
 
 # GPT-5.6突然全面开放：Codex并入ChatGPT，AI开始自己组队干活了
 
-<a href="https://notes.kamacoder.com/qita/0021.gpt-5-6-sol-terra-luna-domestic-guide.html">
+<a href="https://notes.kamacoder.com/ai/chatgpt/recharge.html">
   <img src="https://file1.kamacoder.com/i/web/2026-07-17_15-06-45.jpg?v=20261005" style="width:100%;cursor:pointer;" alt="KamaClaude">
 </a>
 
@@ -54,7 +54,7 @@ GPT-5.6 接着往前推了一步：**模型不只会跑任务，还会自己拆�
 
 **OpenAI 想把 ChatGPT 从聊天框，改造成一个能持续干活的操作系统。**
 
-（如果国内读者因为各种原因（网络、手机号验证等等）用不了GPT、Claude的模型，推荐用这个中转[APIDOCK](https://apidock.ai/)，还是很靠谱的） 
+（如果国内读者因为各种原因（网络、手机号验证等等）用不了GPT、Claude的模型，推荐用这个[中转服务](https://apidock.ai/)，还是很靠谱的）
 
 ## 一次发三个模型，OpenAI也开始给智能分档了
 

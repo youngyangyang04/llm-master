@@ -30,6 +30,8 @@ AI 时代新词出现得太快。之前 Loop Engineering 还没学完，现在�
 
 这篇不带你追名词，直接把面试官真正关心的几件事讲透：Graph Engineering 到底是什么、Loop 为什么会长成图、什么时候该用、和 GraphRAG 到底有什么关系、落地时怎么避免把自己编排进坑里。
 
+想继续练工程追问，可以接着看[Agent Harness 可观测性面试详解](./agent_harness_observability_interview.md)：执行过程怎么追踪、失败怎么归因，以及修复后怎么做评测回归。
+
 ## 目录
 
 1. [Graph Engineering 到底是什么](#1-graph-engineering-到底是什么)
